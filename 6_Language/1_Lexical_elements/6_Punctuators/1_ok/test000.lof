@@ -1,0 +1,36 @@
+`test00' called
+ 0 0 0 3 4 5 0 0 0 0
+`test01' called
+`f' called
+`f' called
+`test02' called
+a[2] = 3
+s.a = 1
+ss.a = 2
+`test03' called
+ 1 2 3
+m = 3
+m ** pp = 9
+`test04' called
+a = 2
+`test05' called
+s.a = 1, s.b = 3, s.c = 5
+n = 1
+`test06' called
+a = 1
+a = 3
+`test07' called
+a = 2
+`test08' called
+1
+2.000000
+3.000000
+4
+`test09' called
+`test10' called
+ 0 0 0 3 4 5 0 0 0 0
+`test11' called
+a[2] = 3
+s.a = 1
+ss.a = 2
+`test12' called

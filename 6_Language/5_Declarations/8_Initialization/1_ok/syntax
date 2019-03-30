@@ -1,0 +1,19 @@
+initializer:
+  assignment-expression
+  { initializer-list }
+  { initializer-list , }
+
+initializer-list:
+  designationopt initializer
+  initializer-list , designationopt initializer
+
+designation:
+  designator-list =
+
+designator-list:
+  designator
+  designator-list designator
+
+designator:
+  [ constant-expression ]
+  . identifier

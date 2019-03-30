@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<item>
+    <source>1_ok/test000.c</source>
+    <abstract>
+    さまざまなポインタの宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test001.c</source>
+    <abstract>
+    ISO のサンプル
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test000.c</source>
+    <abstract>
+    ISO のサンプル
+    </abstract>
+</item>
+
+</test_item>

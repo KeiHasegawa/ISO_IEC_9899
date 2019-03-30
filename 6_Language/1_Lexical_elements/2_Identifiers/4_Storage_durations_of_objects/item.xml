@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<item>
+    <source>1_ok/test000.c</source>
+    <abstract>
+    static storage duration をもつ object
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test001.c</source>
+    <abstract>
+    automatic storage duration をもつ object
+    </abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test000.c</source>
+    <abstract>eax, ebx, ecx, edx, esi, edi のすべてを使用する場合</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test001.c</source>
+    <abstract>test000 からさらに 1 つの変数に定数を代入した場合</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test002.c</source>
+    <abstract>test001 からさらに 1 つの変数にレジスタにない変数を代入した場合</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test003.c</source>
+    <abstract>test001 からさらに 1 つの変数にレジスタにある変数を代入した場合</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test004.c</source>
+    <abstract>test000 からさらに レジスタにある変数に代入をした場合.
+    test000 からさらに 1 つの変数に y + z の結果を代入した場合
+    </abstract>
+</item>
+		
+<item>
+    <source>2_ok/1_reg/01_gpr/test005.c</source>
+    <abstract>y が定数,    z が定数</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test006.c</source>
+    <abstract>y が定数,    z がレジスタ</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test007.c</source>
+    <abstract>y がレジスタ,  z が定数</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test008.c</source>
+    <abstract>y がレジスタ,  z がレジスタ</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test009.c</source>
+    <abstract>y がメモリ,   z がレジスタ</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test010.c</source>
+    <abstract>y がメモリ,   z が定数</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test011.c</source>
+    <abstract>y が定数,    z がメモリ</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test012.c</source>
+    <abstract>y がレジスタ,  z がメモリ</abstract>
+</item>
+
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test013.c</source>
+    <abstract>割り算の割られる数が rom に置かれている場合
+    test000 からさらに 1 つの変数に y >> z の結果を代入した場合
+    </abstract>
+</item>
+		
+<item>
+    <source>2_ok/1_reg/01_gpr/test014.c</source>
+    <abstract>y が定数,    z が定数</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test015.c</source>
+    <abstract>y が定数,    z が ecx 以外のレジスタ</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test016.c</source>
+    <abstract>y が定数,    z が ecx レジスタ</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test017.c</source>
+    <abstract>y がレジスタ,  z が定数</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test018.c</source>
+    <abstract>y がレジスタ,  z が ecx 以外のレジスタ</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test019.c</source>
+    <abstract>y がレジスタ,  z が ecx レジスタ</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test020.c</source>
+    <abstract>y がメモリ,   z が ecx 以外のレジスタ</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test021.c</source>
+    <abstract>y がメモリ,   z が ecx レジスタ</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test022.c</source>
+    <abstract>y がメモリ,   z が定数</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test023.c</source>
+    <abstract>y が定数,    z がメモリ</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test024.c</source>
+    <abstract>y がレジスタ,  z がメモリ
+    test000 からさらに 1 つの変数に -y の結果を代入した場合
+    </abstract>
+</item>
+		
+<item>
+    <source>2_ok/1_reg/01_gpr/test025.c</source>
+    <abstract>y が定数</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test026.c</source>
+    <abstract>y がレジスタ</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test027.c</source>
+    <abstract>y がメモリ</abstract>
+</item>
+
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test028.c</source>
+    <abstract>test000 からさらに定数を函数に渡す</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test029.c</source>
+    <abstract>test000 からさらに函数を呼び出す. 
+    呼び出された函数でレジスタを使用する.
+    test000 からさらに if x == y goto lable をした場合</abstract>
+</item>
+		
+<item>
+    <source>2_ok/1_reg/01_gpr/test030.c</source>
+    <abstract>x が定数,    y が定数</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test031.c</source>
+    <abstract>x が定数,    y がレジスタ</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test032.c</source>
+    <abstract>x が定数,    y がメモリ</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test033.c</source>
+    <abstract>x がレジスタ,  y が定数</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test034.c</source>
+    <abstract>x がレジスタ,  y がレジスタ</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test035.c</source>
+    <abstract>x がレジスタ,  y がメモリ</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test036.c</source>
+    <abstract>x がメモリ,   y が定数</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test037.c</source>
+    <abstract>x がメモリ,  y がレジスタ</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test038.c</source>
+    <abstract>x がメモリ,  y がメモリ</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test039.c</source>
+    <abstract>test031 で if x != y goto label</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test040.c</source>
+    <abstract>test032 で if x != y goto label</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test041.c</source>
+    <abstract>test031 で if x &lt; y goto label</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test042.c</source>
+    <abstract>test032 で if x &lt; y goto label</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test043.c</source>
+    <abstract>test031 で if x &lt;= y goto label</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test044.c</source>
+    <abstract>test032 で if x &lt;= y goto label</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test045.c</source>
+    <abstract>test031 で if x >= y goto label</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test046.c</source>
+    <abstract>test032 で if x >= y goto label</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test047.c</source>
+    <abstract>test031 で if x > y goto label</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/01_gpr/test048.c</source>
+    <abstract>test032 で if x > y goto label</abstract>
+</item>
+
+<item>
+    <source>2_ok/1_reg/02_fpr/test000.c</source>
+    <abstract>7 個の double 型のローカル変数を正しく処理できるか</abstract>
+    <comment></comment>
+</item>
+
+<item>
+    <source>2_ok/1_reg/02_fpr/test001.c</source>
+    <abstract>8 個の double 型のローカル変数を正しく処理できるか</abstract>
+    <comment>8 個目は x := y, y はレジスタ以外</comment>
+</item>
+
+<item>
+    <source>2_ok/1_reg/02_fpr/test002.c</source>
+    <abstract>9 個の double 型のローカル変数を正しく処理できるか</abstract>
+    <comment>8, 9 個目は x := y, y はレジスタ以外</comment>
+</item>
+
+<item>
+    <source>2_ok/1_reg/02_fpr/test003.c</source>
+    <abstract>7 個の float 型のローカル変数を正しく処理できるか</abstract>
+    <comment></comment>
+</item>
+
+
+
+<item>
+    <source>2_ok/1_reg/02_fpr/test004.c</source>
+    <abstract>8 個の float 型のローカル変数を正しく処理できるか</abstract>
+    <comment>8 個目は x := y, y はレジスタ以外</comment>
+</item>
+
+<item>
+    <source>2_ok/1_reg/02_fpr/test005.c</source>
+    <abstract>9 個の float 型のローカル変数を正しく処理できるか	 8, 9 個目は x := y, y はレジスタ以外 )</abstract>
+    <comment>test001 からさらに 1 つの変数に y + z の結果を代入した場合</comment>
+</item>
+
+<item>
+    <source>2_ok/1_reg/02_fpr/test006.c</source>
+    <abstract>y レジスタ以外, z レジスタ以外</abstract>
+    <comment></comment>
+</item>
+
+<item>
+    <source>2_ok/1_reg/02_fpr/test007.c</source>
+    <abstract>y レジスタ以外, z レジスタ</abstract>
+    <comment></comment>
+</item>
+
+<item>
+    <source>2_ok/1_reg/02_fpr/test008.c</source>
+    <abstract>y レジスタ,    z レジスタ以外</abstract>
+    <comment></comment>
+</item>
+
+<item>
+    <source>2_ok/1_reg/02_fpr/test009.c</source>
+    <abstract>y レジスタ,    z レジスタ</abstract>
+    <comment></comment>
+</item>
+
+<item>
+    <source>2_ok/1_reg/02_fpr/test010.c</source>
+    <abstract>test001 で y がレジスタ</abstract>
+    <comment></comment>
+</item>
+
+<item>
+    <source>2_ok/1_reg/02_fpr/test011.c</source>
+    <abstract>test002 で y がレジスタ</abstract>
+    <comment></comment>
+</item>
+
+<item>
+    <source>2_ok/1_reg/02_fpr/test012.c</source>
+    <abstract>test004 で y がレジスタ</abstract>
+    <comment></comment>
+</item>
+
+<item>
+    <source>2_ok/1_reg/02_fpr/test013.c</source>
+    <abstract>test005 で y がレジスタ</abstract>
+    <comment></comment>
+</item>
+
+<item>
+    <source>2_ok/1_reg/02_fpr/test014.c</source>
+    <abstract>double を戻り値とする函数</abstract>
+    <comment></comment>
+</item>
+
+<item>
+    <source>2_ok/1_reg/02_fpr/test015.c</source>
+    <abstract>double の定数を返す函数</abstract>
+    <comment></comment>
+</item>
+
+<item>
+    <source>2_ok/1_reg/02_fpr/test016.c</source>
+    <abstract>double の定数を返す函数</abstract>
+    <comment></comment>
+</item>
+
+<item>
+    <source>2_ok/2_mem/test000.c</source>
+    <abstract>メモリにある変数への代入</abstract>
+</item>
+
+<item>
+    <source>2_ok/2_mem/test001.c</source>
+    <abstract>test000 のメモリにある変数を extern を指定して函数内で宣言</abstract>
+</item>
+
+<item>
+    <source>2_ok/2_mem/test002.c</source>
+    <abstract>test001 を別の函数で行なう</abstract>
+</item>
+
+<item>
+    <source>2_ok/2_mem/test003.c</source>
+    <abstract>test002 と同じだが函数を呼び出す前にメモリにある変数を参照する</abstract>
+</item>
+
+<item>
+    <source>2_ok/2_mem/test004.c</source>
+    <abstract>extern 指定の初期値リストを持つ変数</abstract>
+</item>
+
+<item>
+    <source>2_ok/2_mem/test005</source>
+    <abstract>複数の翻訳単位での static 指定の変数</abstract>
+</item>
+
+<item>
+    <source>2_ok/2_mem/test006.c</source>
+    <abstract>名前空間の異なる static 指定の変数</abstract>
+</item>
+
+<item>
+    <source>2_ok/2_mem/test007</source>
+    <abstract>異なるファイルでの変数の定義と参照</abstract>
+</item>
+
+<item>
+    <source>2_ok/2_mem/test008</source>
+    <abstract>異なるファイルでの変数の 2 つの定義(リンク時のエラーがあれば合格)</abstract>
+</item>
+
+<item>
+    <source>2_ok/7_constant/test000.c</source>
+    <abstract>文字定数</abstract>
+</item>
+
+<item>
+    <source>2_ok/7_constant/test001.c</source>
+    <abstract>文字定数その2</abstract>
+</item>
+
+<item>
+    <source>2_ok/7_constant/test002.c</source>
+    <abstract>文字定数その3</abstract>
+</item>
+
+</test_item>

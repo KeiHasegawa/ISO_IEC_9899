@@ -1,0 +1,8 @@
+s.a = 1
+s.b = "unix"
+u.a = 0x3f800000
+f called
+ps->a = 1
+ps->b = "unix"
+g called
+pu->a = 0x3f800000

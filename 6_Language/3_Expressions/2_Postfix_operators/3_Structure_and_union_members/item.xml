@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<item>
+    <source>1_ok/test000.c</source>
+    <abstract>
+    構造体, 共用体に対するメンバ参照
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test001.c</source>
+    <abstract>
+    qualifier 付きの struct, union へのポインタ
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test002.c</source>
+    <abstract>
+    ビットフィールド
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test003.c</source>
+    <abstract>
+    メンバ参照演算子の結果にメンバ参照演算子を適用
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test004.c</source>
+    <abstract>
+    構造体のメンバに構造体の変数を代入
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test005.c</source>
+    <abstract>
+    メンバ参照演算子の結果に単項の &amp; を適用 
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test000.c</source>
+    <abstract>
+    宣言されていない変数に対するメンバ参照.
+    宣言されていないメンバの参照.
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test001.c</source>
+    <abstract>
+    函数呼び出しの結果に . 演算子適用し左辺値として使用.
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test002.c</source>
+    <abstract>
+    修飾子付きの構造体変数.
+    修飾子付きの構造体へのポインタ.
+    修飾子付きのメンバ.
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test003.c</source>
+    <abstract>
+    宣言されていないメンバの参照
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test006.c</source>
+    <abstract>
+    函数の戻り値にメンバ参照演算子を 2 つ適用
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test007.c</source>
+    <abstract>
+    函数の外側で使用
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test008.c</source>
+    <abstract>
+    case ラベルで使用
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test009.c</source>
+    <abstract>
+    パラメータスコープの variable length array の次元に使用
+    </abstract>
+</item>
+
+</test_item>

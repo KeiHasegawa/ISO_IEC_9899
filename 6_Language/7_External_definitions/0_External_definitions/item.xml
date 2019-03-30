@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<item>
+    <source>1_ok/test001.c</source>
+    <abstract>
+    定義のない外部リンケージを持つ変数を sizeof で参照.
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test000.c</source>
+    <abstract>
+    ファイルスコープの宣言で記憶クラスが auto, register 
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test001.c</source>
+    <abstract>
+    内部リンケージを持つ変数に対して定義が 2 つ. 内部リンケージを持つ函数を式で参照しているが, 翻訳単位に定義がない.
+    </abstract>
+</item>
+
+<item>
+    <source>3_error</source>
+    <abstract>
+    外部リンケージを持つ変数を式で参照しているが, プログラム内で定義がない.
+    </abstract>
+</item>
+
+<item>
+    <source>4_error</source>
+    <abstract>
+    外部リンケージを持つ変数がプログラム内で 2 つの定義.
+    </abstract>
+</item>
+
+</test_item>

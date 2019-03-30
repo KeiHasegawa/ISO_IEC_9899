@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<item>
+    <source>1_ok/test000.c</source>
+    <abstract>
+    さまざまな型に対する compound literal
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test000.c</source>
+    <abstract>
+    compound literal の型が不正
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test001.c</source>
+    <abstract>
+    compound literal で初期化指定子が要素サイズを超えている
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test001.c</source>
+    <abstract>
+    関数の外側での compound literal
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test002.c</source>
+    <abstract>
+    関数の外側で初期化が定数でない
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test002.c</source>
+    <abstract>
+    規格書にあるサンプル
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test003.c</source>
+    <abstract>
+    代入演算子の左オペランドに compound literal を指定
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test003.c</source>
+    <abstract>
+    変更できない compoud literal
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test004.c</source>
+    <abstract>
+    case ラベルにおける compound literal
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test005.c</source>
+    <abstract>
+    パラメータスコープの variable length array の次元に使用
+    </abstract>
+</item>
+
+</test_item>

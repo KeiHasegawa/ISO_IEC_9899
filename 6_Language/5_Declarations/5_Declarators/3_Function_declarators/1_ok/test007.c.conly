@@ -1,0 +1,115 @@
+/*
+ * Check function declarator works well, which parameter
+ * list terminates with an ellipsis (, ...).
+ */
+#include <stdio.h>
+#include <stdarg.h>
+
+void test000(int a, ...);
+void test001(double a, ...);
+void test002(float (*a)[], ...);
+void test003(int a, ...);
+
+struct S {
+  int a;
+  char* b;
+};
+
+int main(void)
+{
+  test000(3,1,2,3);
+  test000(2,4,5);
+  int a[] = { 6, 7, 8 };
+  test001(0,&a);
+  extern void f(void);
+  test001(1,&f);
+  float fa[][2] = {
+    { 9, 10 },
+    { -9, -10 },
+  };
+  test002(&fa[0],11.0F);
+  test002(&fa[1],12LL);
+  struct S s = { -5, "program" };
+  test003(0,s);
+  test003(1,&s);
+  return 0;
+}
+
+void test000(int n, ...)
+{
+  printf("`test000' called\n");
+  va_list ap;
+  va_start(ap,n);
+  for ( int i = 0 ; i < n ; ++i )
+    printf(" %d", va_arg(ap,int));
+  printf("\n");
+  va_end(ap);
+}
+
+void test001(double d, ...)
+{
+  printf("`test001' called\n");
+  va_list ap;
+  va_start(ap,d);
+  if ( !d ){
+#ifndef _MSC_VER
+    int (*pa)[3] = va_arg(ap, int (*)[3]);
+#else // _MSC_VER
+    typedef int (*T)[3];
+    int (*pa)[3] = va_arg(ap, T);
+#endif // _MSC_VER
+    for ( int i = 0 ; i < sizeof *pa/ sizeof **pa ; ++i )
+      printf(" %d", (*pa)[i]);
+    printf("\n");
+  }
+  else {
+#ifndef _MSC_VER
+    void (*pf)(void) = va_arg(ap, void (*)(void));
+#else // _MSC_VER
+    typedef void (*T)(void);
+    void (*pf)(void) = va_arg(ap, T);
+#endif // _MSC_VER
+    (*pf)();
+  }
+  va_end(ap);
+}
+
+void test002(float (*pa)[2], ...)
+{
+  printf("`test002' called\n");
+  va_list ap;
+  va_start(ap,pa);
+  for ( int i = 0 ; i < sizeof *pa/sizeof **pa ; ++i )
+    printf(" %f", (*pa)[i]);
+  printf("\n");
+  if ( (*pa)[0] > 0 )
+    printf("%f\n", va_arg(ap,double));
+  else
+    printf("%lld\n", va_arg(ap,long long));
+  va_end(ap);
+}
+
+void f(void)
+{
+  printf("`f' called\n");
+}
+
+void test003(int a, ...)
+{
+  printf("`test003' called\n");
+  va_list ap;
+  va_start(ap,a);
+  if ( a ){
+    struct S* ps = va_arg(ap,struct S*);
+    printf("%d\n", ps->a);
+  }
+  else {
+#ifdef USE_BUILTIN_VA_ARG
+    struct S s = __builtin_va_arg(ap,struct S);
+#else
+    struct S s = va_arg(ap,struct S);
+#endif
+    printf("%d\n", s.a);
+  }
+  va_end(ap);
+}

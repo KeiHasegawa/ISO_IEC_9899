@@ -1,0 +1,22 @@
+TOUCH = touch
+CC1 = hcc1.exe
+CC1_FLAG =
+CPP = hcpp.exe
+CPP_FLAG = $(EXTRA_CPP_FLAG) \
+-D__declspec\(a\)= -D__cdecl= -D__inline__=inline -D__extension__= \
+-D__attribute__\(a\)= -D__builtin_va_list='char*' \
+-D__builtin_stdarg_start=__builtin_va_start -D__asm__\(a\)= -W 0 -H
+
+DOGV = wdog.exe -v
+
+all:test000.s
+
+test000.s:test000.i
+	$(DOGV) $(CC1) $< $(CC1_FLAG)
+	$(TOUCH) $@
+
+test000.i:test000.c
+	$(DOGV) $(CPP) -o $@ $(CPP_FLAG) $< -DABCDEF0=0x9abcdef0
+
+clean:
+	$(RM) *.i *.s *.exe *.log *~ test000.dmp test001.h test001.c

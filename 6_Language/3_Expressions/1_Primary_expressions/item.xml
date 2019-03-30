@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<item>
+    <source>1_ok/test000.c</source>
+    <abstract>
+    識別子, 定数, 文字列リテラル, 括弧式
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test001.c</source>
+    <abstract>
+    文字列リテラルを左辺値として使用
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test002.c</source>
+    <abstract>
+    括弧式を左辺値として使用
+    void 式を括弧で使用
+    関数を括弧式で使用
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test003.c</source>
+    <abstract>
+    __func__
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test000.c</source>
+    <abstract>
+    宣言されていない変数の参照
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test001.c</source>
+    <abstract>
+    定数を左辺値として使用
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test002.c</source>
+    <abstract>
+    __func__ を関数の外側で使用.
+    __func__ の型は const char [].
+    __func__ を識別子として宣言.
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test004.c</source>
+    <abstract>
+    関数の外側での使用.
+    case ラベルでの使用.
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test005.c</source>
+    <abstract>
+    定数を if 式, while 式, do while 式, for の第 2 式, 3 項演算子の第一オペランド, それ以外で使用
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test003.c</source>
+    <abstract>
+    関数の外側での使用.
+    case ラベルでの使用.
+    </abstract>
+</item>
+
+</test_item>

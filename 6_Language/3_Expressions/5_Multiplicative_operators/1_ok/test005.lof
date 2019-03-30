@@ -1,0 +1,6 @@
+`f' called with 99
+case (long int)(1.0*'c'):
+`f' called with 3
+case (int)(10 / 3.0L):
+`f' called with 2
+case (unsigned int)11 % 3:

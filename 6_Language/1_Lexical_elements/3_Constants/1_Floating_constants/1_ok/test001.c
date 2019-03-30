@@ -1,0 +1,114 @@
+/*
+ * Check if floating-constats are recognized,
+ * whose types are `float' and which are in various range.
+ *
+ * Note : We assumed that compiler uses
+ * IEEE 754 floating constant format.
+ *
+ * Let type of `x' be `float' and bit representation of `x'
+ * (b_0 ... b_{31}).
+ *
+ * If `x' is normalized,
+ *
+ * x = (-1)^{b_0} 2^{e-127}(1+\sum_{i=9}^{31}b_i/2^{i-8})
+ * where, e = \sum_{i=1}^8 2^{8-i} b_i and e must be neither
+ * 0 nor 255.
+ *
+ * If `x' is denormalized,
+ *
+ * x = (-1)^{b_0} 2^{-127} \sum_{i=9}^{31}(b_i/2^{i-9})
+ */
+#include <stdio.h>
+
+/*
+ * Check if b_0 is recognized.
+ */
+void test00(void)
+{
+  printf("*** `test00' called\n");
+  union {
+    float f;
+    int i;
+  } u;
+
+  /* zero */
+  u.f = +0.0F; printf("+0.0F : 0x%08x\n", u.i);
+  u.f = -u.f;  printf("-0.0F : 0x%08x\n", u.i);
+
+  /* normalized */
+  u.f = +1.0F; printf("+1.0F : 0x%08x\n", u.i);
+  u.f = -1.0F; printf("-1.0F : 0x%08x\n", u.i);
+
+  /* not normalized */
+  u.f = +0x1p-127F; printf("+0x1p-127F : 0x%08x\n", u.i);
+  u.f = -0x1p-127F; printf("-0x1p-127F : 0x%08x\n", u.i);
+
+  /* inf */
+  u.f = +1.0F/0.0F; printf("+inf : 0x%08x\n", u.i);
+  u.f = -1.0F/0.0F; printf("-inf : 0x%08x\n", u.i); 
+}
+
+/*
+ * Check if b_1 ... b_8 is recognized.
+ */
+void test01(void)
+{
+  printf("*** `test01' called\n");
+  union {
+    float f;
+    int i;
+  } u;
+  u.f = 0x1p-126F; printf("0x1p-126 : 0x%08x\n", u.i);
+  u.f = 0x1p-125F; printf("0x1p-125 : 0x%08x\n", u.i);
+  u.f = 0x1p-123F; printf("0x1p-123 : 0x%08x\n", u.i);
+  u.f = 0x1p-119F; printf("0x1p-119 : 0x%08x\n", u.i);
+  u.f = 0x1p-111F; printf("0x1p-111 : 0x%08x\n", u.i);
+  u.f = 0x1p-95F;  printf("0x1p-95  : 0x%08x\n", u.i);
+  u.f = 0x1p-63F;  printf("0x1p-63  : 0x%08x\n", u.i);
+  u.f = 0x1p+1F;   printf("0x1p+1   : 0x%08x\n", u.i);
+}
+
+/*
+ * Check if b_9 ... b_{31} is recognized.
+ */
+void test02(void)
+{
+  printf("*** `test02' called\n");
+
+  union {
+    float f;
+    int i;
+  } u;
+  u.f = 0x1p-149F; printf("0x1p-149F : 0x%08x\n", u.i);
+  u.f = 0x1p-148F; printf("0x1p-148F : 0x%08x\n", u.i);
+  u.f = 0x1p-147F; printf("0x1p-147F : 0x%08x\n", u.i);
+  u.f = 0x1p-146F; printf("0x1p-146F : 0x%08x\n", u.i);
+  u.f = 0x1p-145F; printf("0x1p-145F : 0x%08x\n", u.i);
+  u.f = 0x1p-144F; printf("0x1p-144F : 0x%08x\n", u.i);
+  u.f = 0x1p-143F; printf("0x1p-143F : 0x%08x\n", u.i);
+  u.f = 0x1p-142F; printf("0x1p-142F : 0x%08x\n", u.i);
+  u.f = 0x1p-141F; printf("0x1p-141F : 0x%08x\n", u.i);
+  u.f = 0x1p-140F; printf("0x1p-140F : 0x%08x\n", u.i);
+  u.f = 0x1p-139F; printf("0x1p-139F : 0x%08x\n", u.i);
+  u.f = 0x1p-138F; printf("0x1p-138F : 0x%08x\n", u.i);
+  u.f = 0x1p-137F; printf("0x1p-137F : 0x%08x\n", u.i);
+  u.f = 0x1p-136F; printf("0x1p-136F : 0x%08x\n", u.i);
+  u.f = 0x1p-135F; printf("0x1p-135F : 0x%08x\n", u.i);
+  u.f = 0x1p-134F; printf("0x1p-134F : 0x%08x\n", u.i);
+  u.f = 0x1p-133F; printf("0x1p-133F : 0x%08x\n", u.i);
+  u.f = 0x1p-132F; printf("0x1p-132F : 0x%08x\n", u.i);
+  u.f = 0x1p-131F; printf("0x1p-131F : 0x%08x\n", u.i);
+  u.f = 0x1p-130F; printf("0x1p-130F : 0x%08x\n", u.i);
+  u.f = 0x1p-129F; printf("0x1p-129F : 0x%08x\n", u.i);
+  u.f = 0x1p-128F; printf("0x1p-128F : 0x%08x\n", u.i);
+  u.f = 0x1p-127F; printf("0x1p-127F : 0x%08x\n", u.i);
+}
+
+int main(void)
+{
+  test00();
+  test01();
+  test02();
+  return 0;
+}
+

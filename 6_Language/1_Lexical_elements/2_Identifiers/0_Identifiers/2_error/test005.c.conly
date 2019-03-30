@@ -1,0 +1,20 @@
+/*
+ * Check error if omitted parameter identifier in function definition.
+ */
+void test00(int) /* error */
+{
+}
+
+typedef int N;
+
+void test01(N) /* error */
+{
+}
+
+void test02(int []) /* error */
+{
+}
+
+void test03(void) /* ok */
+{
+}

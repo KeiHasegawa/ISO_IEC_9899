@@ -1,0 +1,14 @@
+/*
+ * Check if parameter scope struct declaration works well. 
+ * (global scope function declaration)
+ */
+
+void f(struct S { int a; } s);
+
+void g()
+{
+  struct S { int a; } s = { 1 };
+  f(s);  // error g::body::struct S is not compatible with f::param::struct S
+  void f();  // hide global `f' declaration
+  f(s);  // ok
+}

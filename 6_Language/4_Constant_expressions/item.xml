@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<item>
+    <source>2_error/test000.c</source>
+    <abstract>
+    構造体のビットフィールド指定に非定数を指定
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test000.c</source>
+    <abstract>
+    構造体のビットフィールド指定に sizeof 演算子の結果を指定
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test001.c</source>
+    <abstract>
+    構造体のビットフィールド指定に文字定数, 列挙定数, 浮動小数点定数をキャストしたものを指定
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test002.c</source>
+    <abstract>
+    函数の外側で address constant を初期化指定子に指定
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test003.c</source>
+    <abstract>
+    ISO のサンプル
+    </abstract>
+</item>
+
+</test_item>

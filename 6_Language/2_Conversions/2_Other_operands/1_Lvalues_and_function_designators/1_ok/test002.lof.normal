@@ -1,0 +1,29 @@
+`test00' called
+`f' called
+`test01' called
+`f' called
+`test02' called
+`f' called
+`f' called
+`test03' called
+`f' is located at non-zero.
+`test04' called
+`f' called
+`test05' called
+address of `test04' is less than that of `test05'
+`test06' called
+address of `test06' is greater than that of `test05'
+`test07' called
+address of `test06' is less than or equal to that of `test07'
+`test08' called
+address of `test08' is greater than or equal to that of `test07'
+`test09' called
+ok
+`test10' called
+ok
+`test11' called
+ok
+`test12' called
+ok
+`test13' called
+`f' called

@@ -1,0 +1,17 @@
+include ../../../../Makefile.ok
+
+test000.log:test000.i
+	$(DOGV) --alarm 300 $(CC1) $< $(CC1_FLAG) > $@
+	$(DOS2UNIX) $@
+
+test001.log:test001.i
+	$(DOGV) --alarm 300 $(CC1) $< $(CC1_FLAG) > $@
+	$(DOS2UNIX) $@
+
+test002.log:test002.i
+	$(DOGV) --alarm 300 $(CC1) $< $(CC1_FLAG) > $@
+	$(DOS2UNIX) $@
+
+test003.log:test003.i
+	$(DOGV) --alarm 300 $(CC1) $< $(CC1_FLAG) > $@
+	$(DOS2UNIX) $@

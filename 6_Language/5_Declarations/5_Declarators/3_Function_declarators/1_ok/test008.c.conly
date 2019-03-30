@@ -1,0 +1,31 @@
+/*
+ * Check parameter type `void' works well
+ */
+#include <stdio.h>
+
+void test000(void);
+void test001();
+void test002();
+
+int main(void)
+{
+  test000();
+  test001();
+  test002(1);
+  return 0;
+}
+
+void test000(void)
+{
+  printf("`test000' called.\n");
+}
+
+void test001(void)
+{
+  printf("`test001' called.\n");
+}
+
+void test002(int a)
+{
+  printf("`test002' called with %d.\n", a);
+}

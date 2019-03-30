@@ -1,0 +1,6 @@
+x = -1
+y = -1
+case &a[0] - &a[2]:
+case &b[2] - &b[0]:
+case &s.b - &s.c:
+case &t.e - &t.d:

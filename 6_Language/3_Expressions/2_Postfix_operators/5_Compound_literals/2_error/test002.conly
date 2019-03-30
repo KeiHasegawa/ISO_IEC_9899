@@ -1,0 +1,26 @@
+/*
+ * If the compound literal occurs outside the body of a function, the
+ * initializer list shall consist of constant expressions.
+ */
+
+int a;
+
+int* b = &(int){ a };
+
+int* c = (int []){ a, (int)b };
+
+struct S {
+  int a;
+  int b;
+};
+
+struct S* ps = &(struct S){ a, (int)b };
+
+union U {
+  int a;
+  float b;
+};
+
+union U* pu = &(union U){ a };
+
+int n = sizeof (struct S){a, (int)b};

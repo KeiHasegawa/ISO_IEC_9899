@@ -1,0 +1,4 @@
+mv test001.lof.cxx1 test001.lof.cxx1.vc
+mv test001.lof.cygwin test001.lof.cc1.cygwin
+mv test001.lof.linux test001.lof.cc1.linux
+mv test001.lof.vc test001.lof.cc1.vc

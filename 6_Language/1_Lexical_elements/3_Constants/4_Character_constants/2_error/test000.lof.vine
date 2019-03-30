@@ -1,0 +1,4 @@
+test000.c: ”Ÿ” `f' :
+test000.c:3: error: character constant `'aa'` is invalid for `char'.
+test000.c:4: error: character constant `'zJ` is invalid for `char'.
+test000.c:5: error: character constant `'bc'` is invalid for `char'.

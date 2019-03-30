@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<section url="1_Primary_expressions/item.xml">
+    <title>6.3.1 Primary expressions</title>
+</section>
+
+<section url="2_Postfix_operators/item.xml">
+    <title>6.3.2 Postfix operators</title>
+</section>
+
+<section url="3_Unary_operators/item.xml">
+    <title>6.3.3 Unary operators</title>
+</section>
+
+<section url="4_Cast_operators/item.xml">
+    <title>6.3.4 Cast operators</title>
+</section>
+
+<section url="5_Multiplicative_operators/item.xml">
+    <title>6.3.5 Multiplicative operators</title>
+</section>
+
+<section url="6_Additive_operators/item.xml">
+    <title>6.3.6 Additive operators</title>
+</section>
+
+<section url="7_Bitwise_shift_operators/item.xml">
+    <title>6.3.7 Bitwise shift operators</title>
+</section>
+
+<section url="8_Relational_operators/item.xml">
+    <title>6.3.8 Relational operators</title>
+</section>
+
+<section url="9_Equality_operators/item.xml">
+    <title>6.3.9 Equality operators</title>
+</section>
+
+<section url="10_Bitwise_AND_operator/item.xml">
+    <title>6.3.10 Bitwise AND operator</title>
+</section>
+
+<section url="11_Bitwise_exclusive_OR_operator/item.xml">
+    <title>6.3.11 Bitwise exclusive OR operator</title>
+</section>
+
+<section url="12_Bitwise_inclusive_OR_operator/item.xml">
+    <title>6.3.12 Bitwise inclusive OR operator</title>
+</section>
+
+<section url="13_Logical_AND_operator/item.xml">
+    <title>6.3.13 Logical AND operator</title>
+</section>
+
+<section url="14_Logical_OR_operator/item.xml">
+    <title>6.3.14 Logical OR operator</title>
+</section>
+
+<section url="15_Conditional_operator/item.xml">
+    <title>6.3.15 Conditional operator</title>
+</section>
+
+<section url="16_Assignment_operators/item.xml">
+    <title>6.3.16 Assignment operators</title>
+</section>
+
+<section url="17_Comma_operator/item.xml">
+    <title>6.3.17 Comma operator</title>
+</section>
+
+</test_item>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<item>
+    <source>1_ok/test000.c</source>
+    <abstract>
+    簡単な函数定義
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test001.c</source>
+    <abstract>
+    古いスタイルの函数定義
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test002.c</source>
+    <abstract>
+    ISO のサンプル
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test003.c</source>
+    <abstract>
+    ISO のサンプル
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test005.c</source>
+    <abstract>
+      参照されない static 函数, inline 函数に対してコード生成しないかを確認
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test006.c</source>
+    <abstract>
+      参照された static 函数に対して普通にコード生成することを確認
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test007.c</source>
+    <abstract>
+    相互参照している static 函数に対して正しくコード生成することを確認
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test008.c</source>
+    <abstract>
+    相互参照している inline 函数に対して正しくにコード生成することを確認
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test000.c</source>
+    <abstract>
+    declaration-specifies もパラメータスコープもない宣言
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test001.c</source>
+    <abstract>
+    パラメータスコープのない函数の定義
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test002.c</source>
+    <abstract>
+    古いスタイルの函数定義でのエラー
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test003.c</source>
+    <abstract>
+    函数定義において函数の戻り値が不正
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test004.c</source>
+    <abstract>
+    記憶クラスが不正
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test005.c</source>
+    <abstract>
+    古いスタイルと新しいスタイルの函数定義の混在
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test006.c</source>
+    <abstract>
+    古いスタイルの函数定義でのエラー
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test007.c</source>
+    <abstract>
+    ISO のサンプル
+    </abstract>
+</item>
+
+</test_item>

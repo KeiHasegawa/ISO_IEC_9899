@@ -1,0 +1,6 @@
+storage-class-specifier:
+  typedef
+  extern
+  static
+  auto
+  register

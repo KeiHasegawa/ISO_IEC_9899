@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<item>
+    <source>1_ok/test000.c</source>
+    <abstract>
+    添字参照演算子の結果に単項の `&amp;', `sizeof' を適用.
+    integer [ array ] の形式で使用.
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test001.c</source>
+    <abstract>
+    添字参照演算子の結果にメンバ参照演算子を適用.
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test002.c</source>
+    <abstract>
+    添字参照演算子の結果に `sizeof' を適用.
+    添字参照演算子の結果に添字参照演算子を適用.
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test003.c</source>
+    <abstract>
+    添字参照演算子の結果の型が配列
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test004.c</source>
+    <abstract>
+    ポインタ生成規則
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test005.c</source>
+    <abstract>
+    変数のアドレス
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test006.c</source>
+    <abstract>
+    不完全型構造体へのポインタ
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test007.c</source>
+    <abstract>
+    ビットフィールドのメンバ宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test008.c</source>
+    <abstract>
+    ビットフィールドのメンバ宣言
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test000.c</source>
+    <abstract>
+    添字参照演算子の結果を初期化指定子として使用.
+    添字参照演算子の結果に sizeof を適用した結果を初期化指定子として使用.
+    不完全型へのポインタに添字参照演算子を適用.
+    添字の型が整数でない.
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test001.c</source>
+    <abstract>
+    添字参照演算子の結果を case のラベルとして使用
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test002.c</source>
+    <abstract>
+    変更できない型の式を代入演算子の左に指定
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test003.c</source>
+    <abstract>
+    宣言されていない変数を添字参照演算子に指定
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test004.c</source>
+    <abstract>
+    ビットフィールドの宣言でビットに添字参照演算子の結果を指定.
+    case ラベルに添字参照演算子の結果を指定.    
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test009.c</source>
+    <abstract>
+    函数の外側で使用
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test010.c</source>
+    <abstract>
+    パラメータスコープの variable length array の次元に
+    添字参照演算子を指定
+    </abstract>
+</item>
+
+</test_item>

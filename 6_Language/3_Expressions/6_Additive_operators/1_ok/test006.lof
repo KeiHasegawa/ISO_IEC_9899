@@ -1,0 +1,10 @@
+`f' called with 0
+case (int)('\0' + 0.0):
+`f' called with 1
+case (char)(1.5L-0.5F):
+`f' called with 2
+case -(&array[0]-&array[2])::
+`f' called with 3
+case &s[3] - &s[0]:
+`f' called with 4
+case (&array[0] + 2) - &array[-2]:

@@ -1,0 +1,2 @@
+test011.c:7: error: syntax error before `int' token.
+test011.c:7: エラー: 函数定義でない函数宣言で, 型指定のないパラメータ名が指定されています.

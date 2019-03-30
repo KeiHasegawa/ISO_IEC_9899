@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<item>
+    <source>1_ok/test000.c</source>
+    <abstract>float から double への変換</abstract>
+</item>
+
+<item>
+    <source>1_ok/test001.c</source>
+    <abstract>float から long double への変換</abstract>
+</item>
+
+<item>
+    <source>1_ok/test002.c</source>
+    <abstract>double から long double への変換</abstract>
+</item>
+
+<item>
+    <source>1_ok/test003.c</source>
+    <abstract>double から float への変換</abstract>
+</item>
+
+<item>
+    <source>1_ok/test004.c</source>
+    <abstract>long double から float への変換</abstract>
+</item>
+
+<item>
+    <source>1_ok/test005.c</source>
+    <abstract>long double から double への変換</abstract>
+</item>
+
+</test_item>

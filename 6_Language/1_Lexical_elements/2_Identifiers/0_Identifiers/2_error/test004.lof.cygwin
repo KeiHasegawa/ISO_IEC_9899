@@ -1,0 +1,2 @@
+test004.c: ”Ÿ” `f' :
+test004.c:6: error: syntax error before `3' token.

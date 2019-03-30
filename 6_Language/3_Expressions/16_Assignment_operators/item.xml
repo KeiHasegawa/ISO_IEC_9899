@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<item>
+    <source>1_ok/test000.c</source>
+    <abstract>
+    算術型に対する単純代入
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test001.c</source>
+    <abstract>
+    構造体, 共用体に対する単純代入
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test002.c</source>
+    <abstract>
+    ポインタに対する単純代入
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test003.c</source>
+    <abstract>
+    算術型に対する複合代入
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test004.c</source>
+    <abstract>
+    ポインタ型に対する複合代入
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test005.c</source>
+    <abstract>
+    複合演算において左オペランドが 1 回評価される
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test006.c</source>
+    <abstract>
+    函数の外側での使用
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test007.c</source>
+    <abstract>
+    case ラベルでの使用
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test008.c</source>
+    <abstract>
+    複合式における演算子の使用
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test009.c</source>
+    <abstract>
+    パラメータスコープの variable length array の次元に使用
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test000.c</source>
+    <abstract>
+    左オペランドが不正
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test001.c</source>
+    <abstract>
+    宣言されていない変数の使用
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test002.c</source>
+    <abstract>
+    左辺値として使用
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test003.c</source>
+    <abstract>
+    修飾子が失われるポインタの代入
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test004.c</source>
+    <abstract>
+    不正な複合代入
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test005.c</source>
+    <abstract>
+    左辺値として使用
+    </abstract>
+</item>
+
+<item>
+    <source>3_assign/test000.c</source>
+    <abstract>メモリ = メモリ</abstract>
+    <type>char</type>
+</item>
+
+<item>
+    <source>3_assign/test001.c</source>
+    <abstract>メモリ = スタック</abstract>
+    <type>char</type>
+</item>
+
+<item>
+    <source>3_assign/test002.c</source>
+    <abstract>メモリ = 定数</abstract>
+    <type>char</type>
+</item>
+
+<item>
+    <source>3_assign/test003.c</source>
+    <abstract>スタック = メモリ</abstract>
+    <type>char</type>
+</item>
+
+<item>
+    <source>3_assign/test004.c</source>
+    <abstract>スタック = スタック</abstract>
+    <type>char</type>
+</item>
+
+<item>
+    <source>3_assign/test005.c</source>
+    <abstract>スタック = 定数</abstract>
+    <type>char</type>
+</item>
+
+<item>
+    <source>3_assign/test006.c</source>
+    <abstract>メモリ = メモリ</abstract>
+    <type>unsigned char</type>
+</item>
+
+<item>
+    <source>3_assign/test007.c</source>
+    <abstract>メモリ = スタック</abstract>
+    <type>unsigned char</type>
+</item>
+
+<item>
+    <source>3_assign/test008.c</source>
+    <abstract>メモリ = 定数</abstract>
+    <type>unsigned char</type>
+</item>
+
+<item>
+    <source>3_assign/test009.c</source>
+    <abstract>スタック = メモリ</abstract>
+    <type>unsigned char</type>
+</item>
+
+<item>
+    <source>3_assign/test010.c</source>
+    <abstract>スタック = スタック</abstract>
+    <type>unsigned char</type>
+</item>
+
+<item>
+    <source>3_assign/test011.c</source>
+    <abstract>スタック = 定数</abstract>
+    <type>unsigned char</type>
+</item>
+
+<item>
+    <source>3_assign/test012.c</source>
+    <abstract>メモリ = メモリ</abstract>
+    <type>short int</type>
+</item>
+
+<item>
+    <source>3_assign/test013.c</source>
+    <abstract>メモリ = スタック</abstract>
+    <type>short int</type>
+</item>
+
+<item>
+    <source>3_assign/test014.c</source>
+    <abstract>メモリ = 定数</abstract>
+    <type>short int</type>
+</item>
+
+<item>
+    <source>3_assign/test015.c</source>
+    <abstract>スタック = メモリ</abstract>
+    <type>short int</type>
+</item>
+
+<item>
+    <source>3_assign/test016.c</source>
+    <abstract>スタック = スタック</abstract>
+    <type>short int</type>
+</item>
+
+<item>
+    <source>3_assign/test017.c</source>
+    <abstract>スタック = 定数</abstract>
+    <type>short int</type>
+</item>
+
+<item>
+    <source>3_assign/test018.c</source>
+    <abstract>メモリ = メモリ</abstract>
+    <type>unsigned short int</type>
+</item>
+
+<item>
+    <source>3_assign/test019.c</source>
+    <abstract>メモリ = スタック</abstract>
+    <type>unsigned short int</type>
+</item>
+
+<item>
+    <source>3_assign/test020.c</source>
+    <abstract>メモリ = 定数</abstract>
+    <type>unsigned short int</type>
+</item>
+
+<item>
+    <source>3_assign/test021.c</source>
+    <abstract>スタック = メモリ</abstract>
+    <type>unsigned short int</type>
+</item>
+
+<item>
+    <source>3_assign/test022.c</source>
+    <abstract>スタック = スタック</abstract>
+    <type>unsigned short int</type>
+</item>
+
+<item>
+    <source>3_assign/test023.c</source>
+    <abstract>スタック = 定数</abstract>
+    <type>unsigned short int</type>
+</item>
+
+<item>
+    <source>3_assign/test024.c</source>
+    <abstract>メモリ = メモリ</abstract>
+    <type>int</type>
+</item>
+
+<item>
+    <source>3_assign/test025.c</source>
+    <abstract>メモリ = スタック</abstract>
+    <type>int</type>
+</item>
+
+<item>
+    <source>3_assign/test026.c</source>
+    <abstract>メモリ = 定数</abstract>
+    <type>int</type>
+</item>
+
+<item>
+    <source>3_assign/test027.c</source>
+    <abstract>スタック = メモリ</abstract>
+    <type>int</type>
+</item>
+
+<item>
+    <source>3_assign/test028.c</source>
+    <abstract>スタック = スタック</abstract>
+    <type>int</type>
+</item>
+
+<item>
+    <source>3_assign/test029.c</source>
+    <abstract>スタック = 定数</abstract>
+    <type>int</type>
+</item>
+
+<item>
+    <source>3_assign/test030.c</source>
+    <abstract>メモリ = メモリ</abstract>
+    <type>unsigned int</type>
+</item>
+
+<item>
+    <source>3_assign/test031.c</source>
+    <abstract>メモリ = スタック</abstract>
+    <type>unsigned int</type>
+</item>
+
+<item>
+    <source>3_assign/test032.c</source>
+    <abstract>メモリ = 定数</abstract>
+    <type>unsigned int</type>
+</item>
+
+<item>
+    <source>3_assign/test033.c</source>
+    <abstract>スタック = メモリ</abstract>
+    <type>unsigned int</type>
+</item>
+
+<item>
+    <source>3_assign/test034.c</source>
+    <abstract>スタック = スタック</abstract>
+    <type>unsigned int</type>
+</item>
+
+<item>
+    <source>3_assign/test035.c</source>
+    <abstract>スタック = 定数</abstract>
+    <type>unsigned int</type>
+</item>
+
+<item>
+    <source>3_assign/test036.c</source>
+    <abstract>メモリ = メモリ</abstract>
+    <type>long int</type>
+</item>
+
+<item>
+    <source>3_assign/test037.c</source>
+    <abstract>メモリ = スタック</abstract>
+    <type>long int</type>
+</item>
+
+<item>
+    <source>3_assign/test038.c</source>
+    <abstract>メモリ = 定数</abstract>
+    <type>long int</type>
+</item>
+
+<item>
+    <source>3_assign/test039.c</source>
+    <abstract>スタック = メモリ</abstract>
+    <type>long int</type>
+</item>
+
+<item>
+    <source>3_assign/test040.c</source>
+    <abstract>スタック = スタック</abstract>
+    <type>long int</type>
+</item>
+
+<item>
+    <source>3_assign/test041.c</source>
+    <abstract>スタック = 定数</abstract>
+    <type>long int</type>
+</item>
+
+<item>
+    <source>3_assign/test042.c</source>
+    <abstract>メモリ = メモリ</abstract>
+    <type>unsigned long int</type>
+</item>
+
+<item>
+    <source>3_assign/test043.c</source>
+    <abstract>メモリ = スタック</abstract>
+    <type>unsigned long int</type>
+</item>
+
+<item>
+    <source>3_assign/test044.c</source>
+    <abstract>メモリ = 定数</abstract>
+    <type>unsigned long int</type>
+</item>
+
+<item>
+    <source>3_assign/test045.c</source>
+    <abstract>スタック = メモリ</abstract>
+    <type>unsigned long int</type>
+</item>
+
+<item>
+    <source>3_assign/test046.c</source>
+    <abstract>スタック = スタック</abstract>
+    <type>unsigned long int</type>
+</item>
+
+<item>
+    <source>3_assign/test047.c</source>
+    <abstract>スタック = 定数</abstract>
+    <type>unsigned long int</type>
+</item>
+
+<item>
+    <source>3_assign/test048.c</source>
+    <abstract>メモリ = メモリ</abstract>
+    <type>long long int</type>
+</item>
+
+<item>
+    <source>3_assign/test049.c</source>
+    <abstract>メモリ = スタック</abstract>
+    <type>long long int</type>
+</item>
+
+<item>
+    <source>3_assign/test050.c</source>
+    <abstract>メモリ = 定数</abstract>
+    <type>long long int</type>
+</item>
+
+<item>
+    <source>3_assign/test051.c</source>
+    <abstract>スタック = メモリ</abstract>
+    <type>long long int</type>
+</item>
+
+<item>
+    <source>3_assign/test052.c</source>
+    <abstract>スタック = スタック</abstract>
+    <type>long long int</type>
+</item>
+
+<item>
+    <source>3_assign/test053.c</source>
+    <abstract>スタック = 定数</abstract>
+    <type>long long int</type>
+</item>
+
+<item>
+    <source>3_assign/test054.c</source>
+    <abstract>メモリ = メモリ</abstract>
+    <type>unsigned long long int</type>
+</item>
+
+<item>
+    <source>3_assign/test055.c</source>
+    <abstract>メモリ = スタック</abstract>
+    <type>unsigned long long int</type>
+</item>
+
+<item>
+    <source>3_assign/test056.c</source>
+    <abstract>メモリ = 定数</abstract>
+    <type>unsigned long long int</type>
+</item>
+
+<item>
+    <source>3_assign/test057.c</source>
+    <abstract>スタック = メモリ</abstract>
+    <type>unsigned long long int</type>
+</item>
+
+<item>
+    <source>3_assign/test058.c</source>
+    <abstract>スタック = スタック</abstract>
+    <type>unsigned long long int</type>
+</item>
+
+<item>
+    <source>3_assign/test059.c</source>
+    <abstract>スタック = 定数</abstract>
+    <type>unsigned long long int</type>
+</item>
+
+<item>
+    <source>3_assign/test060.c</source>
+    <abstract>メモリ = メモリ</abstract>
+    <type>pointer</type>
+</item>
+
+<item>
+    <source>3_assign/test061.c</source>
+    <abstract>メモリ = スタック</abstract>
+    <type>pointer</type>
+</item>
+
+<item>
+    <source>3_assign/test062.c</source>
+    <abstract>メモリ = 定数</abstract>
+    <type>pointer</type>
+</item>
+
+<item>
+    <source>3_assign/test063.c</source>
+    <abstract>スタック = メモリ</abstract>
+    <type>pointer</type>
+</item>
+
+<item>
+    <source>3_assign/test064.c</source>
+    <abstract>スタック = スタック</abstract>
+    <type>pointer</type>
+</item>
+
+<item>
+    <source>3_assign/test065.c</source>
+    <abstract>スタック = 定数</abstract>
+    <type>pointer</type>
+</item>
+
+<item>
+    <source>3_assign/test066.c</source>
+    <abstract>メモリ = メモリ</abstract>
+    <type>float</type>
+</item>
+
+<item>
+    <source>3_assign/test067.c</source>
+    <abstract>メモリ = スタック</abstract>
+    <type>float</type>
+</item>
+
+<item>
+    <source>3_assign/test068.c</source>
+    <abstract>メモリ = 定数</abstract>
+    <type>float</type>
+</item>
+
+<item>
+    <source>3_assign/test069.c</source>
+    <abstract>スタック = メモリ</abstract>
+    <type>float</type>
+</item>
+
+<item>
+    <source>3_assign/test070.c</source>
+    <abstract>スタック = スタック</abstract>
+    <type>float</type>
+</item>
+
+<item>
+    <source>3_assign/test071.c</source>
+    <abstract>スタック = 定数</abstract>
+    <type>float</type>
+</item>
+
+<item>
+    <source>3_assign/test072.c</source>
+    <abstract>メモリ = メモリ</abstract>
+    <type>double</type>
+</item>
+
+<item>
+    <source>3_assign/test073.c</source>
+    <abstract>メモリ = スタック</abstract>
+    <type>double</type>
+</item>
+
+<item>
+    <source>3_assign/test074.c</source>
+    <abstract>メモリ = 定数</abstract>
+    <type>double</type>
+</item>
+
+<item>
+    <source>3_assign/test075.c</source>
+    <abstract>スタック = メモリ</abstract>
+    <type>double</type>
+</item>
+
+<item>
+    <source>3_assign/test076.c</source>
+    <abstract>スタック = スタック</abstract>
+    <type>double</type>
+</item>
+
+<item>
+    <source>3_assign/test077.c</source>
+    <abstract>スタック = 定数</abstract>
+    <type>double</type>
+</item>
+
+<item>
+    <source>3_assign/test078.c</source>
+    <abstract>メモリ = メモリ</abstract>
+    <type>long double</type>
+</item>
+
+<item>
+    <source>3_assign/test079.c</source>
+    <abstract>メモリ = スタック</abstract>
+    <type>long double</type>
+</item>
+
+<item>
+    <source>3_assign/test080.c</source>
+    <abstract>メモリ = 定数</abstract>
+    <type>long double</type>
+</item>
+
+<item>
+    <source>3_assign/test081.c</source>
+    <abstract>スタック = メモリ</abstract>
+    <type>long double</type>
+</item>
+
+<item>
+    <source>3_assign/test082.c</source>
+    <abstract>スタック = スタック</abstract>
+    <type>long double</type>
+</item>
+
+<item>
+    <source>3_assign/test083.c</source>
+    <abstract>スタック = 定数</abstract>
+    <type>long double</type>
+</item>
+
+<item>
+    <source>3_assign/test084.c</source>
+    <abstract>メモリ = メモリ</abstract>
+    <type>構造体</type>
+</item>
+
+<item>
+    <source>3_assign/test085.c</source>
+    <abstract>メモリ = スタック</abstract>
+    <type>構造体</type>
+</item>
+
+<item>
+    <source>3_assign/test086.c</source>
+    <abstract>スタック = メモリ</abstract>
+    <type>構造体</type>
+</item>
+
+<item>
+    <source>3_assign/test087.c</source>
+    <abstract>スタック = スタック</abstract>
+    <type>構造体</type>
+</item>
+
+<item>
+    <source>4_ptrptr/1_ok</source>
+    <abstract>修飾された char へのポインタ = 修飾された char へのポインタ(合法)</abstract>
+</item>
+
+<item>
+    <source>4_ptrptr/2_error</source>
+    <abstract>修飾された char へのポインタ = 修飾された char へのポインタ(エラー)</abstract>
+</item>
+
+</test_item>

@@ -1,0 +1,81 @@
+/*
+ * One of the following shall hold:
+ * - ...
+ * - the left operand has a qualified or unqualified version of a structure
+ *   or union type compatible with the type of the right;
+ * - ...
+ */
+#include <stdio.h>
+
+void test000(void)
+{
+  printf("`test000' called\n");
+  struct S {
+    int a;
+    double b;
+  };
+  struct S x = { 1, 3.0 };
+  struct S y = { 2, 4.0 };
+  printf("(%d,%f), (%d,%f)\n", x.a, x.b, y.a, y.b);
+  x = y;
+  printf("(%d,%f), (%d,%f)\n", x.a, x.b, y.a, y.b);
+}
+
+void test001(void)
+{
+  printf("`test001' called\n");
+  union U {
+    float a;
+    int b;
+  };
+  union U x = { 1 };
+  union U y = { 2 };
+  printf("(%f,0x%x), (%f,0x%x)\n", x.a, x.b, y.a, y.b);
+  x = y;
+  printf("(%f,0x%x), (%f,0x%x)\n", x.a, x.b, y.a, y.b);
+}
+
+struct S;
+extern struct S test002_x;
+struct S {
+  int a;
+  double b;
+};
+struct S test002_y = { 2, 4 };
+
+void test002(void)
+{
+  printf("`test002' called\n");
+  printf("(%d,%f), (%d,%f)\n", test002_x.a, test002_x.b, test002_y.a, test002_y.b);
+  test002_x = test002_y;
+  printf("(%d,%f), (%d,%f)\n", test002_x.a, test002_x.b, test002_y.a, test002_y.b);
+}
+
+union U;
+extern union U test003_x;
+extern union U test003_y;
+union U {
+  float a;
+  int b;
+};
+
+void test003(void)
+{
+  printf("`test003' called\n");
+  printf("(%f,0x%x), (%f,0x%x)\n", test003_x.a, test003_x.b, test003_y.a, test003_y.b);
+  test003_x = test003_y;
+  printf("(%f,0x%x), (%f,0x%x)\n", test003_x.a, test003_x.b, test003_y.a, test003_y.b);
+}
+
+int main(void)
+{
+  test000();
+  test001();
+  test002();
+  test003();
+  return 0;
+}
+
+struct S test002_x = { 1, 3 };
+union U test003_x = { 1 };
+union U test003_y = { 2 };

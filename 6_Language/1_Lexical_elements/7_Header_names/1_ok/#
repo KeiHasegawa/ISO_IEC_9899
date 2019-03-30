@@ -1,0 +1,6 @@
+#ifndef _SHARP_
+#define _SHARP_
+
+extern int e;
+
+#endif /* _SHARP_ */

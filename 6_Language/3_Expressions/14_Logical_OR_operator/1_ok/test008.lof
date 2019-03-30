@@ -1,0 +1,16 @@
+`test00' called
+a || 1
+`test00' called
+a || 1
+`test01' called
+!(a || 0)
+`test01' called
+a || 0
+`test02' called
+1 || a
+`test02' called
+1 || a
+`test03' called
+!(0 || a)
+`test03' called
+0 || a

@@ -1,0 +1,10 @@
+a is zero
+b is zero
+c.a is zero
+c.b is zero
+d.a is zero
+*a = 1
+b = -0.500000
+*c.a = 1
+c.b = 2.500000
+d.a = 0x3f800000

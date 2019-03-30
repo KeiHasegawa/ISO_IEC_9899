@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<item>
+    <source>1_ok/test000.c</source>
+    <abstract>declaration-specifiers に
+    void
+    char,
+    float,
+    double,
+    short,
+    long,
+    signed,
+    unsigned,
+    struct,
+    typedef
+    を持つ識別子の宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test001.c</source>
+    <abstract>
+    暗黙に int が仮定される宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test002.c</source>
+    <abstract>
+    記憶クラス付きの構造体変数の宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test003.c</source>
+    <abstract>
+    型修飾子付きの宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test004.c</source>
+    <abstract>
+    型修飾子付きの構造体変数の宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test005.c</source>
+    <abstract>
+    typedef 宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test006.c</source>
+    <abstract>
+    同一のタグ名と変数名
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test007.c</source>
+    <abstract>
+    ブロックスコープにおける構造体宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test008.c</source>
+    <abstract>
+    ポインタ, 配列の宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test009.c</source>
+    <abstract>
+    暗黙に int が仮定される函数定義
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test010.c</source>
+    <abstract>
+    typedef されたパラメータの宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test011.c</source>
+    <abstract>
+    初期化指定子付きの宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test012.c</source>
+    <abstract>
+    typedef 名, タグ名
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test013.c</source>
+    <abstract>
+    extern なし宣言の後の extern 宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test014.c</source>
+    <abstract>
+    異なるスコープにおける同じ名前の変数の宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test015.c</source>
+    <abstract>
+    1024 byte を超える identifier
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test016.c</source>
+    <abstract>
+    universal-charactername を含む identifier
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test000.c</source>
+    <abstract>
+    同一スコープにおける多重宣言
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test001.c</source>
+    <abstract>
+    const 修飾された変数を変更
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test002.c</source>
+    <abstract>
+    不完全型構造体変数の宣言
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test003.c</source>
+    <abstract>
+    構造体の宣言で `;' を忘れている
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test004.c</source>
+    <abstract>
+    数字で始まる変数名
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test005.c</source>
+    <abstract>
+    関数定義の仮引数宣言で識別子を省略
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test006.c</source>
+    <abstract>
+    enum のメンバの宣言の後の ;
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test007.c</source>
+    <abstract>
+    暗黙の `int' が仮定される宣言
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test008.c</source>
+    <abstract>
+    暗黙の `int' が仮定される宣言
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test009.c</source>
+    <abstract>
+    暗黙の `int' が仮定される宣言. 宣言のない関数呼び出し.
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test010.c</source>
+    <abstract>
+    暗黙の `int' が仮定される仮引数宣言.
+    </abstract>
+</item>
+
+<item>
+    <source>3_ok</source>
+    <abstract>
+    static 変数
+    </abstract>
+</item>
+
+<item>
+    <source>4_error</source>
+    <abstract>
+    プログラム内での変数多重定義
+    </abstract>
+</item>
+
+<item>
+    <source>5_ok</source>
+    <abstract>
+    同一名のファイルスコープ static 変数と
+    extern 変数
+    </abstract>
+</item>
+
+
+</test_item>

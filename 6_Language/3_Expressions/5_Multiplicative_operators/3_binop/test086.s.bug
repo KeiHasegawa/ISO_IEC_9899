@@ -1,0 +1,58 @@
+	.text
+string1:
+	.ascii	"%llu / %llu = %llu\n\0"
+integer2:
+	.long	-1
+	.long	2147483647
+	.global	_main
+_main:
+	pushl	%ebp
+	movl	%esp, %ebp
+	subl	$72, %esp
+	movl	integer2, %eax
+	movl	%eax, -36(%ebp)
+	movl	integer2+4, %edx
+	movl	%edx, -32(%ebp)
+	movl	$6, %eax
+	movl	%eax, -44(%ebp)
+	movl	$0, %edx
+	movl	%edx, -40(%ebp)
+	subl	$16, %esp
+	movl	-36(%ebp), %eax
+	movl	%eax, 0(%esp)
+	movl	-32(%ebp), %ebx
+	movl	%ebx, 4(%esp)
+	movl	-44(%ebp), %ecx
+	movl	%ecx, 8(%esp)
+	movl	-40(%ebp), %edx
+	movl	%edx, 12(%esp)
+	call	___udivdi3
+	movl	%eax, -8(%ebp)
+	movl	%edx, -4(%ebp)
+	addl	$16, %esp
+	movl	-8(%ebp), %eax
+	movl	%eax, -28(%ebp)
+	movl	-4(%ebp), %edx
+	movl	%edx, -24(%ebp)
+	leal	_printf, %eax
+	movl	%eax, -12(%ebp)
+	leal	string1, %eax
+	movl	%eax, -16(%ebp)
+	movl	-16(%ebp), %eax
+	movl	%eax, 0(%esp)
+	movl	-36(%ebp), %eax
+	movl	%eax, 4(%esp)
+	movl	-32(%ebp), %edx
+	movl	%edx, 8(%esp)
+	movl	-44(%ebp), %eax
+	movl	%eax, 12(%esp)
+	movl	-40(%ebp), %edx
+	movl	%edx, 16(%esp)
+	movl	-28(%ebp), %eax
+	movl	%eax, 20(%esp)
+	movl	-24(%ebp), %edx
+	movl	%edx, 24(%esp)
+	call	_printf
+	movl	$0, %eax
+	leave
+	ret

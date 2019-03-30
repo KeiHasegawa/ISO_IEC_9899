@@ -1,0 +1,12 @@
+enum-specifier:
+  enum identifieropt { enumerator-list }
+  enum identifieropt { enumerator-list , }
+  enum identifier
+
+enumerator-list:
+  enumerator
+  enumerator-list , enumerator
+
+enumerator:
+  enumeration-constant
+  enumeration-constant = constant-expression

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<item>
+    <source>1_ok/test000.c</source>
+    <abstract>
+    さまざまな式, 型に対する sizeof 演算子
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test001.c</source>
+    <abstract>
+    sizeof 演算子の結果の型は符号なし整数
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test000.c</source>
+    <abstract>
+    さまざまな式, 型に対する sizeof 演算子
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test002.c</source>
+    <abstract>
+    variable length array に対する
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test001.c</source>
+    <abstract>
+    宣言されていない変数をオペンランドに使用
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test002.c</source>
+    <abstract>
+    sizeof 演算子の結果を左辺値参照
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test003.c</source>
+    <abstract>
+    パラメータスコープの variable length array の次元に使用
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test004.c</source>
+    <abstract>
+    sizeof 演算子を if 式, while 式, do while 式, for の第 2 式, 3 項演算子の第一オペランド, それ以外で使用
+    </abstract>
+</item>
+
+</test_item>

@@ -1,0 +1,20 @@
+a = 1
+ok
+c = 'c'
+d = 1.500000
+i = 1
+++a = 2
+--a = 1
+--a = 0
+w = 2
+ef = 0.750000
+f called
+l = 10
+r = 5
+*res = 10
+sizeof(signed char) = 1
+uni.a = 0x3f800000
+t.a = 1
+t.b = 2.000000
+ok
+vi = 11

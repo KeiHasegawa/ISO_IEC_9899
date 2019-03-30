@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<section url="1_Keywords/item.xml">
+    <title>6.1.1 Keywords</title>
+</section>
+
+<section url="2_Identifiers/item.xml">
+    <title>6.1.2 Identifiers</title>
+</section>
+
+<section url="3_Constants/item.xml">
+    <title>6.1.3 Constants</title>
+</section>
+
+<section url="4_String_literals/item.xml">
+    <title>6.1.4 String literals</title>
+</section>
+
+<section url="5_Operators/item.xml">
+    <title>6.1.5 Operators</title>
+</section>
+
+<section url="6_Punctuators/item.xml">
+    <title>6.1.6 Punctuators</title>
+</section>
+
+<section url="7_Header_names/item.xml">
+    <title>6.1.7 Header names</title>
+</section>
+
+<section url="8_Preprocessing_numbers/item.xml">
+    <title>6.1.8 Preprocessing numbers</title>
+</section>
+
+<section url="9_Comments/item.xml">
+    <title>6.1.9 Comments</title>
+</section>
+
+</test_item>

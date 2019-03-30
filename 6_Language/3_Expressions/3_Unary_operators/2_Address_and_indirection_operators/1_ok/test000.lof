@@ -1,0 +1,11 @@
+`test00' called
+`f' called
+`test01' called
+*q = 'w'
+`test02' called
+*q = 3
+r = 2
+`test03' called
+*q = 4
+`test04' called
+*q = 5

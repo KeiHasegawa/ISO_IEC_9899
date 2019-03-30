@@ -1,0 +1,7 @@
+#ifndef _CD_
+#define _CD_
+
+extern int cd;
+
+#endif /* _CD_ */
+

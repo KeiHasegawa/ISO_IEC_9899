@@ -1,0 +1,33 @@
+/*
+ * 6.5.5.3 Function declarators (including prototypes)
+ *
+ * For two function types to be compatible, both shall specify compatible
+ * return types. Moreover, the parameter type lists, if both are present,
+ * shall agree in the number of parameters and in use of the ellipsis
+ * terminator; corresponding parameters shall have compatible types. ...
+ *
+ *
+ *
+ * 6.5.2.2 Enumeration specifiers
+ *
+ * Each enumerated type shall be compatible with an integer type. The choice
+ * of type is implementation-defined, but shall be capable of representing the
+ * values of all the members of the enumeration.
+ *
+ *
+ * 
+ * enum E { a, b, c } x;
+ *
+ * The type of `x' is `enum E' type. And it isn't compatible with `int' or any
+ * integer type. "6.5.2.2 Enumeration specifiers" just says that the type of
+ * `a' may be compatible with `int' or some integer type.
+ */
+void f(int);
+
+enum E { a, b, c };
+
+void f(enum E);  /* error : redeclaration */
+
+void g(enum E);
+
+void g(int);  /* error : redeclaration */

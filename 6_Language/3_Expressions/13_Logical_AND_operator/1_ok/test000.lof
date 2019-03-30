@@ -1,0 +1,480 @@
+`test0000' called
+0 && 0 = 0
+`test0001' called
+0 && 1 = 0
+`test0002' called
+1 && 0 = 0
+`test0003' called
+1 && 1 = 1
+`test0004' called
+0 && 0 = 0
+`test0005' called
+1 && 0 = 0
+`test0006' called
+1 && 1 = 1
+`test0007' called
+0 && 1 = 0
+`test0008' called
+0 && 1 = 0
+`test0009' called
+0 && 0 = 0
+`test0010' called
+1 && 1 = 1
+`test0011' called
+1 && 0.000000= 0
+`test0012' called
+0 && 1.000000= 0
+`test0013' called
+1 && 1.000000 = 1
+`test0014' called
+0 && 1 = 0
+`test0100' called
+0 && 0 = 0
+`test0101' called
+0 && 1 = 0
+`test0102' called
+1 && 0 = 0
+`test0103' called
+1 && 1 = 1
+`test0104' called
+0 && 0 = 0
+`test0105' called
+1 && 0 = 0
+`test0106' called
+1 && 1 = 1
+`test0107' called
+0 && 1 = 0
+`test0108' called
+0 && 1 = 0
+`test0109' called
+0 && 0 = 0
+`test0110' called
+1 && 1 = 1
+`test0111' called
+1 && 0.000000= 0
+`test0112' called
+0 && 1.000000= 0
+`test0113' called
+1 && 1.000000 = 1
+`test0114' called
+0 && 1 = 0
+`test0200' called
+0 && 0 = 0
+`test0201' called
+0 && 1 = 0
+`test0202' called
+1 && 0 = 0
+`test0203' called
+1 && 1 = 1
+`test0204' called
+0 && 0 = 0
+`test0205' called
+1 && 0 = 0
+`test0206' called
+1 && 1 = 1
+`test0207' called
+0 && 1 = 0
+`test0208' called
+0 && 1 = 0
+`test0209' called
+0 && 0 = 0
+`test0210' called
+1 && 1 = 1
+`test0211' called
+1 && 0.000000= 0
+`test0212' called
+0 && 1.000000= 0
+`test0213' called
+1 && 1.000000 = 1
+`test0214' called
+0 && 1 = 0
+`test0300' called
+0 && 0 = 0
+`test0301' called
+0 && 1 = 0
+`test0302' called
+1 && 0 = 0
+`test0303' called
+1 && 1 = 1
+`test0304' called
+0 && 0 = 0
+`test0305' called
+1 && 0 = 0
+`test0306' called
+1 && 1 = 1
+`test0307' called
+0 && 1 = 0
+`test0308' called
+0 && 1 = 0
+`test0309' called
+0 && 0 = 0
+`test0310' called
+1 && 1 = 1
+`test0311' called
+1 && 0.000000= 0
+`test0312' called
+0 && 1.000000= 0
+`test0313' called
+1 && 1.000000 = 1
+`test0314' called
+0 && 1 = 0
+`test0400' called
+0 && 0 = 0
+`test0401' called
+0 && 1 = 0
+`test0402' called
+1 && 0 = 0
+`test0403' called
+1 && 1 = 1
+`test0404' called
+0 && 0 = 0
+`test0405' called
+1 && 0 = 0
+`test0406' called
+1 && 1 = 1
+`test0407' called
+0 && 1 = 0
+`test0408' called
+0 && 1 = 0
+`test0409' called
+0 && 0 = 0
+`test0410' called
+1 && 1 = 1
+`test0411' called
+1 && 0.000000= 0
+`test0412' called
+0 && 1.000000= 0
+`test0413' called
+1 && 1.000000 = 1
+`test0414' called
+0 && 1 = 0
+`test0500' called
+0 && 0 = 0
+`test0501' called
+0 && 1 = 0
+`test0502' called
+1 && 0 = 0
+`test0503' called
+1 && 1 = 1
+`test0504' called
+0 && 0 = 0
+`test0505' called
+1 && 0 = 0
+`test0506' called
+1 && 1 = 1
+`test0507' called
+0 && 1 = 0
+`test0508' called
+0 && 1 = 0
+`test0509' called
+0 && 0 = 0
+`test0510' called
+1 && 1 = 1
+`test0511' called
+1 && 0.000000= 0
+`test0512' called
+0 && 1.000000= 0
+`test0513' called
+1 && 1.000000 = 1
+`test0514' called
+0 && 1 = 0
+`test0600' called
+0 && 0 = 0
+`test0601' called
+0 && 1 = 0
+`test0602' called
+1 && 0 = 0
+`test0603' called
+1 && 1 = 1
+`test0604' called
+0 && 0 = 0
+`test0605' called
+1 && 0 = 0
+`test0606' called
+1 && 1 = 1
+`test0607' called
+0 && 1 = 0
+`test0608' called
+0 && 1 = 0
+`test0609' called
+0 && 0 = 0
+`test0610' called
+1 && 1 = 1
+`test0611' called
+1 && 0.000000= 0
+`test0612' called
+0 && 1.000000= 0
+`test0613' called
+1 && 1.000000 = 1
+`test0614' called
+0 && 1 = 0
+`test0600' called
+0 && 0 = 0
+`test0601' called
+0 && 1 = 0
+`test0602' called
+1 && 0 = 0
+`test0603' called
+1 && 1 = 1
+`test0604' called
+0 && 0 = 0
+`test0605' called
+1 && 0 = 0
+`test0606' called
+1 && 1 = 1
+`test0607' called
+0 && 1 = 0
+`test0608' called
+0 && 1 = 0
+`test0609' called
+0 && 0 = 0
+`test0610' called
+1 && 1 = 1
+`test0611' called
+1 && 0.000000= 0
+`test0612' called
+0 && 1.000000= 0
+`test0613' called
+1 && 1.000000 = 1
+`test0614' called
+0 && 1 = 0
+`test0700' called
+0 && 0 = 0
+`test0701' called
+0 && 1 = 0
+`test0702' called
+1 && 0 = 0
+`test0703' called
+1 && 1 = 1
+`test0704' called
+0 && 0 = 0
+`test0705' called
+1 && 0 = 0
+`test0706' called
+1 && 1 = 1
+`test0707' called
+0 && 1 = 0
+`test0708' called
+0 && 1 = 0
+`test0709' called
+0 && 0 = 0
+`test0710' called
+1 && 1 = 1
+`test0711' called
+1 && 0.000000= 0
+`test0712' called
+0 && 1.000000= 0
+`test0713' called
+1 && 1.000000 = 1
+`test0714' called
+0 && 1 = 0
+`test0800' called
+0 && 0 = 0
+`test0801' called
+0 && 1 = 0
+`test0802' called
+1 && 0 = 0
+`test0803' called
+1 && 1 = 1
+`test0804' called
+0 && 0 = 0
+`test0805' called
+1 && 0 = 0
+`test0806' called
+1 && 1 = 1
+`test0807' called
+0 && 1 = 0
+`test0808' called
+0 && 1 = 0
+`test0809' called
+0 && 0 = 0
+`test0810' called
+1 && 1 = 1
+`test0811' called
+1 && 0.000000= 0
+`test0812' called
+0 && 1.000000= 0
+`test0813' called
+1 && 1.000000 = 1
+`test0814' called
+0 && 1 = 0
+`test0900' called
+0 && 0 = 0
+`test0901' called
+0 && 1 = 0
+`test0902' called
+1 && 0 = 0
+`test0903' called
+1 && 1 = 1
+`test0904' called
+0 && 0 = 0
+`test0905' called
+1 && 0 = 0
+`test0906' called
+1 && 1 = 1
+`test0907' called
+0 && 1 = 0
+`test0908' called
+0 && 1 = 0
+`test0909' called
+0 && 0 = 0
+`test0910' called
+1 && 1 = 1
+`test0911' called
+1 && 0.000000= 0
+`test0912' called
+0 && 1.000000= 0
+`test0913' called
+1 && 1.000000 = 1
+`test0914' called
+0 && 1 = 0
+`test1000' called
+0 && 0 = 0
+`test1001' called
+0 && 1 = 0
+`test1002' called
+1 && 0 = 0
+`test1003' called
+1 && 1 = 1
+`test1004' called
+0 && 0 = 0
+`test1005' called
+1 && 0 = 0
+`test1006' called
+1 && 1 = 1
+`test1007' called
+0 && 1 = 0
+`test1008' called
+0 && 1 = 0
+`test1009' called
+0 && 0 = 0
+`test1010' called
+1 && 1 = 1
+`test1011' called
+1 && 0.000000= 0
+`test1012' called
+0 && 1.000000= 0
+`test1013' called
+1 && 1.000000 = 1
+`test1014' called
+0 && 1 = 0
+`test1100' called
+0.000000 && 0= 0
+`test1101' called
+0.000000 && 1= 0
+`test1102' called
+1.000000 && 0= 0
+`test1103' called
+1.000000 && 1= 1
+`test1104' called
+0.000000 && 0= 0
+`test1105' called
+1.000000 && 0= 0
+`test1106' called
+1.000000 && 1= 1
+`test1107' called
+0.000000 && 1= 0
+`test1108' called
+0.000000 && 1= 0
+`test1109' called
+0.000000 && 0= 0
+`test1110' called
+1.000000 && 1= 1
+`test1111' called
+1.000000 && 0.000000= 0
+`test1112' called
+0.000000 && 1.000000= 0
+`test1113' called
+1.000000 && 1.000000 = 1
+`test1114' called
+0.000000 && 1= 0
+`test1200' called
+0.000000 && 0= 0
+`test1201' called
+0.000000 && 1= 0
+`test1202' called
+1.000000 && 0= 0
+`test1203' called
+1.000000 && 1= 1
+`test1204' called
+0.000000 && 0= 0
+`test1205' called
+1.000000 && 0= 0
+`test1206' called
+1.000000 && 1= 1
+`test1207' called
+0.000000 && 1= 0
+`test1208' called
+0.000000 && 1= 0
+`test1209' called
+0.000000 && 0= 0
+`test1210' called
+1.000000 && 1= 1
+`test1211' called
+1.000000 && 0.000000= 0
+`test1212' called
+0.000000 && 1.000000= 0
+`test1213' called
+1.000000 && 1.000000 = 1
+`test1214' called
+0.000000 && 1= 0
+`test1300' called
+0.000000 && 0 = 0
+`test1301' called
+0.000000 && 1 = 0
+`test1302' called
+1.000000 && 0 = 0
+`test1303' called
+1.000000 && 1 = 1
+`test1304' called
+0.000000 && 0 = 0
+`test1305' called
+1.000000 && 0 = 0
+`test1306' called
+1.000000 && 1 = 1
+`test1307' called
+0.000000 && 1 = 0
+`test1308' called
+0.000000 && 1 = 0
+`test1309' called
+0.000000 && 0 = 0
+`test1310' called
+1.000000 && 1 = 1
+`test1311' called
+1.000000 && 0.000000 = 0
+`test1312' called
+0.000000 && 1.000000 = 0
+`test1313' called
+1.000000 && 1.000000 = 1
+`test1314' called
+0.000000 && 1 = 0
+`test1400' called
+0 && 0 = 0
+`test1401' called
+0 && 1 = 0
+`test1402' called
+1 && 0 = 0
+`test1403' called
+1 && 1 = 1
+`test1404' called
+0 && 0 = 0
+`test1405' called
+1 && 0 = 0
+`test1406' called
+1 && 1 = 1
+`test1407' called
+0 && 1 = 0
+`test1408' called
+0 && 1 = 0
+`test1409' called
+0 && 0 = 0
+`test1410' called
+1 && 1 = 1
+`test1411' called
+1 && 0.000000= 0
+`test1412' called
+0 && 1.000000= 0
+`test1413' called
+1 && 1.000000 = 1
+`test1414' called
+0 && 1 = 0

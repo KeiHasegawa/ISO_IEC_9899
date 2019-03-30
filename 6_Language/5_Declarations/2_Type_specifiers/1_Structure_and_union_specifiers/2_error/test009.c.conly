@@ -1,0 +1,17 @@
+/*
+ * Check if parameter struct or union declaration works well.
+ * (global function declaration)
+ */
+
+void f(union U { int i; float f; } u);
+
+void f(union U { int i; float f; } u);  // error
+
+void f();  // ok
+
+void g(struct S { int i; float f; } s);
+
+void g(struct S { int i; float f; } s);  // error
+
+void g();  // ok
+

@@ -1,0 +1,18 @@
+`test000' called
+ 1 2 3
+`test000' called
+ 4 5
+`test001' called
+ 6 7 8
+`test001' called
+`f' called
+`test002' called
+ 9.000000 10.000000
+11.000000
+`test002' called
+ -9.000000 -10.000000
+12
+`test003' called
+-5
+`test003' called
+-5

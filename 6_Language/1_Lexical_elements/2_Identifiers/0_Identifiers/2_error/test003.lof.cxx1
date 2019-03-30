@@ -1,0 +1,3 @@
+test003.c:11: エラー: `struct S' と `struct S' が指定されています.
+test003.c:18: エラー: `union U' と `union U' が指定されています.
+test003.c:25: エラー: `enum E' と `enum E' が指定されています.

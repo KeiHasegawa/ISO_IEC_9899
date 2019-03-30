@@ -1,0 +1,50 @@
+/*
+ * Check if block scope VLA at inline function works well.
+ */
+#include <stdio.h>
+
+inline void f(int n)
+{
+  printf("f called n = %d\n", n);
+  int a[++n];
+  printf("a:");
+  for (int i = 0 ; i != n ; ++i)
+    printf(" %d", a[i] = n - i);
+  printf("\n");
+  int (*p)[n] = &a;
+  typedef int A[n];
+  A* g(int, A*);
+  A* r = g(n, p);
+
+  A x[5], y[n];
+
+  printf("x:\n");
+  for (int i = 0 ; i != sizeof x/sizeof x[0] ; ++i) {
+    for (int j = 0 ; j != sizeof x[i]/sizeof x[i][0] ; ++j)
+      printf("x[%d][%d] = %d\n", i, j, x[i][j] = n * i + j);
+  }
+
+  printf("y:\n");  
+  for (int i = 0 ; i != sizeof y/sizeof y[0] ; ++i) {
+    for (int j = 0 ; j != sizeof y[i]/sizeof y[i][0] ; ++j)
+      printf("y[%d][%d] = %d\n", i, j, y[i][j] = i + n * j);
+  }
+}
+
+int main()
+{
+  f(3);
+  return 0;
+}
+
+typedef int A[];
+
+A* g(int n, A* p)
+{
+  printf("g called\n");
+  for (int i = 0 ; i != n ; ++i)
+    printf(" %d", (*p)[i]);
+  printf("\n");
+
+  return p;
+}

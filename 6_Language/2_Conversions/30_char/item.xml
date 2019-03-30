@@ -1,0 +1,521 @@
+<?xml version="1.0" ?>
+
+<test_item>
+	<item>
+		<source>test000.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>メモリ, unsigned char</source>
+	<\item>
+
+	<item>
+		<source>test001.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>スタック, unsigned char</source>
+	<\item>
+
+	<item>
+		<source>test002.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>メモリ, unsigned char</source>
+	<\item>
+
+	<item>
+		<source>test003.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>スタック, unsigned char</source>
+	<\item>
+
+	<item>
+		<source>test004.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>メモリ, short int</source>
+	<\item>
+
+	<item>
+		<source>test005.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>スタック, short int</source>
+	<\item>
+
+	<item>
+		<source>test006.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>メモリ, short int</source>
+	<\item>
+
+	<item>
+		<source>test007.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>スタック, short int</source>
+	<\item>
+
+	<item>
+		<source>test008.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>メモリ, unsigned short int</source>
+	<\item>
+
+	<item>
+		<source>test009.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>スタック, unsigned short int</source>
+	<\item>
+
+	<item>
+		<source>test010.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>メモリ, unsigned short int</source>
+	<\item>
+
+	<item>
+		<source>test011.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>スタック, unsigned short int</source>
+	<\item>
+
+	<item>
+		<source>test012.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>メモリ, int</source>
+	<\item>
+
+	<item>
+		<source>test013.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>スタック, int</source>
+	<\item>
+
+	<item>
+		<source>test014.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>定数, int</source>
+	<\item>
+
+	<item>
+		<source>test015.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>メモリ, int</source>
+	<\item>
+
+	<item>
+		<source>test016.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>スタック, int</source>
+	<\item>
+
+	<item>
+		<source>test017.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>定数, int</source>
+	<\item>
+
+	<item>
+		<source>test018.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>メモリ, unsigned int</source>
+	<\item>
+
+	<item>
+		<source>test019.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>スタック, unsigned int</source>
+	<\item>
+
+	<item>
+		<source>test020.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>定数, unsigned int</source>
+	<\item>
+
+	<item>
+		<source>test021.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>メモリ, unsigned int</source>
+	<\item>
+
+	<item>
+		<source>test022.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>スタック, unsigned int</source>
+	<\item>
+
+	<item>
+		<source>test023.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>定数, unsigned int</source>
+	<\item>
+
+	<item>
+		<source>test024.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>メモリ, long int</source>
+	<\item>
+
+	<item>
+		<source>test025.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>スタック, long int</source>
+	<\item>
+
+	<item>
+		<source>test026.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>定数, long int</source>
+	<\item>
+
+	<item>
+		<source>test027.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>メモリ, long int</source>
+	<\item>
+
+	<item>
+		<source>test028.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>スタック, long int</source>
+	<\item>
+
+	<item>
+		<source>test029.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>定数, long int</source>
+	<\item>
+
+	<item>
+		<source>test030.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>メモリ, unsigned long int</source>
+	<\item>
+
+	<item>
+		<source>test031.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>スタック, unsigned long int</source>
+	<\item>
+
+	<item>
+		<source>test032.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>定数, unsigned long int</source>
+	<\item>
+
+	<item>
+		<source>test033.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>メモリ, unsigned long int</source>
+	<\item>
+
+	<item>
+		<source>test034.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>スタック, unsigned long int</source>
+	<\item>
+
+	<item>
+		<source>test035.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>定数, unsigned long int</source>
+	<\item>
+
+	<item>
+		<source>test036.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>メモリ, long long int</source>
+	<\item>
+
+	<item>
+		<source>test037.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>スタック, long long int</source>
+	<\item>
+
+	<item>
+		<source>test038.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>定数, long long int</source>
+	<\item>
+
+	<item>
+		<source>test039.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>メモリ, long long int</source>
+	<\item>
+
+	<item>
+		<source>test040.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>スタック, long long int</source>
+	<\item>
+
+	<item>
+		<source>test041.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>定数, long long int</source>
+	<\item>
+
+	<item>
+		<source>test042.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>メモリ, unsigned long long int</source>
+	<\item>
+
+	<item>
+		<source>test043.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>スタック, unsigned long long int</source>
+	<\item>
+
+	<item>
+		<source>test044.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>定数, unsigned long long int</source>
+	<\item>
+
+	<item>
+		<source>test045.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>メモリ, unsigned long long int</source>
+	<\item>
+
+	<item>
+		<source>test046.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>スタック, unsigned long long int</source>
+	<\item>
+
+	<item>
+		<source>test047.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>定数, unsigned long long int</source>
+	<\item>
+
+	<item>
+		<source>test048.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>メモリ, pointer</source>
+	<\item>
+
+	<item>
+		<source>test049.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>スタック, pointer</source>
+	<\item>
+
+	<item>
+		<source>test050.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>メモリ, pointer</source>
+	<\item>
+
+	<item>
+		<source>test051.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>スタック, pointer</source>
+	<\item>
+
+	<item>
+		<source>test052.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>メモリ, float</source>
+	<\item>
+
+	<item>
+		<source>test053.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>スタック, float</source>
+	<\item>
+
+	<item>
+		<source>test054.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>定数, float</source>
+	<\item>
+
+	<item>
+		<source>test055.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>メモリ, float</source>
+	<\item>
+
+	<item>
+		<source>test056.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>スタック, float</source>
+	<\item>
+
+	<item>
+		<source>test057.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>定数, float</source>
+	<\item>
+
+	<item>
+		<source>test058.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>メモリ, double</source>
+	<\item>
+
+	<item>
+		<source>test059.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>スタック, double</source>
+	<\item>
+
+	<item>
+		<source>test060.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>定数, double</source>
+	<\item>
+
+	<item>
+		<source>test061.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>メモリ, double</source>
+	<\item>
+
+	<item>
+		<source>test062.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>スタック, double</source>
+	<\item>
+
+	<item>
+		<source>test063.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>定数, double</source>
+	<\item>
+
+	<item>
+		<source>test064.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>メモリ, long double</source>
+	<\item>
+
+	<item>
+		<source>test065.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>スタック, long double</source>
+	<\item>
+
+	<item>
+		<source>test066.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>定数, long double</source>
+	<\item>
+
+	<item>
+		<source>test067.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>メモリ, long double</source>
+	<\item>
+
+	<item>
+		<source>test068.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>スタック, long double</source>
+	<\item>
+
+	<item>
+		<source>test069.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>定数, long double</source>
+	<\item>
+
+	<item>
+		<source>test070.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>メモリ, signed char</source>
+	<\item>
+
+	<item>
+		<source>test071.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>メモリ, char</destination>
+		<source>スタック, signed char</source>
+	<\item>
+
+	<item>
+		<source>test072.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>メモリ, signed char</source>
+	<\item>
+
+	<item>
+		<source>test073.c</source>
+		<abstract>x := (char)y</abstract>
+		<destination>スタック, char</destination>
+		<source>スタック, signed char</source>
+	<\item>
+<\test_item>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<item>
+    <source>1_ok/test000.c</source>
+    <abstract>
+    typedef 宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test001.c</source>
+    <abstract>
+    extern 宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test002.c</source>
+    <abstract>
+    static 宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test003.c</source>
+    <abstract>
+    auto 宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test004.c</source>
+    <abstract>
+    register 宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test005.c</source>
+    <abstract>
+    パラメータに typedef-name を使用した函数宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test006.c</source>
+    <abstract>
+    typedef-name に修飾子を適用した宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test007.c</source>
+    <abstract>
+    修飾子をポインタに適用
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test008.c</source>
+    <abstract>
+    修飾子をポインタ型の typedef-name に適用.
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test009.c</source>
+    <abstract>
+    typedef-name を typedef 宣言に使用.
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test010.c</source>
+    <abstract>
+    函数内の extern 宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test011.c</source>
+    <abstract>
+    構造体の typedef 宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test012.c</source>
+    <abstract>
+    void の typedef 宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test012.c</source>
+    <abstract>
+    variable length array の typedef 宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test013.c</source>
+    <abstract>
+    variable length array の typedef 宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test014.c</source>
+    <abstract>
+    variable length array の typedef 宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test015.c</source>
+    <abstract>
+    不完全型配列 の typedef 宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test016.c</source>
+    <abstract>
+    static 付きの構造体の宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test017.c</source>
+    <abstract>
+    不完全型構造体を返す函数の宣言. 不完全型構造体を引数に取る函数の宣言.
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test018.c</source>
+    <abstract>
+    typdef-name を函数のパラメータ宣言に使用.
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test000.c</source>
+    <abstract>
+    修飾子付きの typedef-name. typedef-name は配列型.
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test001.c</source>
+    <abstract>
+    修飾子付きの typedef-name. typedef-name はポインタ型.
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test002.c</source>
+    <abstract>
+    typedef-name と tag-name との違い.
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test003.c</source>
+    <abstract>
+    記憶クラスを伴なった不完全型配列の宣言
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test004.c</source>
+    <abstract>
+    複数の記憶クラスを伴なった宣言
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test005.c</source>
+    <abstract>
+    記憶クラスの矛盾.
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test006.c</source>
+    <abstract>
+    不完全型構造体を返す函数の呼び出し. 不完全型構造体を引数に取る呼び出し.
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test007.c</source>
+    <abstract>
+    多重宣言
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test008.c</source>
+    <abstract>
+    パラメータのない函数定義
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test009.c</source>
+    <abstract>
+    register 宣言された配列
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test010.c</source>
+    <abstract>
+    block スコープでの記憶クラス付き函数宣言
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test011.c</source>
+    <abstract>
+    合成体, union 型に対する記憶クラス
+    </abstract>
+</item>
+
+<item>
+    <source>3_ok</source>
+    <abstract>
+    static な函数宣言の後の static なしの函数定義. extern な函数宣言の後の extern なしの函数定義. extern な函数宣言の後の static な函数定義.
+    </abstract>
+</item>
+
+<item>
+    <source>4_ok</source>
+    <abstract>
+    static な変数定義の後の extern な宣言.
+    </abstract>
+</item>
+
+<item>
+    <source>5_ok</source>
+    <abstract>
+    extern な変数定義の後の static な宣言.
+    </abstract>
+</item>
+
+<item>
+    <source>6_ok</source>
+    <abstract>
+    extern な不完全型構造体変数の宣言と参照
+    </abstract>
+</item>
+
+<item>
+    <source>7_ok</source>
+    <abstract>
+    不完全型構造体へのポインタを返す函数の呼び出し
+    </abstract>
+</item>
+
+</test_item>

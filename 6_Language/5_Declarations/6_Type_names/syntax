@@ -1,0 +1,12 @@
+type-name:
+  specifier-qualifier-list abstract-declaratoropt
+
+abstract-declarator:
+  pointer
+  pointeropt direct-abstract-declarator
+
+direct-abstract-declarator:
+  ( abstract-declarator )
+  direct-abstract-declaratoropt [ assignment-expressionopt ]
+  direct-abstract-declaratoropt [ * ]
+  direct-abstract-declaratoropt ( parameter-type-listopt )

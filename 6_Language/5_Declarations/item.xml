@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<section url="0_Declarations/item.xml">
+    <title>6.5 Declarations</title>
+</section>
+
+<section url="1_Storage_class_specifiers/item.xml">
+    <title>6.5.1 Storage class specifiers</title>
+</section>
+
+<section url="2_Type_specifiers/item.xml">
+    <title>6.5.2 Type specifiers</title>
+</section>
+
+<section url="3_Type_qualifiers/item.xml">
+    <title>6.5.3 Type qualifiers</title>
+</section>
+
+<section url="4_Function_specifiers/item.xml">
+    <title>6.5.4 Function specifiers</title>
+</section>
+
+<section url="5_Declarators/item.xml">
+    <title>6.5.5 Declarators</title>
+</section>
+
+<section url="6_Type_names/item.xml">
+    <title>6.5.6 Type names</title>
+</section>
+
+<section url="7_Type_definitions/item.xml">
+    <title>6.5.7 Type definitions</title>
+</section>
+
+<section url="8_Initialization/item.xml">
+    <title>6.5.8 Initialization</title>
+</section>
+
+</test_item>

@@ -1,0 +1,9 @@
+/*
+ * Check error if 2nd operand of logical AND operator must be constant
+ * in the context where required constant.
+ */
+
+int a;
+int b = 1 || a;  /* ok */
+int c = 2 && a;  /* error */
+

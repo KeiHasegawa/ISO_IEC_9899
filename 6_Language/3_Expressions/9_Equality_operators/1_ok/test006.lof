@@ -1,0 +1,4 @@
+`test00' called
+s[1].a == s[0].b[2] - 'a'
+`test01' called
+(*ps)[i].b != (void*)s[j].b

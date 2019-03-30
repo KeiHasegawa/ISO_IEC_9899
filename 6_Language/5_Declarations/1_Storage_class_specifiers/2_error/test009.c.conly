@@ -1,0 +1,141 @@
+/*
+ * ... Thus the only operator that can be applied to an array declared with
+ * storage-class specifier register is sizeof.
+ */
+void test000(void)
+{
+  register int a[10];
+  a;
+}
+
+void test001(void)
+{
+  register int a[10];
+  a[3];
+}
+
+void test002(int i)
+{
+  register int a[10];
+  a[i];
+}
+
+void test003(void)
+{
+  register int a[10];
+  &a;
+}
+
+void test004(void)
+{
+  register int a[10];
+  *a;
+}
+
+void test005(void)
+{
+  register int a[10];
+  sizeof a;  /* ok */
+}
+
+void test006(void)
+{
+  register int a[10];
+  (int)a;
+}
+
+void test007(void)
+{
+  register int a[10];
+  a + 5;
+}
+
+void test008(int i)
+{
+  register int a[10];
+  a - i;
+}
+
+void test009(int* p)
+{
+  register int a[10];
+  a - p;
+}
+
+void test010(int* p)
+{
+  register int a[10];
+  a < p;
+}
+
+void test011(int* p)
+{
+  register int a[10];
+  a > p;
+}
+
+void test012(int* p)
+{
+  register int a[10];
+  a <= p;
+}
+
+void test013(int* p)
+{
+  register int a[10];
+  a >= p;
+}
+
+void test014(int* p)
+{
+  register int a[10];
+  a == p;
+}
+
+void test015(int* p)
+{
+  register int a[10];
+  a != p;
+}
+
+void test016(int* p)
+{
+  register int a[10];
+  a && p;
+}
+
+void test017(int* p)
+{
+  register int a[10];
+  a || p;
+}
+
+void test018(int i)
+{
+  register int a[10];
+  a ? i : i + 3;
+}
+
+void test019(int i)
+{
+  register int a[10];
+  a ? i : i + 3;
+}
+
+void test020(int i, int* p)
+{
+  register int a[10];
+  i ? a : p;
+}
+
+void test021(int* p)
+{
+  register int a[10];
+  p = a;
+}
+
+void test022(int* p)
+{
+  register int a[10];
+  a, p;
+}

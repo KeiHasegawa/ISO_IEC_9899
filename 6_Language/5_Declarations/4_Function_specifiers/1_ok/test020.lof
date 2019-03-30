@@ -1,0 +1,6 @@
+e = 15
+h(4, 30, 15) returns -8
+e = 15
+h(0, 30, 15) returns 0
+h(4, 30, 0) returns -9
+h(4, 0, 15) returns -16

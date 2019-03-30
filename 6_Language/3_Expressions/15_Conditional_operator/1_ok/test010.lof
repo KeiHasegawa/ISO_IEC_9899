@@ -1,0 +1,240 @@
+`test000' called
+-2
+4
+`test000' called
+-1
+3
+`test001' called
+`f' called with 3, 2
+1
+`fa1' called with 3, 2
+10
+`test001' called
+`f' called with 3, 1
+2
+`fa1' called with 3, 1
+10
+`test002' called
+-5, "ccc"
+`test002' called
+10, "bbb"
+`test003' called
+-4, "CCCC"
+`test003' called
+7, "BBBB"
+`test004' called
+2, 4
+`test005' called
+2
+`test005' called
+1
+`test006' called
+2
+`test006' called
+1
+`test007' called
+-2
+`test007' called
+-1
+`test008' called
+-3
+`test008' called
+-2
+`test009' called
+0
+`test009' called
+1
+`test010' called
+4
+`test010' called
+4
+`test011' called
+2.000000
+`test011' called
+3.000000
+`test012' called
+10
+`test012' called
+5
+`test013' called
+2
+`test013' called
+5
+`test014' called
+1
+`test014' called
+0
+`test015' called
+8
+`test015' called
+7
+`test016' called
+4
+`test016' called
+5
+`test017' called
+24
+`test017' called
+12
+`test018' called
+1
+`test018' called
+3
+`test019' called
+0
+`test019' called
+0
+`test020' called
+0
+`test020' called
+1
+`test021' called
+1
+`test021' called
+0
+`test022' called
+1
+`test022' called
+1
+`test023' called
+1
+`test023' called
+0
+`test024' called
+0
+`test024' called
+1
+`test025' called
+4
+`test025' called
+4
+`test026' called
+10
+`test026' called
+9
+`test027' called
+14
+`test027' called
+13
+`test028' called
+0
+`test028' called
+1
+`test028' called
+1
+`test029' called
+1
+`test029' called
+0
+`test030' called
+8
+`test030' called
+7
+`test030' called
+8
+`test030' called
+7
+`test030' called
+5
+`test030' called
+5
+`test030' called
+4
+`test030' called
+4
+`test030' called
+8
+`test030' called
+7
+`test030' called
+8
+`test030' called
+7
+`test030' called
+5
+`test030' called
+5
+`test030' called
+4
+`test030' called
+4
+`test030' called
+8
+`test030' called
+7
+`test030' called
+8
+`test030' called
+7
+`test030' called
+8
+`test030' called
+7
+`test030' called
+8
+`test030' called
+7
+`test030' called
+5
+`test030' called
+5
+`test030' called
+4
+`test030' called
+4
+`test030' called
+5
+`test030' called
+5
+`test030' called
+4
+`test030' called
+4
+`test031' called
+5
+`test031' called
+4
+`test032' called
+10
+`test032' called
+40
+`test033' called
+0
+`test033' called
+0
+`test034' called
+2
+`test034' called
+2
+`test035' called
+7
+`test035' called
+11
+`test036' called
+-3
+`test036' called
+-7
+`test037' called
+64
+`test037' called
+1024
+`test038' called
+0
+`test038' called
+0
+`test039' called
+0
+`test039' called
+0
+`test040' called
+7
+`test040' called
+3
+`test041' called
+7
+`test041' called
+7
+`test042' called
+4
+`test042' called
+5

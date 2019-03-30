@@ -1,0 +1,65 @@
+`test000' called
+a.c[0] = s b.c[0] = t
+a.c[0] = t b.c[0] = t
+a.c[0] = t b.c[0] = t c.c[0] = x
+a.c[0] = x b.c[0] = t c.c[0] = x
+a.c[0] = x b.c[0] = t c.c[0] = t
+a.c[0] = x b.c[0] = x c.c[0] = t
+`test001' called
+x.i = 1 x.c = apple x.d = 3.000000
+y.i = 3 y.c = lemmon y.d = 5.000000
+z.i = 123 z.c = hoge hoge z.d = 1.500000
+x.i = 3 x.c = lemmon x.d = 5.000000
+y.i = 3 y.c = lemmon y.d = 5.000000
+z.i = 123 z.c = hoge hoge z.d = 1.500000
+x.i = 3 x.c = lemmon x.d = 5.000000
+y.i = 3 y.c = lemmon y.d = 5.000000
+z.i = 3 z.c = lemmon z.d = 5.000000
+x.i = 3 x.c = lemmon x.d = 5.000000
+y.i = 3 y.c = lemmon y.d = 5.000000
+z.i = 3 z.c = lemmon z.d = 5.000000
+x.i = 3 x.c = lemmon x.d = 5.000000
+y.i = 3 y.c = lemmon y.d = 5.000000
+z.i = 3 z.c = lemmon z.d = 5.000000
+`test002' called
+a.i = 1, a.c = apple, a.d = 3.000000
+b.cc = ef, b.s.i = 2, b.s.c = grape, b.s.d = 4.000000, b.ccc = abc
+c.i = 3, c.c = lemmon, c.d = 5.000000
+a.i = 1, a.c = apple, a.d = 3.000000
+b.cc = ef, b.s.i = 1, b.s.c = apple, b.s.d = 3.000000, b.ccc = abc
+c.i = 3, c.c = lemmon, c.d = 5.000000
+a.i = 3, a.c = lemmon, a.d = 5.000000
+b.cc = ef, b.s.i = 1, b.s.c = apple, b.s.d = 3.000000, b.ccc = abc
+c.i = 3, c.c = lemmon, c.d = 5.000000
+a.i = 3, a.c = lemmon, a.d = 5.000000
+b.cc = ef, b.s.i = 1, b.s.c = apple, b.s.d = 3.000000, b.ccc = abc
+c.i = 1, c.c = apple, c.d = 3.000000
+a.i = 3, a.c = lemmon, a.d = 5.000000
+b.cc = Af, b.s.i = 1, b.s.c = abcdefghijklmnopqrstuvwxyz, b.s.d = 3.000000, b.ccc = aBc
+c.i = 1, c.c = apple, c.d = 3.000000
+`test003' called
+x = -30 hijklmnopqrstu 1.000000
+y = -30 hijklmnopqrstu 1.000000
+x = -30 hijklmnopqrstu 1.000000
+y = -30 hijklmnopqrstu 1.000000
+z = 2748 def 5.000000
+w = 2748 def 5.000000
+`test004' called
+s.i = 103 s.c = va_start & va_arg test s.d = -104.000000
+s3.cc = zZ s3.s.i = 13 s3.s.c = va_end may be just ignored s3.s.d = 0.125000 s3.ccc = xXyY
+d = 1.000000
+i = 2
+ulli = 3
+`test005' called
+cc = ef s.i = 2 s.c = grape s.d = 4.000000 ccc = abc
+cc = ef s.i = 2 s.c = grape s.d = 4.000000 ccc = abc
+cc = ef s.i = 2 s.c = grape s.d = 4.000000 ccc = abc
+cc = ef s.i = 2 s.c = grape s.d = 4.000000 ccc = abc
+cc = ef s.i = 2 s.c = grape s.d = 4.000000 ccc = abc
+cc = ef s.i = 2 s.c = grape s.d = 4.000000 ccc = abc
+cc = ef s.i = 2 s.c = grape s.d = 4.000000 ccc = abc
+cc = ef s.i = 2 s.c = grape s.d = 4.000000 ccc = abc
+cc = ef s.i = 2 s.c = grape s.d = 4.000000 ccc = abc
+cc = ef s.i = 2 s.c = grape s.d = 4.000000 ccc = abc
+`test006' called
+cc = ab s.i = 5 s.c = ABCDEF s.d = -5.000000 ccc = cdef

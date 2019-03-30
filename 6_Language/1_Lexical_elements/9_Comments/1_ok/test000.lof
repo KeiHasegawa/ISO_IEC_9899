@@ -1,0 +1,8 @@
+`test00' called
+"/* comment in string literal */"
+`test01' called
+"// comment in string literal"
+"a//b"
+f = 5
+`l' called
+m = 7

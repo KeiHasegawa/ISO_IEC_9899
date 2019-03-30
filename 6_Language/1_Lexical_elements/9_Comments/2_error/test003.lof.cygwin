@@ -1,0 +1,3 @@
+test003.c: ”Ÿ” `f' :
+test003.c:6: error: character constant `'/* comment in character constant */'` is invalid for `char'.
+test003.c:7: error: character constant `'// comment in character constant'` is invalid for `char'.

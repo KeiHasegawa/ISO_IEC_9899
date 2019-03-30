@@ -1,0 +1,34 @@
+`test000' called
+`test000' called
+`test000' called
+*x < y
+`test001' called
+x <= *y
+`test001' called
+x <= *y
+`test001' called
+x > *y
+`test002' called
+*x <= *y
+*x <= *y
+`test003' called
+x = 6, *y = 5
+x = 5, *y = 6
+`test004' called
+*x = -10.500000, y = 7
+*x = -9.500000, y = 6
+*x = -8.500000, y = 5
+*x = -7.500000, y = 4
+*x = -6.500000, y = 3
+*x = -5.500000, y = 2
+*x = -4.500000, y = 1
+*x = -3.500000, y = 0
+*x = -2.500000, y = -1
+`test005' called
+*x < *y
+`test005' called
+*x >= *y
+`test006' called
+x > y = 1
+`test006' called
+x > y = 0

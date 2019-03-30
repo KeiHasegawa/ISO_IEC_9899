@@ -1,0 +1,11 @@
+f(double, const struct T, const int*, void*) called
+d = 3.000000
+t.a = 1, t.b = 2
+*p = 1
+g(struct T*) called
+p->a = 1, p->b = 2
+h(int*) called
+h(int*) called
+*p = 7
+n = 7, m = 4
+t.a = 6, t.b = 8

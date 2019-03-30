@@ -1,0 +1,52 @@
+/*
+ * A declaration shall declare at least a declarator (excluding the parameters
+ * of a function or the members of a structure or union), a tag, or the
+ * members of an enumeration.
+ */
+#include <stdio.h>
+
+struct S;  /* ok */
+
+void f(int a);  /* ok */
+
+void g(int);  /* ok */
+
+struct outer {
+  struct inner {
+    int a;
+  };
+};
+
+struct outer x;
+
+struct inner y = { 1 };  /* ok in C, but NG in C++. */
+
+struct T {
+  int;  /* ok */
+};
+
+struct T z;
+
+int main(void)
+{
+  f(1);
+  g(2);
+  printf("sizeof(struct outer) = %d\n", (int)sizeof(struct outer));
+  printf("sizeof x = %d\n", (int)sizeof x);
+  printf("sizeof(struct inner) = %d\n", (int)sizeof(struct inner));
+  printf("sizeof y = %d\n", (int)(sizeof y));
+  printf("y.a = %d\n", y.a);
+  printf("sizeof(struct T) = %d\n", (int)sizeof(struct T));
+  printf("sizeof z = %d\n", (int)(sizeof z));
+  return 0;
+}
+
+void f(int n)
+{
+  printf("`f' called with %d\n", n);
+}
+
+void g(int n)
+{
+  printf("`g' called with %d\n", n);
+}

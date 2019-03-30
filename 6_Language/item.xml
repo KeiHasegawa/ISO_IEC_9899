@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<section url="1_Lexical_elements/item.xml">
+    <title>6.1 Lexical element</title>
+</section>
+
+<section url="2_Conversions/item.xml">
+    <title>6.2 Conversions</title>
+</section>
+
+<section url="3_Expressions/item.xml">
+    <title>6.3 Expressions</title>
+</section>
+
+<section url="4_Constant_expressions/item.xml">
+    <title>6.4 Constant expressions</title>
+</section>
+
+<section url="5_Declarations/item.xml">
+    <title>6.5 Declarations</title>
+</section>
+
+<section url="6_Statements/item.xml">
+    <title>6.6 Statements</title>
+</section>
+
+<section url="7_External_definitions/item.xml">
+    <title>6.7 External definitions</title>
+</section>
+
+<section url="8_Preprocessing_directives/item.xml">
+    <title>6.8 Preprocessing directives</title>
+</section>
+
+<section url="9_Future_language_directions/item.xml">
+    <title>6.9 Future language directions</title>
+</section>
+
+</test_item>

@@ -1,0 +1,15 @@
+`test00' called
+*p = 1
+`test01' called
+(*p)[i] = 0
+(*p)[i] = 1
+(*p)[i] = 2
+`test02' called
+(*p)() = 97
+`test03' called
+v[0] = 0
+v[1] = 1
+v[2] = 2
+v[3] = 3
+v[4] = 4
+v[5] = 5

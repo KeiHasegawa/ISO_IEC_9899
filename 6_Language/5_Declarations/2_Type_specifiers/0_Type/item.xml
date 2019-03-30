@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<item>
+    <source>1_ok/test000.c</source>
+    <abstract>
+    void
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test001.c</source>
+    <abstract>
+    char
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test002.c</source>
+    <abstract>
+    signed char
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test003.c</source>
+    <abstract>
+    unsigned char
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test004.c</source>
+    <abstract>
+    short, signed short, short int, or signed short int
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test005.c</source>
+    <abstract>
+    unsigned short, or unsigned short int
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test006.c</source>
+    <abstract>
+    int, signed, or signed int
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test007.c</source>
+    <abstract>
+    unsigned, or unsigned int
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test008.c</source>
+    <abstract>
+    long, signed long, long int, or signed long int
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test009.c</source>
+    <abstract>
+    unsigned long, or unsigned long int
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test010.c</source>
+    <abstract>
+    long long, signed long long, long long int, or signed long long int
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test011.c</source>
+    <abstract>
+    unsigned long long, or unsigned long long int
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test012.c</source>
+    <abstract>
+    float
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test013.c</source>
+    <abstract>
+    double
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test014.c</source>
+    <abstract>
+    long double
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test015.c</source>
+    <abstract>
+    struct-or-union specifier
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test016.c</source>
+    <abstract>
+    enum-specifier
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test017.c</source>
+    <abstract>
+    typedef-name
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test000.c</source>
+    <abstract>
+    type specifier が 1 つもない宣言
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test001.c</source>
+    <abstract>
+    void との不正な組み合わせ
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test002.c</source>
+    <abstract>
+    char との不正な組み合わせ
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test003.c</source>
+    <abstract>
+    signed との不正な組み合わせ
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test004.c</source>
+    <abstract>
+    unsigned との不正な組み合わせ
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test005.c</source>
+    <abstract>
+    short との不正な組み合わせ
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test006.c</source>
+    <abstract>
+    int との不正な組み合わせ
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test007.c</source>
+    <abstract>
+    long との不正な組み合わせ
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test008.c</source>
+    <abstract>
+    float との不正な組み合わせ
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test009.c</source>
+    <abstract>
+    double との不正な組み合わせ
+    </abstract>
+</item>
+
+</test_item>

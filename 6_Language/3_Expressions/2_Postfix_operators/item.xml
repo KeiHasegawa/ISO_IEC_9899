@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<section url="1_Array_subscripting/item.xml">
+    <title>6.3.2.1 Array subscripting</title>
+</section>
+
+<section url="2_Function_calls/item.xml">
+    <title>6.3.2.2 Function calls</title>
+</section>
+
+<section url="3_Structure_and_union_members/item.xml">
+    <title>6.3.2.3 Structure and union members</title>
+</section>
+
+<section url="4_Postfix_increment_and_decrement_operators/item.xml">
+    <title>6.3.2.4 Postfix increment and decrement operators</title>
+</section>
+
+<section url="5_Compound_literals/item.xml">
+    <title>6.3.2.5 Compound literals</title>
+</section>
+
+</test_item>

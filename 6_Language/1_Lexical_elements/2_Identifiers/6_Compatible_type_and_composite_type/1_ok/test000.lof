@@ -1,0 +1,4 @@
+`f' called
+`g' called with "composite test string"
+(*a)(&c[0]) = 40
+ 10.000000 11.000000 12.000000

@@ -1,0 +1,2 @@
+sizeof 'a' = 1
+sizeof L'ab' = 2

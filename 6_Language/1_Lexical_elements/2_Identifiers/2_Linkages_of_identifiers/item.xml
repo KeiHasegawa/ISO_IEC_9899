@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<item>
+    <source>1_ok</source>
+    <abstract>
+    内部リンケージをもつ宣言
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test000.c</source>
+    <abstract>
+    内部リンケージをもつ宣言
+    </abstract>
+</item>
+
+<item>
+    <source>3_ok/test000.c</source>
+    <abstract>
+    外部リンケージをもつ宣言
+    </abstract>
+</item>
+
+<item>
+    <source>3_ok/test001.c</source>
+    <abstract>
+    外部リンケージをもつ宣言
+    </abstract>
+</item>
+
+<item>
+    <source>3_ok/test002.c</source>
+    <abstract>
+    リンケージなしの宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test000.c</source>
+    <abstract>複数の名前空間にある変数の参照</abstract>
+</item>
+
+<item>
+    <source>1_ok/test001.c</source>
+    <abstract>複数の名前空間にある変数の参照(その 2)</abstract>
+</item>
+
+<item>
+    <source>1_ok/test002</source>
+    <abstract>他の翻訳単位にある変数の参照</abstract>
+</item>
+
+<item>
+    <source>1_ok/test003.c</source>
+    <abstract>variable length array</abstract>
+</item>
+
+<item>
+    <source>1_ok/test004.c</source>
+    <abstract>variable length array の配列</abstract>
+</item>
+
+<item>
+    <source>1_ok/test005.c</source>
+    <abstract>複数の variable length array</abstract>
+</item>
+
+</test_item>

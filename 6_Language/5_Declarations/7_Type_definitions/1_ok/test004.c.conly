@@ -1,0 +1,46 @@
+/*
+ * Check if ISO sample works well.
+ */
+#include <stdio.h>
+
+typedef signed int t;
+typedef int plain;
+struct tag {
+  unsigned t:4;
+  const t:5;
+  plain r:5;
+};
+
+/*
+ *  declare a typedef name t with type signed int, a typedef name plain with
+ * type int, and a structure with three bit-field members, one named t that
+ * contains values in the range [0, 15], an unnamed const-qualified bit-field
+ * which (if it could be accessed) would contain values in at least the range
+ * [-15, +15], and one named r that contains values in the range [0, 31] or
+ * values in at least the range [-15, +15]. (The choice of range is
+ * implementation-defined.)
+ */
+void f(struct tag t)
+{
+  printf("%d, %d\n", t.t, t.r);
+}
+
+void g(void)
+{
+  t a = 1;
+  printf("%d\n", a);
+  plain b = 2;
+  printf("%d\n", b);
+  struct tag c;
+  for ( int i = -17 ; i < 17 ; ++i ){
+    c.t = i;
+    c.r = i;
+    f(c);
+  }
+}
+
+int main(void)
+{
+  g();
+  return 0;
+}

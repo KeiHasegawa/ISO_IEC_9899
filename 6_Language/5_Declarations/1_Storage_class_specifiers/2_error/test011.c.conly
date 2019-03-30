@@ -1,0 +1,29 @@
+/*
+ * If an aggregate or union object is declared with a storage-class specifier
+ * other than typedef, the properties resulting from the storage-class
+ * specifier, except with respect to linkage, also apply to the members of 
+ * the object, and so on recursively for any aggregate or union member objects.
+ */
+void test000(void)
+{
+  register int a[3][5][7];
+  &a[1][2];
+}
+
+void test001(void)
+{
+  struct S {
+    int a;
+  };
+  register struct S s;
+  &s.a;
+}
+
+void test002(void)
+{
+  union U {
+    int a;
+  };
+  register union U u;
+  &u.a;
+}

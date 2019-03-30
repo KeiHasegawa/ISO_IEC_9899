@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<section url="1_Arithmetic_operands/item.xml">
+    <title>6.2.1 Arithmetic operands</title>
+</section>
+
+<section url="2_Other_operands/item.xml">
+    <title>6.2.2 Other operands</title>
+</section>
+
+</test_item>

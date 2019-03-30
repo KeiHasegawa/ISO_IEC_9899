@@ -1,0 +1,8 @@
+/*
+ * Check the result of comma operator is not lvalue.
+ */
+void test000(int a, int b)
+{
+  (a, b) = 1;
+  &(a, b);
+}

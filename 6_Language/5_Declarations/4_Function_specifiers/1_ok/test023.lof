@@ -1,0 +1,8 @@
+alpha called with 5
+alpha(5) = 15
+beta called with 2.500000
+beta(2.5) = 7.500000
+gamma called with 4
+gamma(4) = 0.800000
+delta called with 7
+delta(7) = hijklmnopqrstuvwxyz

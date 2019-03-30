@@ -1,0 +1,23 @@
+/*
+ * Check if parameter scope enum declaration works well.
+ * (abstract declarator parameter scope at block scope function declaration)
+ */
+#include <stdio.h>
+
+void f()
+{
+  printf("`f' called\n");
+  void g(void (*)(enum E { a, b, c, d }));
+  g(0);
+}
+
+int main()
+{
+  f();
+  return 0;
+}
+
+void g(int n)
+{
+  printf("`g' called n = %d\n", n);
+}

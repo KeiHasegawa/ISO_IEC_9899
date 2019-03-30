@@ -1,0 +1,8 @@
+test012.c:6: error: syntax error before `B' token.
+test012.c:10: エラー: `B' は宣言されていません.
+test012.c:10: エラー: `b' は宣言されていません.
+test012.c:10: error: syntax error before `;' token.
+test012.c: 函数 `f' :
+test012.c:14: エラー: `C' の宣言で `int' が仮定されました.
+test012.c:14: error: syntax error before `D' token.
+test012.c:18: error: syntax error before `d' token.

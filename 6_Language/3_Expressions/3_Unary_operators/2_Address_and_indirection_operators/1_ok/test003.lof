@@ -1,0 +1,10 @@
+`f' called with 10
+&s[10] - &s[0]:
+`f' called with -10
+&*s - &s[10]:
+`f' called with -3
+&ss[0] - &ss[3]:
+`f' called with 0
+&*ss - &ss[0]:
+`f' called with 1
+sizeof *ss[2].b / sizeof *s[5].b:

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<section url="1_Pointer_declarators/item.xml">
+    <title>6.5.5.1 Pointer declarators</title>
+</section>
+
+<section url="2_Array_declarators/item.xml">
+    <title>6.5.5.2 Array declarators</title>
+</section>
+
+<section url="3_Function_declarators/item.xml">
+    <title>6.5.5.3 Function declarators</title>
+</section>
+
+</test_item>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<item>
+    <source>test000.c</source>
+    <abstract>long double</abstract>
+</item>
+
+<item>
+    <source>test001.c</source>
+    <abstract>double</abstract>
+</item>
+
+<item>
+    <source>test002.c</source>
+    <abstract>float</abstract>
+</item>
+
+<item>
+    <source>test003.c</source>
+    <abstract>unsigned long long int</abstract>
+</item>
+
+<item>
+    <source>test004.c</source>
+    <abstract>long long int</abstract>
+</item>
+
+<item>
+    <source>test005.c</source>
+    <abstract>unsigned long int</abstract>
+</item>
+
+<item>
+    <source>test006.c</source>
+    <abstract>long int</abstract>
+</item>
+
+<item>
+    <source>test007.c</source>
+    <abstract>unsigned int</abstract>
+</item>
+
+<item>
+    <source>test008.c</source>
+    <abstract>int</abstract>
+</item>
+
+<item>
+    <source>test009.c</source>
+    <abstract>unsigned short int</abstract>
+</item>
+
+<item>
+    <source>test010.c</source>
+    <abstract>short int</abstract>
+</item>
+
+<item>
+    <source>test011.c</source>
+    <abstract>unsigned char</abstract>
+</item>
+
+<item>
+    <source>test012.c</source>
+    <abstract>signed char</abstract>
+</item>
+
+<item>
+    <source>test013.c</source>
+    <abstract>char</abstract>
+</item>
+
+<item>
+    <source>test014.c</source>
+    <abstract>enum</abstract>
+</item>
+
+<item>
+    <source>test015.c</source>
+    <abstract>ANSI promotion</abstract>
+</item>
+
+</test_item>

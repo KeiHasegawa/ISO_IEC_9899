@@ -1,0 +1,22 @@
+/*
+ * Check if old-style function definition is recognized.
+ */
+#include <stdio.h>
+
+void f(h, a, s, e)
+  int s, a, e;
+  double h;
+{
+  printf("h = %f\n", h);
+  printf("a = %d\n", a);
+  printf("s = %d\n", s);
+  printf("e = %d\n", e);
+}
+
+
+int main(void)
+{
+  f(1.0,2,3,4);
+  return 0;
+}
+

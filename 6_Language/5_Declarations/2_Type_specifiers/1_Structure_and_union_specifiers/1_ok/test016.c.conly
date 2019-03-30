@@ -1,0 +1,27 @@
+/*
+ * Check if parameter scope union declaration at inline function works well.
+ */
+#include <stdio.h>
+
+inline float fact(union U { int i; float f; } u)
+{
+  printf("u.i = %x u.f = %f\n", u.i, u.f);
+  if (!u.f)
+    return 1.0;
+  float x = u.f--;
+  return x * fact(u);
+}
+
+int main()
+{
+  // Unfortunately, it's not possible to call above `inline' float fact()
+  // in normal way. But possible to call via pointer.
+  union local {
+    int i;
+    float f;
+  } u;
+  float (*pf)() = fact;
+  u.f = 5.0;
+  printf("%f! = %f\n", u.f, pf(u));
+  return 0;
+}

@@ -1,0 +1,216 @@
+	.text
+	.align	8
+.L1:
+	.long	-1073086464
+	.long	0
+	.align	4
+.L2:
+	.long	-1068498944
+	.align	8
+.L3:
+	.long	1071644672
+	.long	0
+	.align	4
+.L4:
+	.long	1056964608
+	.align	8
+.L5:
+	.long	1072824320
+	.long	0
+	.align	4
+.L6:
+	.long	1066401792
+	.align	8
+.L7:
+	.long	1074397184
+	.long	0
+	.data
+	.global	a
+	.align	4
+a:
+	.long	0x12345678
+	.global	x
+	.align	4
+x:
+	.long	-1068498944
+	.global	y
+	.align	4
+y:
+	.long	1056964608
+	.global	z
+	.align	4
+z:
+	.long	1066401792
+	.text
+.L8:
+	.ascii	"x = %f\n\0"
+.L9:
+	.ascii	"y = %f\n\0"
+.L10:
+	.ascii	"y = %x\n\0"
+.L11:
+	.ascii	"z = %f\n\0"
+	.global	main
+	.align	4
+main:
+	/* enter */
+	stwu 1,-168(1)
+	mflr 0
+	stw 31,164(1)
+	stw 0,172(1)
+	mr 31,1
+	/* .var75 := &printf */
+	lis 9,printf@ha
+	la 9,printf@l(9)
+	stw 9,8(31)
+	/* .var76 := &"x = %f\n" */
+	lis 9,.L8@ha
+	la 9,.L8@l(9)
+	stw 9,12(31)
+	/* .var77 := (double)x */
+	lis 11,x@ha
+	la 11,x@l(11)
+	lfs 0,0(11)
+	stfd 0,16(31)
+	/* param .var76 */
+	lwz 3,12(31)
+	/* param .var77 */
+	lfd 1,16(31)
+	/* .var78 := call printf */
+	creqv 6,6,6
+	bl printf
+	stw 3,24(31)
+	/* .var79 := &printf */
+	lis 9,printf@ha
+	la 9,printf@l(9)
+	stw 9,28(31)
+	/* .var80 := &"y = %f\n" */
+	lis 9,.L9@ha
+	la 9,.L9@l(9)
+	stw 9,32(31)
+	/* .var81 := (double)y */
+	lis 11,y@ha
+	la 11,y@l(11)
+	lfs 0,0(11)
+	stfd 0,40(31)
+	/* param .var80 */
+	lwz 3,32(31)
+	/* param .var81 */
+	lfd 1,40(31)
+	/* .var82 := call printf */
+	creqv 6,6,6
+	bl printf
+	stw 3,48(31)
+	/* .var83 := &printf */
+	lis 9,printf@ha
+	la 9,printf@l(9)
+	stw 9,52(31)
+	/* .var84 := &"z = %f\n" */
+	lis 9,.L11@ha
+	la 9,.L11@l(9)
+	stw 9,56(31)
+	/* .var85 := (double)z */
+	lis 11,z@ha
+	la 11,z@l(11)
+	lfs 0,0(11)
+	stfd 0,64(31)
+	/* param .var84 */
+	lwz 3,56(31)
+	/* param .var85 */
+	lfd 1,64(31)
+	/* .var86 := call printf */
+	creqv 6,6,6
+	bl printf
+	stw 3,72(31)
+	/* y := (float)a */
+	lis 9,a@ha
+	la 9,a@l(9)
+	lwz 9,0(9)
+	xoris 9,9,0x8000
+	stw 9,156(31)
+	lis 9,0x4330
+	stw 9,152(31)
+	lfd 0,152(31)
+	lis 11,.L13@ha
+	la 11,.L13@l(11)
+	lfd 13,0(11)
+	fsub 0,0,13
+	lis 11,y@ha
+	la 11,y@l(11)
+	stfs 0,0(11)
+	/* .var87 := &printf */
+	lis 9,printf@ha
+	la 9,printf@l(9)
+	stw 9,76(31)
+	/* .var88 := &"x = %f\n" */
+	lis 9,.L8@ha
+	la 9,.L8@l(9)
+	stw 9,80(31)
+	/* .var89 := (double)x */
+	lis 11,x@ha
+	la 11,x@l(11)
+	lfs 0,0(11)
+	stfd 0,88(31)
+	/* param .var88 */
+	lwz 3,80(31)
+	/* param .var89 */
+	lfd 1,88(31)
+	/* .var90 := call printf */
+	creqv 6,6,6
+	bl printf
+	stw 3,96(31)
+	/* .var91 := &printf */
+	lis 9,printf@ha
+	la 9,printf@l(9)
+	stw 9,100(31)
+	/* .var92 := &"y = %x\n" */
+	lis 9,.L10@ha
+	la 9,.L10@l(9)
+	stw 9,104(31)
+	/* .var93 := (double)y */
+	lis 11,y@ha
+	la 11,y@l(11)
+	lfs 0,0(11)
+	stfd 0,112(31)
+	/* param .var92 */
+	lwz 3,104(31)
+	/* param .var93 */
+	lfd 1,112(31)
+	/* .var94 := call printf */
+	creqv 6,6,6
+	bl printf
+	stw 3,120(31)
+	/* .var95 := &printf */
+	lis 9,printf@ha
+	la 9,printf@l(9)
+	stw 9,124(31)
+	/* .var96 := &"z = %f\n" */
+	lis 9,.L11@ha
+	la 9,.L11@l(9)
+	stw 9,128(31)
+	/* .var97 := (double)z */
+	lis 11,z@ha
+	la 11,z@l(11)
+	lfs 0,0(11)
+	stfd 0,136(31)
+	/* param .var96 */
+	lwz 3,128(31)
+	/* param .var97 */
+	lfd 1,136(31)
+	/* .var98 := call printf */
+	creqv 6,6,6
+	bl printf
+	stw 3,144(31)
+	/* return 0 */
+	li 3,0
+	/* leave */
+	lwz 11, 0(1)
+	lwz 0, 4(11)
+	mtlr 0
+	lwz 31,-4(11)
+	mr 1,11
+	blr
+	.align	8
+.L13:
+	.long	0x43300000
+	.long	0x80000000

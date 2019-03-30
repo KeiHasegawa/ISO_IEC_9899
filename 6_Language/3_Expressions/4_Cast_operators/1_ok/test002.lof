@@ -1,0 +1,6 @@
+`f' called with 0
+case (char)0:
+`f' called with -1
+case (long long int)-1:
+`f' called with 1
+case (short int)(int*)1:

@@ -1,0 +1,22 @@
+`test00' called
+sizeof a = 40
+sizeof(int [10]) = 40
+sizeof b = 240
+sizeof b[0] = 80
+sizeof b[0][1] = 20
+sizeof b[0][1][2] = 4
+sizeof *c = 240
+sizeof *(int (*)[3][4][5])0 = 240
+`test01' called
+sizeof s = 8
+sizeof(struct S) = 8
+sizeof *ps = 8
+sizeof *(struct S*)2 = 8
+`test02' called
+sizeof u = 4
+sizeof(union U) = 4
+sizeof *pu = 4
+sizeof *(union U*)5 = 4
+`test03' called
+n = 4
+case sizeof printf("howdy\n"):

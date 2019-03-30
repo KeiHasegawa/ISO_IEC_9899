@@ -1,0 +1,8 @@
+`test00' called
+ 1 2 3
+`test01' called
+p[0] = 1, p[1] = 0
+`test02' called
+ps->a = 4, ps->b = 5
+`test03' called
+pu->a = 1.000000, pu->b = 0x3f800000

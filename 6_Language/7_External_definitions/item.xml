@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<section url="0_External_definitions/item.xml">
+    <title>6.7 External definitions</title>
+</section>
+
+<section url="1_Function_definitions/item.xml">
+    <title>6.7.1 Function definitions</title>
+</section>
+
+<section url="2_External_object_definitions/item.xml">
+    <title>6.7.2 External object definitions</title>
+</section>
+
+</test_item>

@@ -1,0 +1,45 @@
+`test000' called
+1
+2
+1 2 3
+0 1 2
+`f' called
+`g0' called
+a is zero
+`g1' called
+2
+`g2' called
+4
+`test001' called
+sizeof(int) = 4
+sizeof(int*) = 8
+sizeof(int*[3]) = 24
+sizeof(int(*)[3]) = 8
+sizeof(int(*)(void)) = 8
+`test002' called
+1
+0x3f800000
+0, 1, 2
+`f' called
+`test003' called
+`f0' called
+n = 5
+`f1' called
+6
+`f2' called
+6, 4, 8
+`f3' called
+3, 4, 5
+`f4' called
+`g' called
+*p = 2
+`f5' called
+`f' called
+n = -3
+`f6' called
+`g0' called
+1
+`g1' called
+a is zero
+`g2' called
+a is zero

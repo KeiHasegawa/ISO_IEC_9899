@@ -1,0 +1,13 @@
+global_array :
+1 a
+2 b
+3 c
+4 d
+local_array :
+100 A
+101 B
+102 C
+103 D
+104 E
+105 F
+106 G

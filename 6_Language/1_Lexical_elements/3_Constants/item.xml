@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<section url="1_Floating_constants/item.xml">
+    <title>6.1.3.1 Floating constants</title>
+</section>
+
+<section url="2_Integer_constants/item.xml">
+    <title>6.1.3.2 Integer constants</title>
+</section>
+
+<section url="3_Enumeration_constants/item.xml">
+    <title>6.1.3.3 Enumeration constants</title>
+</section>
+
+<section url="4_Character_constants/item.xml">
+    <title>6.1.3.4 Character constants</title>
+</section>
+
+</test_item>

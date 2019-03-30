@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<item>
+    <source>1_ok/test000.c</source>
+    <abstract>
+    配列に対するポインタの生成を initializer constant として使用
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test001.c</source>
+    <abstract>
+    函数に対するポインタの生成を initializer constant として使用
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test002.c</source>
+    <abstract>
+    文字配列の初期化
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test003.c</source>
+    <abstract>
+    配列の初期化
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test004.c</source>
+    <abstract>
+    初期化指定子にさまざまな式の結果を指定
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test005.c</source>
+    <abstract>
+    array designator
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test006.c</source>
+    <abstract>
+    member designator
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test007.c</source>
+    <abstract>
+    static storage duration を持つ初期化されない変数の初期値
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test008.c</source>
+    <abstract>
+    大括弧が余分に付いている初期化指定子
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test009.c</source>
+    <abstract>
+    幅広文字配列
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test010.c</source>
+    <abstract>
+    多次元配列の初期化
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test011.c</source>
+    <abstract>
+    多次元配列の初期化
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test012.c</source>
+    <abstract>
+    多次元配列の初期化
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test013.c</source>
+    <abstract>
+    initializer-list における current object
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test014.c</source>
+    <abstract>
+    多次元配列の初期化
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test015.c</source>
+    <abstract>
+    多次元配列の初期化
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test016.c</source>
+    <abstract>
+    多次元配列の初期化
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test017.c</source>
+    <abstract>
+    初期化の対象が typedef-name によって宣言されている
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test018.c</source>
+    <abstract>
+    文字配列の初期化. 最後の '\0' が初期値にならない場合.
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test019.c</source>
+    <abstract>
+    enum のメンバを array designator に指定
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test020.c</source>
+    <abstract>
+    member designator
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test021.c</source>
+    <abstract>
+    array designator と member designator の複合
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test022.c</source>
+    <abstract>
+    array designator
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test023.c</source>
+    <abstract>
+    共用体に対する member designator
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test024.c</source>
+    <abstract>
+    ビットフィールドメンバを含む構造体の初期化
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test024.c</source>
+    <abstract>
+    initializer-list における current object
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test025.c</source>
+    <abstract>
+    initializer-list における current object
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test026.c</source>
+    <abstract>
+    block スコープで記憶クラスが static な変数の初期化
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test027.c</source>
+    <abstract>
+    char* の配列を文字列で初期化
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test028.c</source>
+    <abstract>
+    block スコープで記憶クラスが static な変数の初期化
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test029.c</source>
+    <abstract>
+    ビットフィールドの最後のメンバに値指定なし
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test030.c</source>
+    <abstract>
+    複写伝搬が起こる初期化が正しく処理されるか.
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test000.c</source>
+    <abstract>
+    初期化指定子が多い
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test001.c</source>
+    <abstract>
+    不完全型配列の初期化. variable length array の初期化.
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test002.c</source>
+    <abstract>
+    変数の値を initializer constant として使用
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test003.c</source>
+    <abstract>
+    ブロック内 extern 付き変数の初期化.
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test004.c</source>
+    <abstract>
+    配列をスカラで初期化
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test005.c</source>
+    <abstract>
+    多次元配列の初期化指定子が多い
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test006.c</source>
+    <abstract>
+    array designator の値が定数でない.
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test007.c</source>
+    <abstract>
+    member designator が構造体でも共用体でもないものに適用
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test008.c</source>
+    <abstract>
+    member designator に宣言されていないメンバを指定
+    </abstract>
+</item>
+
+<item>
+    <source>3_ok/test000.c</source>
+    <abstract>初期値指定のない静的な変数</abstract>
+    <type>int</type>
+</item>
+
+<item>
+    <source>3_ok/test001.c</source>
+    <abstract>初期値指定のある静的な変数</abstract>
+    <type>int</type>
+</item>
+
+<item>
+    <source>3_ok/test002.c</source>
+    <abstract>初期値指定のあるローカル変数</abstract>
+    <type>char 配列</type>
+</item>
+
+<item>
+    <source>3_ok/test003.c</source>
+    <abstract>初期値指定のない静的な変数</abstract>
+    <type>float</type>
+</item>
+
+<item>
+    <source>3_ok/test004.c</source>
+    <abstract>初期値指定のある静的な変数</abstract>
+    <type>float</type>
+</item>
+
+<item>
+    <source>3_ok/test005.c</source>
+    <abstract>初期値指定のない静的な変数</abstract>
+    <type>double</type>
+</item>
+
+<item>
+    <source>3_ok/test006.c</source>
+    <abstract>初期値指定のある静的な変数</abstract>
+    <type>double</type>
+</item>
+
+<item>
+    <source>3_ok/test007.c</source>
+    <abstract>初期値指定のない静的な変数</abstract>
+    <type>pointer(int)</type>
+</item>
+
+<item>
+    <source>3_ok/test008.c</source>
+    <abstract>初期値指定のある静的な変数</abstract>
+    <type>pointer(int)</type>
+</item>
+
+<item>
+    <source>3_ok/test009.c</source>
+    <abstract>初期値のある静的な変数</abstract>
+    <type>int</type>
+    <comment>函数を 2 つコンパイル</comment>
+</item>
+
+<item>
+    <source>3_ok/test010.c</source>
+    <abstract>初期値指定のある静的な変数</abstract>
+    <type>unsigned char</type>
+    <comment>未定義な動作をする可能性もあるが y = -1 は誤り. .byte 擬似命令が必要
+    little endian ならば 255 が期待される結果.
+    big endian で 1 ワードが 4 バイトならば -16777216 が期待される結果.
+    </comment>
+</item>
+
+<item>
+    <source>3_ok/test011.c</source>
+    <abstract>静的な char 配列の初期化</abstract>
+</item>
+
+<item>
+    <source>3_ok/test012.c</source>
+    <abstract>静的なポインタ変数 b の初期化. int a[20]; int* b = a;</abstract>
+</item>
+
+<item>
+    <source>3_ok/test013.c</source>
+    <abstract>静的なポインタ変数 b の初期化. int a[20]; int* b = &amp;a[0];</abstract>
+</item>
+
+<item>
+    <source>3_ok/test014.c</source>
+    <abstract>静的なポインタ変数 b の初期化. int a[20]; int* b = &amp;a[1];</abstract>
+</item>
+
+<item>
+    <source>tset015.c</source>
+    <abstract>静的なポインタ変数 b の初期化. int* b = (int*)0x1234;</abstract>
+</item>
+
+<item>
+    <source>tset016.c</source>
+    <abstract>静的なポインタ変数 b の初期化. int a[20]; int* b = &amp;*(10+a);</abstract>
+</item>
+
+<item>
+    <source>3_ok/test017.c</source>
+    <abstract>静的な整数型の変数 b の初期化. int a[20]; int b = &amp;a[20] - &amp;a[0];</abstract>
+</item>
+
+<item>
+    <source>3_ok/test018.c</source>
+    <abstract>静的なポインタ変数 b の初期化. int* b = (int*)&amp;b;</abstract>
+</item>
+
+<item>
+    <source>3_ok/test019.c</source>
+    <abstract>静的なポインタ変数 b の初期化. int a[20]; int* b = &amp;a[-1];</abstract>
+</item>
+
+<item>
+    <source>3_ok/test020.c</source>
+    <abstract>静的なポインタ変数 b の初期化. int a[20]; int* b = a-1;</abstract>
+</item>
+
+<item>
+    <source>3_ok/test021.c</source>
+    <abstract>静的な配列の初期化</abstract>
+</item>
+
+<item>
+    <source>3_ok/test022.c</source>
+    <abstract>静的な 2 次元配列の初期化</abstract>
+</item>
+
+<item>
+    <source>3_ok/test023.c</source>
+    <abstract>静的な float 型の変数を整定数で初期化</abstract>
+</item>
+
+<item>
+    <source>3_ok/test024.c</source>
+    <abstract>静的な double 型の変数を整定数で初期化</abstract>
+</item>
+
+<item>
+    <source>3_ok/test025.c</source>
+    <abstract>静的な char ポインタ配列の初期化</abstract>
+</item>
+
+<item>
+    <source>3_ok/test026.c</source>
+    <abstract>静的な 文字列配列の配列の初期化</abstract>
+</item>
+
+<item>
+    <source>3_ok/test027.c</source>
+    <abstract>前の宣言を参照した初期化</abstract>
+</item>
+
+</test_item>

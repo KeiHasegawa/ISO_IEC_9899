@@ -1,0 +1,30 @@
+`test000' called
+d is zero
+`test000' called
+`test000' called
+`test001' called
+*p is zero
+`test001' called
+*p is not zero
+`test002' called
+`update' called
+`update' called
+`update' called
+`test002' called
+`test003' called
+`update' called
+`update' called
+`test003' called
+`update' called
+`test004' called
+*s = 'a'
+`test004' called
+*s = 'c'
+`test005' called
+s points to zero
+`test005' called
+s points to non-zero
+`test006' called
+!x = 0
+`test006' called
+!x = 1

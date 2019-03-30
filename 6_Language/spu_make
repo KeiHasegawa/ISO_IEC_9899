@@ -1,0 +1,4 @@
+#! /bin/csh -f
+
+set SPU_SHELL_DIR=$LANG_PROJECT_ROOT/spu/spu_shell
+make CPP=cxxpre.spu CC1=cxx1.exe LINK="perl $SPU_SHELL_DIR/spu_link.pl" RUN=$SPU_SHELL_DIR/spu_shell.exe

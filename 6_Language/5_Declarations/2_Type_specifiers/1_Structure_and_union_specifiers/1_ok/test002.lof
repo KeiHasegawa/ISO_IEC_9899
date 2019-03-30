@@ -1,0 +1,9 @@
+`test00' called
+1 2.000000
+`test01' called
+1 2.000000
+`test10' called
+s1.a = 1
+`test11' called
+s2->a = 2.000000
+`test13' called

@@ -1,0 +1,12 @@
+函数 test0809 では
+
+unsigned long int x と long long int y とで
+
+x % y
+
+の値を計算するテストであるが
+
+t0 := (long long int)x
+t1 := t0 % y             <-- long long int の % (符号付き)
+
+が正しい. gcc は符号なしの演算にしているので gcc と違う結果になっているが, 合格とする.

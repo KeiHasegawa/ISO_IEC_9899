@@ -1,0 +1,7 @@
+pc = "`pc' has file scope"
+pc = "Scopes of identifiers"
+a = 1
+E.m = 5.000000
+a = 2
+X = 3
+S.n = 0x3f800000

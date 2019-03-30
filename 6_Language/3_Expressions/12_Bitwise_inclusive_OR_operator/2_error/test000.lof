@@ -1,0 +1,18 @@
+test000.c: 函数 `test000' :
+test000.c:6: エラー: 二項演算子 `|' が型 `const float' と型 `float' に適用されました.
+test000.c:7: エラー: 二項演算子 `|' が型 `double' と型 `const double' に適用されました.
+test000.c:8: エラー: 二項演算子 `|' が型 `const long double' と型 `long double' に適用されました.
+test000.c:9: エラー: 二項演算子 `|' が型 `int *' と型 `const int' に適用されました.
+test000.c:10: エラー: 二項演算子 `|' が型 `const float' と型 `const float' に適用されました.
+test000.c:11: エラー: 二項演算子 `|' が型 `const double' と型 `const double' に適用されました.
+test000.c:12: エラー: 二項演算子 `|' が型 `const long double' と型 `const long double' に適用されました.
+test000.c:13: エラー: 二項演算子 `|' が型 `const float' と型 `const float' に適用されました.
+test000.c:14: エラー: 二項演算子 `|' が型 `const double' と型 `const double' に適用されました.
+test000.c:15: エラー: 二項演算子 `|' が型 `const long double' と型 `const long double' に適用されました.
+test000.c:16: エラー: 二項演算子 `|' が型 `const int' と型 `int *' に適用されました.
+test000.c: 函数 `test001' :
+test000.c:31: エラー: 二項演算子 `|' が型 `struct S' と型 `const int' に適用されました.
+test000.c:32: エラー: 二項演算子 `|' が型 `const int' と型 `struct SS' に適用されました.
+test000.c:33: エラー: 二項演算子 `|' が型 `union U' と型 `const int' に適用されました.
+test000.c:34: エラー: 二項演算子 `|' が型 `const int' と型 `union UU' に適用されました.
+test000.c:36: エラー: 二項演算子 `|' が型 `const int' と型 `enum EE' に適用されました.

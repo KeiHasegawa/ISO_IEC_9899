@@ -1,0 +1,8 @@
+`test000' called
+32767
+`test001' called
+32767, -1
+`test002' called
+-32768, 0
+`test003' called
+127, 128, 255, 256, 32767, -32768

@@ -1,0 +1,2 @@
+test002.c:7: error: syntax error before `3' token.
+test002.c:11: error: syntax error before `4' token.

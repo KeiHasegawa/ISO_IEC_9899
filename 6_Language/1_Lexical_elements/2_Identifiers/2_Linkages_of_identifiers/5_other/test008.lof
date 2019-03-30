@@ -1,0 +1,6 @@
+flags.is_keyword = 0
+flags.is_extern = 1
+flags.is_static = 0
+flags.is_keyword = 0
+flags.is_extern = 1
+flags.is_static = 0

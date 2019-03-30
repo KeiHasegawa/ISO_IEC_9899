@@ -1,0 +1,26 @@
+/*
+ * Check if parameter scope struct declaration works well.
+ * (parameter scope at function definition)
+ */
+#include <stdio.h>
+
+void f(struct S { int a; } s)
+{
+  printf("`f' called\n");
+  printf("s.a = %d\n", s.a);
+}
+
+void g(struct S { int a; } s)
+{
+  printf("`g' called\n");
+  struct S s2 = { 1 };
+  void f(); // hide global f declaration
+  f(s2);  // ok
+}
+
+int main()
+{
+  void g(); // hide global g declaration
+  g(); // ok
+  return 0;
+}

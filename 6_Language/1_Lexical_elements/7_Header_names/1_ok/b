@@ -1,0 +1,6 @@
+#ifndef _B_
+#define _B_
+
+extern int b;
+
+#endif /* _B_ */

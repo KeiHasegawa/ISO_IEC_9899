@@ -1,0 +1,30 @@
+/*
+ *  Check if old sytle function declaration and function definition works well.
+ */
+#include <stdio.h>
+
+int f();
+
+int g();
+
+int main()
+{
+  printf("f(3) = %d\n", f(3));
+  printf("g(4) = %d\n", g(4));
+  return 0;
+}
+
+int f(a)
+     int a;
+{
+  printf("f called a = %d\n", a);
+  return a + 5;
+}
+
+int g(a)
+     int a;
+{
+  printf("g called a = %d\n", a);
+  return a - 5;
+}
+

@@ -1,0 +1,1215 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<item>
+    <source>1_ok/test000.c</source>
+    <abstract>
+    戻り値が void の函数, 構造体の函数の呼び出し.
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test001.c</source>
+    <abstract>
+    構造体, 構造体へのポインタ, void へのポインタを引数に取る函数の函数呼び出し
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test002.c</source>
+    <abstract>
+    引数を可変個取る函数の函数呼び出し
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test003.c</source>
+    <abstract>
+    宣言されていない函数呼び出しの結果に sizeof を適用
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test004.c</source>
+    <abstract>
+    函数呼び出しの結果に sizeof を適用
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test005.c</source>
+    <abstract>
+    ビットフィールドの宣言. 函数呼び出しの結果に sizeof を適用.
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test006.c</source>
+    <abstract>
+    case ラベル. 函数呼び出しの結果に sizeof を適用.
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test007.c</source>
+    <abstract>
+    ポインタ経由の函数呼び出し
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test008.c</source>
+    <abstract>
+    函数の引数に函数呼び出しの結果を指定
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test009.c</source>
+    <abstract>
+    宣言されていない函数の呼び出し
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test010.c</source>
+    <abstract>
+    再帰的な函数呼び出し
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test000.c</source>
+    <abstract>
+    不完全型を返す函数を呼び出す
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test001.c</source>
+    <abstract>
+    函数のパラメータ宣言と函数呼び出しの引数が合致していない
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test002.c</source>
+    <abstract>
+    函数呼び出しの結果を initializer constant として使用
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test003.c</source>
+    <abstract>
+    ビットフィールドの宣言, case ラベルに函数呼び出しの結果を使用
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test004.c</source>
+    <abstract>
+    函数呼び出しの結果を左辺値として使用
+    </abstract>
+</item>
+
+<item>
+    <source>3_call/test000.c</source>
+    <abstract>簡単な函数の定義のコード出力</abstract>
+</item>
+
+<item>
+    <source>3_call/test001.c</source>
+    <abstract>簡単な函数の定義のコード出力その 2</abstract>
+</item>
+
+<item>
+    <source>3_call/test002.c</source>
+    <abstract>簡単な函数呼び出しのコード出力</abstract>
+</item>
+
+<item>
+    <source>3_call/test003.c</source>
+    <abstract>簡単な函数呼び出しのコード出力その 2</abstract>
+</item>
+
+<item>
+    <source>3_call/test004.c</source>
+    <abstract>簡単な函数呼び出しのコード出力その 3</abstract>
+</item>
+
+<item>
+    <source>3_call/test005.c</source>
+    <abstract>整数型の変数に対する printf</abstract>
+</item>
+
+<item>
+    <source>3_call/test006.c</source>
+    <abstract>浮動小数点数型の変数に対する printf</abstract>
+</item>
+
+<item>
+    <source>3_call/test007.c</source>
+    <abstract>__func__</abstract>
+</item>
+
+<item>
+    <source>3_call/test008.c</source>
+    <abstract>プロトタイプ宣言のない函数呼び出し</abstract>
+</item>
+
+<item>
+    <source>3_call/test009.c</source>
+    <abstract>再帰呼び出し</abstract>
+</item>
+
+
+<item>
+    <source>3_call/test010.c</source>
+    <abstract>param x ( char )</abstract>
+</item>
+
+<item>
+    <source>3_call/test011.c</source>
+    <abstract>param x ( char )</abstract>
+</item>
+
+<item>
+    <source>3_call/test012.c</source>
+    <abstract>param x ( char )</abstract>
+</item>
+
+<item>
+    <source>3_call/test013.c</source>
+    <abstract>param x ( unsigned char )</abstract>
+</item>
+
+<item>
+    <source>3_call/test014.c</source>
+    <abstract>param x ( short int )</abstract>
+</item>
+
+<item>
+    <source>3_call/test015.c</source>
+    <abstract>param x ( unsigned short int )</abstract>
+</item>
+
+<item>
+    <source>3_call/test016.c</source>
+    <abstract>param x ( int )</abstract>
+</item>
+
+<item>
+    <source>3_call/test017.c</source>
+    <abstract>param x ( unsigned int )</abstract>
+</item>
+
+<item>
+    <source>3_call/test018.c</source>
+    <abstract>param x ( long int )</abstract>
+</item>
+
+<item>
+    <source>3_call/test019.c</source>
+    <abstract>param x ( unsigned long int )</abstract>
+</item>
+
+<item>
+    <source>3_call/test020.c</source>
+    <abstract>param x ( float )</abstract>
+</item>
+
+<item>
+    <source>3_call/test021.c</source>
+    <abstract>param x ( double )</abstract>
+</item>
+
+
+<item>
+    <source>3_call/test022.c</source>
+    <abstract>call f, 0</abstract>
+</item>
+
+<item>
+    <source>3_call/test023.c</source>
+    <abstract>call f, 1</abstract>
+</item>
+
+<item>
+    <source>3_call/test024.c</source>
+    <abstract>r := call f, 0 ( r は int )</abstract>
+</item>
+
+<item>
+    <source>3_call/test025.c</source>
+    <abstract>r := call f, 1 ( r は int )</abstract>
+</item>
+
+<item>
+    <source>3_call/test026.c</source>
+    <abstract>r := call f, 1 ( r は int )</abstract>
+</item>
+
+<item>
+    <source>3_call/test027.c</source>
+    <abstract>r := call f, 2 ( r は int )</abstract>
+</item>
+
+<item>
+    <source>3_call/test028.c</source>
+    <abstract>r := call f, 3 ( r は int )</abstract>
+</item>
+
+<item>
+    <source>3_call/test029.c</source>
+    <abstract>r := call f, 0 ( r は char )</abstract>
+</item>
+
+<item>
+    <source>3_call/test030.c</source>
+    <abstract>r := call f, 1 ( r は unsigned char )</abstract>
+</item>
+
+<item>
+    <source>3_call/test031.c</source>
+    <abstract>r := call f, 2 ( r は short int )</abstract>
+</item>
+
+<item>
+    <source>3_call/test032.c</source>
+    <abstract>r := call f, 3 ( r は unsigned short int )</abstract>
+</item>
+
+<item>
+    <source>3_call/test033.c</source>
+    <abstract>r := call f, 2 ( r は int )</abstract>
+</item>
+
+<item>
+    <source>3_call/test034.c</source>
+    <abstract>r := call f, 4 ( r は unsigned int )</abstract>
+</item>
+
+<item>
+    <source>3_call/test035.c</source>
+    <abstract>r := call f, 0 ( r は float )</abstract>
+</item>
+
+<item>
+    <source>3_call/test036.c</source>
+    <abstract>r := call f, 5 ( r は float )</abstract>
+</item>
+
+<item>
+    <source>3_call/test037.c</source>
+    <abstract>r := call f, 2 ( r は float )</abstract>
+</item>
+
+<item>
+    <source>3_call/test038.c</source>
+    <abstract>r := call f, 6 ( r は double )</abstract>
+</item>
+
+
+<item>
+    <source>3_call/test039.c</source>
+    <abstract>return ( 函数の途中 )</abstract>
+</item>
+
+<item>
+    <source>3_call/test040.c</source>
+    <abstract>return r ( r は char )</abstract>
+</item>
+
+<item>
+    <source>3_call/test041.c</source>
+    <abstract>return r ( r は unsigned char )</abstract>
+</item>
+
+<item>
+    <source>3_call/test042.c</source>
+    <abstract>return ( 戻り値なし )</abstract>
+</item>
+
+<item>
+    <source>3_call/test043.c</source>
+    <abstract>return r ( r は short int )</abstract>
+    <comment>gcc/intel は定数の評価をしているが, これは間違えていると思う.</comment>
+</item>
+
+<item>
+    <source>3_call/test044.c</source>
+    <abstract>return r ( r は unsigned short int )</abstract>
+</item>
+
+<item>
+    <source>3_call/test045.c</source>
+    <abstract>return r ( r は int )</abstract>
+</item>
+
+<item>
+    <source>3_call/test046.c</source>
+    <abstract>return r ( r は unsigned int )</abstract>
+</item>
+
+<item>
+    <source>3_call/test047.c</source>
+    <abstract>return r ( r は float )</abstract>
+</item>
+
+<item>
+    <source>3_call/test048.c</source>
+    <abstract>return r ( r は double )</abstract>
+</item>
+
+
+<item>
+    <source>3_call/test049.c</source>
+    <abstract>param x ( x は char で函数引数にある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test050.c</source>
+    <abstract>param x ( x は unsigned char で函数引数にある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test051.c</source>
+    <abstract>param x ( x は short int で函数引数にある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test052.c</source>
+    <abstract>param x ( x は unsigned short int で函数引数にある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test053.c</source>
+    <abstract>param x ( x は int で函数引数にある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test054.c</source>
+    <abstract>param x ( x は unsigned int で函数引数にある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test055.c</source>
+    <abstract>param x ( x は long int で函数引数にある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test056.c</source>
+    <abstract>param x ( x は unsigned long int で函数引数にある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test057.c</source>
+    <abstract>param x ( x は float で函数引数にある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test058.c</source>
+    <abstract>param x ( x は double で函数引数にある )</abstract>
+</item>
+
+
+<item>
+    <source>3_call/test059.c</source>
+    <abstract>param x ( x は char でメモリにある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test060.c</source>
+    <abstract>param x ( x は unsigned char でメモリにある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test061.c</source>
+    <abstract>param x ( x は short int でメモリにある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test062.c</source>
+    <abstract>param x ( x は unsigned short int でメモリにある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test063.c</source>
+    <abstract>param x ( x は int でメモリにある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test064.c</source>
+    <abstract>param x ( x は unsigned int でメモリにある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test065.c</source>
+    <abstract>param x ( x は long int でメモリにある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test066.c</source>
+    <abstract>param x ( x は unsigned long int でメモリにある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test067.c</source>
+    <abstract>param x ( x は float でメモリにある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test068.c</source>
+    <abstract>param x ( x は double でメモリにある )</abstract>
+</item>
+
+
+<item>
+    <source>3_call/test069.c</source>
+    <abstract>return r ( r は char で函数引数にある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test070.c</source>
+    <abstract>return r ( r は unsigned char で函数引数にある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test071.c</source>
+    <abstract>return r ( r は short int で函数引数にある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test072.c</source>
+    <abstract>return r ( r は unsigned short int で函数引数にある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test073.c</source>
+    <abstract>return r ( r は int で函数引数にある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test074.c</source>
+    <abstract>return r ( r は unsigned int で函数引数にある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test075.c</source>
+    <abstract>return r ( r は float で函数引数にある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test076.c</source>
+    <abstract>return r ( r は double で函数引数にある )</abstract>
+</item>
+
+
+<item>
+    <source>3_call/test077.c</source>
+    <abstract>return r ( r は char でメモリにある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test078.c</source>
+    <abstract>return r ( r は unsigned char でメモリにある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test079.c</source>
+    <abstract>return r ( r は short int でメモリにある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test080.c</source>
+    <abstract>return r ( r は unsigned short int でメモリにある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test081.c</source>
+    <abstract>return r ( r は int でメモリにある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test082.c</source>
+    <abstract>return r ( r は unsigned int でメモリにある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test083.c</source>
+    <abstract>return r ( r は float でメモリにある )</abstract>
+</item>
+
+<item>
+    <source>3_call/test084.c</source>
+    <abstract>return r ( r は double でメモリにある )</abstract>
+</item>
+
+
+<item>
+    <source>3_call/test085.c</source>
+    <abstract>param x ( x は char で定数 )</abstract>
+</item>
+
+<item>
+    <source>3_call/test086.c</source>
+    <abstract>param x ( x は unsigned char で定数 )</abstract>
+</item>
+
+<item>
+    <source>3_call/test087.c</source>
+    <abstract>param x ( x は short int で定数 )</abstract>
+</item>
+
+<item>
+    <source>3_call/test088.c</source>
+    <abstract>param x ( x は unsigned short int で定数 )</abstract>
+</item>
+
+<item>
+    <source>3_call/test089.c</source>
+    <abstract>param x ( x は int で定数 )</abstract>
+</item>
+
+<item>
+    <source>3_call/test090.c</source>
+    <abstract>param x ( x は unsigned int で定数 )</abstract>
+</item>
+
+<item>
+    <source>3_call/test091.c</source>
+    <abstract>param x ( x は long int で定数 )</abstract>
+</item>
+
+<item>
+    <source>3_call/test092.c</source>
+    <abstract>param x ( x は unsigned long int で定数 )</abstract>
+</item>
+
+<item>
+    <source>3_call/test093.c</source>
+    <abstract>param x ( x は float で定数 )</abstract>
+</item>
+
+<item>
+    <source>3_call/test094.c</source>
+    <abstract>param x ( x は double で定数 )</abstract>
+</item>
+
+
+<item>
+    <source>3_call/test095.c</source>
+    <abstract>return r ( r は char で定数 )</abstract>
+</item>
+
+<item>
+    <source>3_call/test096.c</source>
+    <abstract>return r ( r は unsigned char で定数 )</abstract>
+</item>
+
+<item>
+    <source>3_call/test097.c</source>
+    <abstract>return r ( r は short int で定数 )</abstract>
+</item>
+
+<item>
+    <source>3_call/test098.c</source>
+    <abstract>return r ( r は unsigned short int で定数 )</abstract>
+</item>
+
+<item>
+    <source>3_call/test099.c</source>
+    <abstract>return r ( r は int で定数 )</abstract>
+</item>
+
+<item>
+    <source>3_call/test100.c</source>
+    <abstract>return r ( r は unsigned int で定数 )</abstract>
+</item>
+
+<item>
+    <source>3_call/test101.c</source>
+    <abstract>return r ( r は long int で定数 )</abstract>
+</item>
+
+<item>
+    <source>3_call/test102.c</source>
+    <abstract>return r ( r は unsigned long int で定数 )</abstract>
+</item>
+
+<item>
+    <source>3_call/test103.c</source>
+    <abstract>return r ( r は float で定数 )</abstract>
+</item>
+
+<item>
+    <source>3_call/test104.c</source>
+    <abstract>return r ( r は double で定数 )</abstract>
+</item>
+
+
+<item>
+    <source>3_call/test105.c</source>
+    <abstract>param x ( x は const char * )</abstract>
+</item>
+
+<item>
+    <source>3_call/test106.c</source>
+    <abstract>ポインタ変数経由の函数呼び出し.</abstract>
+</item>
+
+
+<item>
+    <source>3_call/test107.c</source>
+    <abstract>param x ( long long int )</abstract>
+</item>
+
+
+<item>
+    <source>4_param/test000.c</source>
+    <abstract>param メモリ</abstract>
+    <type>char</type>
+</item>
+
+<item>
+    <source>4_param/test001.c</source>
+    <abstract>param スタック</abstract>
+    <type>char</type>
+</item>
+
+<item>
+    <source>4_param/test002.c</source>
+    <abstract>param 定数</abstract>
+    <type>char</type>
+</item>
+
+<item>
+    <source>4_param/test003.c</source>
+    <abstract>param メモリ</abstract>
+    <type>unsigned char</type>
+</item>
+
+<item>
+    <source>4_param/test004.c</source>
+    <abstract>param スタック</abstract>
+    <type>unsigned char</type>
+</item>
+
+<item>
+    <source>4_param/test005.c</source>
+    <abstract>param 定数</abstract>
+    <type>unsigned char</type>
+</item>
+
+<item>
+    <source>4_param/test006.c</source>
+    <abstract>param メモリ</abstract>
+    <type>short int</type>
+</item>
+
+<item>
+    <source>4_param/test007.c</source>
+    <abstract>param スタック</abstract>
+    <type>short int</type>
+</item>
+
+<item>
+    <source>4_param/test008.c</source>
+    <abstract>param 定数</abstract>
+    <type>short int</type>
+</item>
+
+<item>
+    <source>4_param/test009.c</source>
+    <abstract>param メモリ</abstract>
+    <type>unsigned short int</type>
+</item>
+
+<item>
+    <source>4_param/test010.c</source>
+    <abstract>param スタック</abstract>
+    <type>unsigned short int</type>
+</item>
+
+<item>
+    <source>4_param/test011.c</source>
+    <abstract>param 定数</abstract>
+    <type>unsigned short int</type>
+</item>
+
+<item>
+    <source>4_param/test012.c</source>
+    <abstract>param メモリ</abstract>
+    <type>int</type>
+</item>
+
+<item>
+    <source>4_param/test013.c</source>
+    <abstract>param スタック</abstract>
+    <type>int</type>
+</item>
+
+<item>
+    <source>4_param/test014.c</source>
+    <abstract>param 定数</abstract>
+    <type>int</type>
+</item>
+
+<item>
+    <source>4_param/test015.c</source>
+    <abstract>param メモリ</abstract>
+    <type>unsigned int</type>
+</item>
+
+<item>
+    <source>4_param/test016.c</source>
+    <abstract>param スタック</abstract>
+    <type>unsigned int</type>
+</item>
+
+<item>
+    <source>4_param/test017.c</source>
+    <abstract>param 定数</abstract>
+    <type>unsigned int</type>
+</item>
+
+<item>
+    <source>4_param/test018.c</source>
+    <abstract>param メモリ</abstract>
+    <type>long int</type>
+</item>
+
+<item>
+    <source>4_param/test019.c</source>
+    <abstract>param スタック</abstract>
+    <type>long int</type>
+</item>
+
+<item>
+    <source>4_param/test020.c</source>
+    <abstract>param 定数</abstract>
+    <type>long int</type>
+</item>
+
+<item>
+    <source>4_param/test021.c</source>
+    <abstract>param メモリ</abstract>
+    <type>unsigned long int</type>
+</item>
+
+<item>
+    <source>4_param/test022.c</source>
+    <abstract>param スタック</abstract>
+    <type>unsigned long int</type>
+</item>
+
+<item>
+    <source>4_param/test023.c</source>
+    <abstract>param 定数</abstract>
+    <type>unsigned long int</type>
+</item>
+
+<item>
+    <source>4_param/test024.c</source>
+    <abstract>param メモリ</abstract>
+    <type>long long int</type>
+</item>
+
+<item>
+    <source>4_param/test025.c</source>
+    <abstract>param スタック</abstract>
+    <type>long long int</type>
+</item>
+
+<item>
+    <source>4_param/test026.c</source>
+    <abstract>param 定数</abstract>
+    <type>long long int</type>
+</item>
+
+<item>
+    <source>4_param/test027.c</source>
+    <abstract>param メモリ</abstract>
+    <type>unsigned long long int</type>
+</item>
+
+<item>
+    <source>4_param/test028.c</source>
+    <abstract>param スタック</abstract>
+    <type>unsigned long long int</type>
+</item>
+
+<item>
+    <source>4_param/test029.c</source>
+    <abstract>param 定数</abstract>
+    <type>unsigned long long int</type>
+</item>
+
+<item>
+    <source>4_param/test030.c</source>
+    <abstract>param メモリ</abstract>
+    <type>pointer</type>
+</item>
+
+<item>
+    <source>4_param/test031.c</source>
+    <abstract>param スタック</abstract>
+    <type>pointer</type>
+</item>
+
+<item>
+    <source>4_param/test032.c</source>
+    <abstract>param 定数</abstract>
+    <type>pointer</type>
+</item>
+
+<item>
+    <source>4_param/test033.c</source>
+    <abstract>param メモリ</abstract>
+    <type>float</type>
+</item>
+
+<item>
+    <source>4_param/test034.c</source>
+    <abstract>param スタック</abstract>
+    <type>float</type>
+</item>
+
+<item>
+    <source>4_param/test035.c</source>
+    <abstract>param 定数</abstract>
+    <type>float</type>
+</item>
+
+<item>
+    <source>4_param/test036.c</source>
+    <abstract>param メモリ</abstract>
+    <type>double</type>
+</item>
+
+<item>
+    <source>4_param/test037.c</source>
+    <abstract>param スタック</abstract>
+    <type>double</type>
+</item>
+
+<item>
+    <source>4_param/test038.c</source>
+    <abstract>param 定数</abstract>
+    <type>double</type>
+</item>
+
+<item>
+    <source>4_param/test039.c</source>
+    <abstract>param メモリ</abstract>
+    <type>long double</type>
+</item>
+
+<item>
+    <source>4_param/test040.c</source>
+    <abstract>param スタック</abstract>
+    <type>long double</type>
+</item>
+
+<item>
+    <source>4_param/test041.c</source>
+    <abstract>param 定数</abstract>
+    <type>long double</type>
+</item>
+
+<item>
+    <source>4_param/test042.c</source>
+    <abstract>param メモリ</abstract>
+    <type>構造体</type>
+</item>
+
+<item>
+    <source>4_param/test043.c</source>
+    <abstract>param スタック</abstract>
+    <type>構造体</type>
+</item>
+
+<item>
+    <source>4_param/test044.c</source>
+    <abstract>20 個の整数引数</abstract>
+</item>
+
+<item>
+    <source>4_param/test045.c</source>
+    <abstract>20 個の浮動小数点数引数</abstract>
+</item>
+
+<item>
+    <source>4_param/test046.c</source>
+    <abstract>40 個の整数引数と浮動小数点数引数</abstract>
+</item>
+
+<item>
+    <source>4_param/test047.c</source>
+    <abstract>80 個の引数</abstract>
+</item>
+
+<item>
+    <source>4_param/test048.c</source>
+    <abstract>サイズの大きい構造体引数</abstract>
+</item>
+
+<item>
+    <source>4_param/test049.c</source>
+    <abstract>サイズの大きい構造体引数</abstract>
+</item>
+
+<item>
+    <source>4_param/test050.c</source>
+    <abstract>サイズの大きい構造体引数</abstract>
+</item>
+
+<item>
+    <source>4_param/test051.c</source>
+    <abstract>サイズの大きい構造体引数</abstract>
+</item>
+
+<item>
+    <source>4_param/test052.c</source>
+    <abstract>サイズの大きい構造体引数</abstract>
+</item>
+
+
+<item>
+    <source>5_return/test000.c</source>
+    <abstract>メモリ = call</abstract>
+    <type>char</type>
+</item>
+
+<item>
+    <source>5_return/test001.c</source>
+    <abstract>スタック = call</abstract>
+    <type>char</type>
+</item>
+
+<item>
+    <source>5_return/test002.c</source>
+    <abstract>メモリ = call</abstract>
+    <type>unsigned char</type>
+</item>
+
+<item>
+    <source>5_return/test003.c</source>
+    <abstract>スタック = call</abstract>
+    <type>unsigned char</type>
+</item>
+
+<item>
+    <source>5_return/test004.c</source>
+    <abstract>メモリ = call</abstract>
+    <type>short int</type>
+</item>
+
+<item>
+    <source>5_return/test005.c</source>
+    <abstract>スタック = call</abstract>
+    <type>short int</type>
+</item>
+
+<item>
+    <source>5_return/test006.c</source>
+    <abstract>メモリ = call</abstract>
+    <type>unsigned short int</type>
+</item>
+
+<item>
+    <source>5_return/test007.c</source>
+    <abstract>スタック = call</abstract>
+    <type>unsigned short int</type>
+</item>
+
+<item>
+    <source>5_return/test008.c</source>
+    <abstract>メモリ = call</abstract>
+    <type>int</type>
+</item>
+
+<item>
+    <source>5_return/test009.c</source>
+    <abstract>スタック = call</abstract>
+    <type>int</type>
+</item>
+
+<item>
+    <source>5_return/test010.c</source>
+    <abstract>メモリ = call</abstract>
+    <type>unsigned int</type>
+</item>
+
+<item>
+    <source>5_return/test011.c</source>
+    <abstract>スタック = call</abstract>
+    <type>unsigned int</type>
+</item>
+
+<item>
+    <source>5_return/test012.c</source>
+    <abstract>メモリ = call</abstract>
+    <type>long int</type>
+</item>
+
+<item>
+    <source>5_return/test013.c</source>
+    <abstract>スタック = call</abstract>
+    <type>long int</type>
+</item>
+
+<item>
+    <source>5_return/test014.c</source>
+    <abstract>メモリ = call</abstract>
+    <type>unsigned long int</type>
+</item>
+
+<item>
+    <source>5_return/test015.c</source>
+    <abstract>スタック = call</abstract>
+    <type>unsigned long int</type>
+</item>
+
+<item>
+    <source>5_return/test016.c</source>
+    <abstract>メモリ = call</abstract>
+    <type>long long int</type>
+</item>
+
+<item>
+    <source>5_return/test017.c</source>
+    <abstract>スタック = call</abstract>
+    <type>long long int</type>
+</item>
+
+<item>
+    <source>5_return/test018.c</source>
+    <abstract>メモリ = call</abstract>
+    <type>unsigned long long int</type>
+</item>
+
+<item>
+    <source>5_return/test019.c</source>
+    <abstract>スタック = call</abstract>
+    <type>unsigned long long int</type>
+</item>
+
+<item>
+    <source>5_return/test020.c</source>
+    <abstract>メモリ = call</abstract>
+    <type>pointer</type>
+</item>
+
+<item>
+    <source>5_return/test021.c</source>
+    <abstract>スタック = call</abstract>
+    <type>pointer</type>
+</item>
+
+<item>
+    <source>5_return/test022.c</source>
+    <abstract>メモリ = call</abstract>
+    <type>float</type>
+</item>
+
+<item>
+    <source>5_return/test023.c</source>
+    <abstract>スタック = call</abstract>
+    <type>float</type>
+</item>
+
+<item>
+    <source>5_return/test024.c</source>
+    <abstract>メモリ = call</abstract>
+    <type>double</type>
+</item>
+
+<item>
+    <source>5_return/test025.c</source>
+    <abstract>スタック = call</abstract>
+    <type>double</type>
+</item>
+
+<item>
+    <source>5_return/test026.c</source>
+    <abstract>メモリ = call</abstract>
+    <type>long double</type>
+</item>
+
+<item>
+    <source>5_return/test027.c</source>
+    <abstract>スタック = call</abstract>
+    <type>long double</type>
+</item>
+
+<item>
+    <source>5_return/test028.c</source>
+    <abstract>メモリ = call</abstract>
+    <type>構造体</type>
+</item>
+
+<item>
+    <source>5_return/test029.c</source>
+    <abstract>スタック = call</abstract>
+    <type>構造体</type>
+</item>
+
+
+<item>
+    <source>5_return/test030.c</source>
+    <abstract>大きいサイズの構造体を返す函数の呼び出し</abstract>
+    <type>構造体</type>
+</item>
+
+<item>
+    <source>6_va/test000.c</source>
+    <abstract>可変個パラメータ取る函数に 20 個の int</abstract>
+</item>
+
+<item>
+    <source>6_va/test001.c</source>
+    <abstract>可変個パラメータ取る函数に 20 個の double</abstract>
+</item>
+
+<item>
+    <source>6_va/test002.c</source>
+    <abstract>可変個パラメータ取る函数に 20 個の char*</abstract>
+</item>
+
+<item>
+    <source>6_va/test003.c</source>
+    <abstract>可変個パラメータ取る函数に 20 個の long long int</abstract>
+</item>
+
+<item>
+    <source>6_va/test004.c</source>
+    <abstract>可変個パラメータ取る函数に 20 個の long double</abstract>
+</item>
+
+<item>
+    <source>6_va/test005.c</source>
+    <abstract>可変個パラメータ取る函数に 20 個がそれぞれ違う型の引数</abstract>
+</item>
+
+<item>
+    <source>6_va/test006.c</source>
+    <abstract>可変個パラメータ取る函数に 80 個の引数</abstract>
+</item>
+
+<item>
+    <source>6_va/test007.c</source>
+    <abstract>構造体引数と可変個引数</abstract>
+</item>
+
+<item>
+    <source>6_va/test008.c</source>
+    <abstract>構造体引数と可変個引数</abstract>
+</item>
+
+</test_item>
+
+

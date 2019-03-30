@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<item>
+    <source>1_ok/test000.c</source>
+    <abstract>
+    宣言において declarator を省略できるケース
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test001.c</source>
+    <abstract>
+    リンケージなしの identifier
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test002.c</source>
+    <abstract>
+    同一スコープで同一のオブジェクトもしくは函数を参照する宣言 
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test003.c</source>
+    <abstract>
+    宣言されたオブジェクトが不完全型を持つ宣言
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test000.c</source>
+    <abstract>
+    空の宣言
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test001.c</source>
+    <abstract>
+    リンケージなしの identifier が同一名, 同一スコープにある
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test002.c</source>
+    <abstract>
+    同一スコープで同一のオブジェクトもしくは函数を参照する宣言 
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test003.c</source>
+    <abstract>
+    宣言されたオブジェクトが不完全型を持つ宣言
+    </abstract>
+</item>
+
+</test_item>

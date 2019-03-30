@@ -1,0 +1,2 @@
+sizeof(struct S1) = 1
+sizeof(struct S2) = 4

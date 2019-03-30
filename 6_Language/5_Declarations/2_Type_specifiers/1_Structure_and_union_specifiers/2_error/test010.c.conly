@@ -1,0 +1,34 @@
+/*
+ * Check if parameter scope struct declaration works well.
+ * (abstract declarator parameter scope at global scope function declaration)
+ */
+
+struct S {
+  int a;
+};
+
+typedef int (*ARRAY_OF_POINTER_TO_FUNC[10])(struct S);
+
+extern ARRAY_OF_POINTER_TO_FUNC* pa;
+
+int (*(*pa)[10])(struct S);  // ok. because previous type of `pa' is
+                             // compatible with current type of `pa'
+
+extern int (*(*pa)[10])(struct S);  // of cause ok
+
+// Now this test really starts from here.
+int (*(*pa2)[10])(struct SS {int a; });
+
+extern int (*(*pa2)[10])(struct SS {int a; });  // error.
+/* because struct SS at previous pa2 is not compatible struct SS at
+   current pa2 */
+
+void f(int (*(*pa3)[10])(struct SSS {int a; }));
+
+void f(int (*(*pa3)[10])(struct SSS {int a; }));  // error
+/* because of the same reason. previous struct SSS is not compatible with
+   current struct SSS. */
+
+void g(int (*(*)[10])(struct SSSS {int a; }));
+
+void g(int (*(*)[10])(struct SSSS {int a; }));  // error. Samely.

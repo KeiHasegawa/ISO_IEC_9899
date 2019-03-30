@@ -1,0 +1,8 @@
+case 0:
+case 1:
+case 2:
+default:
+case 'a':
+case 'b':
+case 'c':
+default:

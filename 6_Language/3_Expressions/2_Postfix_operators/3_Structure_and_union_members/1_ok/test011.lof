@@ -1,0 +1,6 @@
+`f' called
+pu->i = 0x3f800000
+pu->f = 1.000000
+`g' called
+a.d = 1.500000
+a.c = hello world

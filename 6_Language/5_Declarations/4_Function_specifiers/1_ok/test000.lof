@@ -1,0 +1,24 @@
+`test000' called
+hello
+`test001' called
+x = 5
+`test001' called
+y = 2
+`test002' called
+`test003' called
+ok
+`test002' called
+ok
+`test002' called
+`test003' called
+ok
+`test002' called
+ok
+counter = 0
+`test004' called
+counter = 1
+`test004' called
+counter = 2
+`test004' called
+counter = 3
+`test004' called

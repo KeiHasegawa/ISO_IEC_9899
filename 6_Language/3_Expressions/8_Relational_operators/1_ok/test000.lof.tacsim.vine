@@ -1,0 +1,450 @@
+`test0000' called
+1 < 0 = 0
+`test0001' called
+1 < 1 = 0
+`test0002' called
+1 < 2 = 1
+`test0003' called
+-1 < -2 = 0
+`test0004' called
+-1 < 65535 = 1
+`test0005' called
+-1 < 0 = 1
+`test0006' called
+1 < 0 = 0
+`test0007' called
+1 < 1 = 0
+`test0008' called
+1 < 2 = 1
+`test0009' called
+-1 < -2 = 0
+`test0010' called
+-1 < 18446744073709551615 = 0
+`test0011' called
+-1 < 0.000000 = 1
+`test0012' called
+1 < 0.000000 = 0
+`test0013' called
+1 < 1.000000 = 0
+`test0014' called
+1 < 2 = 1
+`test0100' called
+2 < 1 = 0
+`test0101' called
+2 < 2 = 0
+`test0102' called
+2 < 3 = 1
+`test0103' called
+-2 < -3 = 0
+`test0104' called
+-2 < 65534 = 1
+`test0105' called
+-2 < -1 = 1
+`test0106' called
+2 < 1 = 0
+`test0107' called
+2 < 2 = 0
+`test0108' called
+2 < 3 = 1
+`test0109' called
+-2 < -3 = 0
+`test0110' called
+-2 < 18446744073709551614 = 0
+`test0111' called
+-2 < -1.000000 = 1
+`test0112' called
+2 < 1.000000 = 0
+`test0113' called
+2 < 2.000000 = 0
+`test0114' called
+2 < 3 = 1
+`test0200' called
+3 < 2 = 0
+`test0201' called
+3 < 3 = 0
+`test0202' called
+3 < 4 = 1
+`test0203' called
+253 < -4 = 0
+`test0204' called
+253 < 65533 = 1
+`test0205' called
+253 < -2 = 0
+`test0206' called
+3 < 2 = 0
+`test0207' called
+3 < 3 = 0
+`test0208' called
+3 < 4 = 1
+`test0209' called
+253 < -4 = 0
+`test0210' called
+253 < 18446744073709551613 = 1
+`test0211' called
+253 < -2.000000 = 0
+`test0212' called
+3 < 2.000000 = 0
+`test0213' called
+3 < 3.000000 = 0
+`test0214' called
+3 < 4 = 1
+`test0300' called
+4 < 3 = 0
+`test0301' called
+4 < 4 = 0
+`test0302' called
+4 < 5 = 1
+`test0303' called
+-4 < -5 = 0
+`test0304' called
+-4 < 65532 = 1
+`test0305' called
+-4 < -3 = 1
+`test0306' called
+4 < 3 = 0
+`test0307' called
+4 < 4 = 0
+`test0308' called
+4 < 5 = 1
+`test0309' called
+-4 < -5 = 0
+`test0310' called
+-4 < 18446744073709551612 = 0
+`test0311' called
+-4 < -3.000000 = 1
+`test0312' called
+4 < 3.000000 = 0
+`test0313' called
+4 < 4.000000 = 0
+`test0314' called
+4 < 5 = 1
+`test0400' called
+5 < 4 = 0
+`test0401' called
+5 < 5 = 0
+`test0402' called
+5 < 6 = 1
+`test0403' called
+65531 < -6 = 0
+`test0404' called
+65531 < 65531 = 0
+`test0405' called
+65531 < -4 = 0
+`test0406' called
+5 < 4 = 0
+`test0407' called
+5 < 5 = 0
+`test0408' called
+5 < 6 = 1
+`test0409' called
+65531 < -6 = 0
+`test0410' called
+65531 < 18446744073709551611 = 1
+`test0411' called
+65531 < -4.000000 = 0
+`test0412' called
+5 < 4.000000 = 0
+`test0413' called
+5 < 5.000000 = 0
+`test0414' called
+5 < 6 = 1
+`test0500' called
+-6 < -7 = 0
+`test0501' called
+-6 < -6 = 0
+`test0502' called
+-6 < 251 = 1
+`test0503' called
+6 < 5 = 0
+`test0504' called
+6 < 6 = 0
+`test0505' called
+6 < 7 = 1
+`test0506' called
+-6 < 4294967289 = 0
+`test0507' called
+-6 < -6 = 0
+`test0508' called
+-6 < 4294967291 = 1
+`test0509' called
+6 < 5 = 0
+`test0510' called
+6 < 6 = 0
+`test0511' called
+6 < 7.000000 = 1
+`test0512' called
+-6 < -7.000000 = 0
+`test0513' called
+-6 < -6.000000 = 0
+`test0514' called
+-6 < -5 = 1
+`test0600' called
+4294967289 < -8 = 0
+`test0601' called
+4294967289 < -7 = 0
+`test0602' called
+4294967289 < 250 = 0
+`test0603' called
+7 < 6 = 0
+`test0604' called
+7 < 7 = 0
+`test0605' called
+7 < 8 = 1
+`test0606' called
+4294967289 < 4294967288 = 0
+`test0607' called
+4294967289 < -7 = 0
+`test0608' called
+4294967289 < 4294967290 = 1
+`test0609' called
+7 < 6 = 0
+`test0610' called
+7 < 7 = 0
+`test0611' called
+7 < 8.000000 = 1
+`test0612' called
+4294967289 < -8.000000 = 0
+`test0613' called
+4294967289 < -7.000000 = 0
+`test0614' called
+4294967289 < -6 = 1
+`test0700' called
+8 < 7 = 0
+`test0701' called
+8 < 8 = 0
+`test0702' called
+8 < 9 = 1
+`test0703' called
+-8 < -9 = 0
+`test0704' called
+-8 < 65528 = 1
+`test0705' called
+-8 < -7 = 1
+`test0706' called
+8 < 7 = 0
+`test0707' called
+8 < 8 = 0
+`test0708' called
+8 < 9 = 1
+`test0709' called
+-8 < -9 = 0
+`test0710' called
+-8 < 18446744073709551608 = 0
+`test0711' called
+-8 < -7.000000 = 1
+`test0712' called
+8 < 7.000000 = 0
+`test0713' called
+8 < 8.000000 = 0
+`test0714' called
+8 < 9 = 1
+`test0800' called
+4294967287 < -10 = 0
+`test0801' called
+4294967287 < -9 = 0
+`test0802' called
+4294967287 < 248 = 0
+`test0803' called
+9 < 8 = 0
+`test0804' called
+9 < 9 = 0
+`test0805' called
+9 < 10 = 1
+`test0806' called
+4294967287 < 4294967286 = 0
+`test0807' called
+4294967287 < -9 = 0
+`test0808' called
+4294967287 < 4294967288 = 1
+`test0809' called
+9 < 8 = 0
+`test0810' called
+9 < 9 = 0
+`test0811' called
+9 < 10.000000 = 1
+`test0812' called
+4294967287 < -10.000000 = 0
+`test0813' called
+4294967287 < -9.000000 = 0
+`test0814' called
+4294967287 < -8 = 1
+`test0900' called
+10 < 9 = 0
+`test0901' called
+10 < 10 = 0
+`test0902' called
+10 < 11 = 1
+`test0903' called
+-10 < -11 = 0
+`test0904' called
+-10 < 65526 = 1
+`test0905' called
+-10 < -9 = 1
+`test0906' called
+10 < 9 = 0
+`test0907' called
+10 < 10 = 0
+`test0908' called
+10 < 11 = 1
+`test0909' called
+-10 < -11 = 0
+`test0910' called
+-10 < 18446744073709551606 = 0
+`test0911' called
+-10 < -9.000000 = 1
+`test0912' called
+10 < 9.000000 = 0
+`test0913' called
+10 < 10.000000 = 0
+`test0914' called
+10 < 11 = 1
+`test1000' called
+18446744073709551605 < -12 = 0
+`test1001' called
+18446744073709551605 < -11 = 0
+`test1002' called
+18446744073709551605 < 246 = 0
+`test1003' called
+11 < 10 = 0
+`test1004' called
+11 < 11 = 0
+`test1005' called
+11 < 12 = 1
+`test1006' called
+18446744073709551605 < 4294967284 = 0
+`test1007' called
+18446744073709551605 < -11 = 0
+`test1008' called
+18446744073709551605 < 4294967286 = 0
+`test1009' called
+11 < 10 = 0
+`test1010' called
+11 < 11 = 0
+`test1011' called
+11 < 12.000000 = 1
+`test1012' called
+18446744073709551605 < -12.000000 = 0
+`test1013' called
+18446744073709551605 < -11.000000 = 0
+`test1014' called
+18446744073709551605 < -10 = 1
+`test1100' called
+12.000000 < 11 = 0
+`test1101' called
+12.000000 < 12 = 0
+`test1102' called
+12.000000 < 13 = 1
+`test1103' called
+-12.000000 < -13 = 0
+`test1104' called
+-12.000000 < 65524 = 1
+`test1105' called
+-12.000000 < -11 = 1
+`test1106' called
+12.000000 < 11 = 0
+`test1107' called
+12.000000 < 12 = 0
+`test1108' called
+12.000000 < 13 = 1
+`test1109' called
+-12.000000 < -13 = 0
+`test1110' called
+-12.000000 < 18446744073709551604 = 1
+`test1111' called
+-12.000000 < -11.000000 = 1
+`test1112' called
+12.000000 < 11.000000 = 0
+`test1113' called
+12.000000 < 12.000000 = 0
+`test1114' called
+12.000000 < 13 = 1
+`test1200' called
+-13.000000 < -14 = 0
+`test1201' called
+-13.000000 < -13 = 0
+`test1202' called
+-13.000000 < 244 = 1
+`test1203' called
+13.000000 < 12 = 0
+`test1204' called
+13.000000 < 13 = 0
+`test1205' called
+13.000000 < 14 = 1
+`test1206' called
+-13.000000 < 4294967282 = 1
+`test1207' called
+-13.000000 < -13 = 0
+`test1208' called
+-13.000000 < 4294967284 = 1
+`test1209' called
+13.000000 < 12 = 0
+`test1210' called
+13.000000 < 13 = 0
+`test1211' called
+13.000000 < 14.000000 = 1
+`test1212' called
+-13.000000 < -14.000000 = 0
+`test1213' called
+-13.000000 < -13.000000 = 0
+`test1214' called
+-13.000000 < -12 = 1
+`test1300' called
+14.000000 < 13 = 0
+`test1301' called
+14.000000 < 14 = 0
+`test1302' called
+14.000000 < 15 = 1
+`test1303' called
+-14.000000 < -15 = 0
+`test1304' called
+-14.000000 < 65522 = 1
+`test1305' called
+-14.000000 < -13 = 1
+`test1306' called
+14.000000 < 13 = 0
+`test1307' called
+14.000000 < 14 = 0
+`test1308' called
+14.000000 < 15 = 1
+`test1309' called
+-14.000000 < -15 = 0
+`test1310' called
+-14.000000 < 18446744073709551602 = 1
+`test1311' called
+-14.000000 < -13.000000 = 1
+`test1312' called
+14.000000 < 13.000000 = 0
+`test1313' called
+14.000000 < 14.000000 = 0
+`test1314' called
+14.000000 < 15 = 1
+`test1400' called
+-15 < -16 = 0
+`test1401' called
+-15 < -15 = 0
+`test1402' called
+-15 < 242 = 1
+`test1403' called
+15 < 14 = 0
+`test1404' called
+15 < 15 = 0
+`test1405' called
+15 < 16 = 1
+`test1406' called
+-15 < 4294967280 = 0
+`test1407' called
+-15 < -15 = 0
+`test1408' called
+-15 < 4294967282 = 1
+`test1409' called
+15 < 14 = 0
+`test1410' called
+15 < 15 = 0
+`test1411' called
+15 < 16.000000 = 1
+`test1412' called
+-15 < -16.000000 = 0
+`test1413' called
+-15 < -15.000000 = 0
+`test1414' called
+-15 < -14 = 1

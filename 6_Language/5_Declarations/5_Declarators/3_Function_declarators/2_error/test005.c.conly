@@ -1,0 +1,9 @@
+/*
+ * If, in a parameter declaration, an identifier can be treated as a typedef
+ * name or as a parameter name, it shall be taken as a typedef name.
+ */
+typedef int A;
+
+void test000(A) /* error. parameter name omitted */
+{
+}

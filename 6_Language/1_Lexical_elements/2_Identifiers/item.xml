@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<section url="0_Identifiers/item.xml">
+    <title>6.1.2 Identifiers</title>
+</section>
+
+<section url="1_Scopes_of_identifiers/item.xml">
+    <title>6.1.2.1 Scopes of identifiers</title>
+</section>
+
+<section url="2_Linkages_of_identifiers/item.xml">
+    <title>6.1.2.2 Linkages of identifiers</title>
+</section>
+
+<section url="3_Name_spaces_of_identifiers/item.xml">
+    <title>6.1.2.3 Name spaces of identifiers</title>
+</section>
+
+<section url="4_Storage_durations_of_objects/item.xml">
+    <title>6.1.2.4 Storage durations of objects</title>
+</section>
+
+<section url="5_Types/item.xml">
+    <title>6.1.2.5 Types</title>
+</section>
+
+<section url="6_Compatible_type_and_composite_type/item.xml">
+    <title>6.1.2.6 Compatible type and composite type</title>
+</section>
+
+<section url="7_Predefined_identifiers/item.xml">
+    <title>6.1.2.7 Predefined identifiers</title>
+</section>
+
+<section url="8_Representations_of_types/item.xml">
+    <title>6.1.2.8 Representations of types</title>
+</section>
+
+</test_item>

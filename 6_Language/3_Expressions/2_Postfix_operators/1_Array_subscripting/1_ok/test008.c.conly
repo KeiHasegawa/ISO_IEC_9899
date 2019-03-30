@@ -1,0 +1,87 @@
+/*
+ * Check if bit field member declaration is recognized.
+ */
+#include <stdio.h>
+
+int a[10];
+
+struct T {
+  unsigned int a : &a[1]-&a[0]; /* 2nd and 3rd `a' reference ::a */
+  unsigned int b : &a[3]-&a[2];
+  /* 1st and 2nd `a' reference ::a in C, but reference T::a in C++ */
+  unsigned int c : &a[5]-&a[4];
+};
+
+extern void f(void);
+
+int main(void)
+{
+  struct T t = { 0, 1, 0 };
+  if ( t.a )
+    printf("error\n");
+  else
+    printf("ok\n");
+  if ( t.b )
+    printf("ok\n");
+  else
+    printf("error\n");
+  if ( t.c )
+    printf("error\n");
+  else
+    printf("ok\n");
+  t.a = 1;
+  t.b = 0;
+  t.c = 1;
+  if ( t.a )
+    printf("ok\n");
+  else
+    printf("error\n");
+  if ( t.b )
+    printf("error\n");
+  else
+    printf("ok\n");
+  if ( t.c )
+    printf("ok\n");
+  else
+    printf("error\n");
+  f();
+  return 0;
+}
+
+void f(void)
+{
+  int b[10];
+  struct S {
+    unsigned int a : &b[1] - &b[0];
+    unsigned int b : &b[3] - &b[2];
+    unsigned int c : &b[5] - &b[4];
+  };
+  struct S s = { 1, 0, 1 };
+  if ( s.a )
+    printf("ok\n");
+  else
+    printf("error\n");
+  if ( s.b )
+    printf("error\n");
+  else
+    printf("ok\n");
+  if ( s.c )
+    printf("ok\n");
+  else
+    printf("error\n");
+  s.a = 0;
+  s.b = 1;
+  s.c = 0;
+  if ( s.a )
+    printf("error\n");
+  else
+    printf("ok\n");
+  if ( s.b )
+    printf("ok\n");
+  else
+    printf("error\n");
+  if ( s.c )
+    printf("error\n");
+  else
+    printf("ok\n");
+}

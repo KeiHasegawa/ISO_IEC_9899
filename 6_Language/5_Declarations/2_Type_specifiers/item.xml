@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<section url="0_Type/item.xml">
+    <title>6.5.2 Type specifiers</title>
+</section>
+
+<section url="1_Structure_and_union_specifiers/item.xml">
+    <title>6.5.2.1 Structure and union specifiers</title>
+</section>
+
+<section url="2_Enumeration_specifiers/item.xml">
+    <title>6.5.2.2 Enumeration specifiers</title>
+</section>
+
+<section url="3_Tags/item.xml">
+    <title>6.5.2.3 Tags</title>
+</section>
+
+</test_item>

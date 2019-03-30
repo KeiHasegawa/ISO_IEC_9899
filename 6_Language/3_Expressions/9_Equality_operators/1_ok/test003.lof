@@ -1,0 +1,40 @@
+`test00' called
+a != b = 1
+`test00' called
+a != b = 0
+`test00' called
+a != b = 1
+test01' called
+&a[1] != &a[0] = 1
+&a[1] != &a[1] = 0
+&a[1] != &a[2] = 1
+test02' called
+&array[1] != &array[0] = 1
+&array[1] != &array[1] = 0
+&array[1] != &array[2] = 1
+`test03' called
+ps != &s = 1
+`test03' called
+ps != &s = 0
+`test03' called
+ps != &s = 1
+`test04' called
+p != v = 0
+q != v = 1
+`test04' called
+p != v = 1
+q != v = 0
+`test05' called
+p != 0 = 1
+0x0 != p = 1
+p != 0U = 1
+0L != q = 0
+q != 0LL = 0
+0UL != q = 0
+`test05' called
+p != 0 = 0
+0x0 != p = 0
+p != 0U = 0
+0L != q = 1
+q != 0LL = 1
+0UL != q = 1

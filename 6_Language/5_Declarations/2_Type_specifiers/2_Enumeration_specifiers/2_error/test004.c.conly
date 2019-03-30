@@ -1,0 +1,7 @@
+/*
+ * Check if parameter scope enum declaration works well.
+ * (global scope function declaration)
+ */
+void f(enum E { a, b, c } e);
+
+void f(enum E { a, b, c } e);  // error

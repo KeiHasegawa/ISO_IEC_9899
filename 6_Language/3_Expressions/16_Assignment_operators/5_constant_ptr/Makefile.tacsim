@@ -1,0 +1,40 @@
+DIFF = diff
+TOUCH = touch
+DOS2UNIX = dos2unix.csh
+RUN =
+CC1 = hcc1.exe
+CPP = hcpp.exe
+CPP_FLAG = $(EXTRA_CPP_FLAG) \
+-D__declspec\(a\)= -D__cdecl= -D__inline__=inline -D__extension__= \
+-D__attribute__\(a\)= -D__builtin_va_list='char*' \
+-D__builtin_stdarg_start=__builtin_va_start -D__asm__\(a\)= -W 0 -H
+
+
+all:
+#all:test001.lof
+
+test001.lof:test001.log
+	$(DOGV) $(DIFF) $< $@
+	$(TOUCH) $@
+
+test001.log:test001.i
+	$(DOGV) $(CC1) $< > $@
+	$(DOS2UNIX) $@
+
+test001.i:test001.c
+	$(DOGV) $(CPP) -o $@ $(CPP_FLAG) $<
+
+test001.c:test000.c test001.h
+	$(DOGV) cat test001.h test000.c > $@
+
+test001.h:test000.dmp conv.pl
+	$(DOGV) perl conv.pl test000.dmp > $@
+
+test000.dmp:test000.i
+	$(DOGV) $(CC1) $< --generator-option \( --i -x $(basename $<).com \) > $@
+
+test000.i:test000.c
+	$(DOGV) $(CPP) -o $@ $(CPP_FLAG) $< -DABCDEF0=0x9abcdef0
+
+clean:
+	$(RM) *.i *.s *.exe *.log *~ test000.dmp test001.h test001.c

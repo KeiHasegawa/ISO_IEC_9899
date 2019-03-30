@@ -1,0 +1,8 @@
+`f' called with 0
+case +0:
+`f' called with -99
+case -'c':
+`f' called with -1
+case ~0:
+`f' called with 1
+case !0:

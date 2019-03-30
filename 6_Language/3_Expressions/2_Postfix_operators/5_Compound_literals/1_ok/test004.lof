@@ -1,0 +1,4 @@
+`f' called with 1
+case sizeof ((char){1}):
+`f' called with 3
+sizeof ((char []){'x', 'y', 'z'}):

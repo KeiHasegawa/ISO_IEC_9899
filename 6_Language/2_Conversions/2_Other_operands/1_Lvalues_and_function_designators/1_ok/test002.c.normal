@@ -1,0 +1,155 @@
+/*
+ * Check if expressions whose type function retuning `T' are recognized.
+ */
+#include <stdio.h>
+
+void f(void){ printf("`f' called\n"); }
+
+/* expr () , where expr has function returning `T' */
+void test00(void)
+{
+  printf("`test00' called\n");
+  f();
+}
+
+/* & expr, where expr has function returning `T' */
+void test01(void)
+{
+  printf("`test01' called\n");
+  void (*pf)(void) = &f;
+  (*pf)();
+}
+
+/* *expr, where expr has function returning `T' */
+void test02(void)
+{
+  printf("`test02' called\n");
+  (*f)();
+  (&*f)();
+}
+
+/* !expr, where expr has function returning `T' */
+void test03(void)
+{
+  printf("`test03' called\n");
+  if ( !f )
+    printf("`f' is located at zero.\n");
+  else
+    printf("`f' is located at non-zero.\n");
+}
+
+/* (type_name) expr, where expr has function returning `T' */
+void test04(void)
+{
+  printf("`test04' called\n");
+  long long int lli = (long long int)f;
+  void (*pf)(void) = (void (*)(void))lli;
+  (*pf)();
+}
+
+/* expr < pointer, where expr has function returning `T' */
+void test05(void)
+{
+  printf("`test05' called\n");
+  if ( test04 < test05 )
+    printf("address of `test04' is less than that of `test05'\n");
+  else
+    printf("address of `test04' is not less than that of `test05'\n");
+}
+
+/* expr > pointer, where expr has function returning `T' */
+void test06(void)
+{
+  printf("`test06' called\n");
+  if ( test06 > test05 )
+    printf("address of `test06' is greater than that of `test05'\n");
+  else
+    printf("address of `test06' is not greater than that of `test05'\n");
+}
+
+/* expr <= pointer, where expr has function returning `T' */
+void test07(void)
+{
+  printf("`test07' called\n");
+  if ( test06 <= test07 )
+    printf("address of `test06' is less than or equal to that of `test07'\n");
+  else
+    printf("address of `test06' is neither less than nor equal to that of `test07'\n");
+}
+
+/* expr >= pointer, where expr has function returning `T' */
+void test08(void)
+{
+  printf("`test08' called\n");
+  if ( test08 >= test07 )
+    printf("address of `test08' is greater than or equal to that of `test07'\n");
+  else
+    printf("address of `test08' is neither greater than nor equal to that of `test07'\n");
+}
+
+/* expr == pointer, where expr has function returning `T' */
+void test09(void)
+{
+  printf("`test09' called\n");
+  if ( test09 == test09 )
+    printf("ok\n");
+  else
+    printf("error\n");
+}
+
+/* expr != pointer, where expr has function returning `T' */
+void test10(void)
+{
+  printf("`test10' called\n");
+  if ( test09 != test10 )
+    printf("ok\n");
+  else
+    printf("error\n");
+}
+
+/* expr && exprA or exprB || expr, where expr has function returning `T' */
+void test11(void)
+{
+  printf("`test11' called\n");
+  if ( test10 && test11 )
+    printf("ok\n");
+  else
+    printf("error\n");
+}
+
+/* expr || exprA or exprB || expr, where expr has function returning `T' */
+void test12(void)
+{
+  printf("`test12' called\n");
+  if ( !test11 || !test12 )
+    printf("error\n");
+  else
+    printf("ok\n");
+}
+
+/* expr_1 ? expr_2 : expr_3, where expr_i has function returning `T' */
+void test13(void)
+{
+  printf("`test13' called\n");
+  void (*pf)(void) = f ? f : test13;
+  (*pf)();
+}
+
+int main(void)
+{
+  test00();
+  test01();
+  test02();
+  test03();
+  test04();
+  test05();
+  test06();
+  test07();
+  test08();
+  test09();
+  test10();
+  test11();
+  test12();
+  test13();
+  return 0;
+}

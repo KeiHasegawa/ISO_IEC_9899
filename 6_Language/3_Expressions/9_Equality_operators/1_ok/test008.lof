@@ -1,0 +1,29 @@
+`test000' called
+**x == y
+`test000' called
+`test001' called
+x != **y
+`test001' called
+x == **y
+`test002' called
+'a'
+'b'
+`test003' called
+*x = 2, **y = 6
+*x = 3, **y = 5
+*x = 4, **y = 4
+`test004' called
+'a', 'm'
+'b', 'l'
+'c', 'k'
+'d', 'j'
+'e', 'i'
+'f', 'h'
+`test005' called
+x != y
+`test005' called
+x == y
+`test006' called
+x == y = 0
+`test006' called
+x == y = 1

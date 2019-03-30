@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<section url="0_Type_qualifiers/item.xml">
+    <title>6.5.3 Type qualifiers</title>
+</section>
+
+<section url="1_Formal_definition_of_restrict/item.xml">
+    <title>6.5.3.1 Formal definition of restrict</title>
+</section>
+
+</test_item>

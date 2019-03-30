@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<item>
+    <source>1_ok/test000.c</source>
+    <abstract>
+    さまざまな函数の宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test001.c</source>
+    <abstract>
+    函数のパラメータスコープ
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test002.c</source>
+    <abstract>
+    函数ポインタ, 配列ポインタを返す函数
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test003.c</source>
+    <abstract>
+    古いスタイルの函数宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test004.c</source>
+    <abstract>
+    パラメータの型に函数, 配列を宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test005.c</source>
+    <abstract>
+    パラメータの型が不完全型の函数の定義でない宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test006.c</source>
+    <abstract>
+    パラメータの型が [*]
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test007.c</source>
+    <abstract>
+    可変個引数の函数宣言
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test008.c</source>
+    <abstract>
+    パラメータに void を指定
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test009.c</source>
+    <abstract>
+    パラメータに typedef 名を指定
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test010.c</source>
+    <abstract>
+    函数宣言のパラメータに不完全型を指定
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test011.c</source>
+    <abstract>
+    函数宣言におけるパラメータが空
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test012.c</source>
+    <abstract>
+    函数の compatiblity (ISO のサンプル)
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test013.c</source>
+    <abstract>
+    ISO のサンプル
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test014.c</source>
+    <abstract>
+    ISO のサンプル
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test000.c</source>
+    <abstract>
+    函数を返す函数, 配列を返す函数
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test001.c</source>
+    <abstract>
+    パラメータの宣言で register 以外の記憶クラスを指定
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test002.c</source>
+    <abstract>
+    函数定義でない函数宣言で型のないパラメータ名が指定
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test003.c</source>
+    <abstract>
+    函数定義でパラメータの型が不完全型
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test004.c</source>
+    <abstract>
+    パラメータに void を指定した函数宣言に対し, 引数を指定して呼び出す
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test005.c</source>
+    <abstract>
+    パラメータに typdef 名を指定
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test006.c</source>
+    <abstract>
+    函数宣言のパラメータに不完全型を指定
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test007.c</source>
+    <abstract>
+    函数宣言におけるパラメータが空
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test008.c</source>
+    <abstract>
+    途中までが function-definition の構文になっている不正なプログラム
+    </abstract>
+</item>
+
+</test_item>

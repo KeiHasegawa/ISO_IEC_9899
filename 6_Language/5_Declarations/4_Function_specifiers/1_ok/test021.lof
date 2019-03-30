@@ -1,0 +1,30 @@
+printfd a = 3.000000 b = 4.000000
+printfd a = 12.000000 b = 7.000000
+printfd a = 1.000000 b = 2.000000
+printfd a = 55.000000 b = 15.000000
+printd d = 5040.000000
+printd d = 384.000000
+printd d = 1.000000
+printd d = 7.000000
+printd d = 0.000000
+apple(3, 4) returns 240.000000
+printfd a = 10.000000 b = 20.000000
+printd d = 30.000000
+printfd a = 0.000000 b = -10.000000
+printfd a = 55.000000 b = 40.000000
+printd d = 5040.000000
+printd d = 30720.000000
+printd d = 0.000000
+printd d = 30.000000
+printd d = 0.000000
+printfd a = 200.000000 b = 30.000000
+printfd a = 7.000000 b = 8.000000
+printfd a = 55.000000 b = 40.000000
+printd d = 5040.000000
+printd d = 1024.000000
+printd d = 0.000000
+printd d = 15.000000
+printd d = 0.000000
+printfd a = 56.000000 b = 15.000000
+printfd a = 0.000000 b = -1.000000
+lemmon(7, 8) return s 1054

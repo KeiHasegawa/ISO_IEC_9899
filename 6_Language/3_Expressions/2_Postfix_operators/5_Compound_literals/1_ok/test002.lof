@@ -1,0 +1,30 @@
+`test00' called
+(1,1),(3,4)
+`test01' called
+(1,1),(3,4)
+`test03' called
+/tmp/fileXXXXXX
+/tmP/fileXXXXXX
+`test04' called
+0 42
+1 42
+2 42
+3 42
+4 42
+5 42
+6 42
+7 42
+8 42
+9 42
+0 42
+1 42
+2 42
+3 42
+4 42
+5 42
+6 42
+7 42
+8 42
+9 42
+`test05' called
+ok

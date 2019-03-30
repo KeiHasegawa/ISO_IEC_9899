@@ -1,0 +1,9 @@
+ptr->x->i = 1
+ptr->x->c = abc
+ptr->x->d = 2.000000
+ptr->y->i = 3
+ptr->y->c = defghijk
+ptr->y->d = 4.000000
+ptr->z->i = 5
+ptr->z->c = lmnop
+ptr->z->d = 6.000000

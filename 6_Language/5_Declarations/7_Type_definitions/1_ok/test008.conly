@@ -1,0 +1,30 @@
+/*
+ * Check abstract-declarator works well.
+ * Note : In C++, this program can not be compiled.
+ */
+#include <stdio.h>
+
+typedef int T;
+
+int g(int);
+
+int main(void)
+{
+  struct T {
+    int m;
+  };
+  void f(T (T));
+  f(g);  /* error in C++ */
+  return 0;
+}
+
+void f(T a(T))
+{
+  printf("`f' called\n");
+  a(10);
+}
+
+int g(int a)
+{
+  printf("`g' called with %d\n", a);
+}

@@ -1,0 +1,8 @@
+`test000' called
+`f' called with 5
+`test001' called
+ 0 1 2
+`test002' called
+`g' called with 6.500000
+`test003' called
+ 0.000000 1.000000 2.000000 3.000000 4.000000

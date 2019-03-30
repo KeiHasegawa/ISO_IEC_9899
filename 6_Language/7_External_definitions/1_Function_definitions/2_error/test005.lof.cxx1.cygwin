@@ -1,0 +1,3 @@
+test005.c:12: error: syntax error before `int' token.
+test005.c:12: エラー: `a' は宣言されていません.
+test005.c:16: エラー: `test002' は宣言されていません.

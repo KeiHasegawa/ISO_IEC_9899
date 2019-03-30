@@ -1,0 +1,5 @@
+test014.c: ”Ÿ” `x' :
+test014.c:7: ƒGƒ‰[: `T' ‚ÍéŒ¾‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ.
+test014.c:7: error: syntax error before `*);' token.
+test014.c:9: error: syntax error before `T' token.
+test014.c:11: error: syntax error before `struct' token.

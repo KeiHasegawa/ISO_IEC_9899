@@ -1,0 +1,8 @@
+`f' called
+ 5 4 3 2 1 0
+r = 0
+`g' called with 6
+ 5 4 3 2 1 0
+`h' called with 6
+ 5 4 3 2 1 0
+r = 2

@@ -1,0 +1,4 @@
+`f' called with 6
+case 0xc & 0xa:
+`f' called with 1
+case -1LL & -2:

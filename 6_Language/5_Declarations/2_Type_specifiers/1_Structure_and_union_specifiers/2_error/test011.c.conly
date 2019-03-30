@@ -1,0 +1,36 @@
+/*
+ * Check if parameter scope union declaration works well.
+ * (abstract declarator parameter scope at global scope function declaration)
+ */
+
+union U {
+  int i;
+  float f;
+};
+
+typedef void FUNC(union U);
+
+void f(FUNC*);
+
+void f(void (*)(union U));  // ok.
+/* Previous type of `f' is compatible with current type of `f' */
+
+FUNC* g(FUNC*);
+
+void (*g(void (*)(union U)))(union U);  // ok
+/* because of the same reason with `f' */
+
+typedef FUNC* G(FUNC*);
+
+G g;  // ok
+
+G* h(G*);
+
+G* h(FUNC* (*)(FUNC*));  // ok
+
+G* h(FUNC* (*)(void (*)(union U)));  // ok
+
+// Now how about bellow.
+G* t(FUNC* (*)(void (*)(union UU { int i; float f; })));
+G* t(FUNC* (*)(void (*)(union UU { int i; float f; })));  // error
+/* because previous union UU is not compatible with current union UU */

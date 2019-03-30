@@ -1,0 +1,46 @@
+/*
+ * Check if ISO sample works well.
+ */
+#include <stdio.h>
+
+typedef signed int t;
+typedef int plain;
+struct tag {
+  unsigned t:4;
+  const t:5;
+  plain r:5;
+};
+
+t h(t t)
+{
+  printf("`h' called with %d\n", t);
+  return t + 1;
+}
+
+void g(void)
+{
+  /* If these declarations are followed in an inner scope by */
+  t f(t (t));
+  long t;
+  /* 
+   * then a function f is declared with type ``function returning signed int
+   * with one unnamed parameter with type pointer to function returning
+   * signed int with one unnamed parameter with type signed int'', and an
+   * identifier t with type long.
+   */
+  t = 1;
+  printf("%ld\n", t);
+  printf("%d\n", f(h));
+}
+
+t f(t g(t))
+{
+  printf("`f' called\n");
+  return g(2);
+}
+
+int main(void)
+{
+  g();
+  return 0;
+}

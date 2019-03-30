@@ -1,0 +1,9 @@
+include ../../../../Makefile.ok
+
+test001.s:test001.i
+	$(DOGV) --alarm 300 $(CC1) $< $(CC1_FLAG)
+	$(TOUCH) $@
+
+test010.s:test010.i
+	$(DOGV) --alarm 300 $(CC1) $< $(CC1_FLAG)
+	$(TOUCH) $@

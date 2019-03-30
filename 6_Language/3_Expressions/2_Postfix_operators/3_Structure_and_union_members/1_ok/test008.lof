@@ -1,0 +1,10 @@
+`test00' called with -4
+(char*)&s.a - (char*)&s.b:
+`test00' called with 0
+(char*)&s.a - (char*)&s:
+`test00' called with 4
+(char*)&s.b - (char*)&s:
+`test01' called with 1
+sizeof ((char)ps->b):
+`test01' called with 4
+sizeof ps->a:

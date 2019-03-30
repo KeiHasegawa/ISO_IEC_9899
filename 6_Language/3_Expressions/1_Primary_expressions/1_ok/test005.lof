@@ -1,0 +1,25 @@
+`test000' called
+ok
+`test001' called
+ok
+ok
+`test002' called
+i = 1
+i = 2
+i = 3
+i = 4
+`test003' called
+i = 4
+i = 3
+i = 2
+i = 1
+`test004' called
+i = 0
+i = 1
+i = 2
+`test005' called
+ok
+ok
+ok
+`test006' called
+'c', 7, 2.500000

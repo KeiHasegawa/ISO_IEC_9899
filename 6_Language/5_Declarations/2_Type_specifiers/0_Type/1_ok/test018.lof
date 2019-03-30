@@ -1,0 +1,8 @@
+x = 1
+sizeof a = 12, strlen(a) = 11
+sizeof array = 40
+`f' returns 5
+sizeof(enum fruit)  = 4
+orange = 2
+mine = 3
+xxx.m_fruit = 1, xxx.array = grape

@@ -1,0 +1,37 @@
+/*
+ * An identifier list declares only the identifiers of the parameters of the
+ * function. An empty list in a function declarator that is part of a function
+ * definition specifies that the function has no parameters. The empty list in
+ * a function declarator that is not part of a function definition specifies
+ * that no information about the number or types of the parameters is supplied.
+ */
+#include <stdio.h>
+
+void test000()
+{
+  printf("`test000' called\n");
+}
+
+void test001();
+
+void f(void)
+{
+  test001();
+}
+
+int main(void)
+{
+  test000();
+  test001(0);
+  test001(1,2);
+  return 0;
+}
+
+void test001(int a, int b)
+{
+  printf("`test001' called\n");
+  if ( a )
+    printf("%d %d\n", a, b);
+  else
+    printf("%d\n", a);
+}

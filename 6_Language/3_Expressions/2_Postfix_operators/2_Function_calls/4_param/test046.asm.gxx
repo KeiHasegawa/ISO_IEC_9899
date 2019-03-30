@@ -1,0 +1,1104 @@
+	.model	flat
+CONST SEGMENT
+LC$0:
+	DD	1
+	DD	0
+CONST ENDS
+CONST SEGMENT
+LC$1:
+	DD	2
+	DD	0
+CONST ENDS
+CONST SEGMENT
+LC$2:
+	DD	1
+	DD	0
+CONST ENDS
+_TEXT SEGMENT
+	PUBLIC	__test_main
+__test_main	PROC
+	; enter
+	push 	ebp
+	mov 	ebp, esp
+	sub 	esp, 336
+	; .var0x60018ced0 := array[0]
+	fld	DWORD PTR _array
+	fstp 	DWORD PTR [ebp-8]
+	; .var0x60018cf10 := array[4]
+	lea 	eax, _array
+	mov 	eax, 4[eax]
+	mov 	DWORD PTR [ebp-12], eax
+	; .var0x60018ce40 := array[8]
+	lea 	eax, _array
+	mov 	eax, 8[eax]
+	mov 	DWORD PTR [ebp-16], eax
+	; .var0x60018cef0 := array[12]
+	fld	DWORD PTR (_array+12)
+	fstp 	DWORD PTR [ebp-20]
+	; .var0x60018cf70 := array[16]
+	lea 	eax, _array
+	mov 	eax, 16[eax]
+	mov 	DWORD PTR [ebp-24], eax
+	; .var0x60018d040 := array[20]
+	fld	DWORD PTR (_array+20)
+	fstp 	DWORD PTR [ebp-28]
+	; .var0x60018cfd0 := array[24]
+	fld	DWORD PTR (_array+24)
+	fstp 	DWORD PTR [ebp-32]
+	; .var0x60018d210 := array[28]
+	lea 	eax, _array
+	mov 	eax, 28[eax]
+	mov 	DWORD PTR [ebp-36], eax
+	; .var0x60018d270 := array[32]
+	lea 	eax, _array
+	mov 	eax, 32[eax]
+	mov 	DWORD PTR [ebp-40], eax
+	; .var0x60018d140 := array[36]
+	fld	DWORD PTR (_array+36)
+	fstp 	DWORD PTR [ebp-44]
+	; .var0x60018d160 := array[40]
+	fld	DWORD PTR (_array+40)
+	fstp 	DWORD PTR [ebp-48]
+	; .var0x60018d430 := array[44]
+	lea 	eax, _array
+	mov 	eax, 44[eax]
+	mov 	DWORD PTR [ebp-52], eax
+	; .var0x60018d490 := array[48]
+	lea 	eax, _array
+	mov 	eax, 48[eax]
+	mov 	DWORD PTR [ebp-56], eax
+	; .var0x60018d4f0 := array[52]
+	fld	DWORD PTR (_array+52)
+	fstp 	DWORD PTR [ebp-60]
+	; .var0x60018d550 := array[56]
+	lea 	eax, _array
+	mov 	eax, 56[eax]
+	mov 	DWORD PTR [ebp-64], eax
+	; .var0x60018d5b0 := array[60]
+	fld	DWORD PTR (_array+60)
+	fstp 	DWORD PTR [ebp-68]
+	; .var0x60018d610 := array[64]
+	fld	DWORD PTR (_array+64)
+	fstp 	DWORD PTR [ebp-72]
+	; .var0x60018d2d0 := array[68]
+	lea 	eax, _array
+	mov 	eax, 68[eax]
+	mov 	DWORD PTR [ebp-76], eax
+	; .var0x60018d330 := array[72]
+	lea 	eax, _array
+	mov 	eax, 72[eax]
+	mov 	DWORD PTR [ebp-80], eax
+	; .var0x60018d390 := array[76]
+	fld	DWORD PTR (_array+76)
+	fstp 	DWORD PTR [ebp-84]
+	; .var0x60018d890 := array[80]
+	fld	DWORD PTR (_array+80)
+	fstp 	DWORD PTR [ebp-88]
+	; .var0x60018d8f0 := array[84]
+	lea 	eax, _array
+	mov 	eax, 84[eax]
+	mov 	DWORD PTR [ebp-92], eax
+	; .var0x60018d950 := array[88]
+	lea 	eax, _array
+	mov 	eax, 88[eax]
+	mov 	DWORD PTR [ebp-96], eax
+	; .var0x60018d9b0 := array[92]
+	fld	DWORD PTR (_array+92)
+	fstp 	DWORD PTR [ebp-100]
+	; .var0x60018da10 := array[96]
+	lea 	eax, _array
+	mov 	eax, 96[eax]
+	mov 	DWORD PTR [ebp-104], eax
+	; .var0x60018da70 := array[100]
+	fld	DWORD PTR (_array+100)
+	fstp 	DWORD PTR [ebp-108]
+	; .var0x60018dad0 := array[104]
+	fld	DWORD PTR (_array+104)
+	fstp 	DWORD PTR [ebp-112]
+	; .var0x60018db30 := array[108]
+	lea 	eax, _array
+	mov 	eax, 108[eax]
+	mov 	DWORD PTR [ebp-116], eax
+	; .var0x60018db90 := array[112]
+	lea 	eax, _array
+	mov 	eax, 112[eax]
+	mov 	DWORD PTR [ebp-120], eax
+	; .var0x60018dbf0 := array[116]
+	fld	DWORD PTR (_array+116)
+	fstp 	DWORD PTR [ebp-124]
+	; .var0x60018dc50 := array[120]
+	fld	DWORD PTR (_array+120)
+	fstp 	DWORD PTR [ebp-128]
+	; .var0x60018dcb0 := array[124]
+	lea 	eax, _array
+	mov 	eax, 124[eax]
+	mov 	DWORD PTR [ebp-132], eax
+	; .var0x60018dd10 := array[128]
+	lea 	eax, _array
+	mov 	eax, 128[eax]
+	mov 	DWORD PTR [ebp-136], eax
+	; .var0x60018d670 := array[132]
+	fld	DWORD PTR (_array+132)
+	fstp 	DWORD PTR [ebp-140]
+	; .var0x60018d6d0 := array[136]
+	lea 	eax, _array
+	mov 	eax, 136[eax]
+	mov 	DWORD PTR [ebp-144], eax
+	; .var0x60018d730 := array[140]
+	fld	DWORD PTR (_array+140)
+	fstp 	DWORD PTR [ebp-148]
+	; .var0x60018d790 := array[144]
+	fld	DWORD PTR (_array+144)
+	fstp 	DWORD PTR [ebp-152]
+	; .var0x60018d7f0 := array[148]
+	lea 	eax, _array
+	mov 	eax, 148[eax]
+	mov 	DWORD PTR [ebp-156], eax
+	; .var0x60018e150 := array[152]
+	lea 	eax, _array
+	mov 	eax, 152[eax]
+	mov 	DWORD PTR [ebp-160], eax
+	; .var0x60018e1b0 := array[156]
+	fld	DWORD PTR (_array+156)
+	fstp 	DWORD PTR [ebp-164]
+	; param .var0x60018ced0
+	fld	DWORD PTR [ebp-8]
+	fstp	DWORD PTR 0[esp]
+	; param .var0x60018cf10
+	mov 	eax, DWORD PTR [ebp-12]
+	mov	DWORD PTR 4[esp], eax
+	; param .var0x60018ce40
+	mov 	eax, DWORD PTR [ebp-16]
+	mov	DWORD PTR 8[esp], eax
+	; param .var0x60018cef0
+	fld	DWORD PTR [ebp-20]
+	fstp	DWORD PTR 12[esp]
+	; param .var0x60018cf70
+	mov 	eax, DWORD PTR [ebp-24]
+	mov	DWORD PTR 16[esp], eax
+	; param .var0x60018d040
+	fld	DWORD PTR [ebp-28]
+	fstp	DWORD PTR 20[esp]
+	; param .var0x60018cfd0
+	fld	DWORD PTR [ebp-32]
+	fstp	DWORD PTR 24[esp]
+	; param .var0x60018d210
+	mov 	eax, DWORD PTR [ebp-36]
+	mov	DWORD PTR 28[esp], eax
+	; param .var0x60018d270
+	mov 	eax, DWORD PTR [ebp-40]
+	mov	DWORD PTR 32[esp], eax
+	; param .var0x60018d140
+	fld	DWORD PTR [ebp-44]
+	fstp	DWORD PTR 36[esp]
+	; param .var0x60018d160
+	fld	DWORD PTR [ebp-48]
+	fstp	DWORD PTR 40[esp]
+	; param .var0x60018d430
+	mov 	eax, DWORD PTR [ebp-52]
+	mov	DWORD PTR 44[esp], eax
+	; param .var0x60018d490
+	mov 	eax, DWORD PTR [ebp-56]
+	mov	DWORD PTR 48[esp], eax
+	; param .var0x60018d4f0
+	fld	DWORD PTR [ebp-60]
+	fstp	DWORD PTR 52[esp]
+	; param .var0x60018d550
+	mov 	eax, DWORD PTR [ebp-64]
+	mov	DWORD PTR 56[esp], eax
+	; param .var0x60018d5b0
+	fld	DWORD PTR [ebp-68]
+	fstp	DWORD PTR 60[esp]
+	; param .var0x60018d610
+	fld	DWORD PTR [ebp-72]
+	fstp	DWORD PTR 64[esp]
+	; param .var0x60018d2d0
+	mov 	eax, DWORD PTR [ebp-76]
+	mov	DWORD PTR 68[esp], eax
+	; param .var0x60018d330
+	mov 	eax, DWORD PTR [ebp-80]
+	mov	DWORD PTR 72[esp], eax
+	; param .var0x60018d390
+	fld	DWORD PTR [ebp-84]
+	fstp	DWORD PTR 76[esp]
+	; param .var0x60018d890
+	fld	DWORD PTR [ebp-88]
+	fstp	DWORD PTR 80[esp]
+	; param .var0x60018d8f0
+	mov 	eax, DWORD PTR [ebp-92]
+	mov	DWORD PTR 84[esp], eax
+	; param .var0x60018d950
+	mov 	eax, DWORD PTR [ebp-96]
+	mov	DWORD PTR 88[esp], eax
+	; param .var0x60018d9b0
+	fld	DWORD PTR [ebp-100]
+	fstp	DWORD PTR 92[esp]
+	; param .var0x60018da10
+	mov 	eax, DWORD PTR [ebp-104]
+	mov	DWORD PTR 96[esp], eax
+	; param .var0x60018da70
+	fld	DWORD PTR [ebp-108]
+	fstp	DWORD PTR 100[esp]
+	; param .var0x60018dad0
+	fld	DWORD PTR [ebp-112]
+	fstp	DWORD PTR 104[esp]
+	; param .var0x60018db30
+	mov 	eax, DWORD PTR [ebp-116]
+	mov	DWORD PTR 108[esp], eax
+	; param .var0x60018db90
+	mov 	eax, DWORD PTR [ebp-120]
+	mov	DWORD PTR 112[esp], eax
+	; param .var0x60018dbf0
+	fld	DWORD PTR [ebp-124]
+	fstp	DWORD PTR 116[esp]
+	; param .var0x60018dc50
+	fld	DWORD PTR [ebp-128]
+	fstp	DWORD PTR 120[esp]
+	; param .var0x60018dcb0
+	mov 	eax, DWORD PTR [ebp-132]
+	mov	DWORD PTR 124[esp], eax
+	; param .var0x60018dd10
+	mov 	eax, DWORD PTR [ebp-136]
+	mov	DWORD PTR 128[esp], eax
+	; param .var0x60018d670
+	fld	DWORD PTR [ebp-140]
+	fstp	DWORD PTR 132[esp]
+	; param .var0x60018d6d0
+	mov 	eax, DWORD PTR [ebp-144]
+	mov	DWORD PTR 136[esp], eax
+	; param .var0x60018d730
+	fld	DWORD PTR [ebp-148]
+	fstp	DWORD PTR 140[esp]
+	; param .var0x60018d790
+	fld	DWORD PTR [ebp-152]
+	fstp	DWORD PTR 144[esp]
+	; param .var0x60018d7f0
+	mov 	eax, DWORD PTR [ebp-156]
+	mov	DWORD PTR 148[esp], eax
+	; param .var0x60018e150
+	mov 	eax, DWORD PTR [ebp-160]
+	mov	DWORD PTR 152[esp], eax
+	; param .var0x60018e1b0
+	fld	DWORD PTR [ebp-164]
+	fstp	DWORD PTR 156[esp]
+	; call f
+	call	_f
+	; return 0
+	mov	eax, 0
+	; leave
+	mov 	esp, ebp
+	leave
+	ret
+__test_main	ENDP
+_TEXT ENDS
+CONST SEGMENT
+LC$3:
+	;"a00 = %f, a01 = 0x%08x, a02 = 0x%08x, a03 = %f, a04 = 0x%08x\n,a05 = %f, a06 = %f, a07 = 0x%08x, a08 = 0x%08x, a09 = %f,\na10 = %f, a11 = 0x%08x, a12 = 0x%08x, a13 = %f, a14 = 0x%08x\n,a15 = %f, a16 = %f, a17 = 0x%08x, a18 = 0x%08x, a19 = %f,\na20 = %f, a21 = 0x%08x, a22 = 0x%08x, a23 = %f, a24 = 0x%08x\n,a25 = %f, a26 = %f, a27 = 0x%08x, a28 = 0x%08x, a29 = %f,\na30 = %f, a31 = 0x%08x, a32 = 0x%08x, a33 = %f, a34 = 0x%08x\n,a35 = %f, a36 = %f, a37 = 0x%08x, a38 = 0x%08x, a39 = %f\n"
+	BYTE	97
+	BYTE	48
+	BYTE	48
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	37
+	BYTE	102
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	48
+	BYTE	49
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	48
+	BYTE	120
+	BYTE	37
+	BYTE	48
+	BYTE	56
+	BYTE	120
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	48
+	BYTE	50
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	48
+	BYTE	120
+	BYTE	37
+	BYTE	48
+	BYTE	56
+	BYTE	120
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	48
+	BYTE	51
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	37
+	BYTE	102
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	48
+	BYTE	52
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	48
+	BYTE	120
+	BYTE	37
+	BYTE	48
+	BYTE	56
+	BYTE	120
+	BYTE	10
+	BYTE	44
+	BYTE	97
+	BYTE	48
+	BYTE	53
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	37
+	BYTE	102
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	48
+	BYTE	54
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	37
+	BYTE	102
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	48
+	BYTE	55
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	48
+	BYTE	120
+	BYTE	37
+	BYTE	48
+	BYTE	56
+	BYTE	120
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	48
+	BYTE	56
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	48
+	BYTE	120
+	BYTE	37
+	BYTE	48
+	BYTE	56
+	BYTE	120
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	48
+	BYTE	57
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	37
+	BYTE	102
+	BYTE	44
+	BYTE	10
+	BYTE	97
+	BYTE	49
+	BYTE	48
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	37
+	BYTE	102
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	49
+	BYTE	49
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	48
+	BYTE	120
+	BYTE	37
+	BYTE	48
+	BYTE	56
+	BYTE	120
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	49
+	BYTE	50
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	48
+	BYTE	120
+	BYTE	37
+	BYTE	48
+	BYTE	56
+	BYTE	120
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	49
+	BYTE	51
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	37
+	BYTE	102
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	49
+	BYTE	52
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	48
+	BYTE	120
+	BYTE	37
+	BYTE	48
+	BYTE	56
+	BYTE	120
+	BYTE	10
+	BYTE	44
+	BYTE	97
+	BYTE	49
+	BYTE	53
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	37
+	BYTE	102
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	49
+	BYTE	54
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	37
+	BYTE	102
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	49
+	BYTE	55
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	48
+	BYTE	120
+	BYTE	37
+	BYTE	48
+	BYTE	56
+	BYTE	120
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	49
+	BYTE	56
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	48
+	BYTE	120
+	BYTE	37
+	BYTE	48
+	BYTE	56
+	BYTE	120
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	49
+	BYTE	57
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	37
+	BYTE	102
+	BYTE	44
+	BYTE	10
+	BYTE	97
+	BYTE	50
+	BYTE	48
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	37
+	BYTE	102
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	50
+	BYTE	49
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	48
+	BYTE	120
+	BYTE	37
+	BYTE	48
+	BYTE	56
+	BYTE	120
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	50
+	BYTE	50
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	48
+	BYTE	120
+	BYTE	37
+	BYTE	48
+	BYTE	56
+	BYTE	120
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	50
+	BYTE	51
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	37
+	BYTE	102
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	50
+	BYTE	52
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	48
+	BYTE	120
+	BYTE	37
+	BYTE	48
+	BYTE	56
+	BYTE	120
+	BYTE	10
+	BYTE	44
+	BYTE	97
+	BYTE	50
+	BYTE	53
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	37
+	BYTE	102
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	50
+	BYTE	54
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	37
+	BYTE	102
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	50
+	BYTE	55
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	48
+	BYTE	120
+	BYTE	37
+	BYTE	48
+	BYTE	56
+	BYTE	120
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	50
+	BYTE	56
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	48
+	BYTE	120
+	BYTE	37
+	BYTE	48
+	BYTE	56
+	BYTE	120
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	50
+	BYTE	57
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	37
+	BYTE	102
+	BYTE	44
+	BYTE	10
+	BYTE	97
+	BYTE	51
+	BYTE	48
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	37
+	BYTE	102
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	51
+	BYTE	49
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	48
+	BYTE	120
+	BYTE	37
+	BYTE	48
+	BYTE	56
+	BYTE	120
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	51
+	BYTE	50
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	48
+	BYTE	120
+	BYTE	37
+	BYTE	48
+	BYTE	56
+	BYTE	120
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	51
+	BYTE	51
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	37
+	BYTE	102
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	51
+	BYTE	52
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	48
+	BYTE	120
+	BYTE	37
+	BYTE	48
+	BYTE	56
+	BYTE	120
+	BYTE	10
+	BYTE	44
+	BYTE	97
+	BYTE	51
+	BYTE	53
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	37
+	BYTE	102
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	51
+	BYTE	54
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	37
+	BYTE	102
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	51
+	BYTE	55
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	48
+	BYTE	120
+	BYTE	37
+	BYTE	48
+	BYTE	56
+	BYTE	120
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	51
+	BYTE	56
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	48
+	BYTE	120
+	BYTE	37
+	BYTE	48
+	BYTE	56
+	BYTE	120
+	BYTE	44
+	BYTE	32
+	BYTE	97
+	BYTE	51
+	BYTE	57
+	BYTE	32
+	BYTE	61
+	BYTE	32
+	BYTE	37
+	BYTE	102
+	BYTE	10
+	BYTE	0
+CONST ENDS
+_TEXT SEGMENT
+_printf	PROC
+	; enter
+	push 	ebp
+	mov 	ebp, esp
+	sub 	esp, 96
+	; .var0x60012b940 := &_Format
+	lea 	ebx, DWORD PTR [ebp+8]
+	mov 	DWORD PTR [ebp-12], ebx
+	; .var0x60012bb10 := (char *).var0x60012b940
+	mov 	eax, DWORD PTR [ebp-12]
+	mov 	DWORD PTR [ebp-16], eax
+	; _ArgList := .var0x60012bb10 + .integer3
+	mov 	eax, DWORD PTR [ebp-16]
+	add 	eax, 4
+	mov 	DWORD PTR [ebp-8], eax
+	; param .integer2
+	mov	eax, 1
+	mov	DWORD PTR 0[esp], eax
+	; .var0x60012d4c0 := call __acrt_iob_func
+	call	___acrt_iob_func
+	mov 	DWORD PTR [ebp-20], eax
+	; _Format := _Format
+	mov 	eax, DWORD PTR [ebp+8]
+	mov 	DWORD PTR [ebp-28], eax
+	; _ArgList := _ArgList
+	mov 	eax, DWORD PTR [ebp-8]
+	mov 	DWORD PTR [ebp-36], eax
+	; _Stream := .var0x60012d4c0
+	mov 	eax, DWORD PTR [ebp-20]
+	mov 	DWORD PTR [ebp-24], eax
+	; _Locale := .pointer1
+	mov	eax, 0
+	mov 	DWORD PTR [ebp-32], eax
+	; .var0x60012d830 := call __local_stdio_printf_options
+	call	___local_stdio_printf_options
+	mov 	DWORD PTR [ebp-40], eax
+	; .var0x60012d8b0 := *.var0x60012d830
+	mov 	eax, DWORD PTR [ebp-40]
+	mov	edx, [eax+4]
+	mov	eax, [eax]
+	mov	DWORD PTR [ebp-48], eax
+	mov	DWORD PTR [ebp-44], edx
+	; param .var0x60012d8b0
+	mov	eax, DWORD PTR [ebp-48]
+	mov	edx, DWORD PTR [ebp-44]
+	mov	 DWORD PTR 0[esp], eax
+	mov	 DWORD PTR 4[esp], edx
+	; param _Stream
+	mov 	eax, DWORD PTR [ebp-24]
+	mov	DWORD PTR 8[esp], eax
+	; param _Format
+	mov 	eax, DWORD PTR [ebp-28]
+	mov	DWORD PTR 12[esp], eax
+	; param _Locale
+	mov 	eax, DWORD PTR [ebp-32]
+	mov	DWORD PTR 16[esp], eax
+	; param _ArgList
+	mov 	eax, DWORD PTR [ebp-36]
+	mov	DWORD PTR 20[esp], eax
+	; .var0x60012d890 := call __stdio_common_vfprintf
+	call	___stdio_common_vfprintf
+	mov 	DWORD PTR [ebp-52], eax
+	; .var0x60012d9a0 := .var0x60012d890
+	mov 	eax, DWORD PTR [ebp-52]
+	mov 	DWORD PTR [ebp-56], eax
+	; goto label0x60012dc70
+	jmp	_printf0x60012dc70$
+	; label0x60012dc70:
+_printf0x60012dc70$:
+	; return .var0x60012d9a0
+	mov 	eax, DWORD PTR [ebp-56]
+	; leave
+	mov 	esp, ebp
+	leave
+	ret
+_printf	ENDP
+_TEXT ENDS
+_TEXT SEGMENT
+	PUBLIC	_f
+_f	PROC
+	; enter
+	push 	ebp
+	mov 	ebp, esp
+	sub 	esp, 416
+	; .var0x6001a9738 := &"a00 = %f, a01 = 0x%08x, a02 = 0x%08x, a03 = %f, a04 = 0x%08x\n,a05 = %f, a06 = %f, a07 = 0x%08x, a08 = 0x%08x, a09 = %f,\na10 = %f, a11 = 0x%08x, a12 = 0x%08x, a13 = %f, a14 = 0x%08x\n,a15 = %f, a16 = %f, a17 = 0x%08x, a18 = 0x%08x, a19 = %f,\na20 = %f, a21 = 0x%08x, a22 = 0x%08x, a23 = %f, a24 = 0x%08x\n,a25 = %f, a26 = %f, a27 = 0x%08x, a28 = 0x%08x, a29 = %f,\na30 = %f, a31 = 0x%08x, a32 = 0x%08x, a33 = %f, a34 = 0x%08x\n,a35 = %f, a36 = %f, a37 = 0x%08x, a38 = 0x%08x, a39 = %f\n"
+	lea 	ebx, LC$3
+	mov 	DWORD PTR [ebp-8], ebx
+	; .var0x60018ed40 := (double)a00
+	fld	DWORD PTR [ebp+8]
+	fstp 	QWORD PTR [ebp-16]
+	; .var0x60018ece0 := (double)a03
+	fld	DWORD PTR [ebp+20]
+	fstp 	QWORD PTR [ebp-24]
+	; .var0x60018eca0 := (double)a05
+	fld	DWORD PTR [ebp+28]
+	fstp 	QWORD PTR [ebp-32]
+	; .var0x6001a9800 := (double)a06
+	fld	DWORD PTR [ebp+32]
+	fstp 	QWORD PTR [ebp-40]
+	; .var0x6001a3ba0 := (double)a09
+	fld	DWORD PTR [ebp+44]
+	fstp 	QWORD PTR [ebp-48]
+	; .var0x60018ee50 := (double)a10
+	fld	DWORD PTR [ebp+48]
+	fstp 	QWORD PTR [ebp-56]
+	; .var0x60018d3c0 := (double)a13
+	fld	DWORD PTR [ebp+60]
+	fstp 	QWORD PTR [ebp-64]
+	; .var0x6001a9bf0 := (double)a15
+	fld	DWORD PTR [ebp+68]
+	fstp 	QWORD PTR [ebp-72]
+	; .var0x6001a9a80 := (double)a16
+	fld	DWORD PTR [ebp+72]
+	fstp 	QWORD PTR [ebp-80]
+	; .var0x6001a9af0 := (double)a19
+	fld	DWORD PTR [ebp+84]
+	fstp 	QWORD PTR [ebp-88]
+	; .var0x6001a9dc0 := (double)a20
+	fld	DWORD PTR [ebp+88]
+	fstp 	QWORD PTR [ebp-96]
+	; .var0x6001a9e30 := (double)a23
+	fld	DWORD PTR [ebp+100]
+	fstp 	QWORD PTR [ebp-104]
+	; .var0x6001a9ea0 := (double)a25
+	fld	DWORD PTR [ebp+108]
+	fstp 	QWORD PTR [ebp-112]
+	; .var0x6001a9f10 := (double)a26
+	fld	DWORD PTR [ebp+112]
+	fstp 	QWORD PTR [ebp-120]
+	; .var0x6001a9f80 := (double)a29
+	fld	DWORD PTR [ebp+124]
+	fstp 	QWORD PTR [ebp-128]
+	; .var0x6001a9bb0 := (double)a30
+	fld	DWORD PTR [ebp+128]
+	fstp 	QWORD PTR [ebp-136]
+	; .var0x6001a9bd0 := (double)a33
+	fld	DWORD PTR [ebp+140]
+	fstp 	QWORD PTR [ebp-144]
+	; .var0x6001a9cb0 := (double)a35
+	fld	DWORD PTR [ebp+148]
+	fstp 	QWORD PTR [ebp-152]
+	; .var0x6001a9d20 := (double)a36
+	fld	DWORD PTR [ebp+152]
+	fstp 	QWORD PTR [ebp-160]
+	; .var0x6001a9d40 := (double)a39
+	fld	DWORD PTR [ebp+164]
+	fstp 	QWORD PTR [ebp-168]
+	; param .var0x6001a9738
+	mov 	eax, DWORD PTR [ebp-8]
+	mov	DWORD PTR 0[esp], eax
+	; param .var0x60018ed40
+	fld	QWORD PTR [ebp-16]
+	fstp	QWORD PTR 4[esp]
+	; param a01
+	mov 	eax, DWORD PTR [ebp+12]
+	mov	DWORD PTR 12[esp], eax
+	; param a02
+	mov 	eax, DWORD PTR [ebp+16]
+	mov	DWORD PTR 16[esp], eax
+	; param .var0x60018ece0
+	fld	QWORD PTR [ebp-24]
+	fstp	QWORD PTR 20[esp]
+	; param a04
+	mov 	eax, DWORD PTR [ebp+24]
+	mov	DWORD PTR 28[esp], eax
+	; param .var0x60018eca0
+	fld	QWORD PTR [ebp-32]
+	fstp	QWORD PTR 32[esp]
+	; param .var0x6001a9800
+	fld	QWORD PTR [ebp-40]
+	fstp	QWORD PTR 40[esp]
+	; param a07
+	mov 	eax, DWORD PTR [ebp+36]
+	mov	DWORD PTR 48[esp], eax
+	; param a08
+	mov 	eax, DWORD PTR [ebp+40]
+	mov	DWORD PTR 52[esp], eax
+	; param .var0x6001a3ba0
+	fld	QWORD PTR [ebp-48]
+	fstp	QWORD PTR 56[esp]
+	; param .var0x60018ee50
+	fld	QWORD PTR [ebp-56]
+	fstp	QWORD PTR 64[esp]
+	; param a11
+	mov 	eax, DWORD PTR [ebp+52]
+	mov	DWORD PTR 72[esp], eax
+	; param a12
+	mov 	eax, DWORD PTR [ebp+56]
+	mov	DWORD PTR 76[esp], eax
+	; param .var0x60018d3c0
+	fld	QWORD PTR [ebp-64]
+	fstp	QWORD PTR 80[esp]
+	; param a14
+	mov 	eax, DWORD PTR [ebp+64]
+	mov	DWORD PTR 88[esp], eax
+	; param .var0x6001a9bf0
+	fld	QWORD PTR [ebp-72]
+	fstp	QWORD PTR 92[esp]
+	; param .var0x6001a9a80
+	fld	QWORD PTR [ebp-80]
+	fstp	QWORD PTR 100[esp]
+	; param a17
+	mov 	eax, DWORD PTR [ebp+76]
+	mov	DWORD PTR 108[esp], eax
+	; param a18
+	mov 	eax, DWORD PTR [ebp+80]
+	mov	DWORD PTR 112[esp], eax
+	; param .var0x6001a9af0
+	fld	QWORD PTR [ebp-88]
+	fstp	QWORD PTR 116[esp]
+	; param .var0x6001a9dc0
+	fld	QWORD PTR [ebp-96]
+	fstp	QWORD PTR 124[esp]
+	; param a21
+	mov 	eax, DWORD PTR [ebp+92]
+	mov	DWORD PTR 132[esp], eax
+	; param a22
+	mov 	eax, DWORD PTR [ebp+96]
+	mov	DWORD PTR 136[esp], eax
+	; param .var0x6001a9e30
+	fld	QWORD PTR [ebp-104]
+	fstp	QWORD PTR 140[esp]
+	; param a24
+	mov 	eax, DWORD PTR [ebp+104]
+	mov	DWORD PTR 148[esp], eax
+	; param .var0x6001a9ea0
+	fld	QWORD PTR [ebp-112]
+	fstp	QWORD PTR 152[esp]
+	; param .var0x6001a9f10
+	fld	QWORD PTR [ebp-120]
+	fstp	QWORD PTR 160[esp]
+	; param a27
+	mov 	eax, DWORD PTR [ebp+116]
+	mov	DWORD PTR 168[esp], eax
+	; param a28
+	mov 	eax, DWORD PTR [ebp+120]
+	mov	DWORD PTR 172[esp], eax
+	; param .var0x6001a9f80
+	fld	QWORD PTR [ebp-128]
+	fstp	QWORD PTR 176[esp]
+	; param .var0x6001a9bb0
+	fld	QWORD PTR [ebp-136]
+	fstp	QWORD PTR 184[esp]
+	; param a31
+	mov 	eax, DWORD PTR [ebp+132]
+	mov	DWORD PTR 192[esp], eax
+	; param a32
+	mov 	eax, DWORD PTR [ebp+136]
+	mov	DWORD PTR 196[esp], eax
+	; param .var0x6001a9bd0
+	fld	QWORD PTR [ebp-144]
+	fstp	QWORD PTR 200[esp]
+	; param a34
+	mov 	eax, DWORD PTR [ebp+144]
+	mov	DWORD PTR 208[esp], eax
+	; param .var0x6001a9cb0
+	fld	QWORD PTR [ebp-152]
+	fstp	QWORD PTR 212[esp]
+	; param .var0x6001a9d20
+	fld	QWORD PTR [ebp-160]
+	fstp	QWORD PTR 220[esp]
+	; param a37
+	mov 	eax, DWORD PTR [ebp+156]
+	mov	DWORD PTR 228[esp], eax
+	; param a38
+	mov 	eax, DWORD PTR [ebp+160]
+	mov	DWORD PTR 232[esp], eax
+	; param .var0x6001a9d40
+	fld	QWORD PTR [ebp-168]
+	fstp	QWORD PTR 236[esp]
+	; call printf
+	call	_printf
+	; leave
+	mov 	esp, ebp
+	leave
+	ret
+_f	ENDP
+_TEXT ENDS
+_DATA SEGMENT
+	PUBLIC	_array
+_array:
+	DWORD	0
+	DWORD	1065353216
+	DWORD	1073741824
+	DWORD	1077936128
+	DWORD	1082130432
+	DWORD	1084227584
+	DWORD	1086324736
+	DWORD	1088421888
+	DWORD	1090519040
+	DWORD	1091567616
+	DWORD	1092616192
+	DWORD	1093664768
+	DWORD	1094713344
+	DWORD	1095761920
+	DWORD	1096810496
+	DWORD	1097859072
+	DWORD	1098907648
+	DWORD	1099431936
+	DWORD	1099956224
+	DWORD	1100480512
+	DWORD	1101004800
+	DWORD	1101529088
+	DWORD	1102053376
+	DWORD	1102577664
+	DWORD	1103101952
+	DWORD	1103626240
+	DWORD	1104150528
+	DWORD	1104674816
+	DWORD	1105199104
+	DWORD	1105723392
+	DWORD	1106247680
+	DWORD	1106771968
+	DWORD	1107296256
+	DWORD	1107558400
+	DWORD	1107820544
+	DWORD	1108082688
+	DWORD	1108344832
+	DWORD	1108606976
+	DWORD	1108869120
+	DWORD	1109131264
+_DATA ENDS
+EXTERN ___acrt_iob_func:PROC
+EXTERN ___local_stdio_printf_options:PROC
+EXTERN ___stdio_common_vfprintf:PROC
+END

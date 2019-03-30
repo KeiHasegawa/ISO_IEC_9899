@@ -1,0 +1,5 @@
+test012.c:6: エラー: `f' は宣言されていません.
+test012.c:6: エラー: `f' の宣言で `int' が仮定されました.
+test012.c:6: エラー: パラメータスコープのない関数定義です.
+test012.c:13: エラー: `size_t' は宣言されていません.
+test012.c:13: error: syntax error before `)' token.

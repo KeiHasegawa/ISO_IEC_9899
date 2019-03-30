@@ -1,0 +1,25 @@
+/*
+ * Check if parameter scope enum declaration works well.
+ */
+#include <stdio.h>
+
+void f(enum E { a, b, c }* pe)
+{
+  printf("`f' called\n");
+  printf("*pe = %d\n", *pe);
+}
+
+void g(enum E { a, b, c }* pe)
+{
+  printf("`g' called\n");
+  void f();  // hide global `f' declaration
+  f(pe);  // ok
+}
+
+int main()
+{
+  void g();  // hide global `g' declaration
+  enum E { a, b, c } e = c;
+  g(&e);
+  return 0;
+}

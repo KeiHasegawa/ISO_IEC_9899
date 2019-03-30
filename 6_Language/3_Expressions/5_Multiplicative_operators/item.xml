@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<item>
+    <source>1_ok/test000.c</source>
+    <abstract>
+    さまざまな型に対する `*' 演算子 
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test001.c</source>
+    <abstract>
+    さまざまな型に対する `/' 演算子 
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test002.c</source>
+    <abstract>
+    さまざまな型に対する `%' 演算子 
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test003.c</source>
+    <abstract>
+    一方のオペランドが定数
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test004.c</source>
+    <abstract>
+    函数の外側での使用 
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test005.c</source>
+    <abstract>
+    case ラベルでの使用
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test006.c</source>
+    <abstract>
+    複合式における演算子の使用
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test007.c</source>
+    <abstract>
+    パラメータスコープの variable length array の次元に使用
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test000.c</source>
+    <abstract>
+    宣言されていない識別子の使用
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test001.c</source>
+    <abstract>
+    左辺値としての使用
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test002.c</source>
+    <abstract>
+    さまざまな型に対する `*', `/', `%' 演算子
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test003.c</source>
+    <abstract>
+    初期値の指定で整数の 0 割りの結果を指定
+    </abstract>
+</item>
+
+<item>
+    <source>3_binop/test000.c</source>
+    <abstract>x := y + z</abstract>
+    <type>int</type>
+</item>
+
+<item>
+    <source>3_binop/test001.c</source>
+    <abstract>x := y - z</abstract>
+    <type>int</type>
+</item>
+
+<item>
+    <source>3_binop/test002.c</source>
+    <abstract>x := y * z</abstract>
+    <type>int</type>
+</item>
+
+<item>
+    <source>3_binop/test003.c</source>
+    <abstract>x := y / z</abstract>
+    <type>int</type>
+</item>
+
+<item>
+    <source>3_binop/test004.c</source>
+    <abstract>x := y % z</abstract>
+    <type>int</type>
+</item>
+
+<item>
+    <source>3_binop/test005.c</source>
+    <abstract>x := y &lt;&lt; z</abstract>
+    <type>int</type>
+</item>
+
+<item>
+    <source>3_binop/test006.c</source>
+    <abstract>x := y >> z</abstract>
+    <type>int</type>
+</item>
+
+<item>
+    <source>3_binop/test007.c</source>
+    <abstract>x := y &amp; z</abstract>
+    <type>int</type>
+</item>
+
+<item>
+    <source>3_binop/test008.c</source>
+    <abstract>x := y ^ z</abstract>
+    <type>int</type>
+</item>
+
+<item>
+    <source>3_binop/test009.c</source>
+    <abstract>x := y | z</abstract>
+    <type>int</type>
+</item>
+
+<item>
+    <source>3_binop/test010.c</source>
+    <abstract>x := y / z</abstract>
+    <type>int</type>
+</item>
+
+<item>
+    <source>3_binop/test011.c</source>
+    <abstract>x := y / z</abstract>
+    <type>unsigned int</type>
+</item>
+
+<item>
+    <source>3_binop/test012.c</source>
+    <abstract>x := y % z</abstract>
+    <type>int</type>
+</item>
+
+<item>
+    <source>3_binop/test013.c</source>
+    <abstract>x := y % z</abstract>
+    <type>unsigned int</type>
+</item>
+
+<item>
+    <source>3_binop/test014.c</source>
+    <abstract>x := y >> z</abstract>
+    <type>int</type>
+</item>
+
+<item>
+    <source>3_binop/test015.c</source>
+    <abstract>x := y >> z</abstract>
+    <type>unsigned int</type>
+</item>
+
+<item>
+    <source>3_binop/test016.c</source>
+    <abstract>x := y + z</abstract>
+    <type>float</type>
+</item>
+
+<item>
+    <source>3_binop/test017.c</source>
+    <abstract>x := y - z</abstract>
+    <type>float</type>
+</item>
+
+<item>
+    <source>3_binop/test018.c</source>
+    <abstract>x := y * z</abstract>
+    <type>float</type>
+</item>
+
+<item>
+    <source>3_binop/test019.c</source>
+    <abstract>x := y / z</abstract>
+    <type>float</type>
+</item>
+
+<item>
+    <source>3_binop/test020.c</source>
+    <abstract>x := y + z</abstract>
+    <type>double</type>
+</item>
+
+<item>
+    <source>3_binop/test021.c</source>
+    <abstract>x := y - z</abstract>
+    <type>double</type>
+</item>
+
+<item>
+    <source>3_binop/test022.c</source>
+    <abstract>x := y * z</abstract>
+    <type>double</type>
+</item>
+
+<item>
+    <source>3_binop/test023.c</source>
+    <abstract>x := y / z</abstract>
+    <type>double</type>
+</item>
+
+<item>
+    <source>3_binop/test024.c</source>
+    <abstract>x := y / z</abstract>
+    <type>int</type>
+    <addr>eax レジスタに y 以外もあるパターン</addr>
+</item>
+
+<item>
+    <source>3_binop/test025.c</source>
+    <abstract>x := y / z</abstract>
+    <type>int</type>
+    <type>eax レジスタに y がないパターン</type>
+</item>
+
+<item>
+    <source>3_binop/test026.c</source>
+    <abstract>x := y + z</abstract>
+    <type>double</type>
+    <addr> y も z も st(0) 以外にあるパターン</addr>
+</item>
+
+<item>
+    <source>3_binop/test027.c</source>
+    <abstract>x := y * z</abstract>
+    <type>double</type>
+    <addr>y も z も st(0) 以外にあるパターン</addr>
+</item>
+
+
+<item>
+    <source>3_binop/test028.c</source>
+    <abstract>x := y + z</abstract>
+    <type>int</type>
+    <addr>y, z が函数の引数</addr>
+</item>
+
+<item>
+    <source>3_binop/test029.c</source>
+    <abstract>x := y - z</abstract>
+    <type>int</type>
+    <addr>y, z が函数の引数</addr>
+</item>
+
+<item>
+    <source>3_binop/test030.c</source>
+    <abstract>x := y * z</abstract>
+    <type>int</type>
+    <type>y, z が函数の引数</type>
+</item>
+
+<item>
+    <source>3_binop/test031.c</source>
+    <abstract>x := y / z</abstract>
+    <type>int</type>
+    <type>y, z が函数の引数</type>
+</item>
+
+<item>
+    <source>3_binop/test032.c</source>
+    <abstract>x := y % z</abstract>
+    <type>int</type>
+    <addr>y, z が函数の引数</addr>
+</item>
+
+<item>
+    <source>3_binop/test033.c</source>
+    <abstract>x := y &lt;&lt; z</abstract>
+    <type>int</type>
+    <addr>y, z が函数の引数</addr>
+</item>
+
+<item>
+    <source>3_binop/test034.c</source>
+    <abstract>x := y >> z</abstract>
+    <type>int</type>
+    <addr>y, z が函数の引数</addr>
+</item>
+
+<item>
+    <source>3_binop/test035.c</source>
+    <abstract>x := y &amp; z</abstract>
+    <type>int</type>
+    <addr>y, z が函数の引数</addr>
+</item>
+
+<item>
+    <source>3_binop/test036.c</source>
+    <abstract>x := y ^ z</abstract>
+    <type>int</type>
+    <addr>y, z が函数の引数</addr>
+</item>
+
+<item>
+    <source>3_binop/test037.c</source>
+    <abstract>x := y | z</abstract>
+    <type>int</type>
+    <addr>y, z が函数の引数</addr>
+</item>
+
+<item>
+    <source>3_binop/test038.c</source>
+    <abstract>x := y / z</abstract>
+    <type>unsigned int</type>
+    <addr>y, z が函数の引数</addr>
+</item>
+
+<item>
+    <source>3_binop/test039.c</source>
+    <abstract>x := y % z</abstract>
+    <type>unsigned int</type>
+    <addr>y, z が函数の引数</addr>
+</item>
+
+<item>
+    <source>3_binop/test040.c</source>
+    <abstract>x := y >> z</abstract>
+    <type>( unsigned int ) y, z が函数の引数</type>
+</item>
+
+<item>
+    <source>3_binop/test041.c</source>
+    <abstract>x := y + z</abstract>
+    <type>( float ) y, z が函数の引数</type>
+</item>
+
+<item>
+    <source>3_binop/test042.c</source>
+    <abstract>x := y - z</abstract>
+    <type>( float ) y, z が函数の引数</type>
+</item>
+
+<item>
+    <source>3_binop/test043.c</source>
+    <abstract>x := y * z</abstract>
+    <type>( float ) y, z が函数の引数</type>
+</item>
+
+<item>
+    <source>3_binop/test044.c</source>
+    <abstract>x := y / z</abstract>
+    <type>( float ) y, z が函数の引数</type>
+</item>
+
+<item>
+    <source>3_binop/test045.c</source>
+    <abstract>x := y + z</abstract>
+    <type>( double ) y, z が函数の引数</type>
+</item>
+
+<item>
+    <source>3_binop/test046.c</source>
+    <abstract>x := y - z</abstract>
+    <type>( double ) y, z が函数の引数</type>
+</item>
+
+<item>
+    <source>3_binop/test047.c</source>
+    <abstract>x := y * z</abstract>
+    <type>( double ) y, z が函数の引数</type>
+</item>
+
+<item>
+    <source>3_binop/test048.c</source>
+    <abstract>x := y / z</abstract>
+    <type>( double ) y, z が函数の引数</type>
+</item>
+
+
+<item>
+    <source>3_binop/test049.c</source>
+    <abstract>x := y + z</abstract>
+    <type>( int ) y, z がメモリにある</type>
+</item>
+
+<item>
+    <source>3_binop/test050.c</source>
+    <abstract>x := y - z</abstract>
+    <type>( int ) y, z がメモリにある</type>
+</item>
+
+<item>
+    <source>3_binop/test051.c</source>
+    <abstract>x := y * z</abstract>
+    <type>( int ) y, z がメモリにある</type>
+</item>
+
+<item>
+    <source>3_binop/test052.c</source>
+    <abstract>x := y / z</abstract>
+    <type>( int ) y, z がメモリにある</type>
+</item>
+
+<item>
+    <source>3_binop/test053.c</source>
+    <abstract>x := y % z</abstract>
+    <type>( int ) y, z がメモリにある</type>
+</item>
+
+<item>
+    <source>3_binop/test054.c</source>
+    <abstract>x := y &lt;&lt; z</abstract>
+    <type>( int ) y, z がメモリにある</type>
+</item>
+
+<item>
+    <source>3_binop/test055.c</source>
+    <abstract>x := y >> z</abstract>
+    <type>( int ) y, z がメモリにある</type>
+</item>
+
+<item>
+    <source>3_binop/test056.c</source>
+    <abstract>x := y &amp; z</abstract>
+    <type>( int ) y, z がメモリにある</type>
+</item>
+
+<item>
+    <source>3_binop/test057.c</source>
+    <abstract>x := y ^ z</abstract>
+    <type>( int ) y, z がメモリにある</type>
+</item>
+
+<item>
+    <source>3_binop/test058.c</source>
+    <abstract>x := y | z</abstract>
+    <type>( int ) y, z がメモリにある</type>
+</item>
+
+<item>
+    <source>3_binop/test059.c</source>
+    <abstract>x := y / z</abstract>
+    <type>( unsigned int ) y, z がメモリにある</type>
+</item>
+
+<item>
+    <source>3_binop/test060.c</source>
+    <abstract>x := y % z</abstract>
+    <type>( unsigned int ) y, z がメモリにある</type>
+</item>
+
+<item>
+    <source>3_binop/test061.c</source>
+    <abstract>x := y >> z</abstract>
+    <type>( unsigned int ) y, z がメモリにある</type>
+</item>
+
+<item>
+    <source>3_binop/test062.c</source>
+    <abstract>x := y + z</abstract>
+    <type>( float ) y, z がメモリにある</type>
+</item>
+
+<item>
+    <source>3_binop/test063.c</source>
+    <abstract>x := y - z</abstract>
+    <type>( float ) y, z がメモリにある</type>
+</item>
+
+<item>
+    <source>3_binop/test064.c</source>
+    <abstract>x := y * z</abstract>
+    <type>( float ) y, z がメモリにある</type>
+</item>
+
+<item>
+    <source>3_binop/test065.c</source>
+    <abstract>x := y / z</abstract>
+    <type>( float ) y, z がメモリにある</type>
+</item>
+
+<item>
+    <source>3_binop/test066.c</source>
+    <abstract>x := y + z</abstract>
+    <type>( double ) y, z がメモリにある</type>
+</item>
+
+<item>
+    <source>3_binop/test067.c</source>
+    <abstract>x := y - z</abstract>
+    <type>( double ) y, z がメモリにある</type>
+</item>
+
+<item>
+    <source>3_binop/test068.c</source>
+    <abstract>x := y * z</abstract>
+    <type>( double ) y, z がメモリにある</type>
+</item>
+
+<item>
+    <source>3_binop/test069.c</source>
+    <abstract>x := y / z</abstract>
+    <type>( double ) y, z がメモリにある</type>
+</item>
+
+
+<item>
+    <source>3_binop/test070.c</source>
+    <abstract>x := y + z</abstract>
+    <type>( int ) y が定数, z が函数引数</type>
+</item>
+
+<item>
+    <source>3_binop/test071.c</source>
+    <abstract>x := y - z</abstract>
+    <type>( int ) y が函数引数, z が定数</type>
+</item>
+
+<item>
+    <source>3_binop/test072.c</source>
+    <abstract>x := y * z</abstract>
+    <type>( int ) y, z が定数</type>
+</item>
+
+<item>
+    <source>3_binop/test073.c</source>
+    <abstract>x := y / z</abstract>
+    <type>( int ) y が定数, z がメモリ</type>
+</item>
+
+<item>
+    <source>3_binop/test074.c</source>
+    <abstract>x := y % z</abstract>
+    <type>( int ) y がメモリ, z が定数</type>
+</item>
+
+<item>
+    <source>3_binop/test075.c</source>
+    <abstract>x := y + z</abstract>
+    <type>( float ) y が定数, z が函数引数</type>
+</item>
+
+<item>
+    <source>3_binop/test076.c</source>
+    <abstract>x := y - z</abstract>
+    <type>( float ) y が函数引数, z が定数</type>
+</item>
+
+<item>
+    <source>3_binop/test077.c</source>
+    <abstract>x := y * z</abstract>
+    <type>( float ) y, z が定数</type>
+</item>
+
+<item>
+    <source>3_binop/test078.c</source>
+    <abstract>x := y / z</abstract>
+    <type>( float ) y がメモリ, z が定数</type>
+</item>
+
+<item>
+    <source>3_binop/test079.c</source>
+    <abstract>x := y % z</abstract>
+    <type>( float ) y が定数, z がメモリ</type>
+</item>
+
+
+<item>
+    <source>3_binop/test080.c</source>
+    <abstract>x := y + z</abstract>
+    <type>( float ) y がレジスタにあり, このあと y の使用がある</type>
+</item>
+
+<item>
+    <source>3_binop/test081.c</source>
+    <abstract>x := y / z</abstract>
+    <type>( int ) z が定数</type>
+</item>
+
+
+<item>
+    <source>3_binop/test082.c</source>
+    <abstract>x := y + z</abstract>
+    <type>long long int</type>
+</item>
+
+<item>
+    <source>3_binop/test083.c</source>
+    <abstract>x := y - z</abstract>
+    <type>long long int</type>
+</item>
+
+<item>
+    <source>3_binop/test084.c</source>
+    <abstract>x := y * z</abstract>
+    <type>long long int</type>
+</item>
+
+<item>
+    <source>3_binop/test085.c</source>
+    <abstract>x := y / z</abstract>
+    <type>long long int</type>
+</item>
+
+<item>
+    <source>3_binop/test086.c</source>
+    <abstract>x := y / z</abstract>
+    <type>unsigned long long int</type>
+</item>
+
+<item>
+    <source>3_binop/test087.c</source>
+    <abstract>x := y % z</abstract>
+    <type>long long int</type>
+</item>
+
+<item>
+    <source>3_binop/test088.c</source>
+    <abstract>x := y % z</abstract>
+    <type>unsigned long long int</type>
+</item>
+
+<item>
+    <source>3_binop/test089.c</source>
+    <abstract>x := y >> z</abstract>
+    <type>long long int</type>
+</item>
+
+<item>
+    <source>3_binop/test090.c</source>
+    <abstract>x := y >> z</abstract>
+    <type>unsigned long long int</type>
+</item>
+
+<item>
+    <source>3_binop/test091.c</source>
+    <abstract>x := y &lt;&lt; z</abstract>
+    <type>long long int</type>
+</item>
+
+<item>
+    <source>3_binop/test092.c</source>
+    <abstract>x := y &amp; z</abstract>
+    <type>long long int</type>
+</item>
+
+<item>
+    <source>3_binop/test093.c</source>
+    <abstract>x := y ^ z</abstract>
+    <type>long long int</type>
+</item>
+
+<item>
+    <source>3_binop/test094.c</source>
+    <abstract>x := y | z</abstract>
+    <type>long long int</type>
+</item>
+
+<item>
+    <source>3_binop/test095.c</source>
+    <abstract>x := y + z</abstract>
+    <type>long double</type>
+</item>
+
+<item>
+    <source>3_binop/test096.c</source>
+    <abstract>x := y - z</abstract>
+    <type>long double</type>
+</item>
+
+<item>
+    <source>3_binop/test097.c</source>
+    <abstract>x := y * z</abstract>
+    <type>long double</type>
+</item>
+
+<item>
+    <source>3_binop/test098.c</source>
+    <abstract>x := y / z</abstract>
+    <type>long double</type>
+</item>
+
+</test_item>
+
+
+

@@ -1,0 +1,25 @@
+/*
+ * Check member is set zero if member is bit field.
+ */
+#include <stdio.h>
+
+struct S {
+  unsigned int a : 1;
+  unsigned int b : 2;
+  unsigned int c : 30;
+};
+
+struct S x = { 1, 2 };
+
+void test000(void)
+{
+  printf("x.a = %d, x.b = %d, x.c = %d\n", x.a, x.b, x.c);
+  struct S y = { 1, 2 };
+  printf("y.a = %d, y.b = %d, y.c = %d\n", y.a, y.b, y.c);
+}
+
+int main(void)
+{
+  test000();
+  return 0;
+}

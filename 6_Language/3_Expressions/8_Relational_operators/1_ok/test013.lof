@@ -1,0 +1,17 @@
+cond1 called with y = 23 z = 24.000000
+y < z
+y <= z
+cond2 is called
+pc < pv
+pc < cpc
+pc < vpv
+pc <= pv
+pc <= cpc
+pc <= vpv
+cond3 is called
+pc > pv
+pc > cpc
+pc > vpv
+pc >= pv
+pc >= cpc
+pc >= vpv

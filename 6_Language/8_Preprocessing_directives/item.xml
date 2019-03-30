@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<section url="1_Conditional_inclusion/item.xml">
+    <title>6.8.1_Conditional_inclusion</title>
+</section>
+
+<section url="2_Source_file_inclusion/item.xml">
+    <title>6.8.2_Source_file_inclusion</title>
+</section>
+
+<section url="3_Macro_replacement/item.xml">
+    <title>6.8.3_Macro_replacement</title>
+</section>
+
+<section url="4_Line_control/item.xml">
+    <title>6.8.4_Line_control</title>
+</section>
+
+<section url="5_Error_directive/item.xml">
+    <title>6.8.5_Error_directive</title>
+</section>
+
+<section url="6_Pragma_directive/item.xml">
+    <title>6.8.6_Pragma_directive</title>
+</section>
+
+<section url="7_Null_directive/item.xml">
+    <title>6.8.7_Null_directive</title>
+</section>
+
+<section url="8_Predefined_macro_names/item.xml">
+    <title>6.8.8_Predefined_macro_names</title>
+</section>
+
+<section url="9_Pragma_operator/item.xml">
+    <title>6.8.9_Pragma_operator</title>
+</section>
+
+</test_item>

@@ -1,0 +1,12 @@
+`f' called
+f:r = 0
+after f(x);
+`g' called
+g:r = 0
+after g(y);
+`h' called with 2
+f:r = 3
+after h(x, y, --n); 1
+`h' called with 1
+g:r = 4
+after h(x, y, --n); 2

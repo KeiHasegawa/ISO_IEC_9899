@@ -1,0 +1,3 @@
+a.o: In function `main':
+/home/khasegawa/lang/41_ISO_IEC_9899/6_Language/7_External_definitions/0_External_definitions/3_error/a.s:14: undefined reference to `a'
+collect2: error: ld returned 1 exit status

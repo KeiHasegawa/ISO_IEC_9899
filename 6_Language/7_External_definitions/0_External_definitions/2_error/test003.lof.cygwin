@@ -1,0 +1,6 @@
+test003.c:1: error: syntax error before `"C"' token.
+test003.c:3: エラー: `T' は宣言されていません.
+test003.c:3: error: syntax error before `*b)' token.
+test003.c:10: エラー: `c' は宣言されていません.
+test003.c:12: error: syntax error before `=' token.
+test003.c:12: エラー: `c' は宣言されていません.

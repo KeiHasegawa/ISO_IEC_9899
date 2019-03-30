@@ -1,0 +1,23 @@
+`test000' called
+`f' called
+x = 1
+`f' called
+x = 2
+`f' called
+x = 0
+`f' called
+x = 0
+`f' called
+x = 5
+`f' called
+x = -1
+`f' called
+x = -128
+`f' called
+x = -1
+`f' called
+x = 9
+`f' called
+x = 3
+`f' called
+x = 11

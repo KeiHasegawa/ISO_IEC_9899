@@ -1,0 +1,10 @@
+`test00' called
+array[3] < array[5]
+array[2] <= array[4]
+array[6] > array[1]
+array[0] < array[7]
+`test01' called
+p[i] < p[j]
+p[i+1] > p[j-1]
+p[2*(i-1)] <= p[j]
+p[j-i] < p[j+3]

@@ -1,0 +1,44 @@
+`test000' called
+p000 = 0x00001234
+`test001' called
+p001 = 0x00005684
+`test002' called
+p002 = 0x00009abc
+`test003' called
+p003 = 0x0000defc
+`test004' called
+p004 = 0x00001244
+`test005' called
+p005 = 0x00005670
+`test006' called
+n006 = 4
+`test007' called
+n007_0 = 1
+n007_1 = 0
+n007_2 = 1
+n007_3 = 0
+n007_4 = 0
+n007_5 = 1
+`test008' called
+n008_0 = 0
+n008_1 = 0
+n008_2 = 1
+n008_3 = 1
+n008_4 = 1
+n008_5 = 0
+`test009' called
+n009_0 = 0
+n009_1 = 1
+n009_2 = 0
+n009_3 = 1
+n009_4 = 0
+n009_5 = 1
+`test010' called
+n010_0 = 0
+n010_1 = 1
+n010_2 = 1
+n010_3 = 0
+`test011' called
+p011 = 0x00001000
+`test012' called
+p012 = 0x000000d8

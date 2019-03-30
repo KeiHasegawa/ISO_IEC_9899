@@ -1,0 +1,34 @@
+declarator:
+  pointeropt direct-declarator
+
+direct-declarator:
+  identifier
+  ( declarator )
+  direct-declarator [ assignment-expressionopt ]
+  direct-declarator [ * ]
+  direct-declarator ( parameter-type-list )
+  direct-declarator ( identifier-listopt )
+
+pointer:
+  * type-qualifier-listopt
+  * type-qualifier-listopt pointer
+
+type-qualifier-list:
+  type-qualifier
+  type-qualifier-list type-qualifier
+
+parameter-type-list:
+  parameter-list
+  parameter-list , ...
+
+parameter-list:
+  parameter-declaration
+  parameter-list , parameter-declaration
+
+parameter-declaration:
+  declaration-specifiers declarator
+  declaration-specifiers abstract-declaratoropt
+
+identifier-list:
+  identifier
+  identifier-list , identifier

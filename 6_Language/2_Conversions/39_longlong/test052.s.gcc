@@ -1,0 +1,114 @@
+	.file	"test052.c"
+	.global x
+	.section	".data"
+	.align 8
+	.type	x,#object
+	.size	x,8
+x:
+	.long	305419896
+	.long	-1698898192
+	.global y
+	.align 8
+	.type	y,#object
+	.size	y,8
+y:
+	.long	1450744508
+	.long	-554692044
+	.global z
+	.align 8
+	.type	z,#object
+	.size	z,8
+z:
+	.long	-1698898192
+	.long	305419896
+	.global a
+	.align 4
+	.type	a,#object
+	.size	a,4
+a:
+	.long	1191181568
+	.global __ftoll
+	.section	".rodata"
+	.align 8
+.LLC0:
+	.asciz	"x = %llx\n"
+	.align 8
+.LLC1:
+	.asciz	"y = %llx\n"
+	.align 8
+.LLC2:
+	.asciz	"z = %llx\n"
+	.section	".text"
+	.align 4
+	.global main
+	.type	main,#function
+	.proc	04
+main:
+	!#PROLOGUE# 0
+	save	%sp, -112, %sp
+	!#PROLOGUE# 1
+	sethi	%hi(x), %o0
+	or	%o0, %lo(x), %o1
+	sethi	%hi(.LLC0), %o0
+	or	%o0, %lo(.LLC0), %o0
+	ld	[%o1+4], %o2
+	ld	[%o1], %o1
+	call	printf, 0
+	 nop
+	sethi	%hi(y), %o0
+	or	%o0, %lo(y), %o1
+	sethi	%hi(.LLC1), %o0
+	or	%o0, %lo(.LLC1), %o0
+	ld	[%o1+4], %o2
+	ld	[%o1], %o1
+	call	printf, 0
+	 nop
+	sethi	%hi(z), %o0
+	or	%o0, %lo(z), %o1
+	sethi	%hi(.LLC2), %o0
+	or	%o0, %lo(.LLC2), %o0
+	ld	[%o1+4], %o2
+	ld	[%o1], %o1
+	call	printf, 0
+	 nop
+	sethi	%hi(y), %o0
+	or	%o0, %lo(y), %l0
+	sethi	%hi(a), %o0
+	or	%o0, %lo(a), %o0
+	ld	[%o0], %o0
+	call	__ftoll, 0
+	 nop
+	st	%o0, [%l0]
+	st	%o1, [%l0+4]
+	sethi	%hi(x), %o0
+	or	%o0, %lo(x), %o1
+	sethi	%hi(.LLC0), %o0
+	or	%o0, %lo(.LLC0), %o0
+	ld	[%o1+4], %o2
+	ld	[%o1], %o1
+	call	printf, 0
+	 nop
+	sethi	%hi(y), %o0
+	or	%o0, %lo(y), %o1
+	sethi	%hi(.LLC1), %o0
+	or	%o0, %lo(.LLC1), %o0
+	ld	[%o1+4], %o2
+	ld	[%o1], %o1
+	call	printf, 0
+	 nop
+	sethi	%hi(z), %o0
+	or	%o0, %lo(z), %o1
+	sethi	%hi(.LLC2), %o0
+	or	%o0, %lo(.LLC2), %o0
+	ld	[%o1+4], %o2
+	ld	[%o1], %o1
+	call	printf, 0
+	 nop
+	mov	0, %o0
+	mov	%o0, %i0
+	nop
+	ret
+	restore
+.LLfe1:
+	.size	main,.LLfe1-main
+	.ident	"GCC: (GNU) 3.2"

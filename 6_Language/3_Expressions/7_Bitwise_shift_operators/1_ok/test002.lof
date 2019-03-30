@@ -1,0 +1,10 @@
+test_000 = 96
+test_001 = 1
+test_002 = -24
+test_003 = -6
+test_004 = -96
+test_005 = -2
+test_006 = -24
+test_007 = -6
+test_008 = 0x7fffffffffffffff
+test_009 = 0xfffffffffffffffe

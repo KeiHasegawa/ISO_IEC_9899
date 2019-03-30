@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+int main(void)
+{
+  printf("not necessary for tacsim.dll\n");
+  return 0;
+}

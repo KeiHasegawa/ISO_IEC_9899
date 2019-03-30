@@ -1,0 +1,3 @@
+test002.c: ”Ÿ” `f' :
+test002.c:10: error: member `a' is required for `p' not structure or union.
+test002.c:10: ƒGƒ‰[: `struct T *' ‚©‚ç `int' ‚Ö•ÏŠ·‚Å‚«‚Ü‚¹‚ñ.

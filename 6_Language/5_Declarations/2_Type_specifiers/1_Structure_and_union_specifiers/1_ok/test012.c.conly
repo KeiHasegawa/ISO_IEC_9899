@@ -1,0 +1,30 @@
+/*
+ * Check if parameter scope struct declaration works well.
+ * (parameter scope at function definition)
+ */
+#include <stdio.h>
+
+void f(union U { int i; float f; } u)
+{
+  printf("`f' called\n");
+  printf("u.i = %x\n", u.i);
+}
+
+void g()
+{
+  printf("`g' called\n");
+  union U {
+    int i;
+    float f;
+  };
+  union U x;
+  x.f = 0.5;
+  void f(); // hide global f declaration
+  f(x);  // ok
+}
+
+int main()
+{
+  g();
+  return 0;
+}

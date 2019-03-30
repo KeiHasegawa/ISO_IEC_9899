@@ -1,0 +1,3 @@
+test007.c:5: ƒGƒ‰[: `xxx' ‚ÌéŒ¾‚Å `int' ‚ª‰¼’è‚³‚ê‚Ü‚µ‚½.
+test007.c:5: error: syntax error before `int' token.
+test007.c:8: error: syntax error before `{' token.

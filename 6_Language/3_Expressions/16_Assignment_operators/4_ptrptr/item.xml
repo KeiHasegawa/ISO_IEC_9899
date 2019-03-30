@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="../../../not_leaf_dir.xsl"?>
+
+<test_item>
+
+<section url="01_ok/item.xml">
+    <title>OK</title>
+</section>
+
+<section url="02_err/item.xml">
+    <title>エラー</title>
+</section>
+
+</test_item>

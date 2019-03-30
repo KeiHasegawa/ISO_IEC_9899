@@ -1,0 +1,4 @@
+/*
+ * Check if function call is not initializer constant.
+ */
+int a = f();  /* error */

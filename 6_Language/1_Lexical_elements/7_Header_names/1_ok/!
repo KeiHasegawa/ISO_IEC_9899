@@ -1,0 +1,6 @@
+#ifndef _EXCLAMATION_
+#define _EXCLAMATION_
+
+extern int f;
+
+#endif /* _EXCLAMATION_ */

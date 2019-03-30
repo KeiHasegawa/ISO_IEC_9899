@@ -1,0 +1,43 @@
+`test000' called
+*x || *y
+`test000' called
+*x || *y
+`test000' called
+`test000' called
+*x || *y
+`test001' called
+*x || *y
+`test001' called
+*x || *y
+`test001' called
+!(*x || *y)
+`test001' called
+*x || *y
+`test002' called
+x = 2, y = -4
+x = 1, y = -2
+x = 0, y = 0
+`test003' called
+*x = 2, y = -4
+*x = 1, y = -2
+*x = 0, y = 0
+`test004' called
+*x = 3, y = 2.000000
+*x = 2, y = 1.000000
+*x = 1, y = 0.000000
+`test005' called
+!(x || *y)
+`test005' called
+x || *y
+`test005' called
+x || *y
+`test005' called
+x || *y
+`test006' called
+x || *y = 0
+`test006' called
+x || *y = 1
+`test006' called
+x || *y = 1
+`test006' called
+x || *y = 1

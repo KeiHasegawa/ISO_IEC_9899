@@ -1,0 +1,19 @@
+test003.c:4: エラー: `void' に `signed' が指定されています.
+test003.c:5: エラー: `signed' と `signed' が指定されています.
+test003.c:6: エラー: `signed' と `unsigned' が指定されています.
+test003.c:7: エラー: `float' に `signed' が指定されています.
+test003.c:8: エラー: `double' に `signed' が指定されています.
+test003.c:9: エラー: `void' に `signed' が指定されています.
+test003.c:10: エラー: `signed' と `unsigned' が指定されています.
+test003.c:11: エラー: `float' に `signed' が指定されています.
+test003.c:12: エラー: `double' に `signed' が指定されています.
+test003.c:14: エラー: `S' が再宣言されています.
+test003.c:13: エラー: ここで宣言されていました.
+test003.c:14: エラー: `struct S' に `signed' が指定されています.
+test003.c:15: エラー: `struct S' に `signed' が指定されています.
+test003.c:17: エラー: `U' が再宣言されています.
+test003.c:16: エラー: ここで宣言されていました.
+test003.c:17: エラー: `union U' に `signed' が指定されています.
+test003.c:18: エラー: `union U' に `signed' が指定されています.
+test003.c:20: エラー: `void' に `signed' が指定されています.
+test003.c:21: error: syntax error before `test014' token.

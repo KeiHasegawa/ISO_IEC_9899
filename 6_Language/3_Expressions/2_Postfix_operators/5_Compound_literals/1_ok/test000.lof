@@ -1,0 +1,16 @@
+`test00' called
+n = 0
+*p = 0
+`test01' called
+*p = 1
+q = 1
+`test02' called
+ 1 2 3
+ 4 5 6
+`test03' called
+ 4 5 6
+ 7 8 9
+`test04' called
+s.a = 7, s.b = 'i'
+s.a = -1, s.b = 'j'
+ps->a = 9, ps->b = 'k'

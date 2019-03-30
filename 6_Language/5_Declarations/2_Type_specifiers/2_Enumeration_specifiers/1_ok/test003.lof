@@ -1,0 +1,14 @@
+`test00' called
+a = 0, b = 1, e = 3
+`test01' called
+a = 0, b = 1, *pe = -3
+`test02' called
+a = 0, b = 1, e = 4
+`test03' called
+a = 0, b = 1, *pe = -4
+`test10' called
+x = 1
+`test11' called
+*x = 2
+n = 1
+`test13' called

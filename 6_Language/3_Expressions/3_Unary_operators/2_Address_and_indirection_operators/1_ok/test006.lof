@@ -1,0 +1,2 @@
+ps->a = 1040
+ps->c = init called here

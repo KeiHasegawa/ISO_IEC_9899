@@ -1,0 +1,21 @@
+/*
+ * Check if undeclared function call is available.
+ */
+#include <stdio.h>
+
+int main(void)
+{
+  char x = 'a';
+  short y = -1;
+  float z = 1.5;
+  f(x,y,z);  /* undeclared function call */
+  return 0;
+}
+
+void f(int x, int y, double z)
+{
+  printf("f called\n");
+  printf("x = '%c'\n", x);
+  printf("y = %d\n", y);
+  printf("z = %f\n", z);
+}

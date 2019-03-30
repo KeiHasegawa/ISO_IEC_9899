@@ -1,0 +1,13 @@
+/*
+ * Reference 6.5.5.3 function declarator
+ *
+ * If, in a parameter declaration, an identifier can be treated as a typedef
+ * name or as a parameter name, it shall be taken as a typedef name.
+ */
+
+typedef int T;
+
+void f(T (T)) /* 2nd `T' is typedef name. */
+              /* parameter name omitted. */
+{
+}

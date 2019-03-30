@@ -1,0 +1,2 @@
+test012.c:6: エラー: パラメータスコープのない関数定義です.
+test012.c:13: error: syntax error before `);' token.

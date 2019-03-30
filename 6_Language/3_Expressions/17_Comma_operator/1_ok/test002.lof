@@ -1,0 +1,8 @@
+`f' called with 98
+case ('a', 'b'):
+`f' called with 3
+case ((void*)2, 3):
+`f' called with 5
+case (int)(4, (void*)5):
+`f' called with 0
+case (int)(s,(struct S)0):

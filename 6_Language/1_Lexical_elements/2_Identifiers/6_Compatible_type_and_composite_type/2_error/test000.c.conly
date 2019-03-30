@@ -1,0 +1,29 @@
+/*
+ * Check if ISO sample works well.
+ * For 2nd `f' declaration, compiler will install `f' as
+ *
+ * int f(int (*)(char*), double (*)[3]);
+ *
+ * whose type is composite type.
+ */
+int f(int (*)(), double (*)[3]);
+int f(int (*)(char*), double (*)[]);
+
+int g(char*);
+int g2();
+int g3(void);
+
+double a[3];
+extern double a2[];
+double a3[4];
+
+void h(void)
+{
+  f(&g,&a);   /* ok */
+  f(&g2,&a);  /* ok */
+  f(&g3,&a);  /* error. mismatch 1st argument. */
+  f(g,&a);    /* ok */
+  f(g,&a2);   /* ok */
+  f(g,&a3);   /* error. mismatch 2nd argument. */
+}
+

@@ -1,0 +1,18 @@
+/*
+ * Check the result of assignment operator is not lvalue.
+ */
+void test000(void)
+{
+  int a;
+  int b;
+  int c;
+  (a = b) = c;
+}
+
+void test001(void)
+{
+  int a;
+  int b;
+  &(a = b);
+}
+

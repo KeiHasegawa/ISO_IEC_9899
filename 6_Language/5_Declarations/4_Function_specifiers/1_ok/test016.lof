@@ -1,0 +1,180 @@
+`test000' called
+-5
+3
+`test000' called
+-2
+4
+`test001' called
+`fa0' called with 2, 5
+-5
+`fa2' called with 3, 2
+77
+`test001' called
+`fa0' called with 3, 5
+-5
+`fa3' called with 4, 5
+-1
+`test002' called
+1, "b"
+`test002' called
+2, "a"
+`test003' called
+1, "a"
+`test003' called
+2, "b"
+`test004' called
+5, 2
+`test004' called
+2, 5
+`test005' called
+10
+`test005' called
+11
+`test006' called
+5
+`test006' called
+2
+`test007' called
+-2
+`test007' called
+-5
+`test008' called
+-6
+`test008' called
+-6
+`test009' called
+0
+`test009' called
+0
+`test010' called
+4
+`test010' called
+4
+`test011' called
+2.000000
+`test011' called
+5.000000
+`test012' called
+6
+`test012' called
+35
+`test013' called
+5
+`test013' called
+2
+`test014' called
+1
+`test014' called
+2
+`test015' called
+14
+`test015' called
+17
+`test016' called
+10
+`test016' called
+7
+`test017' called
+0x18
+`test017' called
+0xc0
+`test018' called
+6
+`test018' called
+2
+`test019' called
+0
+`test019' called
+1
+`test020' called
+0
+`test020' called
+0
+`test021' called
+1
+`test021' called
+1
+`test022' called
+1
+`test022' called
+0
+`test023' called
+1
+`test023' called
+0
+`test024' called
+0
+`test024' called
+1
+`test025' called
+2
+`test025' called
+4
+`test026' called
+4
+`test026' called
+3
+`test027' called
+6
+`test027' called
+7
+`test028' called
+0
+`test028' called
+1
+`test029' called
+1
+`test029' called
+1
+`test030' called
+5
+`test030' called
+2
+`test031' called
+2
+`test031' called
+5
+`test032' called
+6
+`test032' called
+10
+`test033' called
+1
+`test033' called
+0
+`test034' called
+1
+`test034' called
+2
+`test035' called
+5
+`test035' called
+7
+`test036' called
+1
+`test036' called
+-3
+`test037' called
+12
+`test037' called
+64
+`test038' called
+0
+`test038' called
+0
+`test039' called
+2
+`test039' called
+0
+`test040' called
+1
+`test040' called
+7
+`test041' called
+3
+`test041' called
+7
+`test042' called
+5
+`test042' called
+2

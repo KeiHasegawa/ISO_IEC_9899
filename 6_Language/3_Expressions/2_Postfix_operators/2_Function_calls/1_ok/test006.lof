@@ -1,0 +1,3 @@
+case sizeof f()
+case sizeof g()
+case sizeof h()

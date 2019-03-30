@@ -1,0 +1,54 @@
+/*
+ * Check if ISO sample works well.
+ */
+#include <stdio.h>
+
+extern int max(int a, int b)
+{
+  return a > b ? a : b;
+}
+
+extern int max2(a, b)
+     int a, b;
+{
+  return a > b ? a : b;
+}
+
+void test000(void)
+{
+  printf("`test000' called\n");
+  printf("max(3,4) = %d\n", max(3,4));
+  printf("max2(-3,4) = %d\n", max2(-3,4));
+}
+
+void g(int (*funcp)(void))
+{
+  (*funcp)();
+}
+
+void h(int func(void))
+{
+  func();
+}
+
+void test001(void)
+{
+  printf("`test001' called\n");
+  int f(void);
+  g(f);
+  h(f);
+}
+
+int f(void)
+{
+  printf("`f' called\n");
+  return -3;
+}
+
+int main(void)
+{
+  test000();
+  test001();
+  return 0;
+}
+

@@ -1,0 +1,160 @@
+	.text
+.LC0:
+	.ascii	"x = %d\n\0"
+.LC1:
+	.ascii	"y = %d\n\0"
+.LC2:
+	.ascii	"z = %d\n\0"
+.LC3:
+	.long	-16777216
+	.long	0
+.LC4:
+	.long	255
+	.long	0
+.LC5:
+	.long	0
+	.long	255
+.LC6:
+	.long	0
+	.long	65280
+.LC7:
+	.long	0
+	.long	16711680
+.LC8:
+	.long	65280
+	.long	0
+.LC9:
+	.long	16711680
+	.long	0
+.LC10:
+	.long	4660
+	.long	0
+.LC11:
+	.long	-1
+	.long	0
+	.text
+	.globl	main
+main:
+	// enter
+	pushq	%rbp
+	movq	%rsp, %rbp
+	subq	$160, %rsp
+	call	__main
+	// x := .integer31
+	movl	$4660, %eax
+	movw	%ax, -18(%rbp)
+	// y := .integer32
+	movl	$22136, %eax
+	movw	%ax, -20(%rbp)
+	// z := .integer33
+	movl	$39612, %eax
+	movw	%ax, -22(%rbp)
+	// a := .pointer34
+	movq	.refptr..LC10(%rip),	%rax
+	movq	(%rax), %rax
+	movq	%rax, -16(%rbp)
+	// .var000002A00F36CF08 := &"x = %d\n"
+	leaq	.LC0(%rip), %rbx
+	movq	%rbx, -32(%rbp)
+	// .var000002A00F34B050 := (int).integer31
+	movl	$4660, %eax
+	movzx	%ax, %eax
+	movl	%eax, -36(%rbp)
+	// param .var000002A00F36CF08
+	movq	-32(%rbp), %rax
+	movq	%rax, %rcx
+	// param .var000002A00F34B050
+	movl	-36(%rbp), %eax
+	movl	%eax, %edx
+	// call printf
+	call	printf
+	// .var000002A00F36B018 := &"y = %d\n"
+	leaq	.LC1(%rip), %rbx
+	movq	%rbx, -48(%rbp)
+	// .var000002A00F34AC90 := (int)y
+	movw	-20(%rbp), %ax
+	movzx	%ax, %eax
+	movl	%eax, -52(%rbp)
+	// param .var000002A00F36B018
+	movq	-48(%rbp), %rax
+	movq	%rax, %rcx
+	// param .var000002A00F34AC90
+	movl	-52(%rbp), %eax
+	movl	%eax, %edx
+	// call printf
+	call	printf
+	// .var000002A00F36B648 := &"z = %d\n"
+	leaq	.LC2(%rip), %rbx
+	movq	%rbx, -64(%rbp)
+	// .var000002A00F34A630 := (int)z
+	movw	-22(%rbp), %ax
+	movzx	%ax, %eax
+	movl	%eax, -68(%rbp)
+	// param .var000002A00F36B648
+	movq	-64(%rbp), %rax
+	movq	%rax, %rcx
+	// param .var000002A00F34A630
+	movl	-68(%rbp), %eax
+	movl	%eax, %edx
+	// call printf
+	call	printf
+	// y := (unsigned short int)a
+	movq	-16(%rbp), %rax
+	andl	$65535, %eax
+	movw	%ax, -20(%rbp)
+	// .var000002A00F36C778 := &"x = %d\n"
+	leaq	.LC0(%rip), %rbx
+	movq	%rbx, -80(%rbp)
+	// .var000002A00F34A330 := (int)x
+	movw	-18(%rbp), %ax
+	movzx	%ax, %eax
+	movl	%eax, -84(%rbp)
+	// param .var000002A00F36C778
+	movq	-80(%rbp), %rax
+	movq	%rax, %rcx
+	// param .var000002A00F34A330
+	movl	-84(%rbp), %eax
+	movl	%eax, %edx
+	// call printf
+	call	printf
+	// .var000002A00F36BBC8 := &"y = %d\n"
+	leaq	.LC1(%rip), %rbx
+	movq	%rbx, -96(%rbp)
+	// .var000002A00F34A870 := (int)y
+	movw	-20(%rbp), %ax
+	movzx	%ax, %eax
+	movl	%eax, -100(%rbp)
+	// param .var000002A00F36BBC8
+	movq	-96(%rbp), %rax
+	movq	%rax, %rcx
+	// param .var000002A00F34A870
+	movl	-100(%rbp), %eax
+	movl	%eax, %edx
+	// call printf
+	call	printf
+	// .var000002A00F36CAE8 := &"z = %d\n"
+	leaq	.LC2(%rip), %rbx
+	movq	%rbx, -112(%rbp)
+	// .var000002A00F34C7F0 := (int)z
+	movw	-22(%rbp), %ax
+	movzx	%ax, %eax
+	movl	%eax, -116(%rbp)
+	// param .var000002A00F36CAE8
+	movq	-112(%rbp), %rax
+	movq	%rax, %rcx
+	// param .var000002A00F34C7F0
+	movl	-116(%rbp), %eax
+	movl	%eax, %edx
+	// call printf
+	call	printf
+	// return 0
+	movl	$0, %eax
+	// leave
+	movq	%rbp, %rsp
+	leave
+	ret
+	.section	.rdata$.refptr..LC10, "dr"
+	.globl	.refptr..LC10
+	.linkonce	discard
+.refptr..LC10:
+	.quad	.LC10

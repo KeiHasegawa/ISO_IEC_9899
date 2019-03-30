@@ -1,0 +1,7 @@
+/*
+ * Check error if integer division by 0 is error in the contex where
+ * require runtime evaluation.
+ */
+
+int a = 1 / 0;
+int b = 2 % 0;

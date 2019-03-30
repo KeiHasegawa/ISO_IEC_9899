@@ -1,0 +1,12 @@
+/*
+ * Check if variable initialization must be initializer constant,
+ * where variable has static storage duration.
+ */
+int a;
+int b = a;  /* error. not initializer constant */
+static int c = a;  /* error. not initializer constant */
+
+void f(int n)
+{
+  static int d = n;  /* error. not initializer constant */
+}

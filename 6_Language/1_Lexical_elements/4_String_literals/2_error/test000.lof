@@ -1,0 +1,5 @@
+test000.c:6: error: Unterminated string literal, skipped the line
+      "Brian Kernighan
+test000.c:7: error: Unterminated string literal, skipped the line
+      ";
+2 errors in preprocessor.

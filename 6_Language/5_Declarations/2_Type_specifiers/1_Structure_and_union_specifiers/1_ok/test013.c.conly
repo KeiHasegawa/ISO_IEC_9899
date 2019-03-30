@@ -1,0 +1,29 @@
+/*
+ * Check if parameter scope struct declaration works well.
+ * (parameter scope at block scope function declaration)
+ */
+#include <stdio.h>
+
+void f(struct S {int a; } s)
+{
+  printf("`f' called\n");
+  void g(struct S {int a; } s);
+  {
+    void g();  // hide f::body::g declaration 
+    g(s);  // ok. here s is f::param::s
+  }
+}
+
+int main()
+{
+  struct S { int a; } s = { 3 };
+  void f(); // hide global `f' declaration
+  f(s);
+  return 0;
+}
+
+void g(struct S { int a; } s)
+{
+  printf("`g' called\n");
+  printf("s.a = %d\n", s.a);
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<section url="1_Labeled_statements/item.xml">
+    <title>6.6.1 Labeled statements</title>
+</section>
+
+<section url="2_Compound_statement_or_block/item.xml">
+    <title>6.6.2 Compound statement or block</title>
+</section>
+
+<section url="3_Expression_and_null_statements/item.xml">
+    <title>6.6.3 Expression and null statements</title>
+</section>
+
+<section url="4_Selection_statements/item.xml">
+    <title>6.6.4 Selection statements</title>
+</section>
+
+<section url="5_Iteration_statements/item.xml">
+    <title>6.6.5 Iteration statements</title>
+</section>
+
+<section url="6_Jump_statements/item.xml">
+    <title>6.6.6 Jump statements</title>
+</section>
+
+<section url="7_Asm_statements/item.xml">
+    <title>Asm statements</title>
+</section>
+
+</test_item>

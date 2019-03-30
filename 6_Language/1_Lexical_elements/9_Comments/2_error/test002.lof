@@ -1,0 +1,4 @@
+test002.c:11: error: Not a valid preprocessing token "//"
+    macro "glue" defined as: #define glue(x,y) x##y 	/* test002.c:10	*/
+    from test002.c: 11:      glue(/,/) k();
+1 error in preprocessor.

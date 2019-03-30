@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<item>
+    <source>1_ok/test000.c</source>
+    <abstract>
+    構文の異なる浮動小数点定数
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test001.c</source>
+    <abstract>
+    IEEE 754 単精度浮動小数点数
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test002.c</source>
+    <abstract>
+    IEEE 754 倍精度浮動小数点数
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test003.c</source>
+    <abstract>
+    Intel 80 bit 度浮動小数点数
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test004.c</source>
+    <abstract>
+    関数の外側での浮動小数点数の使用
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test005.c</source>
+    <abstract>
+    関数の外側での型 long double を持つ
+    浮動小数点数の二項演算
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test000.c</source>
+    <abstract>
+    浮動小数点数を左辺値として使用.
+    浮動小数点数を case ラベルに使用.
+    </abstract>
+</item>
+
+</test_item>

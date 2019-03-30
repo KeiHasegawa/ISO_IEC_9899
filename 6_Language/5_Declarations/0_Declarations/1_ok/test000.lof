@@ -1,0 +1,9 @@
+`f' called with 1
+`g' called with 2
+sizeof(struct outer) = 1
+sizeof x = 1
+sizeof(struct inner) = 4
+sizeof y = 4
+y.a = 1
+sizeof(struct T) = 1
+sizeof z = 1

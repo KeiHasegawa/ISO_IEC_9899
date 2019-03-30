@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+
+<test_item>
+
+<item>
+    <source>1_ok/test000.c</source>
+    <abstract>
+    inline 函数の宣言とその呼び出し
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test001.c</source>
+    <abstract>
+    extern 宣言の後の inline 函数の定義
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test002.c</source>
+    <abstract>
+    ISO のサンプル
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test003.c</source>
+    <abstract>
+    inline 函数で再帰呼び出し
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test004.c</source>
+    <abstract>
+    複数の inline 函数が相互に呼び出す
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test005.c</source>
+    <abstract>
+    inline 函数から別の inline 函数を呼び出す
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test006.c</source>
+    <abstract>
+    inline 函数を同一の函数から複数回呼び出す
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test007.c</source>
+    <abstract>
+    inline 函数を同一の函数から複数回呼び出す. inline 函数には参照されないラベルが含まれている.
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test008.c</source>
+    <abstract>
+    3 項演算子のオペランドに inline 函数の呼び出し結果を指定
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test009.c</source>
+    <abstract>
+    inline 函数の呼び出しの後に inline 函数の定義がある
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test010.c</source>
+    <abstract>
+    inline 函数における inline 函数の呼び出しの後に inline 函数の定義がある
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test011.c</source>
+    <abstract>
+    inline 函数における inline 函数の呼び出しの後に inline 函数の定義があるがその函数は呼び出されない.
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test012.c</source>
+    <abstract>
+    inline 函数における複数回の inline 函数の呼び出しの後に inline 函数の定義がある
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test013.c</source>
+    <abstract>
+    inline 函数における複数回の inline 函数の呼び出し. いくつかは呼び出し前に inline 函数の定義があり, その他は呼び出し後で inline 函数の定義がある.
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test014.c</source>
+    <abstract>
+    static inline 函数から static inline 函数を参照する.
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test015.c</source>
+    <abstract>
+    static inline 函数から同一の static inline 函数を複数回参照する.
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test016.c</source>
+    <abstract>
+    inline 函数の呼び出し結果をさまざまな式で参照
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test017.c</source>
+    <abstract>
+    複数の inline 函数が相互に呼び出す
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test018.c</source>
+    <abstract>
+    inline 函数で再帰呼び出し
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test019.c</source>
+    <abstract>
+    可変個引数の inline 函数
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test020.c</source>
+    <abstract>
+    定義のある inline 函数呼び出しと宣言はあるが定義が後の inline 函数呼び出し
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test021.c</source>
+    <abstract>
+    後定義の inline 函数, static 函数の複数回の呼び出し. 呼び出し側は inline, static ありなしの函数が混在.
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test022.c</source>
+    <abstract>
+    inline 函数や static 函数のアドレスの参照
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test023.c</source>
+    <abstract>
+    inline 函数で __func__ を参照
+    </abstract>
+</item>
+
+<item>
+    <source>1_ok/test024.c</source>
+    <abstract>
+      inline 函数で enum の宣言とめんば参照
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test000.c</source>
+    <abstract>
+    函数でないものを inline 宣言
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test001.c</source>
+    <abstract>
+    inline 函数のボディに static な変数, 内部リンケージを持つ変数への参照
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test002.c</source>
+    <abstract>
+    main 函数の inline 定義
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test003.c</source>
+    <abstract>
+    inline 函数の定義がない
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test004.c</source>
+    <abstract>
+    inline 函数の引数の合わない呼び出し
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test005.c</source>
+    <abstract>
+    inline 函数の引数の合わない呼び出し
+    </abstract>
+</item>
+
+<item>
+    <source>2_error/test006.c</source>
+    <abstract>
+    inline 函数や static 函数のアドレスの参照しているが, その定義がない
+    </abstract>
+</item>
+
+<item>
+    <source>3_ok</source>
+    <abstract>
+    ISO のサンプル
+    </abstract>
+</item>
+
+<item>
+    <source>4_error</source>
+    <abstract>
+    ISO のサンプル
+    </abstract>
+</item>
+
+<item>
+    <source>5_ok</source>
+    <abstract>
+    ISO のサンプルだが先に inline 関数呼び出しによる参照がある.
+    </abstract>
+</item>
+
+</test_item>
