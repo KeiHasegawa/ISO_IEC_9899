@@ -32,13 +32,6 @@
 </item>
 
 <item>
-    <source>1_ok/test005.c</source>
-    <abstract>
-      参照されない static 函数, inline 函数に対してコード生成しないかを確認
-    </abstract>
-</item>
-
-<item>
     <source>1_ok/test006.c</source>
     <abstract>
       参照された static 函数に対して普通にコード生成することを確認
