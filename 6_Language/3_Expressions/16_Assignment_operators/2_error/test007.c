@@ -1,14 +1,12 @@
-struct S {
-  char* pc;
-  int* pi;
-};
+char* pc;
+int* pi;
 
-void f(struct S* ps)
+void f()
 {
-  ps->pc = ps->pi = 0;  // error
+  pc = pi = 0;  // error
 }
 
-void g(struct S* ps)
+void g()
 {
-  ps->pc = ps->pi = ((void *)0);  // error
+  pc = pi = ((void *)0);  // error
 }
