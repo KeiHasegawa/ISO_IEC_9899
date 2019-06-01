@@ -1,0 +1,18 @@
+extern int printf(const char*, ...);
+
+struct outer {
+  int x;
+  int f();
+  struct inner {
+    int y;
+    int g();
+  };
+};
+
+void f2(int (*pf)(outer::inner))
+{
+  printf("f2 called\n");
+  outer::inner i;
+  i.y = 456;
+  pf(i);
+}
