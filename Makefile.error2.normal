@@ -39,6 +39,7 @@ test.log:$(OBJS)
 	else \
 		$(DOS2UNIX) $@; \
 	fi
+	line_conv.csh $@
 
 clean:
 	$(RM) *.o *.log *.exe *.s *.i *.stackdump core.* *~
