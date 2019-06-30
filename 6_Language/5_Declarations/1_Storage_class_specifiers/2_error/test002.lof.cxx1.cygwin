@@ -1,3 +1,4 @@
 test002.c: 函数 `f' :
 test002.c:10: エラー: `a' は宣言されていません.
+test002.c:10: error: member is required for `p' not structure or union.
 test002.c:10: エラー: `struct T *' から `int' へ変換できません.

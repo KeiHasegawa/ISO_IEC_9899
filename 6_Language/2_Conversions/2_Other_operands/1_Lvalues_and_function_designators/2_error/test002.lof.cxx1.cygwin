@@ -2,11 +2,11 @@ test002.c: 函数 `test00' :
 test002.c:9: エラー: 添字参照された値が void (*)(int) です.
 test002.c:10: エラー: 添字参照された値が void (*)(int) です.
 test002.c: 函数 `test01' :
-test002.c:16: error: member is required for not structure or union.
 test002.c:16: エラー: `member' は宣言されていません.
+test002.c:16: error: member is required for not structure or union.
 test002.c: 函数 `test02' :
-test002.c:22: error: member is required for not structure or union.
 test002.c:22: エラー: `member' は宣言されていません.
+test002.c:22: error: member is required for not structure or union.
 test002.c: 函数 `test03' :
 test002.c:28: エラー: `++' 演算子が型 `void(void) 'に適用されています.
 test002.c: 函数 `test04' :
