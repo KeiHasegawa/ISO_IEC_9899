@@ -1,8 +1,0 @@
-test000.c: 函数 `main' :
-test000.c:12: エラー: `x' は宣言されていません.
-test000.c:12: error: member is required for `x' not structure or union.
-test000.c:12: エラー: `a' は宣言されていません.
-test000.c:14: エラー: `y' は宣言されていません.
-test000.c:15: エラー: `z' は宣言されていません.
-test000.c:15: エラー: -> がポインタでない `z' に対して指定されています.
-test000.c:17: エラー: `c' は宣言されていません.
