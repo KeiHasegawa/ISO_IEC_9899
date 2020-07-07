@@ -1,6 +1,0 @@
-test004.c: 函数 `f' :
-test004.c:9: エラー: `p' の型は struct S * ですが struct S には `a' というメンバーはありません.
-test004.c:3: エラー: struct S はここで宣言されています.
-test004.c: 函数 `g' :
-test004.c:14: エラー: `s' の型は struct S ですが struct S には `a' というメンバーはありません.
-test004.c:3: エラー: struct S はここで宣言されています.
