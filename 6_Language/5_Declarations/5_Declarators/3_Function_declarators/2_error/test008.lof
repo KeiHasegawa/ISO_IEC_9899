@@ -1,4 +1,0 @@
-test008.c:4: エラー: `X' は宣言されていません.
-test008.c:4: エラー: `X' の宣言で `int' が仮定されました.
-test008.c:4: error: syntax error before `typedef' token.
-test008.c:4: エラー: `T' は宣言されていません.

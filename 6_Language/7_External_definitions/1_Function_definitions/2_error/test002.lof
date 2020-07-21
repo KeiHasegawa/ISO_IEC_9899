@@ -1,4 +1,0 @@
-test002.c:5: エラー: `n' は宣言されていません.
-test002.c:5: エラー: `f' が void として宣言されています.
-test002.c:7: error: syntax error before `{' token.
-test002.c:15: error: syntax error before `{' token.
