@@ -39,7 +39,7 @@ endif
 
 CC1 = hcc1.exe
 CC1_FLAG = --generator-option \( --debug --ms \)
-LINK = vs_wrapper2
+LINK2 = vs_wrapper2
 RUN =
 DOG = wdog.exe
 DOGV = wdog.exe -v
@@ -55,7 +55,7 @@ DOGV = wdog.exe -v
 	$(TOUCH) $@
 
 test.log:$(ASMS)
-	-if $(DOG) $(LINK) -o $(basename $@).exe $(ASMS) > $@ ; then \
+	-if $(DOG) $(LINK2) -o $(basename $@).exe $(ASMS) > $@ ; then \
 		$(RM) $@ ; \
 	else \
 		$(DOS2UNIX) $@; \
