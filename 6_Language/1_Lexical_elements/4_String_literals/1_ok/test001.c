@@ -3,7 +3,9 @@
  * Note : this file codeing system is Shift-JIS.
  */
 #include <stdio.h>
+#ifndef __cplusplus
 #include <stddef.h>
+#endif // __cplusplus
 
 void test00(void)
 {
