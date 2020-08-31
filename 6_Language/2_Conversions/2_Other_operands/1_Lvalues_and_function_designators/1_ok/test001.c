@@ -2,7 +2,9 @@
  * Check if expressions whose type array of `T' are recognized.
  */
 #include <stdio.h>
+#ifndef __cplusplus
 #include <stddef.h>
+#endif // __cplusplus
 
 /* expr [ index ] or index [ expr ], where expr has array of `T' */
 void test00(void)
