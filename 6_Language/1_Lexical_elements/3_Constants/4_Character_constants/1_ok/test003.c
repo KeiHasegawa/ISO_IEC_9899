@@ -3,9 +3,7 @@
  * Note : this file codeing system is JIS.
  */
 #include <stdio.h>
-#ifndef __cplusplus
 #include <stddef.h>
-#endif // __cplusplus
 
 wchar_t a = L'犬';
 
