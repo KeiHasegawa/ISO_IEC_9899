@@ -2,9 +2,7 @@
  * Check if string literal is recognized.
  */
 #include <stdio.h>
-#ifndef __cplusplus
 #include <stddef.h>
-#endif // __cplusplus
 
 /*
  * string-literal:

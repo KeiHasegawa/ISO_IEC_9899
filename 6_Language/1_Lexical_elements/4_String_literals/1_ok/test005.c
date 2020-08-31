@@ -3,9 +3,7 @@
  * Note : this file codeing system is EUC.
  */
 #include <stdio.h>
-#ifndef __cplusplus
 #include <stddef.h>
-#endif // __cplusplus
 
 void test00(void)
 {
