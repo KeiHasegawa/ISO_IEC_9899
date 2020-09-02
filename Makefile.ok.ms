@@ -39,7 +39,7 @@ endif
 
 CC1 = hcc1.exe
 CC1_FLAG = --generator-option \( --debug --ms \)
-LINK = vs_wrapper
+LINK_CMD = vs_wrapper
 RUN =
 DOGV = wdog.exe -v
 
@@ -50,7 +50,7 @@ DOGV = wdog.exe -v
 	$(DOGV) $(CC1) -o $@ $< $(CC1_FLAG)
 
 %.exe : %.asm
-	$(DOGV) $(LINK) -o $@ $<
+	$(DOGV) $(LINK_CMD) -o $@ $<
 
 %.log : %.exe
 	$(DOGV) $(RUN) ./$< > $@
