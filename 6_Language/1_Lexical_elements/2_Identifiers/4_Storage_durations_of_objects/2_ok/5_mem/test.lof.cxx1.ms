@@ -1,0 +1,6 @@
+b.obj : error LNK2005: a は既に a.obj で定義されています。 [D:\home\khasegawa\lang\40_test_tool\vs_wrapper2xx\vs_wrapper2xx.vcxproj]
+b.obj : error LNK2005: printf は既に a.obj で定義されています。 [D:\home\khasegawa\lang\40_test_tool\vs_wrapper2xx\vs_wrapper2xx.vcxproj]
+D:\home\khasegawa\lang\40_test_tool\vs_wrapper2xx\x64\Debug\vs_wrapper2xx.exe : fatal error LNK1169: 1 つ以上の複数回定義されているシンボルが見つかりました。 [D:\home\khasegawa\lang\40_test_tool\vs_wrapper2xx\vs_wrapper2xx.vcxproj]
+  b.obj : error LNK2005: a は既に a.obj で定義されています。 [D:\home\khasegawa\lang\40_test_tool\vs_wrapper2xx\vs_wrapper2xx.vcxproj]
+  b.obj : error LNK2005: printf は既に a.obj で定義されています。 [D:\home\khasegawa\lang\40_test_tool\vs_wrapper2xx\vs_wrapper2xx.vcxproj]
+  D:\home\khasegawa\lang\40_test_tool\vs_wrapper2xx\x64\Debug\vs_wrapper2xx.exe : fatal error LNK1169: 1 つ以上の複数回定義されているシンボルが見つかりました。 [D:\home\khasegawa\lang\40_test_tool\vs_wrapper2xx\vs_wrapper2xx.vcxproj]
