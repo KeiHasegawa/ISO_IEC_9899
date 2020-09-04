@@ -37,7 +37,7 @@ endif
 
 CC1 = hcc1.exe
 CC1_FLAG = --generator-option \( --debug --ms \)
-LINK = vs_wrapper2
+LINK2 = vs_wrapper2
 RUN =
 DOGV = wdog.exe -v
 
@@ -56,7 +56,7 @@ DOGV = wdog.exe -v
 	$(TOUCH) $@
 
 test.exe:$(ASMS)
-	$(DOGV) $(LINK) -o $@ $(ASMS)
+	$(DOGV) $(LINK2) -o $@ $(ASMS)
 
 clean:
 	$(RM) *.log *.exe *.asm *.i *.stackdump core.* a.out core *~
