@@ -19,6 +19,7 @@ CPP_FLAG = -D_MSC_VER \
 -D__inline=inline \
 -D__fastcall= \
 -Dmain=_test_main \
+-e sjis \
 -W 0 $(EXTRA_CPP_FLAG)
 else
 CPP_FLAG = -D_MSC_VER \
@@ -32,6 +33,7 @@ CPP_FLAG = -D_MSC_VER \
 -D__declspec\(a\)= \
 -D__inline=inline \
 -Dmain=_test_main \
+-e sjis \
 -W 0 $(EXTRA_CPP_FLAG)
 endif
 

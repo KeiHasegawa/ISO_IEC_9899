@@ -21,6 +21,7 @@ $(EXTRA_CPP_FLAG_TACSIM_VS) \
 -D__declspec\(a\)= \
 -D__inline=inline \
 -D__fastcall= \
+-e sjis \
 -W 0
 else
 CPP_FLAG = \
@@ -35,6 +36,7 @@ $(EXTRA_CPP_FLAG_TACSIM_VS) \
 -D_Bool=int \
 -D__declspec\(a\)= \
 -D__inline=inline \
+-e sjis \
 -W 0
 endif
 

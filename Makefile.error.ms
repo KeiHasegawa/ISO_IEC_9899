@@ -41,6 +41,7 @@ CPP_FLAG = -D_MSC_VER \
 -D__inline=inline \
 -D__fastcall= \
 -H \
+-e sjis \
 -W 0 $(EXTRA_CPP_FLAG)
 else
 CPP_FLAG = -D_MSC_VER \
@@ -54,6 +55,7 @@ CPP_FLAG = -D_MSC_VER \
 -D__declspec\(a\)= \
 -D__inline=inline \
 -H \
+-e sjis \
 -W 0 $(EXTRA_CPP_FLAG)
 endif
 
