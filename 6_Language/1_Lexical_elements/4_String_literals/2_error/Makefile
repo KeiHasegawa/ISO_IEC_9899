@@ -12,3 +12,6 @@ test001.log : test001.c
 	-$(DOG) $(CC1) -o $(basename $@).i $< 2> $@
 	$(DOS2UNIX) $@
 
+test001.i : test001.c
+	-$(DOG) $(CPP) -o $@ $< $(CPP_FLAG) 2> $(basename $@).log
+	$(DOS2UNIX) $(basename $@).log
