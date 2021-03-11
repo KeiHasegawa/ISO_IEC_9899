@@ -4,7 +4,7 @@
 int main()
 {
   wchar_t wc = L'怒';
-  printf("%x\n", wc);
+  printf("%x\n", (int)wc);
   return 0;
 }
 

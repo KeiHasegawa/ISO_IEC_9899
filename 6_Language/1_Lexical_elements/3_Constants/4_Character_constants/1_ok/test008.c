@@ -4,6 +4,6 @@
 int main()
 {
   wchar_t wc = L'”\';
-  printf("%x\n", wc);
+  printf("%x\n", (int)wc);
   return 0;
 }
