@@ -36,7 +36,7 @@ void test001(int a, int b, int c)
 
 struct S {
   int n;
-  char* s;
+  const char* s;
 };
 
 inline struct S il1(int n)
