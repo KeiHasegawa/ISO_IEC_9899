@@ -11,7 +11,7 @@ int d = 1LL;
 
 int e = 2.0F;
 
-char* f = "howdy";
+const char* f = "howdy";
 
 void test00(void)
 {
