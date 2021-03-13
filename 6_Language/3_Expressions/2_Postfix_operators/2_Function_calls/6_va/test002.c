@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-void f(char*, ...);
+void f(const char*, ...);
 
 int main()
 {
@@ -10,14 +10,14 @@ int main()
   return 0;
 }
 
-void f(char* a, ...)
+void f(const char* a, ...)
 {
   char* array[20];
   va_list ap;
   int i;
 
   va_start(ap,a);
-  array[0] = a;
+  array[0] = (char*)a;
   for ( i = 1 ; i < 20 ; ++i )
     array[i] = va_arg(ap,char*);
 
