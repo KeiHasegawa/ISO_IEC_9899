@@ -5,7 +5,7 @@
 
 typedef struct S {
   int a;
-  char* b;
+  const char* b;
 } S;
 
 void test000(S s)
