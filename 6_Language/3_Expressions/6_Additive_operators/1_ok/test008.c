@@ -8,7 +8,7 @@ double da[10];
 
 long long int x, *y;
 
-void f(int n, char* (*pa)[n = da[4] + ++x - ++*y])
+void f(int n, const char* (*pa)[n = da[4] + ++x - ++*y])
 {
   for ( int i = 0 ; i < n ; ++i )
     printf(" \"%s\"", (*pa)[i]);
@@ -20,7 +20,7 @@ int main(void)
   da[4] = 8;
   x = 'x';
   y = &(long long int){'y'};
-  char* day[][7] = {
+  const char* day[][7] = {
     { "Sun", "Mon", "Tue", "Wed", "Thr", "Fri", "Sat" }
   };
   f(1,&day[0]);
