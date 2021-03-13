@@ -35,7 +35,11 @@ void test01(void)
 void test02(void)
 {
   /* string literal is static storage duration */
-  char* p = "/tmp/fileXXXXXX";
+  char* p = 
+#ifdef __cplusplus
+    (char*)
+#endif
+    "/tmp/fileXXXXXX";
   p[3] = 'P';  /* ok. but undefined behavior. */
 }
 
