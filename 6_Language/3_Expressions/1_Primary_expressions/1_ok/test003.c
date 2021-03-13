@@ -21,6 +21,9 @@ int main(void)
 
 void f(void)
 {
-  char* p = "hogehoge";       /* ok */
+  const char* p = "hogehoge";       /* ok */
+#ifdef __cplusplus
+  const
+#endif
   char (*pa)[] = &"hogehoge";  /* ok */
 }
