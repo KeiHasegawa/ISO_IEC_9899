@@ -31,10 +31,16 @@ void test01(void)
   for ( int i = 0 ; i < sizeof a/sizeof a[0] ; ++i )
     printf(" %d", (*pa)[i] = i);
   printf("\n");
+#ifdef __cplusplus
+  const
+#endif
   char (*ps)[] = &"program";
   for ( int i = 0 ; i < sizeof "program"/sizeof "program"[0] - 1 ; ++i )
     printf("%c", (*ps)[i]);
   printf("\n");
+#ifdef __cplusplus
+  const
+#endif
   wchar_t (*pw)[] = &L"program";
   for ( int i = 0 ; i < sizeof L"program"/sizeof L"program"[0] - 1 ; ++i )
     printf("%c", (int)((*pw)[i]));
