@@ -9,7 +9,7 @@
 
 struct S {
   int a;
-  char* b;
+  const char* b;
 };
 
 void test000(int x, struct S* ps, int i, int j)
