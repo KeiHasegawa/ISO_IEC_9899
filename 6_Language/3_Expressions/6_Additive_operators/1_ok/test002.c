@@ -5,14 +5,14 @@
 #include <stdio.h>
 
 /* arithmetic type is `char' */
-void test000(char* a, char b)
+void test000(const char* a, char b)
 {
   printf("`test000' called\n");
   printf("%c\n", *(a + b));
 }
 
 /* arithmetic type is `char' */
-void test001(char a, char* b)
+void test001(char a, const char* b)
 {
   printf("`test001' called\n");
   printf("%c\n", *(a + b));
@@ -142,14 +142,14 @@ void test081(unsigned long int a, unsigned long long int* b)
 }
 
 /* arithmetic type is `long long int' */
-void test090(char* a, long long int b)
+void test090(const char* a, long long int b)
 {
   printf("`test090' called\n");
   printf("%c\n", *(a + b));
 }
 
 /* arithmetic type is `long long int' */
-void test091(long long int a, char* b)
+void test091(long long int a, const char* b)
 {
   printf("`test091' called\n");
   printf("%c\n", *(a + b));
