@@ -39,7 +39,7 @@ struct s1 {
 
 struct s2 {
   struct s1 *s1p;
-  char* b;
+  const char* b;
 };
 
 void print_s2(struct s2*);
