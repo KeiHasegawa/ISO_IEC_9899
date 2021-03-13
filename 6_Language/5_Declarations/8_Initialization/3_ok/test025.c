@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-char *array[] = {
+const char *array[] = {
   "aaaaaaa",
   "bbbbb",
   "cccc",
