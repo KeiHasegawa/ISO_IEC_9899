@@ -34,7 +34,7 @@ void test001(int a, int b, int c, int d, int e)
 
 struct S {
   int a;
-  char* b;
+  const char* b;
 };
 
 void test002(int a, struct S b, struct S c)
