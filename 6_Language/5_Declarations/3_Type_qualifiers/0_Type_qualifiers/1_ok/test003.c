@@ -3,7 +3,11 @@
  */
 #include <stdio.h>
 
-extern char* const pc;
+extern
+#ifdef __cplusplus
+const
+#endif
+char* const pc;
 
 extern int* volatile pi;
 
@@ -17,6 +21,9 @@ int main()
   return 0;
 }
 
+#ifdef __cplusplus
+const
+#endif
 char* const pc = "\"char* const pc;\" declaration test";
 
 int N = 1234;

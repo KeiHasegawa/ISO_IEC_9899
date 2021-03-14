@@ -3,15 +3,15 @@
  */
 #include <stdio.h>
 
-char* test000[] = { "abc", "def", "efg" };
+const char* test000[] = { "abc", "def", "efg" };
 
-static char* test001[] = { "hij", "klm" };
+static const char* test001[] = { "hij", "klm" };
 
 void f(void)
 {
   printf("`f' called\n");
-  static char* test002[] = { "opq", "rst", "uvw", "xyz" };
-  char* test003[] = { "ABC", "DEF" };
+  static const char* test002[] = { "opq", "rst", "uvw", "xyz" };
+  const char* test003[] = { "ABC", "DEF" };
 
   for ( int i = 0 ; i < sizeof test000/sizeof test000[0] ; ++i )
     printf(" \"%s\"", test000[i]);

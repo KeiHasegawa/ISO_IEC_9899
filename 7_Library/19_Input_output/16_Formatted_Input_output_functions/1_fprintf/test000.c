@@ -2,11 +2,11 @@
 #include <stdio.h>
 /* ... */
 
-void f(char**, char**, int*, int*, int*);
+void f(const char**, const char**, int*, int*, int*);
 
 int main()
 {
-  char *weekday, *month; // pointers to strings
+  const char *weekday, *month; // pointers to strings
   int day, hour, min;
   f(&weekday, &month, &day, &hour, &min);
   fprintf(stdout, "%s, %s %d, %.2d:%.2d\n", weekday, month, day, hour, min);
@@ -14,7 +14,7 @@ int main()
   return 0;
 }
 
-void f(char** a, char** b, int* c, int* d, int* e)
+void f(const char** a, const char** b, int* c, int* d, int* e)
 {
   *a = "Sunday";
   *b = "July";

@@ -3,7 +3,7 @@
  */
 #include <stdio.h>
 
-char* pc = "`pc' has file scope";
+const char* pc = "`pc' has file scope";
 
 typedef int a;  /* `a' has file scope */
 

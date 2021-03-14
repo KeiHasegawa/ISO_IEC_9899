@@ -10,7 +10,7 @@ void test000(int n)
     printf("n = %d\n", n);
 }
 
-void test001(char* p)
+void test001(const char* p)
 {
   printf("`test001' called\n");
   while ( *p )

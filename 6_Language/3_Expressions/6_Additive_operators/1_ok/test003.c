@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 /* arithmetic type is `char' */
-void test000(char* a, char b)
+void test000(const char* a, char b)
 {
   printf("`test000' called\n");
   printf("%c\n", *(a - b));
@@ -76,7 +76,7 @@ void test080(unsigned long long int* a, unsigned long int b)
 }
 
 /* arithmetic type is `long long int' */
-void test090(char* a, long long int b)
+void test090(const char* a, long long int b)
 {
   printf("`test090' called\n");
   printf("%c\n", *(a - b));

@@ -16,7 +16,7 @@ int main(void)
   printf("b = %d\n", b);
   int c = (a+b);
   printf("c = %d\n", c);
-  char* d = "Brian Kernighan";
+  const char* d = "Brian Kernighan";
   printf("d = \"%s\"\n", d);
   char e = d[6];
   printf("e = '%c'\n", e);

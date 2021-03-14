@@ -7,7 +7,7 @@ struct S {
 };
 
 struct T {
-  char* p;
+  const char* p;
   struct S s;
   float f;
 };

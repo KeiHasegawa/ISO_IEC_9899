@@ -14,7 +14,7 @@ void test000(int* p)
   }
 }
 
-void test001(char* p)
+void test001(const char* p)
 {
   printf("`test001' called\n");
   for ( ; ; ++p ){

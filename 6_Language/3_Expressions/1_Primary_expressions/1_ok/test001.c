@@ -5,7 +5,13 @@
 
 int main(void)
 {
+#ifdef __cplusplus
+  const
+#endif
   char (*p)[] = &"Bjarne Stroustrup";
+#ifdef __cplusplus
+  const
+#endif
   char (*q)[25] = &"Programming Language C++";
   printf("%s %s\n", *p, *q);
   return 0;

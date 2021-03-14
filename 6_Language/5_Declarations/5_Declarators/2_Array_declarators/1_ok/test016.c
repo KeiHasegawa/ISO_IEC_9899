@@ -46,7 +46,11 @@ void test2(int n)
   printf("\n");
 }
 
+#ifdef __cplusplus
+typedef const char X[];
+#else
 typedef char X[];
+#endif
 X* f()
 {
   return &"abcdefghijklmnopqrstuvwxyz";
