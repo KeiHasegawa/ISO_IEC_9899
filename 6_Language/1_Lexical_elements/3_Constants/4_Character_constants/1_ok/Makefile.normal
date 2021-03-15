@@ -12,4 +12,4 @@ test005.s : test005.i
 CPP_FLAG_FOR_JIS = $(CPP_FLAG) -e iso2022_jp
 
 test012.i : test012.c
-	$(DOGV) $(CPP) $(CPP_FLAG_FOR_JIS) -o $p $< 
+	$(DOGV) $(CPP) $(CPP_FLAG_FOR_JIS) -o $@ $< 
