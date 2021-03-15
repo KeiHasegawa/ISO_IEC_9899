@@ -22,10 +22,10 @@ void test00(void)
 }
 
 /* result of [] operator */
-void test01(char* p, int i)
+void test01(const char* p, int i)
 {
   printf("`test01' called\n");
-  char* q = &p[i];
+  const char* q = &p[i];
   printf("*q = '%c'\n", *q);
 }
 
