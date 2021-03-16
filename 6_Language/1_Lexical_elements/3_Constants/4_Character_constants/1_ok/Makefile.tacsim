@@ -11,3 +11,8 @@ test004.log : test004.i
 test005.log : test005.i
 	$(DOGV) --alarm 700 $(CC1) $< $(CC1_FLAG) > $@
 	$(DOS2UNIX) $@
+
+CPP_FLAG_FOR_JIS = $(CPP_FLAG) -e iso2022_jp
+
+test012.i : test012.c
+	$(DOGV) $(CPP) $(CPP_FLAG_FOR_JIS) -o $@ $< 
