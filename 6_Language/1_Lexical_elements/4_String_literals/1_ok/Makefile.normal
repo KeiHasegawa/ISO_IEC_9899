@@ -13,3 +13,6 @@ test014.i:test014.c
 
 test015.i:test015.c
 	$(DOGV) $(CPP) -o $@ $< $(CPP_FLAG_FOR_JIS)
+
+test016.i:test016.c
+	$(DOGV) $(CPP) -o $@ $< $(CPP_FLAG_FOR_JIS)

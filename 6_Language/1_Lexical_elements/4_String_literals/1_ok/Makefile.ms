@@ -11,3 +11,9 @@ test013.i:test013.c
 test014.i:test014.c
 	$(DOGV) $(CPP) $(CPP_FLAG_FOR_JIS) $< | vs_header_conv.pl > $@
 
+test015.i:test015.c
+	$(DOGV) $(CPP) $(CPP_FLAG_FOR_JIS) $< | vs_header_conv.pl > $@
+
+test016.i:test016.c
+	$(DOGV) $(CPP) $(CPP_FLAG_FOR_JIS) $< | vs_header_conv.pl > $@
+
