@@ -38,7 +38,11 @@ void test1(int n)
 void test2(int n)
 {
   printf("test2 called\n");
+#ifdef __cplusplus
+  typedef const char ARRAY[(n - 5)*2];
+#else
   typedef char ARRAY[(n - 5)*2];
+#endif 
   ARRAY* f();  // Function returning pointer to VLA at block scope
   ARRAY* p = f();
   for (int i = 0 ; i != sizeof *p ; ++ i)
