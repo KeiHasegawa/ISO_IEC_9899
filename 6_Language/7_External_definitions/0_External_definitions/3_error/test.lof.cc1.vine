@@ -1,3 +1,3 @@
-a.o: In function `main':
+/usr/local/lib/gcc/i686-pc-linux-gnu/10.2.0/../../../../i686-pc-linux-gnu/bin/ld: a.o: in function `main':
 /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/7_External_definitions/0_External_definitions/3_error/a.s:XX: undefined reference to `a'
 collect2: error: ld returned 1 exit status
