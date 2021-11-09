@@ -22,11 +22,11 @@ DOGV = wdog.exe -v
 	$(DOGV) $(CC) -o $@ $< -S
 
 
-START_O = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_m68hc11.014/start.o
+START_O = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_m68hc11.015/start.o
 
 LIBGCC = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/GNU_LANG/lib/gcc/m68hc11-elf/3.4.4/libgcc.a
 
-LDSCRIPT = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_m68hc11.014/test014.x
+LDSCRIPT = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_m68hc11.015/test015.x
 
 %.elf : %.o
 	$(DOGV) $(LD) -o $@ $(START_O) $< $(LIBGCC) -T $(LDSCRIPT)
