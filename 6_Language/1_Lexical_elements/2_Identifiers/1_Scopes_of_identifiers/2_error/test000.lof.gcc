@@ -1,0 +1,6 @@
+test000.c: In function `test00':
+test000.c:9: error: duplicate label `Label'
+test000.c:7: error: `Label' previously defined here
+test000.c: In function `test01':
+test000.c:19: error: label `Prev' used but not defined
+test000.c:21: error: label `Post' used but not defined

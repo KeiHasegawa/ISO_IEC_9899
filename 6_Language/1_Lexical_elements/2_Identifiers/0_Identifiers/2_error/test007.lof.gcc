@@ -1,0 +1,8 @@
+/media/ca850f52-0605-42a7-9fd4-899de9edf461/work/GNU_LANG/lib/gcc/m68hc11-elf/3.4.4/../../../../m68hc11-elf/bin/ld: /tmp/ccVph6NG.o: in function `main':
+test007.c:(.text+0x34): undefined reference to `printf'
+/media/ca850f52-0605-42a7-9fd4-899de9edf461/work/GNU_LANG/lib/gcc/m68hc11-elf/3.4.4/../../../../m68hc11-elf/bin/ld: test007.c:(.text+0x55): undefined reference to `printf'
+/media/ca850f52-0605-42a7-9fd4-899de9edf461/work/GNU_LANG/lib/gcc/m68hc11-elf/3.4.4/../../../../m68hc11-elf/bin/ld: test007.c:(.text+0x76): undefined reference to `printf'
+/media/ca850f52-0605-42a7-9fd4-899de9edf461/work/GNU_LANG/lib/gcc/m68hc11-elf/3.4.4/../../../../m68hc11-elf/bin/ld: test007.c:(.text+0x85): undefined reference to `printf'
+/media/ca850f52-0605-42a7-9fd4-899de9edf461/work/GNU_LANG/lib/gcc/m68hc11-elf/3.4.4/../../../../m68hc11-elf/bin/ld: test007.c:(.text+0x97): undefined reference to `printf'
+/media/ca850f52-0605-42a7-9fd4-899de9edf461/work/GNU_LANG/lib/gcc/m68hc11-elf/3.4.4/../../../../m68hc11-elf/bin/ld: /tmp/ccVph6NG.o:test007.c:(.text+0xb7): more undefined references to `printf' follow
+collect2: ld returned 1 exit status

@@ -1,0 +1,2 @@
+test009.c:15: error: conflicting types for 'f'
+test009.c:9: error: previous implicit declaration of 'f' was here

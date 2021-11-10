@@ -1,0 +1,10 @@
+test004.c:8: error: 'X' redeclared as different kind of symbol
+test004.c:7: error: previous declaration of 'X' was here
+test004.c:11: error: redefinition of `struct S'
+test004.c:13: error: redefinition of parameter 'a'
+test004.c:13: error: previous definition of 'a' was here
+test004.c: In function `g':
+test004.c:17: error: 'a' redeclared as different kind of symbol
+test004.c:15: error: previous definition of 'a' was here
+test004.c:20: error: redeclaration of 'a' with no linkage
+test004.c:19: error: previous declaration of 'a' was here

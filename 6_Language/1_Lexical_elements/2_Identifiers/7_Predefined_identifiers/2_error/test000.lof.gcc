@@ -1,0 +1,2 @@
+test000.c:4: warning: '__func__' is not defined outside of function scope
+test000.c:4: error: invalid initializer

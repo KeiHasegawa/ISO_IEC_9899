@@ -1,0 +1,2 @@
+test000.c:6: error: 'A' redeclared as different kind of symbol
+test000.c:5: error: previous declaration of 'A' was here

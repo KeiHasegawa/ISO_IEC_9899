@@ -1,0 +1,2 @@
+test003.c:4: error: redefinition of parameter 'a'
+test003.c:4: error: previous definition of 'a' was here

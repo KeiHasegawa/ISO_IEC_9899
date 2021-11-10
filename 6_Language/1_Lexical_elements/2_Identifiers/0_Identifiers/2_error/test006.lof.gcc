@@ -1,0 +1,2 @@
+test006.c: In function `f':
+test006.c:3: error: parse error before ';' token

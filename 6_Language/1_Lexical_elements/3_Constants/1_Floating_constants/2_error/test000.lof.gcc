@@ -1,0 +1,12 @@
+test000.c: In function `test00':
+test000.c:6: error: invalid lvalue in assignment
+test000.c:7: error: invalid lvalue in assignment
+test000.c:8: error: invalid lvalue in assignment
+test000.c: In function `test01':
+test000.c:13: error: invalid lvalue in unary `&'
+test000.c:14: error: invalid lvalue in unary `&'
+test000.c:15: error: invalid lvalue in unary `&'
+test000.c: In function `test02':
+test000.c:21: error: case label does not reduce to an integer constant
+test000.c:23: error: case label does not reduce to an integer constant
+test000.c:25: error: case label does not reduce to an integer constant
