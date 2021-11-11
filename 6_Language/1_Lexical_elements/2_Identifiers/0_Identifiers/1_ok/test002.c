@@ -12,6 +12,9 @@ struct S {
 typedef struct S t;
 extern struct S e;
 static struct S s;
+#ifdef __GNUC__
+static
+#endif
 inline struct S i(void){ return (struct S){1}; }
 
 int main(void)
