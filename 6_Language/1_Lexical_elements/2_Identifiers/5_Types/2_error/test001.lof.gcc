@@ -1,0 +1,2 @@
+test001.c:8: warning: array 'array' assumed to have one element
+test001.c:4: error: storage size of 'v' isn't known
