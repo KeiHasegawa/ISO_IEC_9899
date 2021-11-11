@@ -1,2 +1,2 @@
-test001.c: In function `f':
-test001.c:6: error: assignment of read-only variable `c'
+test001.c: In function 'f':
+test001.c:6: error: assignment of read-only variable 'c'

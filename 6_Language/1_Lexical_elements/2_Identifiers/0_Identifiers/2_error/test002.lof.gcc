@@ -1,1 +1,1 @@
-test002.c:6: error: storage size of `p' isn't known
+test002.c:6: error: storage size of 'p' isn't known

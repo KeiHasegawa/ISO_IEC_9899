@@ -1,5 +1,5 @@
-test008.c:8: error: parse error before "r"
-test008.c:8: warning: data definition has no type or storage class
-test008.c: In function `main':
-test008.c:15: warning: assignment makes integer from pointer without a cast
-test008.c:16: error: invalid type argument of `unary *'
+test008.c:8: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'r'
+test008.c: In function 'main':
+test008.c:15: error: 'r' undeclared (first use in this function)
+test008.c:15: error: (Each undeclared identifier is reported only once
+test008.c:15: error: for each function it appears in.)

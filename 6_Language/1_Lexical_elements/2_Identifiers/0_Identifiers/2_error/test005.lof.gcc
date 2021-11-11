@@ -1,0 +1,6 @@
+test005.c: In function 'test00':
+test005.c:4: error: parameter name omitted
+test005.c: In function 'test01':
+test005.c:10: error: parameter name omitted
+test005.c: In function 'test02':
+test005.c:14: error: parameter name omitted
