@@ -1,53 +1,52 @@
-test002.c: In function `test00':
+test002.c: In function 'test00':
 test002.c:9: error: subscripted value is neither array nor pointer
 test002.c:10: error: subscripted value is neither array nor pointer
-test002.c: In function `test01':
-test002.c:16: error: request for member `member' in something not a structure or union
-test002.c: In function `test02':
-test002.c:22: error: request for member `member' in something not a structure or union
-test002.c: In function `test03':
-test002.c:28: error: wrong type argument to increment
-test002.c: In function `test04':
-test002.c:34: error: wrong type argument to decrement
-test002.c: In function `test05':
-test002.c:40: error: wrong type argument to increment
-test002.c: In function `test06':
-test002.c:46: error: wrong type argument to decrement
-test002.c: In function `test07':
+test002.c: In function 'test01':
+test002.c:16: error: request for member 'member' in something not a structure or union
+test002.c: In function 'test02':
+test002.c:22: error: request for member 'member' in something not a structure or union
+test002.c: In function 'test03':
+test002.c:28: error: lvalue required as increment operand
+test002.c: In function 'test04':
+test002.c:34: error: lvalue required as decrement operand
+test002.c: In function 'test05':
+test002.c:40: error: lvalue required as increment operand
+test002.c: In function 'test06':
+test002.c:46: error: lvalue required as decrement operand
+test002.c: In function 'test07':
 test002.c:52: error: wrong type argument to unary plus
-test002.c: In function `test08':
+test002.c: In function 'test08':
 test002.c:58: error: wrong type argument to unary minus
-test002.c: In function `test09':
+test002.c: In function 'test09':
 test002.c:64: error: wrong type argument to bit-complement
-test002.c: In function `test11':
+test002.c: In function 'test11':
 test002.c:76: error: invalid operands to binary *
 test002.c:77: error: invalid operands to binary *
-test002.c: In function `test12':
+test002.c: In function 'test12':
 test002.c:83: error: invalid operands to binary /
 test002.c:84: error: invalid operands to binary /
-test002.c: In function `test13':
+test002.c: In function 'test13':
 test002.c:90: error: invalid operands to binary %
 test002.c:91: error: invalid operands to binary %
-test002.c: In function `test15':
+test002.c: In function 'test15':
 test002.c:105: error: invalid operands to binary -
-test002.c: In function `test17':
+test002.c: In function 'test17':
 test002.c:118: error: invalid operands to binary <<
 test002.c:119: error: invalid operands to binary <<
-test002.c: In function `test18':
+test002.c: In function 'test18':
 test002.c:125: error: invalid operands to binary >>
 test002.c:126: error: invalid operands to binary >>
-test002.c: In function `test19':
+test002.c: In function 'test19':
 test002.c:132: error: invalid operands to binary &
 test002.c:133: error: invalid operands to binary &
-test002.c: In function `test20':
+test002.c: In function 'test20':
 test002.c:140: error: invalid operands to binary ^
 test002.c:141: error: invalid operands to binary ^
-test002.c: In function `test21':
+test002.c: In function 'test21':
 test002.c:147: error: invalid operands to binary |
 test002.c:148: error: invalid operands to binary |
-test002.c: In function `test22':
-test002.c:156: warning: the address of `test22', will always evaluate as `true'
+test002.c: In function 'test22':
 test002.c:156: warning: pointer type mismatch in conditional expression
-test002.c: In function `test23':
-test002.c:162: error: invalid lvalue in assignment
-test002.c:163: error: invalid lvalue in assignment
+test002.c: In function 'test23':
+test002.c:162: error: lvalue required as left operand of assignment
+test002.c:163: error: lvalue required as left operand of assignment

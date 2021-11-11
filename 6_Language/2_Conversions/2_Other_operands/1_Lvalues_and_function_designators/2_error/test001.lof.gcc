@@ -1,0 +1,85 @@
+test001.c: In function 'test00':
+test001.c:10: error: called object 'a' is not a function
+test001.c:11: error: called object '"string"' is not a function
+test001.c:12: error: called object '"\000w\000i\000d\000e\000 \000s\000t\000r\000i\000n\000g\000"' is not a function
+test001.c: In function 'test01':
+test001.c:19: error: request for member 'member' in something not a structure or union
+test001.c:20: error: request for member 'member' in something not a structure or union
+test001.c:21: error: request for member 'member' in something not a structure or union
+test001.c: In function 'test02':
+test001.c:28: error: request for member 'member' in something not a structure or union
+test001.c:29: error: request for member 'member' in something not a structure or union
+test001.c:30: error: request for member 'member' in something not a structure or union
+test001.c: In function 'test03':
+test001.c:37: error: lvalue required as increment operand
+test001.c:38: error: lvalue required as increment operand
+test001.c:39: error: lvalue required as increment operand
+test001.c: In function 'test04':
+test001.c:46: error: lvalue required as decrement operand
+test001.c:47: error: lvalue required as decrement operand
+test001.c:48: error: lvalue required as decrement operand
+test001.c: In function 'test05':
+test001.c:55: error: lvalue required as increment operand
+test001.c:56: error: lvalue required as increment operand
+test001.c:57: error: lvalue required as increment operand
+test001.c: In function 'test06':
+test001.c:64: error: lvalue required as decrement operand
+test001.c:65: error: lvalue required as decrement operand
+test001.c:66: error: lvalue required as decrement operand
+test001.c: In function 'test07':
+test001.c:73: error: wrong type argument to unary plus
+test001.c:74: error: wrong type argument to unary plus
+test001.c:75: error: wrong type argument to unary plus
+test001.c: In function 'test08':
+test001.c:82: error: wrong type argument to unary minus
+test001.c:83: error: wrong type argument to unary minus
+test001.c:84: error: wrong type argument to unary minus
+test001.c: In function 'test09':
+test001.c:91: error: wrong type argument to bit-complement
+test001.c:92: error: wrong type argument to bit-complement
+test001.c:93: error: wrong type argument to bit-complement
+test001.c: In function 'test10':
+test001.c:100: error: invalid operands to binary *
+test001.c:101: error: invalid operands to binary *
+test001.c:102: error: invalid operands to binary *
+test001.c: In function 'test11':
+test001.c:109: error: invalid operands to binary /
+test001.c:110: error: invalid operands to binary /
+test001.c:111: error: invalid operands to binary /
+test001.c: In function 'test12':
+test001.c:118: error: invalid operands to binary %
+test001.c:119: error: invalid operands to binary %
+test001.c:120: error: invalid operands to binary %
+test001.c: In function 'test13':
+test001.c:127: error: invalid operands to binary -
+test001.c:128: error: invalid operands to binary -
+test001.c:129: error: invalid operands to binary -
+test001.c: In function 'test14':
+test001.c:136: error: invalid operands to binary <<
+test001.c:137: error: invalid operands to binary <<
+test001.c:138: error: invalid operands to binary <<
+test001.c: In function 'test15':
+test001.c:145: error: invalid operands to binary >>
+test001.c:146: error: invalid operands to binary >>
+test001.c:147: error: invalid operands to binary >>
+test001.c: In function 'test16':
+test001.c:154: error: invalid operands to binary &
+test001.c:155: error: invalid operands to binary &
+test001.c:156: error: invalid operands to binary &
+test001.c: In function 'test17':
+test001.c:163: error: invalid operands to binary ^
+test001.c:164: error: invalid operands to binary ^
+test001.c:165: error: invalid operands to binary ^
+test001.c: In function 'test18':
+test001.c:172: error: invalid operands to binary |
+test001.c:173: error: invalid operands to binary |
+test001.c:174: error: invalid operands to binary |
+test001.c: In function 'test19':
+test001.c:182: warning: pointer type mismatch in conditional expression
+test001.c:183: warning: pointer type mismatch in conditional expression
+test001.c: In function 'test20':
+test001.c:190: error: incompatible types in assignment
+test001.c:191: error: invalid operands to binary +
+test001.c:192: error: invalid operands to binary -
+test001.c:193: error: assignment of read-only location
+test001.c:194: error: assignment of read-only location

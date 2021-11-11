@@ -1,0 +1,36 @@
+SRCS = $(wildcard *.c)
+OBJS = $(SRCS:.c=.o)
+
+all:test.lof
+
+CC = h8300-elf-gcc
+LINK = h8300-elf-gcc
+RUN = h8300-elf-run
+DIFF = diff
+TOUCH = touch
+DOS2UNIX = dos2unix.csh
+DOGV = wdog.exe -v
+
+%.o : %.c
+	$(DOGV) $(CC) -o $@ -c $<
+
+%.log : %.elf
+	$(DOGV) $(RUN) ./$< > $@
+	$(DOS2UNIX) $@
+
+%.lof : %.log
+	$(DOGV) $(DIFF) $< $@
+	$(TOUCH) $@
+
+test.elf:$(OBJS)
+	$(DOGV) $(LINK) -o $@ $(OBJS)
+
+clean:
+	$(RM) *.log *.elf *.s *.i *.stackdump core.* *~
+
+test.lof:test.log
+a.s:a.i
+b.s:b.i
+c.s:c.i
+
+
