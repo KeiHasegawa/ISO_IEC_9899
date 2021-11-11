@@ -14,6 +14,9 @@
  */
 #include <stdio.h>
 
+#ifdef __GNUC__
+static
+#endif
 inline void f(void)
 {
   printf("f called\n");
@@ -24,10 +27,8 @@ struct S {
   float b;
 };
 
-typedef long int int32_t;
-
 union U {
-  int32_t a;
+  long int a;
   float b;
 };
 
@@ -75,7 +76,7 @@ int main(void)
   printf("sizeof(signed char) = %d\n", (int)sizeof(signed char)); 
   static union U uni;
   uni.b = 1.0;
-  printf("uni.a = 0x%x\n", uni.a);
+  printf("uni.a = 0x%lx\n", uni.a);
   typedef struct S T;
   T t = { 1, 2.0 };
   printf("t.a = %d\n", t.a);
