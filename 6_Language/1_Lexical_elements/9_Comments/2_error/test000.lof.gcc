@@ -1,2 +1,2 @@
-test000.c: In function `main':
-test000.c:6: error: parse error before '/' token
+test000.c: In function 'main':
+test000.c:6: error: expected expression before '/' token
