@@ -7,6 +7,9 @@
 typedef int t;
 extern int e;
 static int s;
+#ifdef __GNUC__
+static
+#endif
 inline int i(void){ return 1; }
 
 int main(void)

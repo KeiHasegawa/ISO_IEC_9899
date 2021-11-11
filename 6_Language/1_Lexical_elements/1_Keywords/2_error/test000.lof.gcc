@@ -1,2 +1,4 @@
 test000.c: In function 'f':
-test000.c:6: error: expected identifier or '(' before '=' token
+test000.c:6:16: error: expected identifier or '(' before '=' token
+    6 |   int register = 1;  /* register is keyword */
+      |                ^
