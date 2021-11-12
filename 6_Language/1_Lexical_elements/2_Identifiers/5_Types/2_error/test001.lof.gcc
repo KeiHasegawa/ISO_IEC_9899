@@ -1,2 +1,12 @@
-test001.c:8: warning: array 'array' assumed to have one element
-test001.c:4: error: storage size of 'v' isn't known
+test001.c:5:10: error: storage size of 's' isn't known
+    5 | struct S s;
+      |          ^
+test001.c:6:9: error: storage size of 'u' isn't known
+    6 | union U u;
+      |         ^
+test001.c:7:8: error: storage size of 'e' isn't known
+    7 | enum E e;
+      |        ^
+test001.c:8:5: warning: array 'array' assumed to have one element
+    8 | int array[];
+      |     ^~~~~

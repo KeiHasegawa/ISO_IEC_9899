@@ -1,12 +1,30 @@
 test000.c: In function 'test00':
-test000.c:6: error: lvalue required as left operand of assignment
-test000.c:7: error: lvalue required as left operand of assignment
-test000.c:8: error: lvalue required as left operand of assignment
+test000.c:6:8: error: lvalue required as left operand of assignment
+    6 |   1.0F = 2.0F;
+      |        ^
+test000.c:7:14: error: lvalue required as left operand of assignment
+    7 |   0xab.cdp+2 = 0x12.34p-2;
+      |              ^
+test000.c:8:11: error: lvalue required as left operand of assignment
+    8 |   5.6e+7L = 8.9E-1;
+      |           ^
 test000.c: In function 'test01':
-test000.c:13: error: lvalue required as unary '&' operand
-test000.c:14: error: lvalue required as unary '&' operand
-test000.c:15: error: lvalue required as unary '&' operand
+test000.c:13:3: error: lvalue required as unary '&' operand
+   13 |   &0x1p2F;
+      |   ^
+test000.c:14:3: error: lvalue required as unary '&' operand
+   14 |   &3.45;
+      |   ^
+test000.c:15:3: error: lvalue required as unary '&' operand
+   15 |   &6.L;
+      |   ^
 test000.c: In function 'test02':
-test000.c:21: error: case label does not reduce to an integer constant
-test000.c:23: error: case label does not reduce to an integer constant
-test000.c:25: error: case label does not reduce to an integer constant
+test000.c:21:3: error: case label does not reduce to an integer constant
+   21 |   case 0XABP2F:
+      |   ^~~~
+test000.c:23:3: error: case label does not reduce to an integer constant
+   23 |   case .1:
+      |   ^~~~
+test000.c:25:3: error: case label does not reduce to an integer constant
+   25 |   case .3e-5L:
+      |   ^~~~

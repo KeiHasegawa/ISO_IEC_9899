@@ -1,3 +1,9 @@
 test001.c:1:17: warning: missing terminating " character
-test001.c:1: error: missing terminating " character
-test001.c:1: error: expected expression at end of input
+    1 | const char* p = "\";
+      |                 ^
+test001.c:1:17: error: missing terminating " character
+    1 | const char* p = "\";
+      |                 ^~~~
+test001.c:1:1: error: expected expression at end of input
+    1 | const char* p = "\";
+      | ^~~~~

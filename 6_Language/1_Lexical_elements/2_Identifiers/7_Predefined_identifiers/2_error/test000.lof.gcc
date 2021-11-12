@@ -1,2 +1,4 @@
-test000.c:4: warning: '__func__' is not defined outside of function scope
-test000.c:4: error: invalid initializer
+test000.c:4:12: warning: '__func__' is not defined outside of function scope
+    4 | char a[] = __func__;  /* error. outside of any function. */
+      |            ^~~~~~~~
+test000.c:4:12: error: invalid initializer
