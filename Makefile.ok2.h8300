@@ -4,7 +4,7 @@ OBJS = $(SRCS:.c=.o)
 all:test.lof
 
 CC = h8300-elf-gcc
-LINK = h8300-elf-gcc
+LINK = h8300-elf-ld
 RUN = h8300-elf-run
 DIFF = diff
 TOUCH = touch
@@ -22,11 +22,17 @@ DOGV = wdog.exe -v
 	$(DOGV) $(DIFF) $< $@
 	$(TOUCH) $@
 
+START_O = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_h8300.013/start.o
+
+LIBGCC = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/GNU_LANG/lib/gcc/h8300-elf/10.2.0/libgcc.a
+
+LDSCRIPT = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_h8300.013/test013.x
+
 test.elf:$(OBJS)
-	$(DOGV) $(LINK) -o $@ $(OBJS)
+	$(DOGV) $(LINK) -o $@ $(START_O) $(OBJS) $(LIBGCC) -T $(LDSCRIPT)
 
 clean:
-	$(RM) *.log *.elf *.s *.i *.stackdump core.* *~
+	$(RM) *.o *.log *.exe *.elf *.s *.i *.stackdump core.* *~
 
 test.lof:test.log
 a.s:a.i

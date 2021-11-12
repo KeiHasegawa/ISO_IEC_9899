@@ -259,6 +259,7 @@ void test08(void)
   printf("%Lf\n", test08_ld1);
 }
 
+#ifndef __GNUC__
 float test09_f1 = (25.0F, 26.0F);
 double test09_d1 = (25.0, 26.0);
 long double test09_ld1 = (25.0L, 26.0L);
@@ -270,6 +271,7 @@ void test09(void)
   printf("%f\n", test09_d1);
   printf("%Lf\n", test09_ld1);
 }
+#endif
 
 int main(void)
 {
@@ -282,6 +284,8 @@ int main(void)
   test06();
   test07();
   test08();
+#ifndef __GNUC__
   test09();
+#endif  
   return 0;
 }

@@ -37,6 +37,6 @@ int main(void)
   a a = f(s);  /* first `a' refers `::a', and second `a' has block scope */
   printf("a = %d\n", a);
   printf("X = %d\n", X);
-  printf("S.n = 0x%08x\n", S.n);
+  printf("S.n = 0x%08lx\n", S.n);
   return 0;
 }

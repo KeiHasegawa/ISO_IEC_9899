@@ -8,7 +8,7 @@ all:$(LOFS)
 
 AS = h8300-elf-as
 CC = h8300-elf-gcc -std=c99
-LD = h8300-elf-gcc
+LD = h8300-elf-ld
 RUN = h8300-elf-run
 DOGV = wdog.exe -v
 
@@ -21,9 +21,14 @@ DOGV = wdog.exe -v
 %.s : %.c
 	$(DOGV) $(CC) -o $@ $< -S
 
+START_O = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_h8300.013/start.o
+
+LIBGCC = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/GNU_LANG/lib/gcc/h8300-elf/10.2.0/libgcc.a
+
+LDSCRIPT = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_h8300.013/test013.x
 
 %.elf : %.o
-	$(DOGV) $(LD) -o $@ $<
+	$(DOGV) $(LD) -o $@ $(START_O) $< $(LIBGCC) -T $(LDSCRIPT)
 
 %.log : %.elf
 	$(DOGV) $(RUN) ./$< > $@
@@ -34,7 +39,7 @@ DOGV = wdog.exe -v
 	$(TOUCH) $@
 
 clean:
-	$(RM) *.o *.log *.elf *.s *.asm *.i *.stackdump core.* a.out core *~
+	$(RM) *.o *.log *.exe *.elf *.s *.asm *.i *.stackdump core.* a.out core *~
 
 test000.lof:test000.log
 test000.elf:test000.o

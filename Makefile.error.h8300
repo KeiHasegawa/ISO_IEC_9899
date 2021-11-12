@@ -42,7 +42,7 @@ CC1_FLAG = -c
 	$(TOUCH) $@
 
 clean:
-	$(RM) *.i *.log *.stackdump *~
+	$(RM) *.o *.elf *.exe *.i *.log *.stackdump *~
 
 test000.lof:test000.log
 test001.lof:test001.log
