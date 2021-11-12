@@ -1,0 +1,38 @@
+SRCS = $(wildcard *.c)
+OBJS = $(SRCS:.c=.o)
+
+all:test.lof
+
+CC = msp430-elf-gcc
+LINK = msp430-elf-gcc
+RUN = msp430-elf-run
+DIFF = diff
+TOUCH = touch
+DOS2UNIX = dos2unix.csh
+DOG = wdog.exe
+DOGV = wdog.exe -v
+
+%.o : %.c
+	$(DOGV) $(CC) -o $@ -c $<
+
+%.lof : %.log
+	$(DOGV) $(DIFF) $< $@
+	$(TOUCH) $@
+
+test.log:$(OBJS)
+	-if export LANG=C ; $(DOG) $(LINK) $(OBJS) 2> $@ ; then \
+		$(RM) $@ ; \
+	else \
+		$(DOS2UNIX) $@; \
+	fi
+	line_conv.csh $@
+
+clean:
+	$(RM) *.o *.log *.elf *.s *.i *.stackdump core.* *~
+
+test.lof:test.log
+a.s:a.i
+b.s:b.i
+c.s:c.i
+
+
