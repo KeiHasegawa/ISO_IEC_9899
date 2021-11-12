@@ -1,6 +1,12 @@
 test005.c: In function 'test00':
-test005.c:4: error: parameter name omitted
+test005.c:4:13: error: parameter name omitted
+    4 | void test00(int) /* error */
+      |             ^~~
 test005.c: In function 'test01':
-test005.c:10: error: parameter name omitted
+test005.c:10:13: error: parameter name omitted
+   10 | void test01(N) /* error */
+      |             ^
 test005.c: In function 'test02':
-test005.c:14: error: parameter name omitted
+test005.c:14:13: error: parameter name omitted
+   14 | void test02(int []) /* error */
+      |             ^~~~~~

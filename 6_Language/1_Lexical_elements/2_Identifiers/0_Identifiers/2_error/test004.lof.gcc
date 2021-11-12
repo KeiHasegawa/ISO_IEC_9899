@@ -1,3 +1,5 @@
-test004.c:6:7: error: invalid suffix "rd" on integer constant
 test004.c: In function 'f':
-test004.c:6: error: expected identifier or '(' before numeric constant
+test004.c:6:7: error: invalid suffix "rd" on integer constant
+    6 |   int 3rd = 3; /* error */
+      |       ^~~
+test004.c:6:7: error: expected identifier or '(' before numeric constant

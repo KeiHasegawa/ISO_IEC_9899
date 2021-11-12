@@ -1,2 +1,4 @@
 test006.c: In function 'f':
-test006.c:3: error: expected ',' or '}' before ';' token
+test006.c:3:13: error: expected ',' or '}' before ';' token
+    3 |   enum E { a; };  /* ';' is not necessary */
+      |             ^

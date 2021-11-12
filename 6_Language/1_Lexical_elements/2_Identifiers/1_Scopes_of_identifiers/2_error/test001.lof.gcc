@@ -1,3 +1,12 @@
-test001.c:16: error: redefinition of 'struct S'
-test001.c:18: error: 'f' redeclared as different kind of symbol
-test001.c:11: error: previous definition of 'f' was here
+test001.c:16:8: error: redefinition of 'struct S'
+   16 | struct S { int a; };  /* error. redeclaration */
+      |        ^
+test001.c:6:8: note: originally defined here
+    6 | struct S {
+      |        ^
+test001.c:18:10: error: 'f' redeclared as different kind of symbol
+   18 | enum E { f };  /* error. `E::f' has file scope. redeclaration. */
+      |          ^
+test001.c:10:6: note: previous definition of 'f' was here
+   10 | void f(void)  /* `f' has file scope */
+      |      ^

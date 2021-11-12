@@ -1,2 +1,6 @@
-test003.c:4: error: redefinition of parameter 'a'
-test003.c:4: error: previous definition of 'a' was here
+test003.c:4:19: error: redefinition of parameter 'a'
+    4 | void f(int a, int a);
+      |               ~~~~^
+test003.c:4:12: note: previous definition of 'a' was here
+    4 | void f(int a, int a);
+      |        ~~~~^

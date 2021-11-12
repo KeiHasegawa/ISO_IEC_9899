@@ -1,10 +1,31 @@
-test004.c:8: error: 'X' redeclared as different kind of symbol
-test004.c:7: error: previous declaration of 'X' was here
-test004.c:11: error: redefinition of 'struct S'
-test004.c:13: error: redefinition of parameter 'a'
-test004.c:13: error: previous definition of 'a' was here
+test004.c:8:3: error: 'X' redeclared as different kind of symbol
+    8 | X X;  /* error. redeclaration. */
+      |   ^
+test004.c:7:13: note: previous declaration of 'X' was here
+    7 | typedef int X;
+      |             ^
+test004.c:11:8: error: redefinition of 'struct S'
+   11 | struct S { int a; };  /* error. redeclaration. */
+      |        ^
+test004.c:10:8: note: originally defined here
+   10 | struct S { int a; };
+      |        ^
+test004.c:13:19: error: redefinition of parameter 'a'
+   13 | void f(int a, int a);  /* second `a' is error. redeclaration. */
+      |               ~~~~^
+test004.c:13:12: note: previous definition of 'a' was here
+   13 | void f(int a, int a);  /* second `a' is error. redeclaration. */
+      |        ~~~~^
 test004.c: In function 'g':
-test004.c:17: error: 'a' redeclared as different kind of symbol
-test004.c:15: error: previous definition of 'a' was here
-test004.c:20: error: redeclaration of 'a' with no linkage
-test004.c:19: error: previous declaration of 'a' was here
+test004.c:17:7: error: 'a' redeclared as different kind of symbol
+   17 |   int a;  /* error. redeclaration. */
+      |       ^
+test004.c:15:12: note: previous definition of 'a' was here
+   15 | void g(int a)
+      |        ~~~~^
+test004.c:20:9: error: redeclaration of 'a' with no linkage
+   20 |     int a;  /* error. redeclaration. */
+      |         ^
+test004.c:19:9: note: previous declaration of 'a' was here
+   19 |     int a;
+      |         ^

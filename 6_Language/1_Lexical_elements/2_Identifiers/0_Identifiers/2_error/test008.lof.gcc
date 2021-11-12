@@ -1,5 +1,0 @@
-test008.c:8: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'r'
-test008.c: In function 'main':
-test008.c:15: error: 'r' undeclared (first use in this function)
-test008.c:15: error: (Each undeclared identifier is reported only once
-test008.c:15: error: for each function it appears in.)

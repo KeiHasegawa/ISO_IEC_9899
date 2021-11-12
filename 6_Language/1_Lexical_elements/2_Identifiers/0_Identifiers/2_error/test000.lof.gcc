@@ -1,2 +1,6 @@
-test000.c:6: error: 'A' redeclared as different kind of symbol
-test000.c:5: error: previous declaration of 'A' was here
+test000.c:6:3: error: 'A' redeclared as different kind of symbol
+    6 | A A;  /* error */
+      |   ^
+test000.c:5:13: note: previous declaration of 'A' was here
+    5 | typedef int A;
+      |             ^

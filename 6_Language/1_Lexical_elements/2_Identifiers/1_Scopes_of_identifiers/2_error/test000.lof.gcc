@@ -1,6 +1,14 @@
 test000.c: In function 'test00':
-test000.c:9: error: duplicate label 'Label'
-test000.c:7: error: previous definition of 'Label' was here
+test000.c:9:2: error: duplicate label 'Label'
+    9 |  Label:  /* error. multiple definition of `Label'. */
+      |  ^~~~~
+test000.c:7:2: note: previous definition of 'Label' was here
+    7 |  Label:
+      |  ^~~~~
 test000.c: In function 'test01':
-test000.c:21: error: label 'Post' used but not defined
-test000.c:19: error: label 'Prev' used but not defined
+test000.c:21:5: error: label 'Post' used but not defined
+   21 |     goto Post; /* error. main::Post reference */
+      |     ^~~~
+test000.c:19:5: error: label 'Prev' used but not defined
+   19 |     goto Prev; /* error. test00::Prev reference */
+      |     ^~~~

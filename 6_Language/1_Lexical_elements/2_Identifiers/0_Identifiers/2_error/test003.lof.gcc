@@ -1,3 +1,9 @@
-test003.c:11: error: two or more data types in declaration specifiers
-test003.c:18: error: two or more data types in declaration specifiers
-test003.c:25: error: two or more data types in declaration specifiers
+test003.c:11:1: error: expected ';', identifier or '(' before 'struct'
+   11 | struct S s;
+      | ^~~~~~
+test003.c:18:1: error: expected ';', identifier or '(' before 'union'
+   18 | union U u;
+      | ^~~~~
+test003.c:25:1: error: expected ';', identifier or '(' before 'enum'
+   25 | enum E e;
+      | ^~~~
