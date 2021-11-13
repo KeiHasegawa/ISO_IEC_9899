@@ -1,0 +1,27 @@
+test001.c: In function 'f':
+test001.c:6:3: error: 'a' undeclared (first use in this function)
+    6 |   a || 1;
+      |   ^
+test001.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+test001.c:7:8: error: 'b' undeclared (first use in this function)
+    7 |   2 || b;
+      |        ^
+test001.c:8:3: error: 'c' undeclared (first use in this function)
+    8 |   c || d;
+      |   ^
+test001.c:8:8: error: 'd' undeclared (first use in this function)
+    8 |   c || d;
+      |        ^
+test001.c: In function 'g':
+test001.c:13:3: error: 'a' undeclared (first use in this function)
+   13 |   a || 1,  2 || b, c || d;
+      |   ^
+test001.c:13:17: error: 'b' undeclared (first use in this function)
+   13 |   a || 1,  2 || b, c || d;
+      |                 ^
+test001.c:13:20: error: 'c' undeclared (first use in this function)
+   13 |   a || 1,  2 || b, c || d;
+      |                    ^
+test001.c:13:25: error: 'd' undeclared (first use in this function)
+   13 |   a || 1,  2 || b, c || d;
+      |                         ^

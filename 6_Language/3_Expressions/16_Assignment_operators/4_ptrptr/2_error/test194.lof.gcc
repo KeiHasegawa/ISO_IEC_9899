@@ -1,0 +1,5 @@
+test194.c: In function ÅemainÅf:
+test194.c:5:5: error: assignment to Åeconst volatile char **Åf from incompatible pointer type Åechar * volatile*Åf [-Werror=incompatible-pointer-types]
+    5 |   p = q;
+      |     ^
+cc1: all warnings being treated as errors

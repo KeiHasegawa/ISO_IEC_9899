@@ -1,0 +1,8 @@
+test005.c: In function 'test000':
+test005.c:9:11: error: lvalue required as left operand of assignment
+    9 |   (a = b) = c;
+      |           ^
+test005.c: In function 'test001':
+test005.c:16:3: error: lvalue required as unary '&' operand
+   16 |   &(a = b);
+      |   ^

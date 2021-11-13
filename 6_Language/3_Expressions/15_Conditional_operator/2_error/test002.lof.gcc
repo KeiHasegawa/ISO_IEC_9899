@@ -1,0 +1,39 @@
+test002.c: In function 'test000':
+test002.c:6:3: error: 'a' undeclared (first use in this function)
+    6 |   a ? 1 : 2;
+      |   ^
+test002.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+test002.c:7:7: error: 'b' undeclared (first use in this function)
+    7 |   3 ? b : 4;
+      |       ^
+test002.c:8:11: error: 'c' undeclared (first use in this function)
+    8 |   5 ? 6 : c;
+      |           ^
+test002.c:9:3: error: 'd' undeclared (first use in this function)
+    9 |   d ? e : f;
+      |   ^
+test002.c:9:7: error: 'e' undeclared (first use in this function)
+    9 |   d ? e : f;
+      |       ^
+test002.c:9:11: error: 'f' undeclared (first use in this function)
+    9 |   d ? e : f;
+      |           ^
+test002.c: In function 'g':
+test002.c:16:5: error: 'a' undeclared (first use in this function)
+   16 |   h(a ? 1 : 2);
+      |     ^
+test002.c:17:9: error: 'b' undeclared (first use in this function)
+   17 |   h(3 ? b : 4);
+      |         ^
+test002.c:18:13: error: 'c' undeclared (first use in this function)
+   18 |   h(5 ? 6 : c);
+      |             ^
+test002.c:19:5: error: 'd' undeclared (first use in this function)
+   19 |   h(d ? e : f);
+      |     ^
+test002.c:19:9: error: 'e' undeclared (first use in this function)
+   19 |   h(d ? e : f);
+      |         ^
+test002.c:19:13: error: 'f' undeclared (first use in this function)
+   19 |   h(d ? e : f);
+      |             ^

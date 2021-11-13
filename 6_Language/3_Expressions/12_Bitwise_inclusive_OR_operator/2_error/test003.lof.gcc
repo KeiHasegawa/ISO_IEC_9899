@@ -1,0 +1,8 @@
+test003.c: In function 'f':
+test003.c:8:5: error: 'a' undeclared (first use in this function)
+    8 |   g(a | b);
+      |     ^
+test003.c:8:5: note: each undeclared identifier is reported only once for each function it appears in
+test003.c:8:9: error: 'b' undeclared (first use in this function)
+    8 |   g(a | b);
+      |         ^

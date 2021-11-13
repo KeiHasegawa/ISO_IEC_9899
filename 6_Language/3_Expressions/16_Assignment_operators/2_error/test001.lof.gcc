@@ -1,0 +1,141 @@
+test001.c: In function 'test000':
+test001.c:6:3: error: 'a' undeclared (first use in this function)
+    6 |   a = 1;
+      |   ^
+test001.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+test001.c:7:3: error: 'b' undeclared (first use in this function)
+    7 |   b = c;
+      |   ^
+test001.c:7:7: error: 'c' undeclared (first use in this function)
+    7 |   b = c;
+      |       ^
+test001.c:8:3: error: 'd' undeclared (first use in this function)
+    8 |   d *= e;
+      |   ^
+test001.c:8:8: error: 'e' undeclared (first use in this function)
+    8 |   d *= e;
+      |        ^
+test001.c:9:3: error: 'f' undeclared (first use in this function)
+    9 |   f /= g;
+      |   ^
+test001.c:9:8: error: 'g' undeclared (first use in this function)
+    9 |   f /= g;
+      |        ^
+test001.c:10:3: error: 'h' undeclared (first use in this function)
+   10 |   h %= i;
+      |   ^
+test001.c:10:8: error: 'i' undeclared (first use in this function)
+   10 |   h %= i;
+      |        ^
+test001.c:11:3: error: 'j' undeclared (first use in this function)
+   11 |   j += k;
+      |   ^
+test001.c:11:8: error: 'k' undeclared (first use in this function)
+   11 |   j += k;
+      |        ^
+test001.c:12:3: error: 'l' undeclared (first use in this function)
+   12 |   l -= m;
+      |   ^
+test001.c:12:8: error: 'm' undeclared (first use in this function)
+   12 |   l -= m;
+      |        ^
+test001.c:13:3: error: 'n' undeclared (first use in this function)
+   13 |   n <<= o;
+      |   ^
+test001.c:13:9: error: 'o' undeclared (first use in this function)
+   13 |   n <<= o;
+      |         ^
+test001.c:14:3: error: 'p' undeclared (first use in this function)
+   14 |   p >>= q;
+      |   ^
+test001.c:14:9: error: 'q' undeclared (first use in this function)
+   14 |   p >>= q;
+      |         ^
+test001.c:15:3: error: 'r' undeclared (first use in this function)
+   15 |   r &= s;
+      |   ^
+test001.c:15:8: error: 's' undeclared (first use in this function)
+   15 |   r &= s;
+      |        ^
+test001.c:16:3: error: 't' undeclared (first use in this function)
+   16 |   t ^= u;
+      |   ^
+test001.c:16:8: error: 'u' undeclared (first use in this function)
+   16 |   t ^= u;
+      |        ^
+test001.c:17:3: error: 'v' undeclared (first use in this function)
+   17 |   v |= w;
+      |   ^
+test001.c:17:8: error: 'w' undeclared (first use in this function)
+   17 |   v |= w;
+      |        ^
+test001.c: In function 'test001':
+test001.c:24:16: error: 'a' undeclared (first use in this function)
+   24 |   test001_subr(a = 1);
+      |                ^
+test001.c:25:16: error: 'b' undeclared (first use in this function)
+   25 |   test001_subr(b = c);
+      |                ^
+test001.c:25:20: error: 'c' undeclared (first use in this function)
+   25 |   test001_subr(b = c);
+      |                    ^
+test001.c:26:16: error: 'd' undeclared (first use in this function)
+   26 |   test001_subr(d *= e);
+      |                ^
+test001.c:26:21: error: 'e' undeclared (first use in this function)
+   26 |   test001_subr(d *= e);
+      |                     ^
+test001.c:27:16: error: 'f' undeclared (first use in this function)
+   27 |   test001_subr(f /= g);
+      |                ^
+test001.c:27:21: error: 'g' undeclared (first use in this function)
+   27 |   test001_subr(f /= g);
+      |                     ^
+test001.c:28:16: error: 'h' undeclared (first use in this function)
+   28 |   test001_subr(h %= i);
+      |                ^
+test001.c:28:21: error: 'i' undeclared (first use in this function)
+   28 |   test001_subr(h %= i);
+      |                     ^
+test001.c:29:16: error: 'j' undeclared (first use in this function)
+   29 |   test001_subr(j += k);
+      |                ^
+test001.c:29:21: error: 'k' undeclared (first use in this function)
+   29 |   test001_subr(j += k);
+      |                     ^
+test001.c:30:16: error: 'l' undeclared (first use in this function)
+   30 |   test001_subr(l -= m);
+      |                ^
+test001.c:30:21: error: 'm' undeclared (first use in this function)
+   30 |   test001_subr(l -= m);
+      |                     ^
+test001.c:31:16: error: 'n' undeclared (first use in this function)
+   31 |   test001_subr(n <<= o);
+      |                ^
+test001.c:31:22: error: 'o' undeclared (first use in this function)
+   31 |   test001_subr(n <<= o);
+      |                      ^
+test001.c:32:16: error: 'p' undeclared (first use in this function)
+   32 |   test001_subr(p >>= q);
+      |                ^
+test001.c:32:22: error: 'q' undeclared (first use in this function)
+   32 |   test001_subr(p >>= q);
+      |                      ^
+test001.c:33:16: error: 'r' undeclared (first use in this function)
+   33 |   test001_subr(r &= s);
+      |                ^
+test001.c:33:21: error: 's' undeclared (first use in this function)
+   33 |   test001_subr(r &= s);
+      |                     ^
+test001.c:34:16: error: 't' undeclared (first use in this function)
+   34 |   test001_subr(t ^= u);
+      |                ^
+test001.c:34:21: error: 'u' undeclared (first use in this function)
+   34 |   test001_subr(t ^= u);
+      |                     ^
+test001.c:35:16: error: 'v' undeclared (first use in this function)
+   35 |   test001_subr(v |= w);
+      |                ^
+test001.c:35:21: error: 'w' undeclared (first use in this function)
+   35 |   test001_subr(v |= w);
+      |                     ^

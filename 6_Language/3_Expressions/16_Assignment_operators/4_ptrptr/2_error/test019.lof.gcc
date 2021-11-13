@@ -1,0 +1,5 @@
+test019.c: In function emainf:
+test019.c:5:5: error: assignment discards evolatilef qualifier from pointer target type [-Werror=discarded-qualifiers]
+    5 |   p = q;
+      |     ^
+cc1: all warnings being treated as errors

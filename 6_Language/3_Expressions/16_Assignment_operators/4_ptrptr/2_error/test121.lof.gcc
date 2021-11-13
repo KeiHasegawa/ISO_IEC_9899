@@ -1,0 +1,5 @@
+test121.c: In function ÅemainÅf:
+test121.c:5:5: error: assignment to Åeconst char * const volatile*Åf from incompatible pointer type Åevolatile char * const*Åf [-Werror=incompatible-pointer-types]
+    5 |   p = q;
+      |     ^
+cc1: all warnings being treated as errors

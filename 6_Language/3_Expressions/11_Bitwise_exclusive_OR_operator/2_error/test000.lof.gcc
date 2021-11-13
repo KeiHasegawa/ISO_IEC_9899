@@ -1,0 +1,56 @@
+test000.c: In function 'test000':
+test000.c:6:5: error: invalid operands to binary ^ (have 'int' and 'float')
+    6 |   1 ^ a;
+      |     ^
+test000.c:7:5: error: invalid operands to binary ^ (have 'double' and 'int')
+    7 |   b ^ 2;
+      |     ^
+test000.c:8:5: error: invalid operands to binary ^ (have 'int' and 'long double')
+    8 |   3 ^ c;
+      |     ^
+test000.c:9:5: error: invalid operands to binary ^ (have 'int *' and 'int')
+    9 |   d ^ 4;
+      |     ^
+test000.c:10:8: error: invalid operands to binary ^ (have 'float' and 'int')
+   10 |   1.0F ^ 2;
+      |        ^
+test000.c:11:5: error: invalid operands to binary ^ (have 'int' and 'double')
+   11 |   3 ^ 4.0;
+      |     ^
+test000.c:12:8: error: invalid operands to binary ^ (have 'long double' and 'int')
+   12 |   5.0L ^ 6;
+      |        ^
+test000.c:13:5: error: invalid operands to binary ^ (have 'int' and 'float')
+   13 |   1 ^ (float)2;
+      |     ^ ~~~~~~~~
+      |       |
+      |       float
+test000.c:14:13: error: invalid operands to binary ^ (have 'double' and 'int')
+   14 |   (double)3 ^ 4;
+      |   ~~~~~~~~~ ^
+      |   |
+      |   double
+test000.c:15:5: error: invalid operands to binary ^ (have 'int' and 'long double')
+   15 |   5 ^ (long double)6;
+      |     ^ ~~~~~~~~~~~~~~
+      |       |
+      |       long double
+test000.c:16:5: error: invalid operands to binary ^ (have 'int' and 'int *')
+   16 |   7 ^ (int*)8;
+      |     ^
+test000.c: In function 'test001':
+test000.c:31:5: error: invalid operands to binary ^ (have 'struct S' and 'int')
+   31 |   s ^ 1;  /* error */
+      |     ^
+test000.c:32:5: error: 'ss' has an incomplete type 'struct SS'
+   32 |   2 ^ ss; /* error */
+      |     ^
+test000.c:33:5: error: invalid operands to binary ^ (have 'union U' and 'int')
+   33 |   u ^ 3;  /* error */
+      |     ^
+test000.c:34:5: error: 'uu' has an incomplete type 'union UU'
+   34 |   4 ^ uu; /* error */
+      |     ^
+test000.c:36:5: error: 'ee' has an incomplete type 'enum EE'
+   36 |   6 ^ ee; /* error */
+      |     ^

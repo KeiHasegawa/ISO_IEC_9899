@@ -1,0 +1,42 @@
+test000.c: In function 'test000':
+test000.c:6:11: error: lvalue required as left operand of assignment
+    6 |   test000 = test000;
+      |           ^
+test000.c: In function 'test001':
+test000.c:13:5: error: assignment to expression with array type
+   13 |   x = y;
+      |     ^
+test000.c: In function 'test002':
+test000.c:19:6: error: assignment of read-only location '*q'
+   19 |   *q = 2;  /* error */
+      |      ^
+test000.c:22:5: error: assignment of read-only variable 'x'
+   22 |   x = 1;  /* error */
+      |     ^
+test000.c: At top level:
+test000.c:26:17: error: conflicting type qualifiers for 'x'
+   26 | extern struct S x, y;
+      |                 ^
+test000.c:21:20: note: previous declaration of 'x' was here
+   21 |   extern const int x;
+      |                    ^
+test000.c: In function 'test003':
+test000.c:30:7: error: 'y' has an incomplete type 'struct S'
+   30 |   x = y;
+      |       ^
+test000.c:30:5: error: 'x' has an incomplete type 'struct S'
+   30 |   x = y;
+      |     ^
+test000.c: In function 'test004':
+test000.c:35:5: error: lvalue required as left operand of assignment
+   35 |   1 = 2;
+      |     ^
+test000.c:36:7: error: lvalue required as left operand of assignment
+   36 |   3.0 = 4.0;
+      |       ^
+test000.c:37:7: error: lvalue required as left operand of assignment
+   37 |   'a' = 'b';
+      |       ^
+test000.c:38:17: error: assignment to expression with array type
+   38 |   "programming" = "languages";
+      |                 ^

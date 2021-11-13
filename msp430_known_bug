@@ -1,0 +1,8 @@
+# undefined reference to `__mspabi_mpyi'
+wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/2_Linkages_of_identifiers/5_other:msp430-elf-ld -o test004.elf /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_msp430.010/start.o test004.o /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/GNU_LANG/lib/gcc/msp430-elf/10.2.0/libgcc.a -T /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_msp430.010/test010.x 
+
+# undefined reference to `__mspabi_mpyi'
+wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/4_Storage_durations_of_objects/2_ok/1_reg/02_fpr:msp430-elf-ld -o test014.elf /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_msp430.010/start.o test014.o /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/GNU_LANG/lib/gcc/msp430-elf/10.2.0/libgcc.a -T /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_msp430.010/test010.x 
+
+# float -> int doesn't work well 
+wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/1_Floating_constants/1_ok:diff test001.log test001.lof 

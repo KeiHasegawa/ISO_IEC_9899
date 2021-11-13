@@ -1,0 +1,35 @@
+test001.c: In function 'test000':
+test001.c:16:9: warning: pointer/integer type mismatch in conditional expression
+   16 |   x ? y : z;
+      |         ^
+test001.c: In function 'test001':
+test001.c:23:9: error: type mismatch in conditional expression
+   23 |   x ? y : z;
+      |         ^
+test001.c: In function 'test002':
+test001.c:30:9: error: type mismatch in conditional expression
+   30 |   x ? y : z;
+      |         ^
+test001.c: In function 'test003':
+test001.c:39:9: error: type mismatch in conditional expression
+   39 |   x ? y : z;
+      |         ^
+test001.c: In function 'test005':
+test001.c:49:9: warning: pointer type mismatch in conditional expression
+   49 |   x ? y : z;
+      |         ^
+test001.c: In function 'test006':
+test001.c:54:9: error: type mismatch in conditional expression
+   54 |   x ? y : 0.0;
+      |         ^
+test001.c: In function 'test007':
+test001.c:59:9: warning: pointer/integer type mismatch in conditional expression
+   59 |   x ? y : z;
+      |         ^
+test001.c: In function 'test008':
+test001.c:67:7: error: 'a' has an incomplete type 'struct SSS'
+   67 |   n ? a : b;
+      |       ^
+test001.c:67:11: error: 'b' has an incomplete type 'struct SSS'
+   67 |   n ? a : b;
+      |           ^

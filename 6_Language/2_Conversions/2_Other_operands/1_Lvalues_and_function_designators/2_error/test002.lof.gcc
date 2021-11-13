@@ -1,52 +1,148 @@
 test002.c: In function 'test00':
-test002.c:9: error: subscripted value is neither array nor pointer
-test002.c:10: error: subscripted value is neither array nor pointer
+test002.c:9:9: error: subscripted value is neither array nor pointer nor vector
+    9 |   test00[3];
+      |         ^
+test002.c:10:4: error: subscripted value is neither array nor pointer nor vector
+   10 |   i[test00];
+      |    ^
 test002.c: In function 'test01':
-test002.c:16: error: request for member 'member' in something not a structure or union
+test002.c:16:10: error: request for member 'member' in something not a structure or union
+   16 |   test01 . member;
+      |          ^
 test002.c: In function 'test02':
-test002.c:22: error: request for member 'member' in something not a structure or union
+test002.c:22:10: error: request for member 'member' in something not a structure or union
+   22 |   test02 -> member;
+      |          ^~
 test002.c: In function 'test03':
-test002.c:28: error: lvalue required as increment operand
+test002.c:28:9: error: lvalue required as increment operand
+   28 |   test03++;
+      |         ^~
 test002.c: In function 'test04':
-test002.c:34: error: lvalue required as decrement operand
+test002.c:34:9: error: lvalue required as decrement operand
+   34 |   test04--;
+      |         ^~
 test002.c: In function 'test05':
-test002.c:40: error: lvalue required as increment operand
+test002.c:40:3: error: lvalue required as increment operand
+   40 |   ++ test05;
+      |   ^~
 test002.c: In function 'test06':
-test002.c:46: error: lvalue required as decrement operand
+test002.c:46:3: error: lvalue required as decrement operand
+   46 |   -- test06;
+      |   ^~
 test002.c: In function 'test07':
-test002.c:52: error: wrong type argument to unary plus
+test002.c:52:3: error: wrong type argument to unary plus
+   52 |   + test07;
+      |   ^
 test002.c: In function 'test08':
-test002.c:58: error: wrong type argument to unary minus
+test002.c:58:3: error: wrong type argument to unary minus
+   58 |   - test08;
+      |   ^
 test002.c: In function 'test09':
-test002.c:64: error: wrong type argument to bit-complement
+test002.c:64:3: error: wrong type argument to bit-complement
+   64 |   ~ test09;
+      |   ^
 test002.c: In function 'test11':
-test002.c:76: error: invalid operands to binary *
-test002.c:77: error: invalid operands to binary *
+test002.c:76:10: error: invalid operands to binary * (have 'void (*)(int)' and 'int')
+   76 |   test11 * 3;
+      |   ~~~~~~ ^
+      |   |
+      |   void (*)(int)
+test002.c:77:5: error: invalid operands to binary * (have 'int' and 'void (*)(int)')
+   77 |   i * test11;
+      |     ^
+      |     |
+      |     void (*)(int)
 test002.c: In function 'test12':
-test002.c:83: error: invalid operands to binary /
-test002.c:84: error: invalid operands to binary /
+test002.c:83:10: error: invalid operands to binary / (have 'void (*)(int)' and 'int')
+   83 |   test12 / 3;
+      |   ~~~~~~ ^
+      |   |
+      |   void (*)(int)
+test002.c:84:5: error: invalid operands to binary / (have 'int' and 'void (*)(int)')
+   84 |   i / test12;
+      |     ^
+      |     |
+      |     void (*)(int)
 test002.c: In function 'test13':
-test002.c:90: error: invalid operands to binary %
-test002.c:91: error: invalid operands to binary %
+test002.c:90:10: error: invalid operands to binary % (have 'void (*)(int)' and 'int')
+   90 |   test13 % 3;
+      |   ~~~~~~ ^
+      |   |
+      |   void (*)(int)
+test002.c:91:5: error: invalid operands to binary % (have 'int' and 'void (*)(int)')
+   91 |   i % test13;
+      |     ^
+      |     |
+      |     void (*)(int)
 test002.c: In function 'test15':
-test002.c:105: error: invalid operands to binary -
+test002.c:105:5: error: invalid operands to binary - (have 'int' and 'void (*)(void)')
+  105 |   3 - test15;
+      |     ^
+      |     |
+      |     void (*)(void)
 test002.c: In function 'test17':
-test002.c:118: error: invalid operands to binary <<
-test002.c:119: error: invalid operands to binary <<
+test002.c:118:10: error: invalid operands to binary << (have 'void (*)(int)' and 'int')
+  118 |   test17 << i;
+      |   ~~~~~~ ^~
+      |   |
+      |   void (*)(int)
+test002.c:119:5: error: invalid operands to binary << (have 'int' and 'void (*)(int)')
+  119 |   i << test17;
+      |     ^~
+      |     |
+      |     void (*)(int)
 test002.c: In function 'test18':
-test002.c:125: error: invalid operands to binary >>
-test002.c:126: error: invalid operands to binary >>
+test002.c:125:10: error: invalid operands to binary >> (have 'void (*)(void)' and 'int')
+  125 |   test18 >> 3;
+      |   ~~~~~~ ^~
+      |   |
+      |   void (*)(void)
+test002.c:126:5: error: invalid operands to binary >> (have 'int' and 'void (*)(void)')
+  126 |   3 >> test18;
+      |     ^~
+      |     |
+      |     void (*)(void)
 test002.c: In function 'test19':
-test002.c:132: error: invalid operands to binary &
-test002.c:133: error: invalid operands to binary &
+test002.c:132:10: error: invalid operands to binary & (have 'void (*)(void)' and 'int')
+  132 |   test19 & 3;
+      |   ~~~~~~ ^
+      |   |
+      |   void (*)(void)
+test002.c:133:5: error: invalid operands to binary & (have 'int' and 'void (*)(void)')
+  133 |   3 & test19;
+      |     ^
+      |     |
+      |     void (*)(void)
 test002.c: In function 'test20':
-test002.c:140: error: invalid operands to binary ^
-test002.c:141: error: invalid operands to binary ^
+test002.c:140:10: error: invalid operands to binary ^ (have 'void (*)(int)' and 'int')
+  140 |   test20 ^ i;
+      |   ~~~~~~ ^
+      |   |
+      |   void (*)(int)
+test002.c:141:5: error: invalid operands to binary ^ (have 'int' and 'void (*)(int)')
+  141 |   i ^ test20;
+      |     ^
+      |     |
+      |     void (*)(int)
 test002.c: In function 'test21':
-test002.c:147: error: invalid operands to binary |
-test002.c:148: error: invalid operands to binary |
+test002.c:147:10: error: invalid operands to binary | (have 'void (*)(int)' and 'int')
+  147 |   test21 | i;
+      |   ~~~~~~ ^
+      |   |
+      |   void (*)(int)
+test002.c:148:5: error: invalid operands to binary | (have 'int' and 'void (*)(int)')
+  148 |   3 | test21;
+      |     ^
+      |     |
+      |     void (*)(int)
 test002.c: In function 'test22':
-test002.c:156: warning: pointer type mismatch in conditional expression
+test002.c:156:14: warning: pointer type mismatch in conditional expression
+  156 |   test22 ? f : g;
+      |              ^
 test002.c: In function 'test23':
-test002.c:162: error: lvalue required as left operand of assignment
-test002.c:163: error: lvalue required as left operand of assignment
+test002.c:162:10: error: lvalue required as left operand of assignment
+  162 |   test23 = test22;
+      |          ^
+test002.c:163:10: error: lvalue required as left operand of assignment
+  163 |   test23 = 0;
+      |          ^

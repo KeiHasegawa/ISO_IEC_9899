@@ -1,0 +1,5 @@
+test139.c: In function ÅemainÅf:
+test139.c:5:5: error: assignment discards Åeconst volatileÅf qualifier from pointer target type [-Werror=discarded-qualifiers]
+    5 |   p = q;
+      |     ^
+cc1: all warnings being treated as errors

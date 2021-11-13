@@ -1,0 +1,12 @@
+test000.c: In function 'test00':
+test000.c:6:3: error: void value not ignored as it ought to be
+    6 |   (void)a ? b : c;
+      |   ^~~~~~~
+test000.c: In function 'test01':
+test000.c:15:5: error: used struct type value where scalar is required
+   15 |   a ? b : c;
+      |     ^
+test000.c: In function 'test02':
+test000.c:22:5: error: 'a' has an incomplete type 'union U'
+   22 |   a ? b : c;
+      |     ^

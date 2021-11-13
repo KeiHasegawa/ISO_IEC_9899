@@ -1,0 +1,68 @@
+test002.c: In function 'test000':
+test002.c:6:18: error: lvalue required as left operand of assignment
+    6 |   int a; (a = 1) = 2;
+      |                  ^
+test002.c:7:19: error: lvalue required as left operand of assignment
+    7 |   int b; (b *= 3) = 4;
+      |                   ^
+test002.c:8:19: error: lvalue required as left operand of assignment
+    8 |   int c; (c /= 5) = 6;
+      |                   ^
+test002.c:9:19: error: lvalue required as left operand of assignment
+    9 |   int d; (d %= 7) = 8;
+      |                   ^
+test002.c:10:19: error: lvalue required as left operand of assignment
+   10 |   int e; (e += 9) = 10;
+      |                   ^
+test002.c:11:20: error: lvalue required as left operand of assignment
+   11 |   int f; (f -= 11) = 12;
+      |                    ^
+test002.c:12:21: error: lvalue required as left operand of assignment
+   12 |   int g; (g <<= 13) = 14;
+      |                     ^
+test002.c:13:21: error: lvalue required as left operand of assignment
+   13 |   int h; (h >>= 15) = 16;
+      |                     ^
+test002.c:14:20: error: lvalue required as left operand of assignment
+   14 |   int i; (i &= 17) = 18;
+      |                    ^
+test002.c:15:20: error: lvalue required as left operand of assignment
+   15 |   int j; (j ^= 19) = 20;
+      |                    ^
+test002.c:16:20: error: lvalue required as left operand of assignment
+   16 |   int k; (k |= 21) = 22;
+      |                    ^
+test002.c: In function 'test001':
+test002.c:21:10: error: lvalue required as unary '&' operand
+   21 |   int a; &(a = 1);
+      |          ^
+test002.c:22:10: error: lvalue required as unary '&' operand
+   22 |   int b; &(b *= 3);
+      |          ^
+test002.c:23:10: error: lvalue required as unary '&' operand
+   23 |   int c; &(c /= 5);
+      |          ^
+test002.c:24:10: error: lvalue required as unary '&' operand
+   24 |   int d; &(d %= 7);
+      |          ^
+test002.c:25:10: error: lvalue required as unary '&' operand
+   25 |   int e; &(e += 9);
+      |          ^
+test002.c:26:10: error: lvalue required as unary '&' operand
+   26 |   int f; &(f -= 11);
+      |          ^
+test002.c:27:10: error: lvalue required as unary '&' operand
+   27 |   int g; &(g <<= 13);
+      |          ^
+test002.c:28:10: error: lvalue required as unary '&' operand
+   28 |   int h; &(h >>= 15);
+      |          ^
+test002.c:29:10: error: lvalue required as unary '&' operand
+   29 |   int i; &(i &= 17);
+      |          ^
+test002.c:30:10: error: lvalue required as unary '&' operand
+   30 |   int j; &(j ^= 19);
+      |          ^
+test002.c:31:10: error: lvalue required as unary '&' operand
+   31 |   int k; &(k |= 21);
+      |          ^

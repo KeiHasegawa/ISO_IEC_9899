@@ -1,0 +1,24 @@
+test000.c: In function 'test000':
+test000.c:6:3: error: void value not ignored as it ought to be
+    6 |   (void)a && b;
+      |   ^~~~~~~
+test000.c:7:8: error: void value not ignored as it ought to be
+    7 |   a && (void)b;
+      |        ^~~~~~~
+test000.c: In function 'test001':
+test000.c:18:3: error: 's' has an incomplete type 'struct S'
+   18 |   s && 1;
+      |   ^
+test000.c:19:5: error: 'u' has an incomplete type 'union U'
+   19 |   2 && u;
+      |     ^~
+test000.c:20:3: error: 'e' has an incomplete type 'enum E'
+   20 |   e && 3;
+      |   ^
+test000.c: In function 'test002':
+test000.c:31:5: error: invalid operands to binary && (have 'int' and 'struct S')
+   31 |   1 && s;  /* error */
+      |     ^~
+test000.c:32:3: error: used union type value where scalar is required
+   32 |   u && 2;  /* error */
+      |   ^
