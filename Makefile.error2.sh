@@ -3,9 +3,9 @@ OBJS = $(SRCS:.c=.o)
 
 all:test.lof
 
-CC = msp430-elf-gcc
-LINK = msp430-elf-ld
-RUN = msp430-elf-run
+CC = sh-elf-gcc
+LINK = sh-elf-ld
+RUN = sh-elf-run
 DIFF = diff
 TOUCH = touch
 DOS2UNIX = dos2unix.csh
@@ -19,11 +19,11 @@ DOGV = wdog.exe -v
 	$(DOGV) $(DIFF) $< $@
 	$(TOUCH) $@
 
-START_O = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_msp430.010/start.o
+START_O = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_sh.010/start.o
 
-LIBGCC = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/GNU_LANG/lib/gcc/msp430-elf/10.2.0/libgcc.a
+LIBGCC = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/GNU_LANG/lib/gcc/sh-elf/10.2.0/libgcc.a
 
-LDSCRIPT = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_msp430.010/test010.x
+LDSCRIPT = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_sh.010/test010.x
 
 test.log:$(OBJS)
 	-if export LANG=C ; $(DOG) $(LINK) $(START_O) $(OBJS) $(LIBGCC) -T $(LDSCRIPT) 2> $@ ; then \
