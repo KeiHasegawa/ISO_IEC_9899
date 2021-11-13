@@ -1,0 +1,2 @@
+aarch64-elf-ld: cannot find /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_aarch64.010/start.o: No such file or directory
+aarch64-elf-ld: b.o:(.data+0x0): multiple definition of `a'; a.o:(.data+0x0): first defined here
