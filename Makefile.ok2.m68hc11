@@ -1,0 +1,42 @@
+SRCS = $(wildcard *.c)
+OBJS = $(SRCS:.c=.o)
+
+all:test.lof
+
+CC = m68hc11-elf-gcc
+LINK = m68hc11-elf-ld
+RUN = m68hc11-elf-run
+DIFF = diff
+TOUCH = touch
+DOS2UNIX = dos2unix.csh
+DOGV = wdog.exe -v
+
+START_O = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_m68hc11.015/start.o
+
+LIBGCC = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/GNU_LANG/lib/gcc/m68hc11-elf/3.4.4/libgcc.a
+
+LDSCRIPT = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_m68hc11.015/test015.x
+
+%.o : %.c
+	$(DOGV) $(CC) -o $@ -c $<
+
+%.log : %.elf
+	$(DOGV) $(RUN) ./$< > $@
+	$(DOS2UNIX) $@
+
+%.lof : %.log
+	$(DOGV) $(DIFF) $< $@
+	$(TOUCH) $@
+
+test.elf:$(OBJS)
+	$(DOGV) $(LINK) -o $@ $(START_O) $(OBJS) $(LIBGCC) -T $(LDSCRIPT)
+
+clean:
+	$(RM) *.o *.log *.exe *.elf *.s *.i *.stackdump core.* *~
+
+test.lof:test.log
+a.s:a.i
+b.s:b.i
+c.s:c.i
+
+
