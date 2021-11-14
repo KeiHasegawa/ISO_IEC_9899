@@ -78,3 +78,24 @@ lang/41_ISO_IEC_9899/6_Language/3_Expressions/17_Comma_operator/1_ok:test001
 
 # comma expression case label
 lang/41_ISO_IEC_9899/6_Language/3_Expressions/17_Comma_operator/1_ok:test002
+
+# not errored
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/5_Compound_literals/2_error:test001
+
+# not errored
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/8_Relational_operators/2_error:test000
+
+# not errored
+lang/41_ISO_IEC_9899/6_Language/5_Declarations/0_Declarations/2_error:test000
+
+# not errored
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/15_Conditional_operator/2_error:test004
+
+# not errored
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/16_Assignment_operators/2_error:test003
+
+# not errored
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/16_Assignment_operators/2_error:test006
+
+# not erroed
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/16_Assignment_operators/2_error:test007

@@ -12,3 +12,79 @@ lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/2_Integer_constan
 
 #
 lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/2_Integer_constants/1_ok:test003
+
+# Maybe zero division occured unexpectedly
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/5_Operators/1_ok:test000
+
+# unexpected log
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/3_Real_floating_and_integer/1_ok:test000
+
+# unexpected log
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/3_Real_floating_and_integer/1_ok:test001
+
+# unexpected log
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/3_Real_floating_and_integer/1_ok:test002
+
+# unexpected log
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:test002
+
+# char <- ???
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/30_char:test055
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/30_char:test056
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/30_char:test058
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/30_char:test059
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/30_char:test064
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/30_char:test065
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/30_char:test067
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/30_char:test068
+
+# uchar <- ???
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/32_uchar:test056
+
+# short <- ???
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:test054
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:test057
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:test059
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:test060
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:test061
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:test062
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:test063
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:test065
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:test066
+
+# ushort <- ???
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/34_ushort:test055
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/34_ushort:test056
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/34_ushort:test058
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/34_ushort:test059
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/34_ushort:test061
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/34_ushort:test064
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/34_ushort:test065
+
+
+# uint <- ???
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/36_uint:test055
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/36_uint:test056
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/36_uint:test058
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/36_uint:test059
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/36_uint:test061
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/36_uint:test064
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/36_uint:test065
+
+# ulong <- ???
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/38_ulong:test055
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/38_ulong:test056
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/38_ulong:test058
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/38_ulong:test059
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/38_ulong:test061
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/38_ulong:test064
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/38_ulong:test065
+
+# pointer <- ???
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/41_pointer:test000
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/41_pointer:test001
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/41_pointer:test002
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/41_pointer:test003
+
+# unexpected result
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/15_Conditional_operator/1_ok:test011
