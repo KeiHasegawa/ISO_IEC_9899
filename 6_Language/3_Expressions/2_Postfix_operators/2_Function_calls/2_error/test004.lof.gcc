@@ -1,0 +1,4 @@
+test004.c: In function 'main':
+test004.c:8:7: error: lvalue required as left operand of assignment
+    8 |   f() = 1;
+      |       ^

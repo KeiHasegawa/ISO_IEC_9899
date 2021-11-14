@@ -1,0 +1,4 @@
+test000.c: In function 'main':
+test000.c:11:3: error: invalid use of undefined type 'struct T'
+   11 |   f();
+      |   ^

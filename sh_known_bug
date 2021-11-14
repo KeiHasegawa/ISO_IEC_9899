@@ -1,141 +1,171 @@
 # double format test
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/1_Floating_constants/1_ok:sh-elf-run ./test002.elf 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/1_Floating_constants/1_ok:test002
 
 # unexpected memory access error
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/2_Integer_constants/1_ok:sh-elf-run ./test002.elf 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/2_Integer_constants/1_ok:test002
 
 # log is missed unexpectedly
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/2_Integer_constants/1_ok:diff test003.log test003.lof 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/2_Integer_constants/1_ok:test003
 
 # log is missed unexpectedly
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/5_Operators/1_ok:diff test000.log test000.lof 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/5_Operators/1_ok:test000
 
 # conversions from `float' test
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/3_Real_floating_and_integer/1_ok:sh-elf-run ./test000.elf 
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/3_Real_floating_and_integer/1_ok:test000
 
 # conversions from `double' test
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/3_Real_floating_and_integer/1_ok:sh-elf-run ./test001.elf 
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/3_Real_floating_and_integer/1_ok:test001
 
 # conversions from `long double' test
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/3_Real_floating_and_integer/1_ok:sh-elf-run ./test002.elf 
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/3_Real_floating_and_integer/1_ok:test002
 
 # arithmetic conversion test
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:sh-elf-run ./test000.elf was killed by wdog.exe
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:sh-elf-run ./test001.elf was killed by wdog.exe
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:sh-elf-run ./test002.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:sh-elf-run ./test003.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:sh-elf-run ./test004.elf was killed by wdog.exe
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:sh-elf-run ./test005.elf was killed by wdog.exe
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:sh-elf-run ./test006.elf was killed by wdog.exe
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:sh-elf-run ./test007.elf was killed by wdog.exe
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:sh-elf-run ./test008.elf was killed by wdog.exe
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:sh-elf-run ./test009.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:sh-elf-run ./test010.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:sh-elf-run ./test011.elf was killed by wdog.exe
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:sh-elf-run ./test012.elf was killed by wdog.exe
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:sh-elf-run ./test013.elf was killed by wdog.exe
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:sh-elf-run ./test014.elf was killed by wdog.exe
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:test000
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:test001
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:test002
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:test003
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:test004
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:test005
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:test006
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:test007
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:test008
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:test009
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:test010
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:test011
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:test012
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:test013
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:test014
 
 # char <- float, double, long double
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/30_char:diff test054.log test054.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/30_char:diff test063.log test063.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/30_char:diff test066.log test066.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/30_char:diff test069.log test069.lof 
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/30_char:test054
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/30_char:test063
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/30_char:test066
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/30_char:test069
 
 # signed char <- float, double, long double
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/31_schar:diff test054.log test054.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/31_schar:diff test063.log test063.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/31_schar:diff test066.log test066.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/31_schar:diff test069.log test069.lof 
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/31_schar:test054
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/31_schar:test063
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/31_schar:test066
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/31_schar:test069
 
 # unsigned char <- float, double, long double
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/32_uchar:diff test054.log test054.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/32_uchar:diff test060.log test060.lof 
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/32_uchar:test054
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/32_uchar:test060
 
 # short <- float, double, ???
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:diff test054.log test054.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:diff test057.log test057.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:diff test059.log test059.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:diff test060.log test060.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:diff test061.log test061.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:diff test062.log test062.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:diff test063.log test063.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:diff test065.log test065.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:diff test066.log test066.lof 
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:test054
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:test057
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:test059
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:test060
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:test061
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:test062
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:test063
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:test065
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/33_short:test066
 
 # long long <- ???
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:diff test052.log test052.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:diff test053.log test053.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:diff test055.log test055.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:diff test056.log test056.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:sh-elf-run ./test057.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:sh-elf-run ./test058.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:sh-elf-run ./test059.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:sh-elf-run ./test061.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:sh-elf-run ./test062.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:sh-elf-run ./test064.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:sh-elf-run ./test065.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:sh-elf-run ./test066.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:sh-elf-run ./test067.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:sh-elf-run ./test068.elf 
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:test052
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:test053
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:test055
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:test056
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:test057
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:test058
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:test059
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:test061
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:test062
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:test064
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:test065
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:test066
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:test067
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:test068
 
 # ulong long <- ???
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:sh-elf-run ./test052.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:sh-elf-run ./test053.elf was killed by wdog.exe
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:sh-elf-run ./test055.elf was killed by wdog.exe
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:sh-elf-run ./test056.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:sh-elf-run ./test057.elf was killed by wdog.exe
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:sh-elf-run ./test058.elf was killed by wdog.exe
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:sh-elf-run ./test059.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:sh-elf-run ./test061.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:sh-elf-run ./test062.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:sh-elf-run ./test064.elf was killed by wdog.exe
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:sh-elf-run ./test065.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:sh-elf-run ./test066.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:sh-elf-run ./test067.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:sh-elf-run ./test068.elf 
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:test052
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:test053
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:test055
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:test056
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:test057
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:test058
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:test059
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:test061
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:test062
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:test064
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:test065
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:test066
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:test067
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:test068
 
 # float <- ???
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/42_float:diff test036.log test036.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/42_float:diff test037.log test037.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/42_float:sh-elf-run ./test039.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/42_float:sh-elf-run ./test040.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/42_float:sh-elf-run ./test042.elf was killed by wdog.exe
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/42_float:sh-elf-run ./test043.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/42_float:sh-elf-run ./test045.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/42_float:sh-elf-run ./test046.elf 
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/42_float:test036
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/42_float:test037
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/42_float:test039
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/42_float:test040
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/42_float:test042
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/42_float:test043
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/42_float:test045
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/42_float:test046
 
 # double <- ???
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/43_double:diff test039.log test039.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/43_double:sh-elf-run ./test040.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/43_double:diff test042.log test042.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/43_double:diff test043.log test043.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/43_double:diff test045.log test045.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/43_double:diff test046.log test046.lof 
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/43_double:test036
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/43_double:test037
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/43_double:test039
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/43_double:test040
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/43_double:test042
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/43_double:test043
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/43_double:test045
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/43_double:test046
 
 # long double <- ???
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/44_longdouble:diff test039.log test039.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/44_longdouble:sh-elf-run ./test040.elf 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/44_longdouble:diff test042.log test042.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/44_longdouble:diff test043.log test043.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/2_Conversions/44_longdouble:diff test044.log test044.lof 
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/44_longdouble:test036
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/44_longdouble:test037
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/44_longdouble:test039
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/44_longdouble:test040
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/44_longdouble:test042
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/44_longdouble:test043
+lang/41_ISO_IEC_9899/6_Language/2_Conversions/44_longdouble:test044
 
 # logical AND expr test
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/3_Expressions/13_Logical_AND_operator/1_ok:sh-elf-run ./test007.elf 
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/13_Logical_AND_operator/1_ok:test001
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/13_Logical_AND_operator/1_ok:test002
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/13_Logical_AND_operator/1_ok:test003
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/13_Logical_AND_operator/1_ok:test004
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/13_Logical_AND_operator/1_ok:test005
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/13_Logical_AND_operator/1_ok:test006
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/13_Logical_AND_operator/1_ok:test007
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/13_Logical_AND_operator/1_ok:test008
 
 # logical OR expr test
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/3_Expressions/14_Logical_OR_operator/1_ok:sh-elf-run ./test007.elf 
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/14_Logical_OR_operator/1_ok:test001
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/14_Logical_OR_operator/1_ok:test002
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/14_Logical_OR_operator/1_ok:test003
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/14_Logical_OR_operator/1_ok:test004
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/14_Logical_OR_operator/1_ok:test005
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/14_Logical_OR_operator/1_ok:test006
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/14_Logical_OR_operator/1_ok:test007
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/14_Logical_OR_operator/1_ok:test008
 
 # conditional operator test
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/3_Expressions/15_Conditional_operator/1_ok:sh-elf-run ./test009.elf 
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/15_Conditional_operator/1_ok:test009
 
 # log is missed unexpectedly
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/3_Expressions/15_Conditional_operator/1_ok:diff test011.log test011.lof 
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/15_Conditional_operator/1_ok:test011
 
 # Conditional operator error test
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/3_Expressions/15_Conditional_operator/2_error:diff test004.log test004.lof 
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/15_Conditional_operator/2_error:test004
 
 # Assignment operator error test
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/3_Expressions/16_Assignment_operators/2_error:diff test003.log test003.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/3_Expressions/16_Assignment_operators/2_error:diff test006.log test006.lof 
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/3_Expressions/16_Assignment_operators/2_error:diff test007.log test007.lof 
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/16_Assignment_operators/2_error:test003
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/16_Assignment_operators/2_error:test006
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/16_Assignment_operators/2_error:test007
+
+# log is missed unexpectedly
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_calls/1_ok:test011
+
+# function return `short'
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_calls/3_call:test043
+
+# function return `short'
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_calls/3_call:test071
+
+# log is missed unexpectedly
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_calls/4_param:test046

@@ -1,0 +1,5 @@
+test007.c: In function 'f':
+test007.c:8:5: error: 'a' undeclared (first use in this function)
+    8 |   g(a);
+      |     ^
+test007.c:8:5: note: each undeclared identifier is reported only once for each function it appears in

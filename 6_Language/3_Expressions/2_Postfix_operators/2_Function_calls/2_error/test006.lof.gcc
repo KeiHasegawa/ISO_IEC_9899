@@ -1,0 +1,8 @@
+test006.c: In function 'f':
+test006.c:10:5: error: 'a' undeclared (first use in this function)
+   10 |   g(a);      /* error. `a' is not declared. */
+      |     ^
+test006.c:10:5: note: each undeclared identifier is reported only once for each function it appears in
+test006.c:11:9: error: 'z' undeclared (first use in this function)
+   11 |   h(1,2,z);  /* error. `z' is not declared. */
+      |         ^

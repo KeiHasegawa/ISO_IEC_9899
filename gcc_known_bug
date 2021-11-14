@@ -1,74 +1,80 @@
 # wide character like L'\777'
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/4_Character_constants/1_ok:sh-elf-run ./test004.elf 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/4_Character_constants/1_ok:test004
 
 # Shift-JIS charcter literal
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/4_Character_constants/1_ok:sh-elf-gcc -std=c99 -o test008.s test008.c -S 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/4_Character_constants/1_ok:test008
 
 # Shift-JIS charcter literal
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/4_Character_constants/1_ok:sh-elf-gcc -std=c99 -o test009.s test009.c -S 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/4_Character_constants/1_ok:test009
 
 # JIS character literal
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/4_Character_constants/1_ok:diff test010.log test010.lof 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/4_Character_constants/1_ok:test010
 
 # JIS character literal
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/4_Character_constants/1_ok:diff test011.log test011.lof 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/4_Character_constants/1_ok:test011
 
 # Universal character literal
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:sh-elf-gcc -std=c99 -o test000.s test000.c -S 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test000
 
 # Shift-JIS string literal
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:sh-elf-gcc -std=c99 -o test001.s test001.c -S 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test001
 
 # Shift-JIS string literal
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:sh-elf-gcc -std=c99 -o test002.s test002.c -S 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test002
 
 # JIS string literal
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:diff test003.log test003.lof 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test003
 
 # JIS string literal
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:diff test004.log test004.lof 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test004
 
 # EUC string literal
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:sh-elf-gcc -std=c99 -o test005.s test005.c -S 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test005
 
 # EUC string literal
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:sh-elf-gcc -std=c99 -o test006.s test006.c -S 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test006
 
 # Shift-JIS string literal
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:sh-elf-gcc -std=c99 -o test008.s test008.c -S 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test008
 
 # Shift-JIS string literal
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:diff test009.log test009.lof 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test009
 
 # JIS string literal
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:diff test010.log test010.lof 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test010
 
 # JIS string literal
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:diff test011.log test011.lof 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test011
 
 # JIS string literal
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:sh-elf-gcc -std=c99 -o test012.s test012.c -S 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test012
 
 # JIS string literal
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:sh-elf-gcc -std=c99 -o test013.s test013.c -S 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test013
 
 # JIS string literal
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:diff test014.log test014.lof 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test014
 
 # JIS string literal
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:sh-elf-gcc -std=c99 -o test015.s test015.c -S 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test015
 
 # JIS string literal
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:diff test016.log test016.lof 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test016
 
 # Shift-JIS comment
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/9_Comments/1_ok:sh-elf-gcc -std=c99 -o test001.s test001.c -S 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/9_Comments/1_ok:test001
 
 # Shift-JIS comment
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/9_Comments/1_ok:sh-elf-gcc -std=c99 -o test002.s test002.c -S 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/9_Comments/1_ok:test002
 
 # JIS comment
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/9_Comments/1_ok:sh-elf-gcc -std=c99 -o test003.s test003.c -S 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/9_Comments/1_ok:test003
 
 # JIS comment
-wdog.exe : /home/khasegawa/lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/9_Comments/1_ok:sh-elf-gcc -std=c99 -o test004.s test004.c -S 
+lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/9_Comments/1_ok:test004
+
+# comma expression initializer
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/17_Comma_operator/1_ok:test001
+
+# comma expression case label
+lang/41_ISO_IEC_9899/6_Language/3_Expressions/17_Comma_operator/1_ok:test002

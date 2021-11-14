@@ -1,0 +1,4 @@
+test002.c:4:9: warning: implicit declaration of function 'f' [-Wimplicit-function-declaration]
+    4 | int a = f();  /* error */
+      |         ^
+test002.c:4:9: error: initializer element is not constant

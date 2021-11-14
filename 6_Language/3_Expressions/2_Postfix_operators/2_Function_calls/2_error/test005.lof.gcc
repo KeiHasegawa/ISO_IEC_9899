@@ -1,0 +1,13 @@
+test005.c: In function 'g':
+test005.c:12:3: error: too few arguments to function 'f'
+   12 |   f(1);
+      |   ^
+test005.c:5:12: note: declared here
+    5 | inline int f(int a, int b)
+      |            ^
+test005.c:13:3: error: too many arguments to function 'f'
+   13 |   f(2,3,4);
+      |   ^
+test005.c:5:12: note: declared here
+    5 | inline int f(int a, int b)
+      |            ^

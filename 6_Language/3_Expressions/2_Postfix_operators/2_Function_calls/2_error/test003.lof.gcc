@@ -1,0 +1,7 @@
+test003.c:11:16: error: bit-field 'a' width not an integer constant
+   11 |   unsigned int a : f();
+      |                ^
+test003.c: In function 'main':
+test003.c:17:3: error: case label does not reduce to an integer constant
+   17 |   case f():
+      |   ^~~~
