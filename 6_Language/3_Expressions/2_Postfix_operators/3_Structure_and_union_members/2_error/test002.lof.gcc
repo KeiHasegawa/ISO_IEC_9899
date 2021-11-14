@@ -1,0 +1,28 @@
+test002.c: In function 'f':
+test002.c:14:7: error: assignment of member 'a' in read-only object
+   14 |   t.a = 2;         /* error. not modifiable */
+      |       ^
+test002.c:15:10: error: assignment of read-only location 't.b[3]'
+   15 |   t.b[3] = 4;      /* error. not modifiable */
+      |          ^
+test002.c: In function 'g':
+test002.c:20:9: error: assignment of member 'a' in read-only object
+   20 |   pt->a = 5;       /* error. not modifiable */
+      |         ^
+test002.c:21:12: error: assignment of read-only location 'pt->b[6]'
+   21 |   pt->b[6] = 7;    /* error. not modifiable */
+      |            ^
+test002.c: In function 'x':
+test002.c:31:7: error: assignment of read-only member 'a'
+   31 |   s.a = 1;         /* error. not modifiable */
+      |       ^
+test002.c:32:10: error: assignment of read-only location 's.b[2]'
+   32 |   s.b[2] = 3;      /* error. not modifiable */
+      |          ^
+test002.c: In function 'y':
+test002.c:37:9: error: assignment of read-only member 'a'
+   37 |   ps->a = 4;       /* error. not modifiable */
+      |         ^
+test002.c:38:12: error: assignment of read-only location 'ps->b[5]'
+   38 |   ps->b[5] = 6;    /* error. not modifiable */
+      |            ^

@@ -1,0 +1,7 @@
+test001.c: In function 'main':
+test001.c:13:9: error: lvalue required as left operand of assignment
+   13 |   f().x = 1;  /* not lvalue */
+      |         ^
+test001.c:14:3: error: lvalue required as unary '&' operand
+   14 |   &f().x;  /* not lvalue */
+      |   ^

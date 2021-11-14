@@ -1,0 +1,34 @@
+test002.c: In function 'test00':
+test002.c:15:15: warning: empty declaration with storage class specifier does not redeclare tag
+   15 |   extern enum E;
+      |               ^
+test002.c:17:3: error: 's' has an incomplete type 'struct S'
+   17 |   s + 1;
+      |   ^
+test002.c:18:5: error: 'u' has an incomplete type 'union U'
+   18 |   2 + u;
+      |     ^
+test002.c:19:3: error: 'e' undeclared (first use in this function)
+   19 |   e + 3;
+      |   ^
+test002.c:19:3: note: each undeclared identifier is reported only once for each function it appears in
+test002.c:21:20: error: invalid use of undefined type 'struct S'
+   21 |   struct S* ps; ps + 1;
+      |                    ^
+test002.c:22:19: error: invalid use of undefined type 'union U'
+   22 |   union U* pu;  2 + pu;
+      |                   ^
+test002.c:23:20: error: invalid use of undefined type 'enum E'
+   23 |   enum E* pe;   pe + 3;
+      |                    ^
+test002.c: In function 'test01':
+test002.c:36:5: error: invalid operands to binary + (have 'int' and 'struct S')
+   36 |   1 + s;  /* error */
+      |     ^
+test002.c:37:5: error: invalid operands to binary + (have 'union U' and 'int')
+   37 |   u + 2;  /* error */
+      |     ^
+test002.c: In function 'test02':
+test002.c:48:3: error: void value not ignored as it ought to be
+   48 |   test02() + 1;
+      |   ^~~~~~~~

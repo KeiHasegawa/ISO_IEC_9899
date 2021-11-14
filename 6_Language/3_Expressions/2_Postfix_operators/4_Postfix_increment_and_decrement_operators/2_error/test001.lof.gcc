@@ -1,0 +1,39 @@
+test001.c:12:20: warning: 'struct S' declared inside parameter list will not be visible outside of this definition or declaration
+   12 | void test01(struct S* ps)
+      |                    ^
+test001.c: In function 'test01':
+test001.c:14:5: error: increment of pointer to an incomplete type 'struct S'
+   14 |   ps++;
+      |     ^~
+test001.c:15:5: error: decrement of pointer to an incomplete type 'struct S'
+   15 |   ps--;
+      |     ^~
+test001.c: At top level:
+test001.c:18:19: warning: 'union U' declared inside parameter list will not be visible outside of this definition or declaration
+   18 | void test02(union U* pu)
+      |                   ^
+test001.c: In function 'test02':
+test001.c:20:5: error: increment of pointer to an incomplete type 'union U'
+   20 |   pu++;
+      |     ^~
+test001.c:21:5: error: decrement of pointer to an incomplete type 'union U'
+   21 |   pu--;
+      |     ^~
+test001.c: At top level:
+test001.c:24:18: warning: 'enum E' declared inside parameter list will not be visible outside of this definition or declaration
+   24 | void test03(enum E* pe)
+      |                  ^
+test001.c: In function 'test03':
+test001.c:26:5: error: increment of pointer to an incomplete type 'enum E'
+   26 |   pe++;
+      |     ^~
+test001.c:27:5: error: decrement of pointer to an incomplete type 'enum E'
+   27 |   pe--;
+      |     ^~
+test001.c: In function 'test04':
+test001.c:32:5: error: increment of pointer to an incomplete type 'int[]'
+   32 |   pa++;
+      |     ^~
+test001.c:33:5: error: decrement of pointer to an incomplete type 'int[]'
+   33 |   pa--;
+      |     ^~

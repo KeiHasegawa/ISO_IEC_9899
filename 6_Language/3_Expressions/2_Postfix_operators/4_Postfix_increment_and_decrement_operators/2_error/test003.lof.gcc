@@ -1,0 +1,15 @@
+test003.c: In function 'f':
+test003.c:6:3: error: 'a' undeclared (first use in this function)
+    6 |   a++;
+      |   ^
+test003.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+test003.c:7:3: error: 'b' undeclared (first use in this function)
+    7 |   b--;
+      |   ^
+test003.c: In function 'g':
+test003.c:14:5: error: 'c' undeclared (first use in this function)
+   14 |   h(c++);
+      |     ^
+test003.c:15:5: error: 'd' undeclared (first use in this function)
+   15 |   h(d--);
+      |     ^

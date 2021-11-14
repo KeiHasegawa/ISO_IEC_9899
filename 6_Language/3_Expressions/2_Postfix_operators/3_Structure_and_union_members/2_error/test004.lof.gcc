@@ -1,0 +1,8 @@
+test004.c: In function 'f':
+test004.c:11:4: error: 'struct S' has no member named 'a'
+   11 |   p->a;  /* error */
+      |    ^~
+test004.c: In function 'g':
+test004.c:16:4: error: 'struct S' has no member named 'b'
+   16 |   s.b;  /* error */
+      |    ^

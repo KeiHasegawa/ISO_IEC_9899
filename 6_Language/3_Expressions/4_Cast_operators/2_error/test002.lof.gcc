@@ -1,0 +1,8 @@
+test002.c:4:17: error: 'test00' undeclared here (not in a function)
+    4 | int n = (double)test00;
+      |                 ^~~~~~
+test002.c: In function 'tset01':
+test002.c:8:9: error: 'a' undeclared (first use in this function)
+    8 |   (int*)a;
+      |         ^
+test002.c:8:9: note: each undeclared identifier is reported only once for each function it appears in

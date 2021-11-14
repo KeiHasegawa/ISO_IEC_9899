@@ -1,0 +1,4 @@
+test003.c: In function 'test00':
+test003.c:7:40: error: assignment of read-only location '"/tmp/fileXXXXXX"[3]'
+    7 |   (const char[]){"/tmp/fileXXXXXX"}[3] = 'P';  /* error. not modifiable. */
+      |                                        ^

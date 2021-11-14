@@ -1,0 +1,40 @@
+test000.c: In function 'f':
+test000.c:12:5: warning: comparison between pointer and integer
+   12 |   a == b;
+      |     ^~
+test000.c:13:5: warning: comparison between pointer and integer
+   13 |   a != b;
+      |     ^~
+test000.c:14:5: warning: comparison between pointer and integer
+   14 |   a == (int*)0;
+      |     ^~
+test000.c:15:5: warning: comparison between pointer and integer
+   15 |   a != (int*)1;
+      |     ^~
+test000.c:16:5: warning: comparison of distinct pointer types lacks a cast
+   16 |   b == (int*)0;
+      |     ^~
+test000.c:17:5: warning: comparison of distinct pointer types lacks a cast
+   17 |   b != (int*)1;
+      |     ^~
+test000.c:18:5: warning: comparison between pointer and integer
+   18 |   1 == b;
+      |     ^~
+test000.c:19:5: warning: comparison between pointer and integer
+   19 |   2 != b;
+      |     ^~
+test000.c:20:7: error: invalid operands to binary == (have 'double' and 'char *')
+   20 |   0.0 == b;
+      |       ^~
+test000.c:21:5: warning: comparison between pointer and integer
+   21 |   1 == (void*)0;
+      |     ^~
+test000.c:22:5: warning: comparison between pointer and integer
+   22 |   2 != (int*)1;
+      |     ^~
+test000.c:23:5: warning: comparison between pointer and integer
+   23 |   3 == (double*)2;
+      |     ^~
+test000.c:24:5: warning: comparison between pointer and integer
+   24 |   4 != (long int*)3;
+      |     ^~

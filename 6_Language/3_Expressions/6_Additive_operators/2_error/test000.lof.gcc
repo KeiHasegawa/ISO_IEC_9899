@@ -1,0 +1,22 @@
+test000.c: In function 'f':
+test000.c:3:10: error: 'a' undeclared (first use in this function)
+    3 |   return a + 1.0;  /* error `a' undeclared */
+      |          ^
+test000.c:3:10: note: each undeclared identifier is reported only once for each function it appears in
+test000.c: In function 'g':
+test000.c:8:14: error: 'b' undeclared (first use in this function)
+    8 |   return 3 - b;  /* error `b' undeclared */
+      |              ^
+test000.c: In function 'h':
+test000.c:15:6: error: 'a' undeclared (first use in this function)
+   15 |   hh(a + b);
+      |      ^
+test000.c:15:10: error: 'b' undeclared (first use in this function)
+   15 |   hh(a + b);
+      |          ^
+test000.c:17:6: error: 'c' undeclared (first use in this function)
+   17 |   hh(c - d);
+      |      ^
+test000.c:17:10: error: 'd' undeclared (first use in this function)
+   17 |   hh(c - d);
+      |          ^

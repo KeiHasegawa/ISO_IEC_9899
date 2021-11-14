@@ -1,0 +1,36 @@
+test000.c: In function 'f':
+test000.c:8:3: error: unknown type name 'a'
+    8 |   a * d;
+      |   ^
+test000.c:8:7: error: conflicting types for 'd'
+    8 |   a * d;
+      |       ^
+test000.c:7:22: note: previous declaration of 'd' was here
+    7 |   extern long double d;
+      |                      ^
+test000.c:9:7: error: 'b' undeclared (first use in this function)
+    9 |   d / b;
+      |       ^
+test000.c:9:7: note: each undeclared identifier is reported only once for each function it appears in
+test000.c:10:12: error: 'c' undeclared (first use in this function)
+   10 |   (int)d % c;
+      |            ^
+test000.c: In function 'g':
+test000.c:17:5: error: 'a' undeclared (first use in this function)
+   17 |   h(a * b);
+      |     ^
+test000.c:17:9: error: 'b' undeclared (first use in this function)
+   17 |   h(a * b);
+      |         ^
+test000.c:19:5: error: 'c' undeclared (first use in this function)
+   19 |   h(c / d);
+      |     ^
+test000.c:19:9: error: 'd' undeclared (first use in this function)
+   19 |   h(c / d);
+      |         ^
+test000.c:21:5: error: 'i' undeclared (first use in this function)
+   21 |   h(i % j);
+      |     ^
+test000.c:21:9: error: 'j' undeclared (first use in this function)
+   21 |   h(i % j);
+      |         ^

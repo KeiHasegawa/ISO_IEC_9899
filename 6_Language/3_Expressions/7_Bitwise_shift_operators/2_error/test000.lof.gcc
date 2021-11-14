@@ -1,0 +1,54 @@
+test000.c: In function 'test00':
+test000.c:8:8: error: invalid operands to binary >> (have 'float' and 'int')
+    8 |   2.0F >> 1;
+      |        ^~
+test000.c:9:5: error: invalid operands to binary << (have 'int' and 'double')
+    9 |   2 << 1.0;
+      |     ^~
+test000.c:10:8: error: invalid operands to binary >> (have 'long double' and 'int')
+   10 |   2.0L >> 1;
+      |        ^~
+test000.c: In function 'test01':
+test000.c:16:5: error: invalid operands to binary >> (have 'int *' and 'int')
+   16 |   p >> 1;
+      |     ^~
+test000.c:17:5: error: invalid operands to binary << (have 'int' and 'char *')
+   17 |   2 << q;
+      |     ^~
+test000.c:18:12: error: invalid operands to binary >> (have 'void *' and 'int')
+   18 |   (void*)2 >> 1;
+      |            ^~
+test000.c:21:5: error: invalid operands to binary << (have 'void (*)(void)' and 'int')
+   21 |   f << 1;
+      |   ~ ^~
+      |   |
+      |   void (*)(void)
+test000.c:23:5: error: invalid operands to binary << (have 'int' and 'int *')
+   23 |   2 << a;
+      |     ^~
+      |     |
+      |     int *
+test000.c: In function 'tset02':
+test000.c:29:3: error: void value not ignored as it ought to be
+   29 |   (void)2 << 1;
+      |   ^~~~~~~
+test000.c:30:8: error: void value not ignored as it ought to be
+   30 |   2 >> (void)1;
+      |        ^~~~~~~
+test000.c: In function 'test03':
+test000.c:42:3: error: 's' has an incomplete type 'struct S'
+   42 |   s << 1;
+      |   ^
+test000.c:43:5: error: 'u' has an incomplete type 'union U'
+   43 |   2 >> u;
+      |     ^~
+test000.c:44:3: error: 'e' has an incomplete type 'enum E'
+   44 |   e << 1;
+      |   ^
+test000.c: In function 'test04':
+test000.c:53:5: error: invalid operands to binary >> (have 'int' and 'struct S')
+   53 |   2 >> s;  /* error */
+      |     ^~
+test000.c:54:5: error: invalid operands to binary << (have 'union U' and 'int')
+   54 |   u << 1;  /* error */
+      |     ^~

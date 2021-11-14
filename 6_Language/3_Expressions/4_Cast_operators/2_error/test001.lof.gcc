@@ -1,0 +1,40 @@
+test001.c: In function 'test00':
+test001.c:7:3: error: cannot convert to a pointer type
+    7 |   (int*)a;
+      |   ^
+test001.c:8:3: error: cannot convert to a pointer type
+    8 |   (int*)b;
+      |   ^
+test001.c:9:3: error: cannot convert to a pointer type
+    9 |   (int*)c;
+      |   ^
+test001.c: In function 'test01':
+test001.c:14:3: error: pointer value used where a floating-point was expected
+   14 |   (float)a;
+      |   ^
+test001.c:15:3: error: pointer value used where a floating-point was expected
+   15 |   (double)a;
+      |   ^
+test001.c:16:3: error: pointer value used where a floating-point was expected
+   16 |   (long double)a;
+      |   ^
+test001.c: In function 'test02':
+test001.c:21:3: error: cannot convert to a pointer type
+   21 |   (int*)1.0F;
+      |   ^
+test001.c:22:3: error: cannot convert to a pointer type
+   22 |   (char*)2.0;
+      |   ^
+test001.c:23:3: error: cannot convert to a pointer type
+   23 |   (void*)3.0L;
+      |   ^
+test001.c: In function 'test03':
+test001.c:28:3: error: pointer value used where a floating-point was expected
+   28 |   (float)(void*)0;
+      |   ^
+test001.c:29:3: error: pointer value used where a floating-point was expected
+   29 |   (double)(int*)1;
+      |   ^
+test001.c:30:3: error: pointer value used where a floating-point was expected
+   30 |   (long double)(short int*)2;
+      |   ^

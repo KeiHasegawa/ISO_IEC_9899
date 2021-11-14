@@ -1,0 +1,30 @@
+test000.c: In function 'test00':
+test000.c:13:10: error: invalid application of 'sizeof' to incomplete type 'struct S'
+   13 |   sizeof s;
+      |          ^
+test000.c:15:10: error: invalid application of 'sizeof' to incomplete type 'union U'
+   15 |   sizeof u;
+      |          ^
+test000.c:17:10: error: invalid application of 'sizeof' to incomplete type 'enum E'
+   17 |   sizeof e;
+      |          ^
+test000.c:19:10: error: invalid application of 'sizeof' to incomplete type 'int[]'
+   19 |   sizeof a;
+      |          ^
+test000.c: In function 'test01':
+test000.c:27:10: error: invalid application of 'sizeof' to incomplete type 'struct S'
+   27 |   sizeof(struct S);
+      |          ^~~~~~
+test000.c:29:10: error: invalid application of 'sizeof' to incomplete type 'union U'
+   29 |   sizeof(union U);
+      |          ^~~~~
+test000.c:31:10: error: invalid application of 'sizeof' to incomplete type 'enum E'
+   31 |   sizeof(enum E);
+      |          ^~~~
+test000.c:32:10: error: invalid application of 'sizeof' to incomplete type 'int[]'
+   32 |   sizeof(int []);
+      |          ^~~
+test000.c: In function 'test02':
+test000.c:40:10: error: 'sizeof' applied to a bit-field
+   40 |   sizeof s.a;
+      |          ^

@@ -1,0 +1,91 @@
+test000.c: In function 'test00':
+test000.c:8:12: error: wrong type argument to bit-complement
+    8 |   float a; ~a;
+      |            ^
+test000.c:9:13: error: wrong type argument to bit-complement
+    9 |   double b; ~b;
+      |             ^
+test000.c:10:18: error: wrong type argument to bit-complement
+   10 |   long double c; ~c;
+      |                  ^
+test000.c: In function 'test01':
+test000.c:15:11: error: wrong type argument to unary plus
+   15 |   int* a; +a;
+      |           ^
+test000.c:16:12: error: wrong type argument to unary minus
+   16 |   char* b; -b;
+      |            ^
+test000.c:17:12: error: wrong type argument to bit-complement
+   17 |   void* c; ~c;
+      |            ^
+test000.c:18:3: error: wrong type argument to unary plus
+   18 |   +(int*)3;
+      |   ^
+test000.c:19:3: error: wrong type argument to unary minus
+   19 |   -(char*)4;
+      |   ^
+test000.c:20:3: error: wrong type argument to bit-complement
+   20 |   ~(void*)5;
+      |   ^
+test000.c: In function 'test02':
+test000.c:26:3: error: wrong type argument to unary plus
+   26 |   +s;
+      |   ^
+test000.c:27:3: error: wrong type argument to unary minus
+   27 |   -s;
+      |   ^
+test000.c:28:3: error: wrong type argument to bit-complement
+   28 |   ~s;
+      |   ^
+test000.c:29:3: error: wrong type argument to unary exclamation mark
+   29 |   !s;
+      |   ^
+test000.c:31:3: error: wrong type argument to unary plus
+   31 |   +u;
+      |   ^
+test000.c:32:3: error: wrong type argument to unary minus
+   32 |   -u;
+      |   ^
+test000.c:33:3: error: wrong type argument to bit-complement
+   33 |   ~u;
+      |   ^
+test000.c:34:3: error: wrong type argument to unary exclamation mark
+   34 |   !u;
+      |   ^
+test000.c: In function 'test03':
+test000.c:40:4: error: 's' has an incomplete type 'struct S'
+   40 |   +s;
+      |    ^
+test000.c:41:4: error: 's' has an incomplete type 'struct S'
+   41 |   -s;
+      |    ^
+test000.c:42:4: error: 's' has an incomplete type 'struct S'
+   42 |   ~s;
+      |    ^
+test000.c:43:4: error: 's' has an incomplete type 'struct S'
+   43 |   !s;
+      |    ^
+test000.c:45:4: error: 'u' has an incomplete type 'union U'
+   45 |   +u;
+      |    ^
+test000.c:46:4: error: 'u' has an incomplete type 'union U'
+   46 |   -u;
+      |    ^
+test000.c:47:4: error: 'u' has an incomplete type 'union U'
+   47 |   ~u;
+      |    ^
+test000.c:48:4: error: 'u' has an incomplete type 'union U'
+   48 |   !u;
+      |    ^
+test000.c:50:4: error: 'e' has an incomplete type 'enum E'
+   50 |   +e;
+      |    ^
+test000.c:51:4: error: 'e' has an incomplete type 'enum E'
+   51 |   -e;
+      |    ^
+test000.c:52:4: error: 'e' has an incomplete type 'enum E'
+   52 |   ~e;
+      |    ^
+test000.c:53:4: error: 'e' has an incomplete type 'enum E'
+   53 |   !e;
+      |    ^

@@ -1,0 +1,14 @@
+test002.c: In function 'test000':
+test002.c:6:12: error: lvalue required as left operand of assignment
+    6 |   (a == b) = 1;
+      |            ^
+test002.c:7:12: error: lvalue required as left operand of assignment
+    7 |   (a != b) = 2;
+      |            ^
+test002.c: In function 'test001':
+test002.c:12:3: error: lvalue required as unary '&' operand
+   12 |   &(a == b);
+      |   ^
+test002.c:13:3: error: lvalue required as unary '&' operand
+   13 |   &(a != b);
+      |   ^

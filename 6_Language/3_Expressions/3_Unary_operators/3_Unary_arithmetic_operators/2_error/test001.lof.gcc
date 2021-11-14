@@ -1,0 +1,14 @@
+test001.c: In function 'f':
+test001.c:6:4: error: 'a' undeclared (first use in this function)
+    6 |   +a;
+      |    ^
+test001.c:6:4: note: each undeclared identifier is reported only once for each function it appears in
+test001.c:7:4: error: 'b' undeclared (first use in this function)
+    7 |   -b;
+      |    ^
+test001.c:8:4: error: 'c' undeclared (first use in this function)
+    8 |   ~c;
+      |    ^
+test001.c:9:4: error: 'd' undeclared (first use in this function)
+    9 |   !d;
+      |    ^

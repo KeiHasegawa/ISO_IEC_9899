@@ -1,0 +1,20 @@
+test001.c: In function 'test00':
+test001.c:6:11: error: lvalue required as left operand of assignment
+    6 |   (a * b) = c;
+      |           ^
+test001.c:7:11: error: lvalue required as left operand of assignment
+    7 |   (a / b) = c;
+      |           ^
+test001.c:8:11: error: lvalue required as left operand of assignment
+    8 |   (a % b) = c;
+      |           ^
+test001.c: In function 'test01':
+test001.c:13:3: error: lvalue required as unary '&' operand
+   13 |   &(a * b);
+      |   ^
+test001.c:14:3: error: lvalue required as unary '&' operand
+   14 |   &(a / b);
+      |   ^
+test001.c:15:3: error: lvalue required as unary '&' operand
+   15 |   &(a % b);
+      |   ^

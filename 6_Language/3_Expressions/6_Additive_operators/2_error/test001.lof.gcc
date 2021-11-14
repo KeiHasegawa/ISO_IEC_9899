@@ -1,0 +1,14 @@
+test001.c: In function 'f':
+test001.c:3:11: error: lvalue required as left operand of assignment
+    3 |   (a + b) = c;  /* error. not lvalue */
+      |           ^
+test001.c:4:11: error: lvalue required as left operand of assignment
+    4 |   (a - b) = c;  /* error. not lvalue */
+      |           ^
+test001.c: In function 'g':
+test001.c:9:3: error: lvalue required as unary '&' operand
+    9 |   &(a + b);  /* error. not lvalue */
+      |   ^
+test001.c:10:3: error: lvalue required as unary '&' operand
+   10 |   &(a - b);  /* error. not lvalue */
+      |   ^

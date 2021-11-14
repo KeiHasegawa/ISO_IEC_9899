@@ -1,0 +1,26 @@
+test002.c: In function 'test00':
+test002.c:11:6: error: lvalue required as left operand of assignment
+   11 |   +a = 1;
+      |      ^
+test002.c:12:7: error: lvalue required as left operand of assignment
+   12 |   -*b = 2;
+      |       ^
+test002.c:13:9: error: lvalue required as left operand of assignment
+   13 |   ~c[3] = 3;
+      |         ^
+test002.c:14:6: error: lvalue required as left operand of assignment
+   14 |   !d = 4;
+      |      ^
+test002.c: In function 'test01':
+test002.c:24:3: error: lvalue required as unary '&' operand
+   24 |   &+a;
+      |   ^
+test002.c:25:3: error: lvalue required as unary '&' operand
+   25 |   &-*b;
+      |   ^
+test002.c:26:3: error: lvalue required as unary '&' operand
+   26 |   &~c[3];
+      |   ^
+test002.c:27:3: error: lvalue required as unary '&' operand
+   27 |   &!d;
+      |   ^

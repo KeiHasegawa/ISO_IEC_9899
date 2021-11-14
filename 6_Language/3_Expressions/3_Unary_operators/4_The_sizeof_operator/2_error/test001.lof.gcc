@@ -1,0 +1,8 @@
+test001.c: In function 'f':
+test001.c:6:10: error: 'a' undeclared (first use in this function)
+    6 |   sizeof a;
+      |          ^
+test001.c:6:10: note: each undeclared identifier is reported only once for each function it appears in
+test001.c:7:10: error: 'b' undeclared (first use in this function)
+    7 |   sizeof(b);
+      |          ^

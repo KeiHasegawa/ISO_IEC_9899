@@ -1,0 +1,22 @@
+test000.c: In function 'test000':
+test000.c:14:18: error: bit-field 'a' width not an integer constant
+   14 |     unsigned int a : (n = 1);
+      |                  ^
+test000.c:15:18: error: bit-field 'b' width not an integer constant
+   15 |     unsigned int b : n++;
+      |                  ^
+test000.c:16:18: error: bit-field 'c' width not an integer constant
+   16 |     unsigned int c : n--;
+      |                  ^
+test000.c:17:18: error: bit-field 'd' width not an integer constant
+   17 |     unsigned int d : ++n;
+      |                  ^
+test000.c:18:18: error: bit-field 'e' width not an integer constant
+   18 |     unsigned int e : --n;
+      |                  ^
+test000.c:19:18: error: bit-field 'f' width not an integer constant
+   19 |     unsigned int f : test000(n);
+      |                  ^
+test000.c:20:18: error: bit-field 'g' width not an integer constant
+   20 |     unsigned int g : (n,n+1);
+      |                  ^

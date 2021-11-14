@@ -1,0 +1,110 @@
+test002.c: In function 'test00':
+test002.c:9:3: error: void value not ignored as it ought to be
+    9 |   (void)a * a;
+      |   ^~~~~~~
+test002.c:10:7: error: void value not ignored as it ought to be
+   10 |   a / (void)a;
+      |       ^~~~~~~
+test002.c:11:7: error: void value not ignored as it ought to be
+   11 |   a % (void)a;
+      |       ^~~~~~~
+test002.c: In function 'test01':
+test002.c:17:5: error: invalid operands to binary * (have 'int *' and 'int')
+   17 |   a * *a;
+      |     ^ ~~
+      |       |
+      |       int
+test002.c:18:6: error: invalid operands to binary / (have 'int' and 'int *')
+   18 |   *a / a;
+      |   ~~ ^
+      |   |
+      |   int
+test002.c:19:6: error: invalid operands to binary % (have 'int' and 'int *')
+   19 |   *a % a;
+      |   ~~ ^
+      |   |
+      |   int
+test002.c:21:6: error: invalid operands to binary * (have 'int' and 'int *')
+   21 |   *a * (int*)1;
+      |   ~~ ^
+      |   |
+      |   int
+test002.c:22:11: error: invalid operands to binary / (have 'int *' and 'int')
+   22 |   (int*)2 / *a;
+      |           ^ ~~
+      |             |
+      |             int
+test002.c:23:11: error: invalid operands to binary % (have 'int *' and 'int')
+   23 |   (int*)3 % *a;
+      |           ^ ~~
+      |             |
+      |             int
+test002.c: In function 'test02':
+test002.c:36:3: error: 's' has an incomplete type 'struct S'
+   36 |   s * 3;
+      |   ^
+test002.c:37:5: error: 's' has an incomplete type 'struct S'
+   37 |   4 / s;
+      |     ^
+test002.c:38:3: error: 's' has an incomplete type 'struct S'
+   38 |   s % 5;
+      |   ^
+test002.c:40:3: error: 'u' has an incomplete type 'union U'
+   40 |   u * 6;
+      |   ^
+test002.c:41:5: error: 'u' has an incomplete type 'union U'
+   41 |   7 / u;
+      |     ^
+test002.c:42:3: error: 'u' has an incomplete type 'union U'
+   42 |   u % 8;
+      |   ^
+test002.c:44:3: error: 'e' has an incomplete type 'enum E'
+   44 |   e * 9;
+      |   ^
+test002.c:45:6: error: 'e' has an incomplete type 'enum E'
+   45 |   10 / e;
+      |      ^
+test002.c:46:6: error: 'e' has an incomplete type 'enum E'
+   46 |   11 % e;
+      |      ^
+test002.c: In function 'test03':
+test002.c:54:19: error: conflicting types for 's'
+   54 |   extern struct S s;
+      |                   ^
+test002.c:30:19: note: previous declaration of 's' was here
+   30 |   extern struct S s;
+      |                   ^
+test002.c:56:18: error: conflicting types for 'u'
+   56 |   extern union U u;
+      |                  ^
+test002.c:32:18: note: previous declaration of 'u' was here
+   32 |   extern union U u;
+      |                  ^
+test002.c:58:17: error: conflicting types for 'e'
+   58 |   extern enum E e;
+      |                 ^
+test002.c:34:17: note: previous declaration of 'e' was here
+   34 |   extern enum E e;
+      |                 ^
+test002.c:60:5: error: invalid operands to binary * (have 'struct S' and 'int')
+   60 |   s * 3;
+      |     ^
+test002.c:61:5: error: invalid operands to binary / (have 'int' and 'struct S')
+   61 |   4 / s;
+      |     ^
+test002.c:62:5: error: invalid operands to binary % (have 'struct S' and 'int')
+   62 |   s % 5;
+      |     ^
+test002.c:64:5: error: invalid operands to binary * (have 'union U' and 'int')
+   64 |   u * 6;
+      |     ^
+test002.c:65:5: error: invalid operands to binary / (have 'int' and 'union U')
+   65 |   7 / u;
+      |     ^
+test002.c:66:5: error: invalid operands to binary % (have 'union U' and 'int')
+   66 |   u % 8;
+      |     ^
+test002.c: In function 'test04':
+test002.c:78:5: error: invalid operands to binary % (have 'double' and 'float')
+   78 |   a % b; /* error */
+      |     ^

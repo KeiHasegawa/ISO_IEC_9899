@@ -1,0 +1,26 @@
+test000.c: In function 'test00':
+test000.c:9:3: error: cast specifies array type
+    9 |   (int [])x;
+      |   ^
+test000.c:10:3: error: cast specifies array type
+   10 |   (int [3])x;
+      |   ^
+test000.c: In function 'test01':
+test000.c:16:3: error: cast specifies function type
+   16 |   (int (void))x;
+      |   ^
+test000.c: In function 'test02':
+test000.c:23:11: error: conversion to non-scalar type requested
+   23 |   (struct S)x;
+      |           ^
+test000.c:25:11: error: conversion to non-scalar type requested
+   25 |   (struct SS)x;
+      |           ^~
+test000.c: In function 'test03':
+test000.c:34:3: error: cast to union type from type not present in union
+   34 |   (union UU)x;
+      |   ^
+test000.c: In function 'test04':
+test000.c:41:9: error: conversion to incomplete type
+   41 |   (enum E)x;
+      |         ^

@@ -1,0 +1,28 @@
+test000.c: In function 'test00':
+test000.c:7:18: error: invalid initializer
+    7 |   (void (void)){ test00 };
+      |                  ^~~~~~
+test000.c:7:18: note: (near initialization for '(anonymous)')
+test000.c: In function 'test01':
+test000.c:13:15: warning: excess elements in struct initializer
+   13 |   (struct S){ 1 };
+      |               ^
+test000.c:13:15: note: (near initialization for '(anonymous)')
+test000.c:13:13: error: invalid use of undefined type 'struct S'
+   13 |   (struct S){ 1 };
+      |             ^
+test000.c:15:14: warning: excess elements in union initializer
+   15 |   (union U){ 2 };
+      |              ^
+test000.c:15:14: note: (near initialization for '(anonymous)')
+test000.c:15:12: error: invalid use of undefined type 'union U'
+   15 |   (union U){ 2 };
+      |            ^
+test000.c:17:9: error: conversion to incomplete type
+   17 |   (enum E){ 3 };
+      |         ^
+test000.c: In function 'test02':
+test000.c:22:11: error: invalid initializer
+   22 |   (void){ 1 };
+      |           ^
+test000.c:22:11: note: (near initialization for '(anonymous)')

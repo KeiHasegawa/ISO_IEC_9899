@@ -1,0 +1,4 @@
+test003.c: In function 'f':
+test003.c:10:11: error: 'struct T' has no member named 'b'
+   10 |   return p->b;
+      |           ^~

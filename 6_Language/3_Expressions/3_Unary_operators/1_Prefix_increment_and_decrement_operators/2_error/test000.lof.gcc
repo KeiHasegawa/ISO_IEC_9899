@@ -1,0 +1,35 @@
+test000.c: In function 'test00':
+test000.c:12:3: error: wrong type argument to increment
+   12 |   ++s;
+      |   ^~
+test000.c:14:3: error: wrong type argument to decrement
+   14 |   --u;
+      |   ^~
+test000.c: In function 'test01':
+test000.c:21:3: error: 's' has an incomplete type 'struct S'
+   21 |   ++s;
+      |   ^~
+test000.c:23:3: error: 'u' has an incomplete type 'union U'
+   23 |   --u;
+      |   ^~
+test000.c: In function 'test02':
+test000.c:30:3: error: 'e' has an incomplete type 'enum E'
+   30 |   ++e;
+      |   ^~
+test000.c:31:3: error: 'e' has an incomplete type 'enum E'
+   31 |   --e;
+      |   ^~
+test000.c: In function 'test03':
+test000.c:37:3: error: lvalue required as increment operand
+   37 |   ++test03;
+      |   ^~
+test000.c:38:3: error: lvalue required as decrement operand
+   38 |   --test03;
+      |   ^~
+test000.c: In function 'test04':
+test000.c:45:3: error: lvalue required as increment operand
+   45 |   ++a;
+      |   ^~
+test000.c:46:3: error: lvalue required as decrement operand
+   46 |   --a;
+      |   ^~
