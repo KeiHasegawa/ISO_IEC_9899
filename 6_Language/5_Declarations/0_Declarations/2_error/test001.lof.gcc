@@ -1,0 +1,26 @@
+test001.c:8:22: error: conflicting types for 'a'
+    8 | void f(int a, double a); /* `a' has no linkage */
+      |               ~~~~~~~^
+test001.c:8:12: note: previous definition of 'a' was here
+    8 | void f(int a, double a); /* `a' has no linkage */
+      |        ~~~~^
+test001.c: In function 'g':
+test001.c:16:7: error: redeclaration of 'b' with no linkage
+   16 |   int b;  /* no likage because block scope without `extern' */
+      |       ^
+test001.c:15:7: note: previous declaration of 'b' was here
+   15 |   int b;  /* no likage because block scope without `extern' */
+      |       ^
+test001.c:20:14: error: redeclaration of 'c' with no linkage
+   20 |   static int c;  /* no likage because block scope without `extern' */
+      |              ^
+test001.c:19:7: note: previous declaration of 'c' was here
+   19 |   int c;  /* no likage because block scope without `extern' */
+      |       ^
+test001.c: In function 'h':
+test001.c:26:7: error: 'd' redeclared as different kind of symbol
+   26 |   int d;  /* no linkage becase block scope without `extern' */
+      |       ^
+test001.c:24:12: note: previous definition of 'd' was here
+   24 | void h(int d)  /* no linkage becase block scope without `extern' */
+      |        ~~~~^

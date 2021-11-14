@@ -1,0 +1,14 @@
+test003.c: In function 'g':
+test003.c:19:12: error: storage size of 'b' isn't known
+   19 |   struct S b;  /* no likage because block scope without `extern' */
+      |            ^
+test003.c:22:19: error: storage size of 'c' isn't known
+   22 |   static struct S c;  /* no likage because block scope without `extern' */
+      |                   ^
+test003.c:25:7: error: array size missing in 'd'
+   25 |   int d[]; /* no likage because block scope without `extern' */
+      |       ^
+test003.c: At top level:
+test003.c:29:17: error: parameter 1 ('e') has incomplete type
+   29 | void h(struct S e)  /* no linkage becase block scope without `extern' */
+      |        ~~~~~~~~~^

@@ -1,0 +1,8 @@
+test006.c: In function 'h':
+test006.c:12:3: error: invalid use of undefined type 'struct S'
+   12 |   f();
+      |   ^
+test006.c:13:5: error: 'a' has an incomplete type 'struct S'
+   13 |   g(a);
+      |     ^
+test006.c:13:5: error: type of formal parameter 1 is incomplete

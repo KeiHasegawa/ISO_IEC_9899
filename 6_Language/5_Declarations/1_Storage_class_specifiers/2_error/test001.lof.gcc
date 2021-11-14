@@ -1,0 +1,4 @@
+test001.c: In function 'f':
+test001.c:9:16: error: assignment of read-only variable 'constant_ptr'
+    9 |   constant_ptr = &a;  /* error */
+      |                ^

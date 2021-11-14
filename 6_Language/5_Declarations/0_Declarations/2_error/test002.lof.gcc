@@ -1,0 +1,12 @@
+test002.c:9:6: error: conflicting types for 'test_000'
+    9 | int* test_000;
+      |      ^~~~~~~~
+test002.c:7:12: note: previous declaration of 'test_000' was here
+    7 | extern int test_000[];
+      |            ^~~~~~~~
+test002.c:12:5: error: conflicting types for 'test_001'
+   12 | int test_001(int);
+      |     ^~~~~~~~
+test002.c:11:5: note: previous declaration of 'test_001' was here
+   11 | int test_001(void);
+      |     ^~~~~~~~

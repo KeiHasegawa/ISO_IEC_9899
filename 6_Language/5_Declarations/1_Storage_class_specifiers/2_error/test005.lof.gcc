@@ -1,0 +1,12 @@
+test005.c:5:5: error: non-static declaration of 'a' follows static declaration
+    5 | int a;
+      |     ^
+test005.c:4:12: note: previous declaration of 'a' was here
+    4 | static int a;
+      |            ^
+test005.c:8:12: error: static declaration of 'b' follows non-static declaration
+    8 | static int b;
+      |            ^
+test005.c:7:5: note: previous declaration of 'b' was here
+    7 | int b;
+      |     ^

@@ -1,0 +1,16 @@
+test004.c: In function 'f':
+test004.c:6:3: error: duplicate 'typedef'
+    6 |   typedef typedef int test_00;
+      |   ^~~~~~~
+test004.c:7:3: error: multiple storage classes in declaration specifiers
+    7 |   typedef extern int test_01;
+      |   ^~~~~~~
+test004.c:8:3: error: multiple storage classes in declaration specifiers
+    8 |   typedef static int test_02;
+      |   ^~~~~~~
+test004.c:9:3: error: multiple storage classes in declaration specifiers
+    9 |   typedef auto int test_03;
+      |   ^~~~~~~
+test004.c:10:3: error: multiple storage classes in declaration specifiers
+   10 |   typedef register int test_04;
+      |   ^~~~~~~

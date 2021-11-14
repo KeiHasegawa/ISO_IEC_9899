@@ -1,0 +1,10 @@
+test003.c: In function 'f':
+test003.c:7:12: error: array size missing in 'a'
+    7 |   auto int a[];
+      |            ^
+test003.c:8:16: error: array size missing in 'b'
+    8 |   register int b[];
+      |                ^
+test003.c:9:14: error: storage size of 'c' isn't known
+    9 |   static int c[];
+      |              ^

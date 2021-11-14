@@ -1,0 +1,4 @@
+test000.c: In function 'f':
+test000.c:10:11: error: assignment of read-only location 'a[i][j]'
+   10 |   a[i][j] = 0;  /* error */
+      |           ^
