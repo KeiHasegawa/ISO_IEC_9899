@@ -1,5 +1,5 @@
-test132.c: In function ÅemainÅf:
-test132.c:5:5: error: assignment to Åevolatile char **Åf from incompatible pointer type Åeconst char **Åf [-Werror=incompatible-pointer-types]
+test132.c: In function 'main':
+test132.c:5:5: error: assignment to 'volatile char **' from incompatible pointer type 'const char **' [-Werror=incompatible-pointer-types]
     5 |   p = q;
       |     ^
 cc1: all warnings being treated as errors

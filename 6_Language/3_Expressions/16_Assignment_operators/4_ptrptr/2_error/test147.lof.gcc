@@ -1,5 +1,5 @@
-test147.c: In function ÅemainÅf:
-test147.c:5:5: error: assignment to Åevolatile char * const*Åf from incompatible pointer type Åechar * const volatile*Åf [-Werror=incompatible-pointer-types]
+test147.c: In function 'main':
+test147.c:5:5: error: assignment to 'volatile char * const*' from incompatible pointer type 'char * const volatile*' [-Werror=incompatible-pointer-types]
     5 |   p = q;
       |     ^
 cc1: all warnings being treated as errors

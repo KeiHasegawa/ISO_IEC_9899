@@ -1,5 +1,5 @@
-test035.c: In function ÅemainÅf:
-test035.c:5:5: error: assignment discards ÅeconstÅf qualifier from pointer target type [-Werror=discarded-qualifiers]
+test035.c: In function 'main':
+test035.c:5:5: error: assignment discards 'const' qualifier from pointer target type [-Werror=discarded-qualifiers]
     5 |   p = q;
       |     ^
 cc1: all warnings being treated as errors

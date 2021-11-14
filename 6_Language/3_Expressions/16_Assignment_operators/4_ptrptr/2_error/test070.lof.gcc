@@ -1,5 +1,5 @@
-test070.c: In function ÅemainÅf:
-test070.c:5:5: error: assignment discards ÅevolatileÅf qualifier from pointer target type [-Werror=discarded-qualifiers]
+test070.c: In function 'main':
+test070.c:5:5: error: assignment discards 'volatile' qualifier from pointer target type [-Werror=discarded-qualifiers]
     5 |   p = q;
       |     ^
 cc1: all warnings being treated as errors

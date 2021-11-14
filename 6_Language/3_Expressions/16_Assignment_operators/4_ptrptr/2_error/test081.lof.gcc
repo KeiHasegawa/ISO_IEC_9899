@@ -1,5 +1,5 @@
-test081.c: In function ÅemainÅf:
-test081.c:5:5: error: assignment to Åeconst char * const*Åf from incompatible pointer type Åechar * const*Åf [-Werror=incompatible-pointer-types]
+test081.c: In function 'main':
+test081.c:5:5: error: assignment to 'const char * const*' from incompatible pointer type 'char * const*' [-Werror=incompatible-pointer-types]
     5 |   p = q;
       |     ^
 cc1: all warnings being treated as errors
