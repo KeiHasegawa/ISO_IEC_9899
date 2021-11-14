@@ -1,0 +1,13 @@
+test002.c:6:17: warning: '__func__' is not defined outside of function scope
+    6 | const char* p = __func__;  /* error */
+      |                 ^~~~~~~~
+test002.c: In function 'f':
+test002.c:10:13: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   10 |   char* q = __func__;       /* error. discard qualifier */
+      |             ^~~~~~~~
+test002.c:11:18: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-array-qualifiers]
+   11 |   char (*pa)[] = &__func__; /* error. */
+      |                  ^
+test002.c:12:7: error: expected identifier or '(' before '__func__'
+   12 |   int __func__;             /* error */
+      |       ^~~~~~~~

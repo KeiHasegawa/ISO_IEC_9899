@@ -1,0 +1,13 @@
+test003.c:4:9: error: initializer element is not constant
+    4 | int b = a; /* error */
+      |         ^
+test003.c: In function 'f':
+test003.c:10:3: error: case label does not reduce to an integer constant
+   10 |   case n:
+      |   ^~~~
+test003.c:12:3: error: case label does not reduce to an integer constant
+   12 |   case "hello":
+      |   ^~~~
+test003.c:14:3: error: case label does not reduce to an integer constant
+   14 |   case 1.0:
+      |   ^~~~

@@ -1,0 +1,16 @@
+test000.c:4:11: error: 'x' undeclared here (not in a function)
+    4 | int* p = &x;
+      |           ^
+test000.c: In function 'f':
+test000.c:8:11: error: 'b' undeclared (first use in this function)
+    8 |   int a = b;
+      |           ^
+test000.c:8:11: note: each undeclared identifier is reported only once for each function it appears in
+test000.c: In function 'g':
+test000.c:13:4: error: 'c' undeclared (first use in this function)
+   13 |   (c);
+      |    ^
+test000.c: In function 'h':
+test000.c:18:3: error: 'd' undeclared (first use in this function)
+   18 |   d;
+      |   ^

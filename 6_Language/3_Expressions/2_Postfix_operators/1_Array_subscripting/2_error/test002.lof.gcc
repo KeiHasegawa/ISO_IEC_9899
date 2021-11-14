@@ -1,0 +1,4 @@
+test002.c: In function 'main':
+test002.c:16:21: error: assignment of member 'b' in read-only object
+   16 |     p[i].a = p[i].b = i;  /* type of p[i].a, p[i].b is not modifiable */
+      |                     ^

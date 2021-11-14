@@ -1,0 +1,16 @@
+test000.c:12:9: error: initializer element is not constant
+   12 | int x = a[3];  /* error. a[3] is not constant. */
+      |         ^
+test000.c: In function 'main':
+test000.c:19:4: error: invalid use of undefined type 'struct T'
+   19 |   p[3];  /* error. `p' is pointer to struct T, */
+      |    ^
+test000.c:19:3: error: invalid use of undefined type 'struct T'
+   19 |   p[3];  /* error. `p' is pointer to struct T, */
+      |   ^
+test000.c:23:4: error: array subscript is not an integer
+   23 |   q[d];  /* error. q is pointer to int, and */
+      |    ^
+test000.c:26:4: error: array subscript is not an integer
+   26 |   q[(void*)3];  /* error. (void*)3 is not integer. */
+      |    ^

@@ -1,0 +1,4 @@
+test001.c: In function 'main':
+test001.c:11:3: error: case label does not reduce to an integer constant
+   11 |   case a[0]:
+      |   ^~~~

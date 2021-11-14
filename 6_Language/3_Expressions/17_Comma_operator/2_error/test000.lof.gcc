@@ -1,0 +1,27 @@
+test000.c: In function 'test000':
+test000.c:6:3: error: 'a' undeclared (first use in this function)
+    6 |   a, 1;
+      |   ^
+test000.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+test000.c:7:6: error: 'b' undeclared (first use in this function)
+    7 |   2, b;
+      |      ^
+test000.c:8:3: error: 'c' undeclared (first use in this function)
+    8 |   c, d;
+      |   ^
+test000.c:8:6: error: 'd' undeclared (first use in this function)
+    8 |   c, d;
+      |      ^
+test000.c: In function 'test001':
+test000.c:15:17: error: 'a' undeclared (first use in this function)
+   15 |   test001_subr((a, 1));
+      |                 ^
+test000.c:16:20: error: 'b' undeclared (first use in this function)
+   16 |   test001_subr((2, b));
+      |                    ^
+test000.c:17:17: error: 'c' undeclared (first use in this function)
+   17 |   test001_subr((c, d));
+      |                 ^
+test000.c:17:20: error: 'd' undeclared (first use in this function)
+   17 |   test001_subr((c, d));
+      |                    ^

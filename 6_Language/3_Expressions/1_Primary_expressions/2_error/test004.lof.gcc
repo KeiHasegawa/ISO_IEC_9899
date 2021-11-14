@@ -1,0 +1,10 @@
+test004.c: In function 'f':
+test004.c:14:3: error: 's' has an incomplete type 'struct S'
+   14 |   s;
+      |   ^
+test004.c:15:3: error: 'u' has an incomplete type 'union U'
+   15 |   u;
+      |   ^
+test004.c:16:3: error: 'e' has an incomplete type 'enum E'
+   16 |   e;
+      |   ^

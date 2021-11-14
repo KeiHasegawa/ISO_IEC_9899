@@ -1,0 +1,7 @@
+test001.c: In function 'test000':
+test001.c:6:10: error: lvalue required as left operand of assignment
+    6 |   (a, b) = 1;
+      |          ^
+test001.c:7:3: error: lvalue required as unary '&' operand
+    7 |   &(a, b);
+      |   ^

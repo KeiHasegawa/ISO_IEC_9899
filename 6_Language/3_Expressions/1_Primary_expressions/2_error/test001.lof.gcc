@@ -1,0 +1,28 @@
+test001.c:6:10: error: lvalue required as unary '&' operand
+    6 | int* x = &a;       /* error */
+      |          ^
+test001.c:8:10: error: lvalue required as unary '&' operand
+    8 | int* y = &0;       /* error */
+      |          ^
+test001.c:10:13: error: lvalue required as unary '&' operand
+   10 | double* z = &0.5;  /* error */
+      |             ^
+test001.c: In function 'f':
+test001.c:14:3: error: lvalue required as unary '&' operand
+   14 |   &a;          /* error */
+      |   ^
+test001.c:15:3: error: lvalue required as unary '&' operand
+   15 |   &1;          /* error */
+      |   ^
+test001.c:16:3: error: lvalue required as unary '&' operand
+   16 |   &1.5;        /* error */
+      |   ^
+test001.c:17:5: error: lvalue required as left operand of assignment
+   17 |   2 = 3;       /* error */
+      |     ^
+test001.c:18:7: error: lvalue required as left operand of assignment
+   18 |   2.5 = -0.5;  /* error */
+      |       ^
+test001.c:19:5: error: lvalue required as left operand of assignment
+   19 |   a = b;       /* error */
+      |     ^

@@ -1,0 +1,7 @@
+test004.c:11:7: error: bit-field 'a' width not an integer constant
+   11 |   int a : x[0];
+      |       ^
+test004.c: In function 'f':
+test004.c:17:3: error: case label does not reduce to an integer constant
+   17 |   case x[1]:
+      |   ^~~~

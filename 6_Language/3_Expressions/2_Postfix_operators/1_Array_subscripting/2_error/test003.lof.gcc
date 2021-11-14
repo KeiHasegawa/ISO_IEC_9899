@@ -1,0 +1,14 @@
+test003.c: In function 'main':
+test003.c:13:29: error: 'x' undeclared (first use in this function)
+   13 |   printf("x[%d] = %d\n", i, x[i]);  /* error. x undeclared. */
+      |                             ^
+test003.c:13:29: note: each undeclared identifier is reported only once for each function it appears in
+test003.c:14:31: error: 'y' undeclared (first use in this function)
+   14 |   printf("a[%d] = %d\n", i, a[y]);  /* error. y undeclared. */
+      |                               ^
+test003.c:15:10: error: 'u' undeclared (first use in this function)
+   15 |   return u[v];  /* error. u and v are undeclared. */
+      |          ^
+test003.c:15:12: error: 'v' undeclared (first use in this function)
+   15 |   return u[v];  /* error. u and v are undeclared. */
+      |            ^
