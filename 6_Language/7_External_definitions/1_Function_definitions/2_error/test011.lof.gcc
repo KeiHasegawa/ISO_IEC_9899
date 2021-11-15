@@ -1,0 +1,5 @@
+test011.c: In function 'f':
+test011.c:11:35: error: 'a' undeclared (first use in this function)
+   11 |   printf("return value : %d\n", (*a)(&s[0]));
+      |                                   ^
+test011.c:11:35: note: each undeclared identifier is reported only once for each function it appears in

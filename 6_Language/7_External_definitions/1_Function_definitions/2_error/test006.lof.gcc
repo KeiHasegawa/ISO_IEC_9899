@@ -1,0 +1,36 @@
+test006.c: In function 'test000':
+test006.c:11:6: warning: empty declaration
+   11 |      int;  /* error. no declarator */
+      |      ^~~
+test006.c: In function 'test001':
+test006.c:18:10: error: declaration for parameter 'd' but no such parameter
+   18 |      int d;  /* error */
+      |          ^
+test006.c: In function 'test002':
+test006.c:22:6: warning: type of 'c' defaults to 'int' [-Wimplicit-int]
+   22 | void test002(a,b,c)
+      |      ^~~~~~~
+test006.c: In function 'test003':
+test006.c:29:6: error: old-style parameter declarations in prototyped function definition
+   29 | void test003(A) /* error. parameter omitted. */
+      |      ^~~~~~~
+test006.c:29:14: error: parameter name omitted
+   29 | void test003(A) /* error. parameter omitted. */
+      |              ^
+test006.c: In function 'test004':
+test006.c:35:18: error: storage class specified for parameter 'a'
+   35 |      typedef int a; /* error */
+      |                  ^
+test006.c:36:17: error: storage class specified for parameter 'b'
+   36 |      extern int b; /* error */
+      |                 ^
+test006.c:37:17: error: storage class specified for parameter 'c'
+   37 |      static int c; /* error */
+      |                 ^
+test006.c:38:15: error: storage class specified for parameter 'd'
+   38 |      auto int d; /* error */
+      |               ^
+test006.c: In function 'test005':
+test006.c:44:6: error: parameter 'b' is initialized
+   44 |      int b = 2; /* error */
+      |      ^~~

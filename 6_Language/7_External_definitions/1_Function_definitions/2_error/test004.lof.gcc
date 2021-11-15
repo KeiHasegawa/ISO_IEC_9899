@@ -1,0 +1,9 @@
+test004.c:5:13: error: function definition declared 'typedef'
+    5 | typedef int test000(void)
+      |             ^~~~~~~
+test004.c:10:14: error: function definition declared 'register'
+   10 | register int test001(void)
+      |              ^~~~~~~
+test004.c:15:10: warning: function definition declared 'auto'
+   15 | auto int test002(void)
+      |          ^~~~~~~

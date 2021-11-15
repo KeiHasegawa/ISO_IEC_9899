@@ -1,0 +1,12 @@
+test012.c:6:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+    6 | {
+      | ^
+test012.c:13:18: error: unknown type name 'size_t'
+   13 |   int (*pf)(int, size_t);  // `size_t' is not declared.
+      |                  ^~~~~~
+test012.c:1:1: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+  +++ |+#include <stddef.h>
+    1 | /*
+test012.c:14:1: warning: no semicolon at end of struct or union
+   14 | };
+      | ^

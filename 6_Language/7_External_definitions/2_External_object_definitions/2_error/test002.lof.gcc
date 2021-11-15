@@ -1,0 +1,6 @@
+test002.c:6:5: error: redefinition of 'a'
+    6 | int a = 2; /* definition, external linkage */
+      |     ^
+test002.c:5:5: note: previous definition of 'a' was here
+    5 | int a = 1; /* definition, external linkage */
+      |     ^

@@ -1,0 +1,15 @@
+test005.c: In function 'test000':
+test005.c:7:14: error: parameter name omitted
+    7 | void test000(int)
+      |              ^~~
+test005.c: In function 'test001':
+test005.c:11:6: error: old-style parameter declarations in prototyped function definition
+   11 | void test001(int)
+      |      ^~~~~~~
+test005.c:11:14: error: parameter name omitted
+   11 | void test001(int)
+      |              ^~~
+test005.c: In function 'test002':
+test005.c:16:6: error: old-style parameter declarations in prototyped function definition
+   16 | void test002(int a)
+      |      ^~~~~~~

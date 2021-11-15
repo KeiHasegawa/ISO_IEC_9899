@@ -1,0 +1,15 @@
+test001.c:6:12: warning: 'i3' initialized and declared 'extern'
+    6 | extern int i3 = 3; // definition, external linkage
+      |            ^~
+test001.c:10:5: error: non-static declaration of 'i2' follows static declaration
+   10 | int i2; // 6.1.2.2 renders undefined, linkage disagreement
+      |     ^~
+test001.c:5:12: note: previous definition of 'i2' was here
+    5 | static int i2 = 2; // definition, internal linkage
+      |            ^~
+test001.c:13:5: error: non-static declaration of 'i5' follows static declaration
+   13 | int i5; // 6.1.2.2 renders undefined, linkage disagreement
+      |     ^~
+test001.c:8:12: note: previous declaration of 'i5' was here
+    8 | static int i5; // tentative definition, internal linkage
+      |            ^~

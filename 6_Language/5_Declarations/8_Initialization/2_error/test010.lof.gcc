@@ -1,0 +1,6 @@
+test010.c:11:12: error: invalid initializer
+   11 | char b[] = a;  /* error */
+      |            ^
+test010.c:15:15: error: invalid initializer
+   15 | wchar_t y[] = x;  /* error */
+      |               ^

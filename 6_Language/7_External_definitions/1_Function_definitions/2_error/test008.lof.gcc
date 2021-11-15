@@ -1,0 +1,6 @@
+test008.c:8:6: error: redefinition of 'f'
+    8 | void f(void)
+      |      ^
+test008.c:4:6: note: previous definition of 'f' was here
+    4 | void f(void)
+      |      ^

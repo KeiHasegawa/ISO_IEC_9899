@@ -1,0 +1,6 @@
+test007.c:6:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+    6 | F f { /* ... */ } /* WRONG: syntax/constraint error */
+      |     ^
+test007.c:7:3: error: 'g' declared as function returning a function
+    7 | F g() { /* ... */ } /* WRONG: declares that g returns a function */
+      |   ^

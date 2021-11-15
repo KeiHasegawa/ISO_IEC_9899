@@ -1,0 +1,12 @@
+test003.c:5:5: error: 'test000' declared as function returning an array
+    5 | int test000(void)[3]
+      |     ^~~~~~~
+test003.c:9:5: error: 'test001' declared as function returning an array
+    9 | int test001(void)[]
+      |     ^~~~~~~
+test003.c:15:10: error: return type is an incomplete type
+   15 | struct S test002(void)
+      |          ^~~~~~~
+test003.c:21:9: error: return type is an incomplete type
+   21 | union U test003(void)
+      |         ^~~~~~~
