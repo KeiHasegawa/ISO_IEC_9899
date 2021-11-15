@@ -1,6 +1,12 @@
-test002.c: 函数 `test000' :
-test002.c:7: エラー: 式文の式の型が不完全型です.
-test002.c: 函数 `test001' :
-test002.c:14: エラー: 式文の式の型が不完全型です.
-test002.c: 函数 `test002' :
-test002.c:21: エラー: 式文の式の型が不完全型です.
+test002.c: In function 'test000':
+test002.c:7:5: error: 's' has an incomplete type 'struct S'
+    7 |     s;  // Error. The result type of this expression is incomplete type.
+      |     ^
+test002.c: In function 'test001':
+test002.c:14:5: error: 's' has an incomplete type 'struct S'
+   14 |     s;  // Error. The result type of this expression is incomplete type.
+      |     ^
+test002.c: In function 'test002':
+test002.c:21:5: error: 's' has an incomplete type 'struct S'
+   21 |     s;  // Error. The result type of this expression is incomplete type.
+      |     ^

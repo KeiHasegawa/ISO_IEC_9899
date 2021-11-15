@@ -1,2 +1,14 @@
-test010.c: 函数 `f' :
-test010.c:8: エラー: ブロックスコープの函数 `g' が `extern' 以外の記憶クラスを伴って宣言されました.
+test010.c: In function 'f':
+test010.c:8:14: error: invalid storage class for function 'g'
+    8 |   static int g(void);  /* internal scope function declaration */
+      |              ^
+test010.c:9:24: warning: implicit declaration of function 'g' [-Wimplicit-function-declaration]
+    9 |   printf("g() = %d\n", g());
+      |                        ^
+test010.c: At top level:
+test010.c:12:12: error: static declaration of 'g' follows non-static declaration
+   12 | static int g(void)
+      |            ^
+test010.c:9:24: note: previous implicit declaration of 'g' was here
+    9 |   printf("g() = %d\n", g());
+      |                        ^

@@ -1,2 +1,4 @@
-test002.c: ”Ÿ” `f' :
-test002.c:9: ƒGƒ‰[: case ƒ‰ƒxƒ‹‚ª’è”‚Å‚Í‚ ‚è‚Ü‚¹‚ñ.
+test002.c: In function 'f':
+test002.c:9:3: error: case label does not reduce to an integer constant
+    9 |   case (&a)[n]:
+      |   ^~~~

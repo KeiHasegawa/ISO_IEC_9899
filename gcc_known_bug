@@ -1,101 +1,201 @@
 # wide character like L'\777'
-lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/4_Character_constants/1_ok:test004
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/4_Character_constants/1_ok:test004
 
 # Shift-JIS charcter literal
-lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/4_Character_constants/1_ok:test008
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/4_Character_constants/1_ok:test008
 
 # Shift-JIS charcter literal
-lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/4_Character_constants/1_ok:test009
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/4_Character_constants/1_ok:test009
 
 # JIS character literal
-lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/4_Character_constants/1_ok:test010
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/4_Character_constants/1_ok:test010
 
 # JIS character literal
-lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/4_Character_constants/1_ok:test011
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/4_Character_constants/1_ok:test011
 
 # Universal character literal
-lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test000
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test000
 
 # Shift-JIS string literal
-lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test001
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test001
 
 # Shift-JIS string literal
-lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test002
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test002
 
 # JIS string literal
-lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test003
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test003
 
 # JIS string literal
-lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test004
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test004
 
 # EUC string literal
-lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test005
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test005
 
 # EUC string literal
-lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test006
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test006
 
 # Shift-JIS string literal
-lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test008
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test008
 
 # Shift-JIS string literal
-lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test009
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test009
 
 # JIS string literal
-lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test010
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test010
 
 # JIS string literal
-lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test011
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test011
 
 # JIS string literal
-lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test012
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test012
 
 # JIS string literal
-lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test013
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test013
 
 # JIS string literal
-lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test014
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test014
 
 # JIS string literal
-lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test015
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test015
 
 # JIS string literal
-lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test016
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/4_String_literals/1_ok:test016
 
 # Shift-JIS comment
-lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/9_Comments/1_ok:test001
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/9_Comments/1_ok:test001
 
 # Shift-JIS comment
-lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/9_Comments/1_ok:test002
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/9_Comments/1_ok:test002
 
 # JIS comment
-lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/9_Comments/1_ok:test003
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/9_Comments/1_ok:test003
 
 # JIS comment
-lang/41_ISO_IEC_9899/6_Language/1_Lexical_elements/9_Comments/1_ok:test004
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/9_Comments/1_ok:test004
 
 # comma expression initializer
-lang/41_ISO_IEC_9899/6_Language/3_Expressions/17_Comma_operator/1_ok:test001
+41_ISO_IEC_9899/6_Language/3_Expressions/17_Comma_operator/1_ok:test001
 
 # comma expression case label
-lang/41_ISO_IEC_9899/6_Language/3_Expressions/17_Comma_operator/1_ok:test002
+41_ISO_IEC_9899/6_Language/3_Expressions/17_Comma_operator/1_ok:test002
 
 # not errored
-lang/41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/5_Compound_literals/2_error:test001
+41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/5_Compound_literals/2_error:test001
 
 # not errored
-lang/41_ISO_IEC_9899/6_Language/3_Expressions/8_Relational_operators/2_error:test000
+41_ISO_IEC_9899/6_Language/3_Expressions/8_Relational_operators/2_error:test000
 
 # not errored
-lang/41_ISO_IEC_9899/6_Language/5_Declarations/0_Declarations/2_error:test000
+41_ISO_IEC_9899/6_Language/5_Declarations/0_Declarations/2_error:test000
 
 # not errored
-lang/41_ISO_IEC_9899/6_Language/3_Expressions/15_Conditional_operator/2_error:test004
+41_ISO_IEC_9899/6_Language/3_Expressions/15_Conditional_operator/2_error:test004
 
 # not errored
-lang/41_ISO_IEC_9899/6_Language/3_Expressions/16_Assignment_operators/2_error:test003
+41_ISO_IEC_9899/6_Language/3_Expressions/16_Assignment_operators/2_error:test003
 
 # not errored
-lang/41_ISO_IEC_9899/6_Language/3_Expressions/16_Assignment_operators/2_error:test006
+41_ISO_IEC_9899/6_Language/3_Expressions/16_Assignment_operators/2_error:test006
 
 # not erroed
-lang/41_ISO_IEC_9899/6_Language/3_Expressions/16_Assignment_operators/2_error:test007
+41_ISO_IEC_9899/6_Language/3_Expressions/16_Assignment_operators/2_error:test007
+
+# cannot compile
+41_ISO_IEC_9899/6_Language/3_Expressions/6_Additive_operators/1_ok:test006
+
+# unexpected log
+41_ISO_IEC_9899/6_Language/3_Expressions/8_Relational_operators/1_ok:test008
+
+41_ISO_IEC_9899/6_Language/3_Expressions/8_Relational_operators/1_ok:test013
+
+# cannot compile
+41_ISO_IEC_9899/6_Language/3_Expressions/9_Equality_operators/1_ok:test006
+
+41_ISO_IEC_9899/6_Language/5_Declarations/0_Declarations/1_ok:test000
+
+41_ISO_IEC_9899/6_Language/5_Declarations/0_Declarations/1_ok:test001
+
+# not errored
+41_ISO_IEC_9899/6_Language/5_Declarations/1_Storage_class_specifiers/2_error:test007
+
+# not errored
+41_ISO_IEC_9899/6_Language/5_Declarations/1_Storage_class_specifiers/2_error:test013
+41_ISO_IEC_9899/6_Language/5_Declarations/1_Storage_class_specifiers/2_error:test014
+41_ISO_IEC_9899/6_Language/5_Declarations/1_Storage_class_specifiers/2_error:test015
+41_ISO_IEC_9899/6_Language/5_Declarations/2_Type_specifiers/1_Structure_and_union_specifiers/2_error:test003
+41_ISO_IEC_9899/6_Language/5_Declarations/2_Type_specifiers/1_Structure_and_union_specifiers/2_error:test012
+41_ISO_IEC_9899/6_Language/5_Declarations/2_Type_specifiers/1_Structure_and_union_specifiers/2_error:test013
+
+41_ISO_IEC_9899/6_Language/5_Declarations/2_Type_specifiers/2_Enumeration_specifiers/1_ok:test006
+41_ISO_IEC_9899/6_Language/5_Declarations/2_Type_specifiers/2_Enumeration_specifiers/1_ok:test007
+
+41_ISO_IEC_9899/6_Language/5_Declarations/2_Type_specifiers/2_Enumeration_specifiers/1_ok:test009
+41_ISO_IEC_9899/6_Language/5_Declarations/2_Type_specifiers/2_Enumeration_specifiers/1_ok:test010
+41_ISO_IEC_9899/6_Language/5_Declarations/2_Type_specifiers/2_Enumeration_specifiers/1_ok:test011
+
+41_ISO_IEC_9899/6_Language/5_Declarations/2_Type_specifiers/2_Enumeration_specifiers/2_error:test002
+41_ISO_IEC_9899/6_Language/5_Declarations/2_Type_specifiers/2_Enumeration_specifiers/2_error:test003
+
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/2_error:test000
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/2_error:test001
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/2_error:test002
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/2_error:test006
+41_ISO_IEC_9899/6_Language/5_Declarations/5_Declarators/2_Array_declarators/2_error:test003
+41_ISO_IEC_9899/6_Language/5_Declarations/5_Declarators/3_Function_declarators/2_error:test007
+41_ISO_IEC_9899/6_Language/5_Declarations/5_Declarators/3_Function_declarators/2_error:test010
+41_ISO_IEC_9899/6_Language/5_Declarations/7_Type_definitions/2_error:test002
+41_ISO_IEC_9899/6_Language/5_Declarations/8_Initialization/2_error:test000
+41_ISO_IEC_9899/6_Language/5_Declarations/8_Initialization/2_error:test005
+lang/41_ISO_IEC_9899/6_Language/5_Declarations/8_Initialization/2_error:test009
+41_ISO_IEC_9899/6_Language/6_Statements/6_Jump_statements/4_The_return_statement/2_error:test000
+41_ISO_IEC_9899/6_Language/6_Statements/6_Jump_statements/4_The_return_statement/2_error:test001
+41_ISO_IEC_9899/6_Language/7_External_definitions/0_External_definitions/2_error:test001
+41_ISO_IEC_9899/6_Language/7_External_definitions/1_Function_definitions/2_error:test000
+41_ISO_IEC_9899/6_Language/7_External_definitions/1_Function_definitions/2_error:test002
+41_ISO_IEC_9899/6_Language/7_External_definitions/2_External_object_definitions/2_error:test000
+41_ISO_IEC_9899/6_Language/7_External_definitions/2_External_object_definitions/2_error:test003
+
+41_ISO_IEC_9899/6_Language/5_Declarations/5_Declarators/2_Array_declarators/1_ok:test002
+41_ISO_IEC_9899/6_Language/5_Declarations/5_Declarators/2_Array_declarators/1_ok:test016
+41_ISO_IEC_9899/6_Language/5_Declarations/5_Declarators/2_Array_declarators/1_ok:test022
+41_ISO_IEC_9899/6_Language/5_Declarations/5_Declarators/3_Function_declarators/1_ok:test006
+41_ISO_IEC_9899/6_Language/5_Declarations/8_Initialization/1_ok:test009
+41_ISO_IEC_9899/6_Language/6_Statements/6_Jump_statements/1_The_goto_statement/1_ok:test000
+
+41_ISO_IEC_9899/6_Language/5_Declarations/2_Type_specifiers/1_Structure_and_union_specifiers/1_ok:test015
+41_ISO_IEC_9899/6_Language/5_Declarations/2_Type_specifiers/1_Structure_and_union_specifiers/1_ok:test016
+41_ISO_IEC_9899/6_Language/5_Declarations/2_Type_specifiers/1_Structure_and_union_specifiers/1_ok:test017
+41_ISO_IEC_9899/6_Language/5_Declarations/2_Type_specifiers/1_Structure_and_union_specifiers/1_ok:test018
+41_ISO_IEC_9899/6_Language/5_Declarations/3_Type_qualifiers/1_Formal_definition_of_restrict/1_ok:test003
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/1_ok:test000
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/1_ok:test002
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/1_ok:test003
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/1_ok:test004
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/1_ok:test005
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/1_ok:test006
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/1_ok:test007
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/1_ok:test008
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/1_ok:test009
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/1_ok:test010
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/1_ok:test012
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/1_ok:test013
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/1_ok:test017
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/1_ok:test018
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/1_ok:test019
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/1_ok:test020
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/1_ok:test021
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/1_ok:test022
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/1_ok:test023
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/1_ok:test024
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/1_ok:test026
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/1_ok:test027
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/3_ok:test
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/5_ok:test
+41_ISO_IEC_9899/6_Language/5_Declarations/5_Declarators/2_Array_declarators/1_ok:test017
+41_ISO_IEC_9899/6_Language/5_Declarations/5_Declarators/2_Array_declarators/1_ok:test018
+41_ISO_IEC_9899/6_Language/5_Declarations/5_Declarators/2_Array_declarators/1_ok:test019
+41_ISO_IEC_9899/6_Language/5_Declarations/5_Declarators/2_Array_declarators/1_ok:test020
+41_ISO_IEC_9899/6_Language/5_Declarations/5_Declarators/2_Array_declarators/1_ok:test021
+41_ISO_IEC_9899/6_Language/5_Declarations/8_Initialization/1_ok:test035
+41_ISO_IEC_9899/6_Language/5_Declarations/8_Initialization/1_ok:test036
+
