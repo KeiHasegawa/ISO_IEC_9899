@@ -21,11 +21,11 @@ DOGV = wdog.exe -v
 %.s : %.c
 	$(DOGV) $(CC) -o $@ $< -S
 
-START_O = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_aarch64.020/start.o
+START_O = /home/khasegawa/lang/53_GNU_tool/gcc_cross/AARCH64/tool/start.o
 
 LIBGCC = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/GNU_LANG/lib/gcc/aarch64-elf/10.2.0/libgcc.a
 
-LDSCRIPT = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_aarch64.020/test020.x
+LDSCRIPT = /home/khasegawa/lang/53_GNU_tool/gcc_cross/AARCH64/tool/sample.x
 
 %.elf : %.o
 	$(DOGV) $(LD) -o $@ $(START_O) $< $(LIBGCC) -T $(LDSCRIPT)
