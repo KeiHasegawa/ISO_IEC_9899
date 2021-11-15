@@ -1,0 +1,42 @@
+test010.c:5:18: error: conflicting type qualifiers for 'x'
+    5 | extern const int x;  /* error */
+      |                  ^
+test010.c:1:5: note: previous definition of 'x' was here
+    1 | int x = 1;
+      |     ^
+test010.c:11:19: error: conflicting types for 'a'
+   11 | extern const char a[];  /* error */
+      |                   ^
+test010.c:9:6: note: previous definition of 'a' was here
+    9 | char a[] = "hello world";  /* ok */
+      |      ^
+test010.c:19:12: error: conflicting types for 'array'
+   19 | extern int array[20];  /* error */
+      |            ^~~~~
+test010.c:17:12: note: previous declaration of 'array' was here
+   17 | extern int array[10];  /* ok */
+      |            ^~~~~
+test010.c:37:6: error: redeclaration of 'enum fruit'
+   37 | enum fruit { Apple, Grape, Orange };  /* error */
+      |      ^~~~~
+test010.c:31:6: note: originally defined here
+   31 | enum fruit { apple, grape, orange, melon };  /* ok */
+      |      ^~~~~
+test010.c:48:8: error: redefinition of 'struct st'
+   48 | struct st {
+      |        ^~
+test010.c:41:8: note: originally defined here
+   41 | struct st {
+      |        ^~
+test010.c:66:19: error: conflicting types for 'ptr'
+   66 | extern const int* ptr;  /* error */
+      |                   ^~~
+test010.c:64:13: note: previous declaration of 'ptr' was here
+   64 | extern int* ptr;  /* ok */
+      |             ^~~
+test010.c:72:20: error: conflicting type qualifiers for 'pc'
+   72 | extern char* const pc;  /* error */
+      |                    ^~
+test010.c:70:14: note: previous declaration of 'pc' was here
+   70 | extern char* pc;  /* ok */
+      |              ^~

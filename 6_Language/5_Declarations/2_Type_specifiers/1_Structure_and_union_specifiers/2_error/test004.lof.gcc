@@ -1,0 +1,6 @@
+test004.c:6:5: error: bit-field 'a' has invalid type
+    6 |   A a : 10;  /* Error */
+      |     ^
+test004.c:7:3: error: bit-field '<anonymous>' has invalid type
+    7 |   P : 3; /* Error */
+      |   ^

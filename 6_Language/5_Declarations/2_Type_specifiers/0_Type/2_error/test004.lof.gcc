@@ -1,0 +1,45 @@
+test004.c:4:10: error: both 'unsigned' and 'void' in declaration specifiers
+    4 | unsigned void test000(void);
+      |          ^~~~
+test004.c:5:10: error: both 'signed' and 'unsigned' in declaration specifiers
+    5 | unsigned signed test001(void);
+      |          ^~~~~~
+test004.c:6:10: error: duplicate 'unsigned'
+    6 | unsigned unsigned test002(void);
+      |          ^~~~~~~~
+test004.c:7:10: error: both 'unsigned' and 'float' in declaration specifiers
+    7 | unsigned float test003(void);
+      |          ^~~~~
+test004.c:8:10: error: both 'unsigned' and 'double' in declaration specifiers
+    8 | unsigned double test004(void);
+      |          ^~~~~~
+test004.c:9:6: error: both 'unsigned' and 'void' in declaration specifiers
+    9 | void unsigned test005(void);
+      |      ^~~~~~~~
+test004.c:10:8: error: both 'signed' and 'unsigned' in declaration specifiers
+   10 | signed unsigned test006(void);
+      |        ^~~~~~~~
+test004.c:11:7: error: both 'unsigned' and 'float' in declaration specifiers
+   11 | float unsigned test007(void);
+      |       ^~~~~~~~
+test004.c:12:8: error: both 'unsigned' and 'double' in declaration specifiers
+   12 | double unsigned test008(void);
+      |        ^~~~~~~~
+test004.c:14:10: error: two or more data types in declaration specifiers
+   14 | unsigned struct S test009(void);
+      |          ^~~~~~
+test004.c:15:10: error: two or more data types in declaration specifiers
+   15 | struct S unsigned test010(void);
+      |          ^~~~~~~~
+test004.c:17:10: error: two or more data types in declaration specifiers
+   17 | unsigned union U test011(void);
+      |          ^~~~~
+test004.c:18:9: error: two or more data types in declaration specifiers
+   18 | union U unsigned test012(void);
+      |         ^~~~~~~~
+test004.c:20:3: error: two or more data types in declaration specifiers
+   20 | T unsigned test013(void);
+      |   ^~~~~~~~
+test004.c:21:12: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'test014'
+   21 | unsigned T test014(void);
+      |            ^~~~~~~

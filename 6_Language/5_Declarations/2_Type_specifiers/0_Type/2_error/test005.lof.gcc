@@ -1,0 +1,51 @@
+test005.c:4:7: error: both 'short' and 'void' in declaration specifiers
+    4 | short void test000(void);
+      |       ^~~~
+test005.c:5:7: error: both 'short' and 'char' in declaration specifiers
+    5 | short char test001(void);
+      |       ^~~~
+test005.c:6:7: error: duplicate 'short'
+    6 | short short test002(void);
+      |       ^~~~~
+test005.c:7:7: error: both 'long' and 'short' in declaration specifiers
+    7 | short long test003(void);
+      |       ^~~~
+test005.c:8:7: error: both 'short' and 'float' in declaration specifiers
+    8 | short float test004(void);
+      |       ^~~~~
+test005.c:9:7: error: both 'short' and 'double' in declaration specifiers
+    9 | short double test005(void);
+      |       ^~~~~~
+test005.c:10:6: error: both 'short' and 'void' in declaration specifiers
+   10 | void short test006(void);
+      |      ^~~~~
+test005.c:11:6: error: both 'short' and 'char' in declaration specifiers
+   11 | char short test007(void);
+      |      ^~~~~
+test005.c:12:6: error: both 'long' and 'short' in declaration specifiers
+   12 | long short test008(void);
+      |      ^~~~~
+test005.c:13:7: error: both 'short' and 'float' in declaration specifiers
+   13 | float short test009(void);
+      |       ^~~~~
+test005.c:14:8: error: both 'short' and 'double' in declaration specifiers
+   14 | double short test010(void);
+      |        ^~~~~
+test005.c:16:7: error: two or more data types in declaration specifiers
+   16 | short struct S test011(void);
+      |       ^~~~~~
+test005.c:17:10: error: two or more data types in declaration specifiers
+   17 | struct S short test012(void);
+      |          ^~~~~
+test005.c:19:7: error: two or more data types in declaration specifiers
+   19 | short union U test013(void);
+      |       ^~~~~
+test005.c:20:9: error: two or more data types in declaration specifiers
+   20 | union U short test014(void);
+      |         ^~~~~
+test005.c:22:3: error: two or more data types in declaration specifiers
+   22 | T short test015(void);
+      |   ^~~~~
+test005.c:23:9: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'test016'
+   23 | short T test016(void);
+      |         ^~~~~~~

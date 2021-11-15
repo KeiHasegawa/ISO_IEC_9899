@@ -1,0 +1,7 @@
+test012.c:6:9: error: unknown type name 'A'
+    6 | typedef A B;  // A is not declared
+      |         ^
+test012.c: In function 'f':
+test012.c:14:11: error: unknown type name 'C'
+   14 |   typedef C D; // C is not declared.
+      |           ^

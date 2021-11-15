@@ -1,0 +1,66 @@
+test009.c:4:8: error: two or more data types in declaration specifiers
+    4 | double void test000(void);
+      |        ^~~~
+test009.c:5:6: error: two or more data types in declaration specifiers
+    5 | void double test001(void);
+      |      ^~~~~~
+test009.c:6:8: error: two or more data types in declaration specifiers
+    6 | double char test002(void);
+      |        ^~~~
+test009.c:7:6: error: two or more data types in declaration specifiers
+    7 | char double test003(void);
+      |      ^~~~~~
+test009.c:8:8: error: both 'short' and 'double' in declaration specifiers
+    8 | double short test004(void);
+      |        ^~~~~
+test009.c:9:7: error: both 'short' and 'double' in declaration specifiers
+    9 | short double test005(void);
+      |       ^~~~~~
+test009.c:10:8: error: two or more data types in declaration specifiers
+   10 | double int test006(void);
+      |        ^~~
+test009.c:11:5: error: two or more data types in declaration specifiers
+   11 | int double test007(void);
+      |     ^~~~~~
+test009.c:12:11: error: both 'long long' and 'double' in declaration specifiers
+   12 | long long double test008(void);
+      |           ^~~~~~
+test009.c:13:13: error: both 'long long' and 'double' in declaration specifiers
+   13 | long double long test009(void);
+      |             ^~~~
+test009.c:14:13: error: both 'long long' and 'double' in declaration specifiers
+   14 | double long long test010(void);
+      |             ^~~~
+test009.c:15:8: error: both 'signed' and 'double' in declaration specifiers
+   15 | signed double test011(void);
+      |        ^~~~~~
+test009.c:16:8: error: both 'signed' and 'double' in declaration specifiers
+   16 | double signed test012();
+      |        ^~~~~~
+test009.c:17:8: error: two or more data types in declaration specifiers
+   17 | double float test013();
+      |        ^~~~~
+test009.c:18:7: error: two or more data types in declaration specifiers
+   18 | float double test014();
+      |       ^~~~~~
+test009.c:19:8: error: two or more data types in declaration specifiers
+   19 | double double test015();
+      |        ^~~~~~
+test009.c:21:8: error: two or more data types in declaration specifiers
+   21 | double struct S test016(void);
+      |        ^~~~~~
+test009.c:22:10: error: two or more data types in declaration specifiers
+   22 | struct S double test017(void);
+      |          ^~~~~~
+test009.c:24:8: error: two or more data types in declaration specifiers
+   24 | double union U test018(void);
+      |        ^~~~~
+test009.c:25:9: error: two or more data types in declaration specifiers
+   25 | union U double test019(void);
+      |         ^~~~~~
+test009.c:27:3: error: two or more data types in declaration specifiers
+   27 | T double test020(void);
+      |   ^~~~~~
+test009.c:28:10: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'test021'
+   28 | double T test021(void);
+      |          ^~~~~~~

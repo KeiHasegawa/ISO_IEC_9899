@@ -1,0 +1,30 @@
+test000.c:6:8: error: redefinition of 'struct S'
+    6 | struct S { int a; };
+      |        ^
+test000.c:4:8: note: originally defined here
+    4 | struct S { int a; };
+      |        ^
+test000.c:10:7: error: redefinition of 'union U'
+   10 | union U { int c; };
+      |       ^
+test000.c:8:7: note: originally defined here
+    8 | union U { int b; };
+      |       ^
+test000.c:14:6: error: redeclaration of 'enum E'
+   14 | enum E { d, e };
+      |      ^
+test000.c:12:6: note: originally defined here
+   12 | enum E { d, e, f };
+      |      ^
+test000.c:14:10: error: redeclaration of enumerator 'd'
+   14 | enum E { d, e };
+      |          ^
+test000.c:12:10: note: previous definition of 'd' was here
+   12 | enum E { d, e, f };
+      |          ^
+test000.c:14:13: error: redeclaration of enumerator 'e'
+   14 | enum E { d, e };
+      |             ^
+test000.c:12:13: note: previous definition of 'e' was here
+   12 | enum E { d, e, f };
+      |             ^

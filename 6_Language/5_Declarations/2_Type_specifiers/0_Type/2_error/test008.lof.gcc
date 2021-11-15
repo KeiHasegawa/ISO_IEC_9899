@@ -1,0 +1,63 @@
+test008.c:4:7: error: two or more data types in declaration specifiers
+    4 | float void test000(void);
+      |       ^~~~
+test008.c:5:6: error: two or more data types in declaration specifiers
+    5 | void float test001(void);
+      |      ^~~~~
+test008.c:6:7: error: two or more data types in declaration specifiers
+    6 | float char test002(void);
+      |       ^~~~
+test008.c:7:6: error: two or more data types in declaration specifiers
+    7 | char float test003(void);
+      |      ^~~~~
+test008.c:8:7: error: both 'short' and 'float' in declaration specifiers
+    8 | float short test004(void);
+      |       ^~~~~
+test008.c:9:7: error: both 'short' and 'float' in declaration specifiers
+    9 | short float test005(void);
+      |       ^~~~~
+test008.c:10:7: error: two or more data types in declaration specifiers
+   10 | float int test006(void);
+      |       ^~~
+test008.c:11:5: error: two or more data types in declaration specifiers
+   11 | int float test007(void);
+      |     ^~~~~
+test008.c:12:7: error: both 'long' and 'float' in declaration specifiers
+   12 | float long test008(void);
+      |       ^~~~
+test008.c:13:6: error: both 'long' and 'float' in declaration specifiers
+   13 | long float test009(void);
+      |      ^~~~~
+test008.c:14:8: error: both 'signed' and 'float' in declaration specifiers
+   14 | signed float test010(void);
+      |        ^~~~~
+test008.c:15:7: error: both 'signed' and 'float' in declaration specifiers
+   15 | float signed test011();
+      |       ^~~~~~
+test008.c:16:7: error: two or more data types in declaration specifiers
+   16 | float float test012();
+      |       ^~~~~
+test008.c:17:7: error: two or more data types in declaration specifiers
+   17 | float double test013();
+      |       ^~~~~~
+test008.c:18:8: error: two or more data types in declaration specifiers
+   18 | double float test014();
+      |        ^~~~~
+test008.c:20:7: error: two or more data types in declaration specifiers
+   20 | float struct S test015(void);
+      |       ^~~~~~
+test008.c:21:10: error: two or more data types in declaration specifiers
+   21 | struct S float test016(void);
+      |          ^~~~~
+test008.c:23:7: error: two or more data types in declaration specifiers
+   23 | float union U test017(void);
+      |       ^~~~~
+test008.c:24:9: error: two or more data types in declaration specifiers
+   24 | union U float test018(void);
+      |         ^~~~~
+test008.c:26:3: error: two or more data types in declaration specifiers
+   26 | T float test019(void);
+      |   ^~~~~
+test008.c:27:9: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'test020'
+   27 | float T test020(void);
+      |         ^~~~~~~

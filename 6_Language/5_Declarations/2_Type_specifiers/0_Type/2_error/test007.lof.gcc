@@ -1,0 +1,54 @@
+test007.c:4:6: error: both 'long' and 'void' in declaration specifiers
+    4 | long void test000(void);
+      |      ^~~~
+test007.c:5:6: error: both 'long' and 'void' in declaration specifiers
+    5 | void long test001(void);
+      |      ^~~~
+test007.c:6:6: error: both 'long' and 'char' in declaration specifiers
+    6 | long char test002(void);
+      |      ^~~~
+test007.c:7:6: error: both 'long' and 'char' in declaration specifiers
+    7 | char long test003(void);
+      |      ^~~~
+test007.c:8:6: error: both 'long' and 'short' in declaration specifiers
+    8 | long short test004(void);
+      |      ^~~~~
+test007.c:9:7: error: both 'long' and 'short' in declaration specifiers
+    9 | short long test005(void);
+      |       ^~~~
+test007.c:10:6: error: both 'long' and 'float' in declaration specifiers
+   10 | long float test006(void);
+      |      ^~~~~
+test007.c:11:7: error: both 'long' and 'float' in declaration specifiers
+   11 | float long test007(void);
+      |       ^~~~
+test007.c:12:11: error: both 'long long' and 'double' in declaration specifiers
+   12 | long long double test008(void);
+      |           ^~~~~~
+test007.c:13:13: error: both 'long long' and 'double' in declaration specifiers
+   13 | long double long test009(void);
+      |             ^~~~
+test007.c:14:13: error: both 'long long' and 'double' in declaration specifiers
+   14 | double long long test010(void);
+      |             ^~~~
+test007.c:15:11: error: 'long long long' is too long for GCC
+   15 | long long long test011(void);
+      |           ^~~~
+test007.c:17:6: error: two or more data types in declaration specifiers
+   17 | long struct S test012(void);
+      |      ^~~~~~
+test007.c:18:10: error: two or more data types in declaration specifiers
+   18 | struct S int test013(void);
+      |          ^~~
+test007.c:20:6: error: two or more data types in declaration specifiers
+   20 | long union U test014(void);
+      |      ^~~~~
+test007.c:21:9: error: two or more data types in declaration specifiers
+   21 | union U long test015(void);
+      |         ^~~~
+test007.c:23:3: error: two or more data types in declaration specifiers
+   23 | T long test016(void);
+      |   ^~~~
+test007.c:24:8: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'test017'
+   24 | long T test017(void);
+      |        ^~~~~~~

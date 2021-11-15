@@ -1,0 +1,23 @@
+test008.c:6:14: warning: 'union U' declared inside parameter list will not be visible outside of this definition or declaration
+    6 | void f(union U { int i; float f; } u);
+      |              ^
+test008.c:8:14: warning: 'union U' declared inside parameter list will not be visible outside of this definition or declaration
+    8 | void g(union U { int i; float f; } u)
+      |              ^
+test008.c: In function 'g':
+test008.c:10:5: error: incompatible type for argument 1 of 'f'
+   10 |   f(u);  // error. g::param::union U is not compatible with f::param::union U
+      |     ^
+      |     |
+      |     union U
+test008.c:6:36: note: expected 'union U' but argument is of type 'union U'
+    6 | void f(union U { int i; float f; } u);
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+test008.c:12:5: error: incompatible type for argument 1 of 'f'
+   12 |   f(u);  // ok
+      |     ^
+      |     |
+      |     union U
+test008.c:6:36: note: expected 'union U' but argument is of type 'union U'
+    6 | void f(union U { int i; float f; } u);
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^

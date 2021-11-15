@@ -1,0 +1,6 @@
+test002.c:7:8: error: bit-field 'a' has invalid type
+    7 |   int* a : 3;
+      |        ^
+test002.c:11:7: error: bit-field 'b' has invalid type
+   11 |   int b[10] : 4;
+      |       ^

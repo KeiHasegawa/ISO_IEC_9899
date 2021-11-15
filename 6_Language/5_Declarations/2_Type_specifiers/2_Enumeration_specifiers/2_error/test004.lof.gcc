@@ -1,0 +1,12 @@
+test004.c:5:13: warning: 'enum E' declared inside parameter list will not be visible outside of this definition or declaration
+    5 | void f(enum E { a, b, c } e);
+      |             ^
+test004.c:7:13: warning: 'enum E' declared inside parameter list will not be visible outside of this definition or declaration
+    7 | void f(enum E { a, b, c } e);  // error
+      |             ^
+test004.c:7:6: error: conflicting types for 'f'
+    7 | void f(enum E { a, b, c } e);  // error
+      |      ^
+test004.c:5:6: note: previous declaration of 'f' was here
+    5 | void f(enum E { a, b, c } e);
+      |      ^

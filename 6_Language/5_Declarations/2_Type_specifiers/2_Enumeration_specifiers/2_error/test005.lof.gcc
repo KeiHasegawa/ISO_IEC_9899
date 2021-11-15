@@ -1,0 +1,41 @@
+test005.c:6:21: warning: 'enum E' declared inside parameter list will not be visible outside of this definition or declaration
+    6 | void f(int (*)(enum E { a, b, c } e));
+      |                     ^
+test005.c:8:21: warning: 'enum E' declared inside parameter list will not be visible outside of this definition or declaration
+    8 | void f(int (*)(enum E { a, b, c } e));  // error.
+      |                     ^
+test005.c:8:6: error: conflicting types for 'f'
+    8 | void f(int (*)(enum E { a, b, c } e));  // error.
+      |      ^
+test005.c:6:6: note: previous declaration of 'f' was here
+    6 | void f(int (*)(enum E { a, b, c } e));
+      |      ^
+test005.c:12:23: warning: 'enum E' declared inside parameter list will not be visible outside of this definition or declaration
+   12 | void g(int (*pf)(enum E { a, b, c } e))
+      |                       ^
+test005.c: In function 'g':
+test005.c:14:5: warning: passing argument 1 of 'f' from incompatible pointer type [-Wincompatible-pointer-types]
+   14 |   f(pf);  // error
+      |     ^~
+      |     |
+      |     int (*)(enum E)
+test005.c:8:8: note: expected 'int (*)(enum E)' but argument is of type 'int (*)(enum E)'
+    8 | void f(int (*)(enum E { a, b, c } e));  // error.
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test005.c:17:23: warning: 'enum E' declared inside parameter list will not be visible outside of this definition or declaration
+   17 |   void f(int (*)(enum E)); // hide global `f' declaration
+      |                       ^
+test005.c:17:8: error: conflicting types for 'f'
+   17 |   void f(int (*)(enum E)); // hide global `f' declaration
+      |        ^
+test005.c:6:6: note: previous declaration of 'f' was here
+    6 | void f(int (*)(enum E { a, b, c } e));
+      |      ^
+test005.c:18:5: warning: passing argument 1 of 'f' from incompatible pointer type [-Wincompatible-pointer-types]
+   18 |   f(pf);  // error
+      |     ^~
+      |     |
+      |     int (*)(enum E)
+test005.c:17:10: note: expected 'int (*)(enum E)' but argument is of type 'int (*)(enum E)'
+   17 |   void f(int (*)(enum E)); // hide global `f' declaration
+      |          ^~~~~~~~~~~~~~~

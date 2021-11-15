@@ -1,0 +1,84 @@
+test009.c: In function 'test000':
+test009.c:8:3: error: address of register variable 'a' requested
+    8 |   a;
+      |   ^
+test009.c: In function 'test002':
+test009.c:20:3: error: address of register variable 'a' requested
+   20 |   a[i];
+      |   ^
+test009.c: In function 'test003':
+test009.c:26:3: error: address of register variable 'a' requested
+   26 |   &a;
+      |   ^
+test009.c: In function 'test004':
+test009.c:32:3: error: address of register variable 'a' requested
+   32 |   *a;
+      |   ^
+test009.c: In function 'test006':
+test009.c:44:3: error: address of register variable 'a' requested
+   44 |   (int)a;
+      |   ^
+test009.c: In function 'test007':
+test009.c:50:3: error: address of register variable 'a' requested
+   50 |   a + 5;
+      |   ^
+test009.c: In function 'test008':
+test009.c:56:3: error: address of register variable 'a' requested
+   56 |   a - i;
+      |   ^
+test009.c: In function 'test009':
+test009.c:62:3: error: address of register variable 'a' requested
+   62 |   a - p;
+      |   ^
+test009.c: In function 'test010':
+test009.c:68:3: error: address of register variable 'a' requested
+   68 |   a < p;
+      |   ^
+test009.c: In function 'test011':
+test009.c:74:3: error: address of register variable 'a' requested
+   74 |   a > p;
+      |   ^
+test009.c: In function 'test012':
+test009.c:80:3: error: address of register variable 'a' requested
+   80 |   a <= p;
+      |   ^
+test009.c: In function 'test013':
+test009.c:86:3: error: address of register variable 'a' requested
+   86 |   a >= p;
+      |   ^
+test009.c: In function 'test014':
+test009.c:92:3: error: address of register variable 'a' requested
+   92 |   a == p;
+      |   ^
+test009.c: In function 'test015':
+test009.c:98:3: error: address of register variable 'a' requested
+   98 |   a != p;
+      |   ^
+test009.c: In function 'test016':
+test009.c:104:3: error: address of register variable 'a' requested
+  104 |   a && p;
+      |   ^
+test009.c: In function 'test017':
+test009.c:110:3: error: address of register variable 'a' requested
+  110 |   a || p;
+      |   ^
+test009.c: In function 'test018':
+test009.c:116:3: error: address of register variable 'a' requested
+  116 |   a ? i : i + 3;
+      |   ^
+test009.c: In function 'test019':
+test009.c:122:3: error: address of register variable 'a' requested
+  122 |   a ? i : i + 3;
+      |   ^
+test009.c: In function 'test020':
+test009.c:128:3: error: address of register variable 'a' requested
+  128 |   i ? a : p;
+      |   ^
+test009.c: In function 'test021':
+test009.c:134:3: error: address of register variable 'a' requested
+  134 |   p = a;
+      |   ^
+test009.c: In function 'test022':
+test009.c:140:3: error: address of register variable 'a' requested
+  140 |   a, p;
+      |   ^

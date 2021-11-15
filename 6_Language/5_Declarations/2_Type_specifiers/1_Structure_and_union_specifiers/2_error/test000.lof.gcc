@@ -1,0 +1,30 @@
+test000.c:10:12: error: field 't' has incomplete type
+   10 |   struct T t;  /* error */
+      |            ^
+test000.c:14:12: error: field 't' has incomplete type
+   14 |   struct T t;  /* error */
+      |            ^
+test000.c:18:8: error: field 'f' declared as a function
+   18 |   void f(void);  /* error */
+      |        ^
+test000.c:22:8: error: field 'f' declared as a function
+   22 |   void f(void);  /* error */
+      |        ^
+test000.c:26:7: error: flexible array member not at end of struct
+   26 |   int a[];  /* error. not flexible array element. */
+      |       ^
+test000.c:31:7: error: flexible array member in union
+   31 |   int a[];  /* error. not flexible array element. */
+      |       ^
+test000.c:35:13: error: field 'a' has incomplete type
+   35 |   struct S4 a;  /* error */
+      |             ^
+test000.c:39:12: error: field 'a' has incomplete type
+   39 |   union U4 a;  /* error */
+      |            ^
+test000.c:45:7: error: variably modified 'a' at file scope
+   45 |   int a[n];  /* error */
+      |       ^
+test000.c:49:7: error: variably modified 'a' at file scope
+   49 |   int a[n];  /* error */
+      |       ^

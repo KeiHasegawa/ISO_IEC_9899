@@ -1,0 +1,17 @@
+test016.c:3:8: warning: type defaults to 'int' in declaration of 'a' [-Wimplicit-int]
+    3 | extern a;    // implicit declared as extern int a;
+      |        ^
+test016.c:5:8: warning: type defaults to 'int' in declaration of 'a' [-Wimplicit-int]
+    5 | static a;    // implicit declared as static int a;
+      |        ^
+test016.c:5:8: error: static declaration of 'a' follows non-static declaration
+test016.c:3:8: note: previous declaration of 'a' was here
+    3 | extern a;    // implicit declared as extern int a;
+      |        ^
+test016.c:7:9: warning: type defaults to 'int' in declaration of 'a' [-Wimplicit-int]
+    7 | typedef a;   // implicit declared as typedef int a;
+      |         ^
+test016.c:7:9: error: 'a' redeclared as different kind of symbol
+test016.c:5:8: note: previous declaration of 'a' was here
+    5 | static a;    // implicit declared as static int a;
+      |        ^

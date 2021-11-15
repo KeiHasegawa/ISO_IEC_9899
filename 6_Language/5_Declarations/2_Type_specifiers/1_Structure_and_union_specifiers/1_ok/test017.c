@@ -5,6 +5,9 @@
 #include <stdlib.h>
 #include <string.h>
 
+#ifdef __GNUC__
+static
+#endif
 inline void f(int n, char* s)
 {
   struct S {

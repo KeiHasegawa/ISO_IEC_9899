@@ -1,0 +1,45 @@
+test003.c:4:8: error: both 'signed' and 'void' in declaration specifiers
+    4 | signed void test000(void);
+      |        ^~~~
+test003.c:5:8: error: duplicate 'signed'
+    5 | signed signed test001(void);
+      |        ^~~~~~
+test003.c:6:8: error: both 'signed' and 'unsigned' in declaration specifiers
+    6 | signed unsigned test002(void);
+      |        ^~~~~~~~
+test003.c:7:8: error: both 'signed' and 'float' in declaration specifiers
+    7 | signed float test003(void);
+      |        ^~~~~
+test003.c:8:8: error: both 'signed' and 'double' in declaration specifiers
+    8 | signed double test004(void);
+      |        ^~~~~~
+test003.c:9:6: error: both 'signed' and 'void' in declaration specifiers
+    9 | void signed test005(void);
+      |      ^~~~~~
+test003.c:10:10: error: both 'signed' and 'unsigned' in declaration specifiers
+   10 | unsigned signed test006(void);
+      |          ^~~~~~
+test003.c:11:7: error: both 'signed' and 'float' in declaration specifiers
+   11 | float signed test007(void);
+      |       ^~~~~~
+test003.c:12:8: error: both 'signed' and 'double' in declaration specifiers
+   12 | double signed test008(void);
+      |        ^~~~~~
+test003.c:14:8: error: two or more data types in declaration specifiers
+   14 | signed struct S test009(void);
+      |        ^~~~~~
+test003.c:15:10: error: two or more data types in declaration specifiers
+   15 | struct S signed test010(void);
+      |          ^~~~~~
+test003.c:17:8: error: two or more data types in declaration specifiers
+   17 | signed union U test011(void);
+      |        ^~~~~
+test003.c:18:9: error: two or more data types in declaration specifiers
+   18 | union U signed test012(void);
+      |         ^~~~~~
+test003.c:20:3: error: two or more data types in declaration specifiers
+   20 | T signed test013(void);
+      |   ^~~~~~
+test003.c:21:10: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'test014'
+   21 | signed T test014(void);
+      |          ^~~~~~~

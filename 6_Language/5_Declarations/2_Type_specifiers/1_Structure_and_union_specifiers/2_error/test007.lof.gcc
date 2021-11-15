@@ -1,0 +1,20 @@
+test007.c:6:15: warning: 'struct S' declared inside parameter list will not be visible outside of this definition or declaration
+    6 | void f(struct S { int a; } s);
+      |               ^
+test007.c: In function 'g':
+test007.c:11:5: error: incompatible type for argument 1 of 'f'
+   11 |   f(s);  // error g::body::struct S is not compatible with f::param::struct S
+      |     ^
+      |     |
+      |     struct S
+test007.c:6:28: note: expected 'struct S' but argument is of type 'struct S'
+    6 | void f(struct S { int a; } s);
+      |        ~~~~~~~~~~~~~~~~~~~~^
+test007.c:13:5: error: incompatible type for argument 1 of 'f'
+   13 |   f(s);  // ok
+      |     ^
+      |     |
+      |     struct S
+test007.c:6:28: note: expected 'struct S' but argument is of type 'struct S'
+    6 | void f(struct S { int a; } s);
+      |        ~~~~~~~~~~~~~~~~~~~~^

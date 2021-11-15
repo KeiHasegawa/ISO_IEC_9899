@@ -1,0 +1,45 @@
+test006.c:4:5: error: two or more data types in declaration specifiers
+    4 | int void test000(void);
+      |     ^~~~
+test006.c:5:5: error: two or more data types in declaration specifiers
+    5 | int char test001(void);
+      |     ^~~~
+test006.c:6:5: error: two or more data types in declaration specifiers
+    6 | int int test002(void);
+      |     ^~~
+test006.c:7:5: error: two or more data types in declaration specifiers
+    7 | int float test003(void);
+      |     ^~~~~
+test006.c:8:5: error: two or more data types in declaration specifiers
+    8 | int double test004(void);
+      |     ^~~~~~
+test006.c:9:6: error: two or more data types in declaration specifiers
+    9 | void int test005(void);
+      |      ^~~
+test006.c:10:6: error: two or more data types in declaration specifiers
+   10 | char int test006(void);
+      |      ^~~
+test006.c:11:7: error: two or more data types in declaration specifiers
+   11 | float int test007(void);
+      |       ^~~
+test006.c:12:8: error: two or more data types in declaration specifiers
+   12 | double int test008(void);
+      |        ^~~
+test006.c:14:5: error: two or more data types in declaration specifiers
+   14 | int struct S test009(void);
+      |     ^~~~~~
+test006.c:15:10: error: two or more data types in declaration specifiers
+   15 | struct S int test010(void);
+      |          ^~~
+test006.c:17:5: error: two or more data types in declaration specifiers
+   17 | int union U test011(void);
+      |     ^~~~~
+test006.c:18:9: error: two or more data types in declaration specifiers
+   18 | union U int test012(void);
+      |         ^~~
+test006.c:20:3: error: two or more data types in declaration specifiers
+   20 | T int test013(void);
+      |   ^~~
+test006.c:21:7: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'test014'
+   21 | int T test014(void);
+      |       ^~~~~~~

@@ -1,0 +1,18 @@
+test000.c:11:11: error: enumerator value for 'a' is not an integer constant
+   11 | enum E1 { a = x, b = y, c = z() };
+      |           ^
+test000.c:11:22: error: enumerator value for 'b' is not an integer constant
+   11 | enum E1 { a = x, b = y, c = z() };
+      |                      ^
+test000.c:11:25: error: enumerator value for 'c' is not an integer constant
+   11 | enum E1 { a = x, b = y, c = z() };
+      |                         ^
+test000.c:15:15: error: enumerator value for 'd' is not an integer constant
+   15 | enum E2 { d = 1.0F, e = (int)&"string literal", f = (int)&w[0] };
+      |               ^~~~
+test000.c:15:21: error: enumerator value for 'e' is not an integer constant
+   15 | enum E2 { d = 1.0F, e = (int)&"string literal", f = (int)&w[0] };
+      |                     ^
+test000.c:15:49: error: enumerator value for 'f' is not an integer constant
+   15 | enum E2 { d = 1.0F, e = (int)&"string literal", f = (int)&w[0] };
+      |                                                 ^

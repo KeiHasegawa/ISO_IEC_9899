@@ -1,0 +1,3 @@
+test001.c:5:22: error: invalid application of 'sizeof' to incomplete type 'enum f'
+    5 | enum f { c = sizeof (enum f) };
+      |                      ^~~~

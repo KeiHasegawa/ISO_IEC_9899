@@ -1,0 +1,13 @@
+test014.c:5:7: error: field 'f' declared as a function
+    5 |   int f();
+      |       ^
+test014.c:8:9: error: field 'g' declared as a function
+    8 |     int g();
+      |         ^
+test014.c:9:4: warning: declaration does not declare anything
+    9 |   };
+      |    ^
+test014.c:12:24: error: expected ')' before '::' token
+   12 | void f2(int (*pf)(outer::inner))
+      |                        ^~
+      |                        )

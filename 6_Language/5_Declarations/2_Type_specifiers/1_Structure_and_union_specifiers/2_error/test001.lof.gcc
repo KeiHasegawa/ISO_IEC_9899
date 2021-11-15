@@ -1,0 +1,18 @@
+test001.c:9:16: error: bit-field 'a' width not an integer constant
+    9 |   unsigned int a : 10.5;  /* error */
+      |                ^
+test001.c:16:16: error: bit-field 'b' width not an integer constant
+   16 |   unsigned int b : n;  /* error */
+      |                ^
+test001.c:17:16: error: bit-field 'c' width not an integer constant
+   17 |   unsigned int c : d;  /* error */
+      |                ^
+test001.c:21:16: error: negative width in bit-field 'd'
+   21 |   unsigned int d : -5;  /* error */
+      |                ^
+test001.c:25:16: error: width of 'e' exceeds its type
+   25 |   unsigned int e : 33;  /* error */
+      |                ^
+test001.c:29:16: error: zero width for bit-field 'f'
+   29 |   unsigned int f : 0;  /* error */
+      |                ^
