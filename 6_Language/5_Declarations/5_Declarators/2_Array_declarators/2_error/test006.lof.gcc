@@ -1,0 +1,11 @@
+test006.c: In function 'f':
+test006.c:6:9: error: 'N' undeclared (first use in this function)
+    6 |   int a[N];  // undeclared `N'
+      |         ^
+test006.c:6:9: note: each undeclared identifier is reported only once for each function it appears in
+test006.c:7:9: error: 'M' undeclared (first use in this function)
+    7 |   int b[M + n];  // undeclared 'M'
+      |         ^
+test006.c:8:12: warning: implicit declaration of function 'g' [-Wimplicit-function-declaration]
+    8 |   double c[g()];  // ok. function call.
+      |            ^

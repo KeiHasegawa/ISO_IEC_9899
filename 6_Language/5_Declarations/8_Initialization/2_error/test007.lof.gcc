@@ -1,0 +1,4 @@
+test007.c:5:13: error: field name not in record or union initializer
+    5 | int a[] = { .b = 1 };
+      |             ^
+test007.c:5:13: note: (near initialization for 'a')

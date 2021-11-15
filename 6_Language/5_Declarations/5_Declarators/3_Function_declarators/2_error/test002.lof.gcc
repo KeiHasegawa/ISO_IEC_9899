@@ -1,0 +1,21 @@
+test002.c:5:1: warning: parameter names (without types) in function declaration
+    5 | void test000(a,b,c);
+      | ^~~~
+test002.c:9:1: warning: parameter names (without types) in function declaration
+    9 | void (*test010)(a,b,c);
+      | ^~~~
+test002.c:11:1: warning: parameter names (without types) in function declaration
+   11 | void test020(void (*pf)(a,b,c));
+      | ^~~~
+test002.c:12:1: warning: parameter names (without types) in function declaration
+   12 | void test021(void f(a,b,c));
+      | ^~~~
+test002.c:13:23: error: unknown type name 'a'
+   13 | void test022(void (*)(a,b,c));  /* parse error */
+      |                       ^
+test002.c:13:25: error: unknown type name 'b'
+   13 | void test022(void (*)(a,b,c));  /* parse error */
+      |                         ^
+test002.c:13:27: error: unknown type name 'c'
+   13 | void test022(void (*)(a,b,c));  /* parse error */
+      |                           ^

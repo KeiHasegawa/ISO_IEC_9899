@@ -1,0 +1,18 @@
+test006.c:5:21: warning: 'struct S' declared inside parameter list will not be visible outside of this definition or declaration
+    5 | void test000(struct S s)
+      |                     ^
+test006.c:5:23: error: parameter 1 ('s') has incomplete type
+    5 | void test000(struct S s)
+      |              ~~~~~~~~~^
+test006.c:9:20: warning: 'union U' declared inside parameter list will not be visible outside of this definition or declaration
+    9 | void test001(union U u)
+      |                    ^
+test006.c:9:22: error: parameter 1 ('u') has incomplete type
+    9 | void test001(union U u)
+      |              ~~~~~~~~^
+test006.c:13:19: warning: 'enum E' declared inside parameter list will not be visible outside of this definition or declaration
+   13 | void test002(enum E e)
+      |                   ^
+test006.c:13:21: error: parameter 1 ('e') has incomplete type
+   13 | void test002(enum E e)
+      |              ~~~~~~~^

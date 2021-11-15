@@ -1,0 +1,21 @@
+test001.c: In function 'test000':
+test001.c:7:12: error: switch quantity not an integer
+    7 |   switch ( a )
+      |            ^
+test001.c:9:12: error: switch quantity not an integer
+    9 |   switch ( b )
+      |            ^
+test001.c: In function 'test001':
+test001.c:20:12: error: 's' has an incomplete type 'struct S'
+   20 |   switch ( s )
+      |            ^
+test001.c:22:12: error: 'u' has an incomplete type 'union U'
+   22 |   switch ( u )
+      |            ^
+test001.c: In function 'test002':
+test001.c:31:12: error: switch quantity not an integer
+   31 |   switch ( s )
+      |            ^
+test001.c:33:12: error: switch quantity not an integer
+   33 |   switch ( u )
+      |            ^

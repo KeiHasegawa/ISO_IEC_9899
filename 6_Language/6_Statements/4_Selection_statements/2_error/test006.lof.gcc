@@ -1,0 +1,11 @@
+test006.c: In function 'f':
+test006.c:6:8: error: 'a' undeclared (first use in this function)
+    6 |   if ( a )
+      |        ^
+test006.c:6:8: note: each undeclared identifier is reported only once for each function it appears in
+test006.c:9:8: error: 'b' undeclared (first use in this function)
+    9 |   if ( b )
+      |        ^
+test006.c:14:12: error: 'c' undeclared (first use in this function)
+   14 |   switch ( c )
+      |            ^

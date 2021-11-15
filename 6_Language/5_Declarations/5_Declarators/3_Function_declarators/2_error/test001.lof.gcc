@@ -1,0 +1,24 @@
+test001.c:5:1: error: storage class specified for unnamed parameter
+    5 | void test000(typedef int);
+      | ^~~~
+test001.c:6:1: error: storage class specified for unnamed parameter
+    6 | void test001(extern int);
+      | ^~~~
+test001.c:7:1: error: storage class specified for unnamed parameter
+    7 | void test002(static int);
+      | ^~~~
+test001.c:9:1: error: storage class specified for unnamed parameter
+    9 | void test004(auto int);
+      | ^~~~
+test001.c:11:26: error: storage class specified for parameter 'a'
+   11 | void test010(typedef int a)
+      |                          ^
+test001.c:15:25: error: storage class specified for parameter 'a'
+   15 | void test011(extern int a)
+      |                         ^
+test001.c:19:25: error: storage class specified for parameter 'a'
+   19 | void test012(static int a)
+      |                         ^
+test001.c:27:23: error: storage class specified for parameter 'a'
+   27 | void test014(auto int a)
+      |                       ^

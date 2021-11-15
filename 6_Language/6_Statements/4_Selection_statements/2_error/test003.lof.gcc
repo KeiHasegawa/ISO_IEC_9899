@@ -1,0 +1,23 @@
+test003.c: In function 'test000':
+test003.c:7:3: error: case label does not reduce to an integer constant
+    7 |   case 1.0F:
+      |   ^~~~
+test003.c:9:3: error: case label does not reduce to an integer constant
+    9 |   case 2.0:
+      |   ^~~~
+test003.c:11:3: error: case label does not reduce to an integer constant
+   11 |   case 3.0L:
+      |   ^~~~
+test003.c:13:3: error: pointers are not permitted as case values
+   13 |   case (void*)0:
+      |   ^~~~
+test003.c: In function 'test001':
+test003.c:26:3: error: case label does not reduce to an integer constant
+   26 |   case b:
+      |   ^~~~
+test003.c:28:3: error: case label does not reduce to an integer constant
+   28 |   case s:
+      |   ^~~~
+test003.c:30:3: error: case label does not reduce to an integer constant
+   30 |   case u:
+      |   ^~~~

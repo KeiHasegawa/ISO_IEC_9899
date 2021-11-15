@@ -1,0 +1,24 @@
+test000.c: In function 'test000':
+test000.c:10:7: error: size of array 'a' has non-integer type
+   10 |   int a[5.0F];  /* error */
+      |       ^
+test000.c:11:7: error: size of array 'b' has non-integer type
+   11 |   int b[d]; /* error */
+      |       ^
+test000.c: In function 'test001':
+test000.c:17:7: error: size of array 'b' is negative
+   17 |   int b[-1];  /* error */
+      |       ^
+test000.c: In function 'test002':
+test000.c:24:12: error: array type has incomplete element type 'struct S'
+   24 |   struct S a[10];  /* error */
+      |            ^
+test000.c:25:8: error: declaration of 'b' as array of voids
+   25 |   void b[5]; /* error */
+      |        ^
+test000.c:26:7: error: declaration of 'c' as array of functions
+   26 |   int c[10](void); /* error */
+      |       ^
+test000.c:28:14: error: array type has incomplete element type 'struct S'
+   28 |   struct S (*d)[10];  /* As far as ISO, this is error. */
+      |              ^

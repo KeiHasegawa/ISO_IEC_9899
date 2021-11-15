@@ -1,0 +1,8 @@
+test000.c: In function 'test000':
+test000.c:7:2: error: case label not within a switch statement
+    7 |  case 0:
+      |  ^~~~
+test000.c: In function 'test001':
+test000.c:13:2: error: 'default' label not within a switch statement
+   13 |  default:
+      |  ^~~~~~~

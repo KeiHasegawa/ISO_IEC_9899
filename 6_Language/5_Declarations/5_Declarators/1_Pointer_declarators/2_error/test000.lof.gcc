@@ -1,0 +1,11 @@
+test000.c: In function 'test000':
+test000.c:11:20: error: assignment of read-only location '*ptr_to_constant'
+   11 |   *ptr_to_constant = 1;  /* error */
+      |                    ^
+test000.c:12:16: error: assignment of read-only variable 'constant_ptr'
+   12 |   constant_ptr = &a;  /* error */
+      |                ^
+test000.c: In function 'test001':
+test000.c:21:16: error: assignment of read-only variable 'constant_ptr'
+   21 |   constant_ptr = &a;  /* error */
+      |                ^

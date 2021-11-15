@@ -1,0 +1,19 @@
+test002.c: In function 'f':
+test002.c:6:3: error: jump into scope of identifier with variably modified type
+    6 |   goto lab3; // Error: going INTO scope of VLA.
+      |   ^~~~
+test002.c:10:3: note: label 'lab3' defined here
+   10 |   lab3:
+      |   ^~~~
+test002.c:8:12: note: 'a' declared here
+    8 |     double a[n];
+      |            ^
+test002.c:16:3: error: jump into scope of identifier with variably modified type
+   16 |   goto lab4; // Error: going INTO scope of VLA.
+      |   ^~~~
+test002.c:13:3: note: label 'lab4' defined here
+   13 |   lab4:
+      |   ^~~~
+test002.c:8:12: note: 'a' declared here
+    8 |     double a[n];
+      |            ^

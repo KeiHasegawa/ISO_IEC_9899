@@ -1,0 +1,12 @@
+test004.c: In function 'test000':
+test004.c:12:14: error: storage size of 'a' isn't constant
+   12 |   static int a[n];  /* error */
+      |              ^
+test004.c:13:14: error: object with variably modified type must have no linkage
+   13 |   extern int b[n];  /* error */
+      |              ^
+test004.c:13:14: error: storage size of 'b' isn't constant
+test004.c: At top level:
+test004.c:17:7: error: variably modified 'pa' at file scope
+   17 | int (*pa)[n];  /* error. file scope VM */
+      |       ^~

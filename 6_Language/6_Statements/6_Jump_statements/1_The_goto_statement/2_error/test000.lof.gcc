@@ -1,0 +1,12 @@
+test000.c: In function 'test000':
+test000.c:8:3: error: label 'a' used but not defined
+    8 |   goto a;
+      |   ^~~~
+test000.c: In function 'test001':
+test000.c:13:3: error: label 'label' used but not defined
+   13 |   goto label;
+      |   ^~~~
+test000.c: In function 'test002':
+test000.c:19:3: error: label 'test001' used but not defined
+   19 |   goto test001;
+      |   ^~~~

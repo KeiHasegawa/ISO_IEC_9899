@@ -1,0 +1,6 @@
+test000.c:6:13: error: variably modified 'a' at file scope
+    6 | typedef int a[n];  /* file scope */
+      |             ^
+test000.c:8:20: error: storage class specified for parameter 'b'
+    8 | void f(typedef int b[n])
+      |                    ^

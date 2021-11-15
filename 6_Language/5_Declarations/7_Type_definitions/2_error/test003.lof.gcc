@@ -1,0 +1,4 @@
+test003.c: In function 'f':
+test003.c:10:8: error: parameter name omitted
+   10 | void f(T (T)) /* 2nd `T' is typedef name. */
+      |        ^~~~~

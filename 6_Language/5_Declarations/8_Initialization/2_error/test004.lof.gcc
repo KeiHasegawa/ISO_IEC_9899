@@ -1,0 +1,7 @@
+test004.c:4:11: error: invalid initializer
+    4 | int a[] = 1;
+      |           ^
+test004.c: In function 'f':
+test004.c:8:13: error: invalid initializer
+    8 |   int b[] = 2;
+      |             ^

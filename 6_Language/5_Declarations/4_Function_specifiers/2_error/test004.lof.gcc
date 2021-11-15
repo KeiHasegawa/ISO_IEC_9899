@@ -1,0 +1,7 @@
+test004.c: In function 'g':
+test004.c:14:3: error: too few arguments to function 'f'
+   14 |   f();
+      |   ^
+test004.c:4:12: note: declared here
+    4 | inline int f(int n)
+      |            ^

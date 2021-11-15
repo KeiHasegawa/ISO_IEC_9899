@@ -1,0 +1,10 @@
+test003.c: In function 'f':
+test003.c:10:14: error: 'a' has both 'extern' and initializer
+   10 |   extern int a = 1;
+      |              ^
+test003.c:11:14: error: 'b' has both 'extern' and initializer
+   11 |   extern int b = 2;
+      |              ^
+test003.c:12:14: error: 'c' has both 'extern' and initializer
+   12 |   extern int c = 3;
+      |              ^

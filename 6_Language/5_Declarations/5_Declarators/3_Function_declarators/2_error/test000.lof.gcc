@@ -1,0 +1,12 @@
+test000.c:5:5: error: 'test000' declared as function returning a function
+    5 | int test000(void)(int);
+      |     ^~~~~~~
+test000.c:7:5: error: 'test001' declared as function returning an array
+    7 | int test001(void)[3];
+      |     ^~~~~~~
+test000.c:12:3: error: 'test002' declared as function returning a function
+   12 | F test002(void);
+      |   ^~~~~~~
+test000.c:13:3: error: 'test003' declared as function returning an array
+   13 | A test003(void);
+      |   ^~~~~~~

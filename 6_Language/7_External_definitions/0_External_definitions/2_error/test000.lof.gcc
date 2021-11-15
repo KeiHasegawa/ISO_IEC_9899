@@ -1,0 +1,6 @@
+test000.c:5:13: error: file-scope declaration of 'a' specifies 'auto'
+    5 | auto double a;
+      |             ^
+test000.c:6:14: error: register name not specified for 'b'
+    6 | register int b;
+      |              ^

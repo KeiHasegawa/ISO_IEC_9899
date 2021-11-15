@@ -1,0 +1,7 @@
+test005.c: In function 'test000':
+test005.c:9:3: error: multiple default labels in one switch
+    9 |   default:
+      |   ^~~~~~~
+test005.c:7:3: note: this is the first default label
+    7 |   default:
+      |   ^~~~~~~

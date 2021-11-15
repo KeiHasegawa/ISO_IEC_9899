@@ -1,0 +1,5 @@
+test000.c: In function 'test000':
+test000.c:6:3: error: 'a' undeclared (first use in this function)
+    6 |   a;
+      |   ^
+test000.c:6:3: note: each undeclared identifier is reported only once for each function it appears in

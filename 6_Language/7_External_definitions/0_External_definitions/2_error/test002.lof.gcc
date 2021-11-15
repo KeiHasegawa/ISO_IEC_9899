@@ -1,0 +1,5 @@
+test002.c: In function 'f':
+test002.c:4:6: error: old-style parameter declarations in prototyped function definition
+    4 | void f(void)
+      |      ^
+test002.c:7: error: expected '{' at end of input

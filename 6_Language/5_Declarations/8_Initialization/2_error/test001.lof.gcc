@@ -1,0 +1,41 @@
+test001.c:6:8: error: variable 's' has initializer but incomplete type
+    6 | struct S s = { 1, 2, 3 };
+      |        ^
+test001.c:6:16: warning: excess elements in struct initializer
+    6 | struct S s = { 1, 2, 3 };
+      |                ^
+test001.c:6:16: note: (near initialization for 's')
+test001.c:6:19: warning: excess elements in struct initializer
+    6 | struct S s = { 1, 2, 3 };
+      |                   ^
+test001.c:6:19: note: (near initialization for 's')
+test001.c:6:22: warning: excess elements in struct initializer
+    6 | struct S s = { 1, 2, 3 };
+      |                      ^
+test001.c:6:22: note: (near initialization for 's')
+test001.c: In function 'f':
+test001.c:10:10: error: variable 's' has initializer but incomplete type
+   10 |   struct S s = { 1, 2, 3 };
+      |          ^
+test001.c:10:18: warning: excess elements in struct initializer
+   10 |   struct S s = { 1, 2, 3 };
+      |                  ^
+test001.c:10:18: note: (near initialization for 's')
+test001.c:10:21: warning: excess elements in struct initializer
+   10 |   struct S s = { 1, 2, 3 };
+      |                     ^
+test001.c:10:21: note: (near initialization for 's')
+test001.c:10:24: warning: excess elements in struct initializer
+   10 |   struct S s = { 1, 2, 3 };
+      |                        ^
+test001.c:10:24: note: (near initialization for 's')
+test001.c:10:12: error: storage size of 's' isn't known
+   10 |   struct S s = { 1, 2, 3 };
+      |            ^
+test001.c:11:3: error: variable-sized object may not be initialized
+   11 |   int a[n] = { 1, 2, 3 };
+      |   ^~~
+test001.c: At top level:
+test001.c:6:10: error: storage size of 's' isn't known
+    6 | struct S s = { 1, 2, 3 };
+      |          ^

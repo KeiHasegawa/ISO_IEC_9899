@@ -1,0 +1,7 @@
+test000.c:5:1: error: invalid use of 'restrict'
+    5 | restrict int a;
+      | ^~~~~~~~
+test000.c:5:1: error: invalid use of 'restrict'
+test000.c:7:1: error: invalid use of 'restrict'
+    7 | restrict char* b;
+      | ^~~~~~~~

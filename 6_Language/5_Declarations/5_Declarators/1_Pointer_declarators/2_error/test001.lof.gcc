@@ -1,0 +1,16 @@
+test001.c:1:1: warning: data definition has no type or storage class
+    1 | *p;
+      | ^
+test001.c:1:2: warning: type defaults to 'int' in declaration of 'p' [-Wimplicit-int]
+    1 | *p;
+      |  ^
+test001.c:5:1: warning: data definition has no type or storage class
+    5 | *n;
+      | ^
+test001.c:5:2: warning: type defaults to 'int' in declaration of 'n' [-Wimplicit-int]
+    5 | *n;
+      |  ^
+test001.c:5:2: error: conflicting types for 'n'
+test001.c:3:5: note: previous declaration of 'n' was here
+    3 | int n;
+      |     ^

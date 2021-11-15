@@ -1,0 +1,8 @@
+test001.c: In function 'test000':
+test001.c:8:3: error: increment of read-only variable 'real_time_clock'
+    8 |   ++real_time_clock;
+      |   ^~
+test001.c: In function 'test001':
+test001.c:13:7: error: decrement of read-only location '*p'
+   13 |   (*p)--;
+      |       ^~

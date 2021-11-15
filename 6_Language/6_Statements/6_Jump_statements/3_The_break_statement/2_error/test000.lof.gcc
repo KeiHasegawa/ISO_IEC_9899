@@ -1,0 +1,10 @@
+test000.c: In function 'f':
+test000.c:6:3: error: break statement not within loop or switch
+    6 |   break;
+      |   ^~~~~
+test000.c:9:5: error: break statement not within loop or switch
+    9 |     break;
+      |     ^~~~~
+test000.c:12:5: error: break statement not within loop or switch
+   12 |     break;
+      |     ^~~~~

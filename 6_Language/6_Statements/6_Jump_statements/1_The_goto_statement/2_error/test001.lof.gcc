@@ -1,0 +1,20 @@
+test001.c: In function 'test000':
+test001.c:9:3: error: jump into scope of identifier with variably modified type
+    9 |   goto label;
+      |   ^~~~
+test001.c:12:3: note: label 'label' defined here
+   12 |   label:
+      |   ^~~~~
+test001.c:11:9: note: 'A' declared here
+   11 |     int A[n];
+      |         ^
+test001.c: In function 'test001':
+test001.c:19:3: error: jump into scope of identifier with variably modified type
+   19 |   goto label;
+      |   ^~~~
+test001.c:22:3: note: label 'label' defined here
+   22 |   label:
+      |   ^~~~~
+test001.c:21:17: note: 'A' declared here
+   21 |     typedef int A[n];
+      |                 ^

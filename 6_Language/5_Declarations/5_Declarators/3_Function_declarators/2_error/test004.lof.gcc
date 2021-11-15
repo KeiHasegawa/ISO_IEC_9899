@@ -1,0 +1,13 @@
+test004.c: In function 'f':
+test004.c:11:3: error: too many arguments to function 'test000'
+   11 |   test000(1);   /* error */
+      |   ^~~~~~~
+test004.c:5:6: note: declared here
+    5 | void test000(void);
+      |      ^~~~~~~
+test004.c:12:3: error: too many arguments to function 'test000'
+   12 |   test000(1,2); /* error */
+      |   ^~~~~~~
+test004.c:5:6: note: declared here
+    5 | void test000(void);
+      |      ^~~~~~~

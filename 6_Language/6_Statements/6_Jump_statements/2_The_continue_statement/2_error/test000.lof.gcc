@@ -1,0 +1,13 @@
+test000.c: In function 'f':
+test000.c:6:3: error: continue statement not within a loop
+    6 |   continue;
+      |   ^~~~~~~~
+test000.c:9:5: error: continue statement not within a loop
+    9 |     continue;
+      |     ^~~~~~~~
+test000.c:13:5: error: continue statement not within a loop
+   13 |     continue;
+      |     ^~~~~~~~
+test000.c:17:5: error: continue statement not within a loop
+   17 |     continue;
+      |     ^~~~~~~~

@@ -1,0 +1,5 @@
+test011.c: In function 'f':
+test011.c:7:10: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'int'
+    7 | int g(b) int b;  /* neither function declaration nor definition */
+      |          ^~~
+test011.c:8: error: expected '{' at end of input

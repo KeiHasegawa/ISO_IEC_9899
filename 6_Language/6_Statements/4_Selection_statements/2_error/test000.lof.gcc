@@ -1,0 +1,17 @@
+test000.c: In function 'test000':
+test000.c:8:8: error: 's' has an incomplete type 'struct S'
+    8 |   if ( s )
+      |        ^
+test000.c:13:8: error: 'u' has an incomplete type 'union U'
+   13 |   if ( u )
+      |        ^
+test000.c:16:8: error: void value not ignored as it ought to be
+   16 |   if ( test000() )
+      |        ^~~~~~~
+test000.c: In function 'test001':
+test000.c:24:8: error: used struct type value where scalar is required
+   24 |   if ( s )
+      |        ^
+test000.c:28:8: error: used union type value where scalar is required
+   28 |   if ( u )
+      |        ^

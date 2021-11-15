@@ -1,0 +1,13 @@
+test014.c: In function 'x':
+test014.c:7:21: error: unknown type name 'T'
+    7 |   int f(struct S *, T *);
+      |                     ^
+test014.c:9:21: error: unknown type name 'T'
+    9 |   int g(struct S *, T *);
+      |                     ^
+test014.c:11:3: error: unknown type name 'T'
+   11 |   T* h(struct S *);
+      |   ^
+test014.c:11:15: warning: 'struct S' declared inside parameter list will not be visible outside of this definition or declaration
+   11 |   T* h(struct S *);
+      |               ^

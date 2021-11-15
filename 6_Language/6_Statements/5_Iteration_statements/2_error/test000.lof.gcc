@@ -1,0 +1,12 @@
+test000.c: In function 'test000':
+test000.c:9:11: error: 's' has an incomplete type 'struct S'
+    9 |   while ( s )
+      |           ^
+test000.c: In function 'test001':
+test000.c:19:11: error: used struct type value where scalar is required
+   19 |   for ( ; s ; )
+      |           ^
+test000.c: In function 'test002':
+test000.c:30:11: error: 'u' has an incomplete type 'union U'
+   30 |   while ( u );
+      |           ^

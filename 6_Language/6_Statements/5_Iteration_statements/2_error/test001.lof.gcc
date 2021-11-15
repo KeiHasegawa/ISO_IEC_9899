@@ -1,0 +1,12 @@
+test001.c: In function 'test000':
+test001.c:7:3: error: declaration of non-variable 'i' in 'for' loop initial declaration
+    7 |   for ( typedef int i ; ; )
+      |   ^~~
+test001.c: In function 'test001':
+test001.c:13:20: error: declaration of 'extern' variable 'i' in 'for' loop initial declaration
+   13 |   for ( extern int i ; ; )
+      |                    ^
+test001.c: In function 'test002':
+test001.c:19:20: error: declaration of static variable 'i' in 'for' loop initial declaration
+   19 |   for ( static int i ; ; )
+      |                    ^

@@ -1,0 +1,5 @@
+test001.c: In function 'f':
+test001.c:7:8: error: 'a' undeclared (first use in this function)
+    7 |   case a:
+      |        ^
+test001.c:7:8: note: each undeclared identifier is reported only once for each function it appears in

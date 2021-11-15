@@ -1,0 +1,5 @@
+test006.c: In function 'f':
+test006.c:6:16: error: nonconstant array index in initializer
+    6 |   int b[] = { [a] = 3 };
+      |                ^
+test006.c:6:16: note: (near initialization for 'b')

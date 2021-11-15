@@ -1,0 +1,12 @@
+test007.c:4:11: error: expected ';' before 'int'
+    4 | static xxx int yyy(int);
+      |           ^~~~
+      |           ;
+test007.c:5:11: error: expected ';' before 'int'
+    5 | static xxx int zzz(int);
+      |           ^~~~
+      |           ;
+test007.c:7:11: error: expected ';' before 'int'
+    7 | static xxx int yyy(int a)
+      |           ^~~~
+      |           ;

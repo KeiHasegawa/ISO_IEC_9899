@@ -1,0 +1,13 @@
+test004.c: In function 'test000':
+test004.c:10:3: error: duplicate case value
+   10 |   case 0LL:
+      |   ^~~~
+test004.c:8:3: note: previously used here
+    8 |   case 0:
+      |   ^~~~
+test004.c:14:3: error: duplicate case value
+   14 |   case (int)1.0L:
+      |   ^~~~
+test004.c:12:3: note: previously used here
+   12 |   case 1:
+      |   ^~~~

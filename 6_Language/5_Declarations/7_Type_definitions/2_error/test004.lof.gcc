@@ -1,0 +1,6 @@
+test004.c:8:4: error: 'T' redeclared as different kind of symbol
+    8 | T (T);  /* redeclaration of T */
+      |    ^
+test004.c:6:13: note: previous declaration of 'T' was here
+    6 | typedef int T;
+      |             ^

@@ -1,0 +1,17 @@
+test005.c:6:5: error: variably modified 'A' at file scope
+    6 | int A[n]; // Error - file scope VLA.
+      |     ^
+test005.c:7:14: error: variably modified 'p2' at file scope
+    7 | extern int (*p2)[n]; // Error - file scope VM.
+      |              ^~
+test005.c: In function 'fvla':
+test005.c:17:14: error: storage size of 'E' isn't constant
+   17 |   static int E[m]; // Error - static block scope VLA.
+      |              ^
+test005.c:18:14: error: object with variably modified type must have no linkage
+   18 |   extern int F[m]; // Error - F has linkage and is VLA.
+      |              ^
+test005.c:18:14: error: storage size of 'F' isn't constant
+test005.c:20:16: error: object with variably modified type must have no linkage
+   20 |   extern int (*r)[m]; // Error - r had linkage and is
+      |                ^

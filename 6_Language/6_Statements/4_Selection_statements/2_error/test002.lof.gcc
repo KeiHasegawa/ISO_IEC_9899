@@ -1,0 +1,22 @@
+test002.c: In function 'f':
+test002.c:12:5: error: switch jumps into scope of identifier with variably modified type
+   12 |     case 0:
+      |     ^~~~
+test002.c:9:3: note: switch starts here
+    9 |   switch ( n ){
+      |   ^~~~~~
+test002.c:11:11: note: 'A' declared here
+   11 |       int A[n];
+      |           ^
+test002.c:17:5: error: switch jumps into scope of identifier with variably modified type
+   17 |     default:
+      |     ^~~~~~~
+test002.c:9:3: note: switch starts here
+    9 |   switch ( n ){
+      |   ^~~~~~
+test002.c:16:19: note: 'B' declared here
+   16 |       typedef int B[n];
+      |                   ^
+test002.c:10:5: warning: statement will never be executed [-Wswitch-unreachable]
+   10 |     {
+      |     ^

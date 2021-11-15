@@ -1,0 +1,6 @@
+test001.c:6:3: error: 'a' redeclared as different kind of symbol
+    6 | a a;
+      |   ^
+test001.c:5:13: note: previous declaration of 'a' was here
+    5 | typedef int a;
+      |             ^

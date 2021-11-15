@@ -1,0 +1,8 @@
+test002.c: In function 'test000':
+test002.c:8:15: error: '[*]' not allowed in other than function prototype scope
+    8 |   extern int a[*];
+      |               ^
+test002.c: At top level:
+test002.c:11:19: error: '[*]' not allowed in other than function prototype scope
+   11 | extern int test001[*];
+      |                   ^
