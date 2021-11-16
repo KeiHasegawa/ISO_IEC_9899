@@ -44,6 +44,17 @@ int main()
   __asm("bl f");
 #endif // __arm__
 
+#if defined(__sh__)
+#error  
+  __asm("mov.l	my_label,r1");
+  __asm("jsr	@r1");
+  __asm("mov.l	my_label,r1");
+  __asm("jsr	@r1");
+  __asm("jmp	my_label2")
+  __asm("my_label:");
+  __asm(".long	_f");
+  __asm("my_label2:");
+#endif // __sh__
   return 0;
 }
 
