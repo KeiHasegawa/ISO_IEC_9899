@@ -34,6 +34,17 @@ int main()
   asm("brsl $lr,f");
 #endif // defined(__SPU__)
 
+#if defined(ARM)
+#error  
+  asm("bl f");
+  asm("bl f");
+#endif 
+
+#if defined(AARCH64)
+#error  
+  asm("bl f");
+  asm("bl f");
+#endif 
   return 0;
 }
 
