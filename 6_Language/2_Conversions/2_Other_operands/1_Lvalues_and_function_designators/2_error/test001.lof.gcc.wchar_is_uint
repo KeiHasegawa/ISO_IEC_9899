@@ -1,0 +1,270 @@
+test001.c: In function 'test00':
+test001.c:10:3: error: called object 'a' is not a function or function pointer
+   10 |   a();
+      |   ^
+test001.c:9:7: note: declared here
+    9 |   int a[10];
+      |       ^
+test001.c:11:3: error: called object is not a function or function pointer
+   11 |   "string"();
+      |   ^~~~~~~~
+test001.c:12:3: error: called object is not a function or function pointer
+   12 |   L"wide string"();
+      |   ^~~~~~~~~~~~~~
+test001.c: In function 'test01':
+test001.c:19:5: error: request for member 'member' in something not a structure or union
+   19 |   a . member;
+      |     ^
+test001.c:20:12: error: request for member 'member' in something not a structure or union
+   20 |   "string" . member;
+      |            ^
+test001.c:21:18: error: request for member 'member' in something not a structure or union
+   21 |   L"wide string" . member;
+      |                  ^
+test001.c: In function 'test02':
+test001.c:28:5: error: request for member 'member' in something not a structure or union
+   28 |   a -> member;
+      |     ^~
+test001.c:29:12: error: request for member 'member' in something not a structure or union
+   29 |   "string" -> member;
+      |            ^~
+test001.c:30:18: error: request for member 'member' in something not a structure or union
+   30 |   L"wide string" -> member;
+      |                  ^~
+test001.c: In function 'test03':
+test001.c:37:5: error: lvalue required as increment operand
+   37 |   a ++;
+      |     ^~
+test001.c:38:12: error: lvalue required as increment operand
+   38 |   "string" ++;
+      |            ^~
+test001.c:39:18: error: lvalue required as increment operand
+   39 |   L"wide string" ++;
+      |                  ^~
+test001.c: In function 'test04':
+test001.c:46:5: error: lvalue required as decrement operand
+   46 |   a --;
+      |     ^~
+test001.c:47:12: error: lvalue required as decrement operand
+   47 |   "string" --;
+      |            ^~
+test001.c:48:18: error: lvalue required as decrement operand
+   48 |   L"wide string" --;
+      |                  ^~
+test001.c: In function 'test05':
+test001.c:55:3: error: lvalue required as increment operand
+   55 |   ++ a;
+      |   ^~
+test001.c:56:3: error: lvalue required as increment operand
+   56 |   ++ "string";
+      |   ^~
+test001.c:57:3: error: lvalue required as increment operand
+   57 |   ++ L"wide string";
+      |   ^~
+test001.c: In function 'test06':
+test001.c:64:3: error: lvalue required as decrement operand
+   64 |   -- a;
+      |   ^~
+test001.c:65:3: error: lvalue required as decrement operand
+   65 |   -- "string";
+      |   ^~
+test001.c:66:3: error: lvalue required as decrement operand
+   66 |   -- L"wide string";
+      |   ^~
+test001.c: In function 'test07':
+test001.c:73:3: error: wrong type argument to unary plus
+   73 |   + a;
+      |   ^
+test001.c:74:3: error: wrong type argument to unary plus
+   74 |   + "string";
+      |   ^
+test001.c:75:3: error: wrong type argument to unary plus
+   75 |   + L"wide string";
+      |   ^
+test001.c: In function 'test08':
+test001.c:82:3: error: wrong type argument to unary minus
+   82 |   - a;
+      |   ^
+test001.c:83:3: error: wrong type argument to unary minus
+   83 |   - "string";
+      |   ^
+test001.c:84:3: error: wrong type argument to unary minus
+   84 |   - L"wide string";
+      |   ^
+test001.c: In function 'test09':
+test001.c:91:3: error: wrong type argument to bit-complement
+   91 |   ~ a;
+      |   ^
+test001.c:92:3: error: wrong type argument to bit-complement
+   92 |   ~ "string";
+      |   ^
+test001.c:93:3: error: wrong type argument to bit-complement
+   93 |   ~ L"wide string";
+      |   ^
+test001.c: In function 'test10':
+test001.c:100:5: error: invalid operands to binary * (have 'int *' and 'int')
+  100 |   a * 2;
+      |   ~ ^
+      |   |
+      |   int *
+test001.c:101:12: error: invalid operands to binary * (have 'char *' and 'int')
+  101 |   "string" * 3;
+      |   ~~~~~~~~ ^
+      |   |
+      |   char *
+test001.c:102:5: error: invalid operands to binary * (have 'int' and 'unsigned int *')
+  102 |   4 * L"wide string";
+      |     ^
+      |     |
+      |     unsigned int *
+test001.c: In function 'test11':
+test001.c:109:5: error: invalid operands to binary / (have 'int *' and 'int')
+  109 |   a / 2;
+      |   ~ ^
+      |   |
+      |   int *
+test001.c:110:12: error: invalid operands to binary / (have 'char *' and 'int')
+  110 |   "string" / 3;
+      |   ~~~~~~~~ ^
+      |   |
+      |   char *
+test001.c:111:5: error: invalid operands to binary / (have 'int' and 'unsigned int *')
+  111 |   4 / L"wide string";
+      |     ^
+      |     |
+      |     unsigned int *
+test001.c: In function 'test12':
+test001.c:118:5: error: invalid operands to binary % (have 'int *' and 'int')
+  118 |   a % 2;
+      |   ~ ^
+      |   |
+      |   int *
+test001.c:119:12: error: invalid operands to binary % (have 'char *' and 'int')
+  119 |   "string" % 3;
+      |   ~~~~~~~~ ^
+      |   |
+      |   char *
+test001.c:120:5: error: invalid operands to binary % (have 'int' and 'unsigned int *')
+  120 |   4 % L"wide string";
+      |     ^
+      |     |
+      |     unsigned int *
+test001.c: In function 'test13':
+test001.c:127:5: error: invalid operands to binary - (have 'int' and 'int *')
+  127 |   2 - a;
+      |     ^
+      |     |
+      |     int *
+test001.c:128:8: error: invalid operands to binary - (have 'int' and 'char *')
+  128 |   a[2] - "string";
+      |   ~~~~ ^
+      |    |   |
+      |    int char *
+test001.c:129:14: error: invalid operands to binary - (have 'int' and 'unsigned int *')
+  129 |   a[a[a[4]]] - L"wide string";
+      |   ~~~~~~~~~~ ^
+      |    |         |
+      |    int       unsigned int *
+test001.c: In function 'test14':
+test001.c:136:5: error: invalid operands to binary << (have 'int *' and 'int')
+  136 |   a << 2;
+      |   ~ ^~
+      |   |
+      |   int *
+test001.c:137:8: error: invalid operands to binary << (have 'int' and 'char *')
+  137 |   a[2] << "string";
+      |   ~~~~ ^~
+      |    |   |
+      |    int char *
+test001.c:138:18: error: invalid operands to binary << (have 'unsigned int *' and 'int')
+  138 |   L"wide string" << a[a[a[4]]];
+      |   ~~~~~~~~~~~~~~ ^~ ~~~~~~~~~~
+      |   |                  |
+      |   unsigned int *     int
+test001.c: In function 'test15':
+test001.c:145:5: error: invalid operands to binary >> (have 'int *' and 'int')
+  145 |   a >> 2;
+      |   ~ ^~
+      |   |
+      |   int *
+test001.c:146:8: error: invalid operands to binary >> (have 'int' and 'char *')
+  146 |   a[2] >> "string";
+      |   ~~~~ ^~
+      |    |   |
+      |    int char *
+test001.c:147:14: error: invalid operands to binary >> (have 'int' and 'unsigned int *')
+  147 |   a[a[a[4]]] >> L"wide string";
+      |   ~~~~~~~~~~ ^~
+      |    |         |
+      |    int       unsigned int *
+test001.c: In function 'test16':
+test001.c:154:5: error: invalid operands to binary & (have 'int *' and 'int')
+  154 |   a & 2;
+      |   ~ ^
+      |   |
+      |   int *
+test001.c:155:8: error: invalid operands to binary & (have 'int' and 'char *')
+  155 |   a[2] & "string";
+      |   ~~~~ ^
+      |    |   |
+      |    int char *
+test001.c:156:18: error: invalid operands to binary & (have 'unsigned int *' and 'int')
+  156 |   L"wide string" & a[a[a[4]]];
+      |   ~~~~~~~~~~~~~~ ^ ~~~~~~~~~~
+      |   |                 |
+      |   unsigned int *    int
+test001.c: In function 'test17':
+test001.c:163:5: error: invalid operands to binary ^ (have 'int *' and 'int')
+  163 |   a ^ 2;
+      |   ~ ^
+      |   |
+      |   int *
+test001.c:164:8: error: invalid operands to binary ^ (have 'int' and 'char *')
+  164 |   a[2] ^ "string";
+      |   ~~~~ ^
+      |    |   |
+      |    int char *
+test001.c:165:14: error: invalid operands to binary ^ (have 'int' and 'unsigned int *')
+  165 |   a[a[a[4]]] ^ L"wide string";
+      |   ~~~~~~~~~~ ^
+      |    |         |
+      |    int       unsigned int *
+test001.c: In function 'test18':
+test001.c:172:5: error: invalid operands to binary | (have 'int *' and 'int')
+  172 |   a | 2;
+      |   ~ ^
+      |   |
+      |   int *
+test001.c:173:8: error: invalid operands to binary | (have 'int' and 'char *')
+  173 |   a[2] | "string";
+      |   ~~~~ ^
+      |    |   |
+      |    int char *
+test001.c:174:14: error: invalid operands to binary | (have 'int' and 'unsigned int *')
+  174 |   a[a[a[4]]] | L"wide string";
+      |   ~~~~~~~~~~ ^
+      |    |         |
+      |    int       unsigned int *
+test001.c: In function 'test19':
+test001.c:182:17: warning: pointer type mismatch in conditional expression
+  182 |   a ? "manager" : L"engineer";
+      |                 ^
+test001.c:183:17: warning: pointer type mismatch in conditional expression
+  183 |   "program" ? a : b;
+      |                 ^
+test001.c: In function 'test20':
+test001.c:190:5: error: assignment to expression with array type
+  190 |   a = (int [10]){1,2,3};
+      |     ^
+test001.c:191:5: error: assignment to expression with array type
+  191 |   a += 1;
+      |     ^~
+test001.c:192:5: error: assignment to expression with array type
+  192 |   a -= (int*)2;
+      |     ^~
+test001.c:193:13: error: assignment to expression with array type
+  193 |   "program" = "C";
+      |             ^
+test001.c:194:14: error: assignment to expression with array type
+  194 |   L"program" = L"C";
+      |              ^
