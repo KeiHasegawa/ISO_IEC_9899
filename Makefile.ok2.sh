@@ -22,11 +22,11 @@ DOGV = wdog.exe -v
 	$(DOGV) $(DIFF) $< $@
 	$(TOUCH) $@
 
-START_O = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_sh.010/start.o
+START_O = /home/khasegawa/lang/53_GNU_tool/gcc_cross/SH/tool/start.o
 
 LIBGCC = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/GNU_LANG/lib/gcc/sh-elf/10.2.0/libgcc.a
 
-LDSCRIPT = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_sh.010/test010.x
+LDSCRIPT = /home/khasegawa/lang/53_GNU_tool/gcc_cross/SH/tool/sample.x
 
 test.elf:$(OBJS)
 	$(DOGV) $(LINK) -o $@ $(START_O) $(OBJS) $(LIBGCC) -T $(LDSCRIPT)

@@ -55,6 +55,11 @@ int main()
   __asm(".long	_f");
   __asm("my_label2:");
 #endif // __sh__
+
+#if defined(__H8300__)
+  __asm("jsr f");
+  __asm("jsr f");
+#endif // __H8300__  
   return 0;
 }
 

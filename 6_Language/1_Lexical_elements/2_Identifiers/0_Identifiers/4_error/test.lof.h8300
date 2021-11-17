@@ -1,2 +1,1 @@
-/media/ca850f52-0605-42a7-9fd4-899de9edf461/work/GNU_LANG/lib/gcc/h8300-elf/10.2.0/../../../../h8300-elf/bin/ld: b.o:(.data+0x0): multiple definition of `_a'; a.o:(.data+0x0): first defined here
-collect2: error: ld returned 1 exit status
+h8300-elf-ld: b.o:(.data+0x0): multiple definition of `a'; a.o:(.data+0x0): first defined here
