@@ -7,7 +7,7 @@ DOS2UNIX = dos2unix.csh
 all:$(LOFS)
 
 AS = m68hc11-elf-as
-CC = m68hc11-elf-gcc -std=c99 -mshort
+CC = m68hc11-elf-gcc -std=c99
 LD = m68hc11-elf-ld
 RUN = m68hc11-elf-run
 DOGV = wdog.exe -v
@@ -22,11 +22,11 @@ DOGV = wdog.exe -v
 	$(DOGV) $(CC) -o $@ $< -S
 
 
-START_O = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_m68hc11.014/start.o
+START_O = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_m68hc11.015/start.o
 
-LIBGCC = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/GNU_LANG/lib/gcc/m68hc11-elf/4.2.0/mshort/libgcc.a
+LIBGCC = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/GNU_LANG/lib/gcc/m68hc11-elf/4.2.0/libgcc.a
 
-LDSCRIPT = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_m68hc11.014/test014.x
+LDSCRIPT = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_m68hc11.015/test015.x
 
 %.elf : %.o
 	$(DOGV) $(LD) -o $@ $(START_O) $< $(LIBGCC) -T $(LDSCRIPT)
@@ -40,7 +40,7 @@ LDSCRIPT = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_m68hc11.014/tes
 	$(TOUCH) $@
 
 clean:
-	$(RM) *.o *.log *.elf *.s *.asm *.i *.stackdump core.* a.out core *~
+	$(RM) *.o *.log *.exe *.elf *.s *.asm *.i *.stackdump core.* a.out core *~
 
 test000.lof:test000.log
 test000.elf:test000.o

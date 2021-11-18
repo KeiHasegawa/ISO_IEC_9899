@@ -66,3 +66,14 @@
 41_ISO_IEC_9899/6_Language/3_Expressions/15_Conditional_operator/1_ok:test011
 41_ISO_IEC_9899/6_Language/3_Expressions/16_Assignment_operators/1_ok:test001
 
+41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:test058
+41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:test062
+41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:test064
+41_ISO_IEC_9899/6_Language/2_Conversions/39_longlong:test068
+41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:test052
+41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:test053
+41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:test055
+41_ISO_IEC_9899/6_Language/2_Conversions/42_float:test039
+41_ISO_IEC_9899/6_Language/2_Conversions/42_float:test040
+41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_calls/1_ok:test011
+
