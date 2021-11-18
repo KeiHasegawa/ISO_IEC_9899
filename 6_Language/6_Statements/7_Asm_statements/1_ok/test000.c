@@ -59,7 +59,13 @@ int main()
 #if defined(__H8300__)
   __asm("jsr f");
   __asm("jsr f");
-#endif // __H8300__  
+#endif // __H8300__
+
+
+#if defined(__bfin__)
+  __asm("call _f");
+  __asm("call _f");
+#endif // __bfin__
   return 0;
 }
 
