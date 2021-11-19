@@ -1,0 +1,2 @@
+m32r-elf-ld: a.o: in function `main':
+a.c:(.text+0x4): undefined reference to `a'
