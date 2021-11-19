@@ -1,0 +1,2 @@
+microblaze-elf-ld: b.o: in function `f':
+(.text+0x0): multiple definition of `f'; a.o:(.text+0x0): first defined here
