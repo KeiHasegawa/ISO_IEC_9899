@@ -66,6 +66,28 @@ int main()
   __asm("call _f");
   __asm("call _f");
 #endif // __bfin__
+
+#if define(__lm32__  )
+  __asm("calli _f");
+  __asm("calli _f");
+#endif // __lm32__
+
+#if defined(__m32c__)
+  __asm("jsr.a	_f");
+  __asm("jsr.a	_f");
+#endif // __m32c__
+
+#if defined(__m32r__)
+  __asm("bl	f");
+  __asm("bl	f");
+#endif // __m32r__
+
+#if defined(__MICROBLAZE__)
+  __asm("brlid	r15, f");
+  __asm("nop");
+  __asm("brlid	r15, f");
+  __asm("nop");
+#endif // __MICROBLAZE__
   return 0;
 }
 
