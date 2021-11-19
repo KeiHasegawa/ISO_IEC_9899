@@ -1,0 +1,2 @@
+mips-elf-ld: a.o: in function `main':
+(.text+0xc): undefined reference to `a'
