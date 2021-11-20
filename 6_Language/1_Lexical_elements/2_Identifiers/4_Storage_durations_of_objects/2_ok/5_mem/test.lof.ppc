@@ -1,0 +1,1 @@
+ppc-elf-ld: b.o:(.sdata+0x0): multiple definition of `a'; a.o:(.sdata+0x0): first defined here

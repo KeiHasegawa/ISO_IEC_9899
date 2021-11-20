@@ -1,0 +1,3 @@
+ppc-elf-ld: a.o: in function `main':
+a.c:(.text+0xe): undefined reference to `a'
+ppc-elf-ld: a.c:(.text+0x12): undefined reference to `a'
