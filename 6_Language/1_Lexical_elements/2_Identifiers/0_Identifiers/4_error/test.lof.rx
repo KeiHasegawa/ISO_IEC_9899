@@ -1,0 +1,1 @@
+rx-elf-ld: b.o:(D+0x0): multiple definition of `a'; a.o:(D+0x0): first defined here

@@ -1,0 +1,2 @@
+rx-elf-ld: a.o: in function `main':
+a.c:(P+0x8): undefined reference to `a'

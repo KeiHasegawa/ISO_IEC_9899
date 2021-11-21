@@ -1,0 +1,2 @@
+rx-elf-ld: b.o: in function `f':
+b.c:(P+0x0): multiple definition of `f'; a.o:a.c:(P+0x0): first defined here
