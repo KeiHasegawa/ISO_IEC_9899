@@ -1,0 +1,6 @@
+test012.c:10:18: error: invalid operands to binary - (have 'int' and 'int *')
+   10 | int* p003 = 0x20 - (int*)0x10;
+      |                  ^
+test012.c:12:14: warning: initialization of 'void *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   12 | void* p004 = (void*)0x1000 - (void*)0x0500;
+      |              ^
