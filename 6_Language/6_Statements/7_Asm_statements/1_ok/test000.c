@@ -24,10 +24,10 @@ int main()
   asm("nop");
 #endif // defined(sparc)
 
-#if defined(POWERPC)
+#if defined(POWERPC) || defined(__PPC__)
   asm("bl f");
   asm("bl f");
-#endif // defined(POWERPC)
+#endif // defined(POWERPC) || defined(__PPC__)
 
 #if defined(__SPU__)
   asm("brsl $lr,f");
@@ -61,13 +61,12 @@ int main()
   __asm("jsr f");
 #endif // __H8300__
 
-
 #if defined(__bfin__)
   __asm("call _f");
   __asm("call _f");
 #endif // __bfin__
 
-#if define(__lm32__  )
+#if defined(__lm32__)
   __asm("calli _f");
   __asm("calli _f");
 #endif // __lm32__
@@ -88,6 +87,45 @@ int main()
   __asm("brlid	r15, f");
   __asm("nop");
 #endif // __MICROBLAZE__
+
+#if defined(__mips__)
+  __asm("jal	f");
+  __asm("jal	f");
+#endif //  __mips__
+
+#if defined(__mn10300__)
+  __asm("call f,[],0");
+  __asm("call f,[],0");
+#endif // __mn10300__
+
+#if defined(__moxie__)
+  __asm("jsra	f");
+  __asm("jsra	f");
+#endif // __moxie__
+
+#if defined(__or1k__)
+  __asm("l.jal	f");
+  __asm("l.jal	f");
+#endif // __or1k__
+
+#if defined(__pru__)
+  __asm("call	%label(f)");
+  __asm("call	%label(f)");
+#endif // __pru__
+  
+#if defined(__RL78__)
+  __asm("call	!!f");
+  __asm("call	!!f");
+#endif  
+
+#if defined(__v850__)
+  __asm("movhi hi(_f),r0,r10");
+  __asm("movea lo(_f),r10,r10);
+  __asm("jarl .+4, r31 ; add 4, r31 ; jmp r10")
+  __asm("movhi hi(_f),r0,r10");
+  __asm("movea lo(_f),r10,r10);
+  __asm("jarl .+4, r31 ; add 4, r31 ; jmp r10")
+#endif //  __v850__
   return 0;
 }
 
