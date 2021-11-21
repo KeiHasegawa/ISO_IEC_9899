@@ -1,6 +1,6 @@
 `f' called with -128.500000
 `test00' called
-128
+-128
 `test01' called
 -128
 `test02' called
@@ -20,10 +20,10 @@
 `test09' called
 -128
 `test10' called
-4294967168
+18446744073709551488
 `f' called with -128.000000
 `test00' called
-128
+-128
 `test01' called
 -128
 `test02' called
@@ -43,10 +43,10 @@
 `test09' called
 -128
 `test10' called
-4294967168
+18446744073709551488
 `f' called with -127.500000
 `test00' called
-129
+-127
 `test01' called
 -127
 `test02' called
@@ -66,7 +66,7 @@
 `test09' called
 -127
 `test10' called
-4294967169
+18446744073709551489
 `f' called with 126.500000
 `test00' called
 126
@@ -138,7 +138,7 @@
 127
 `f' called with 254.500000
 `test00' called
-254
+-2
 `test01' called
 -2
 `test02' called
@@ -161,7 +161,7 @@
 254
 `f' called with 255.000000
 `test00' called
-255
+-1
 `test01' called
 -1
 `test02' called
@@ -184,7 +184,7 @@
 255
 `f' called with 255.500000
 `test00' called
-255
+-1
 `test01' called
 -1
 `test02' called
@@ -227,7 +227,7 @@
 `test09' called
 -32768
 `test10' called
-4294934528
+18446744073709518848
 `f' called with -32768.000000
 `test00' called
 0
@@ -250,7 +250,7 @@
 `test09' called
 -32768
 `test10' called
-4294934528
+18446744073709518848
 `f' called with -32767.500000
 `test00' called
 1
@@ -273,10 +273,10 @@
 `test09' called
 -32767
 `test10' called
-4294934529
+18446744073709518849
 `f' called with 32766.500000
 `test00' called
-254
+-2
 `test01' called
 -2
 `test02' called
@@ -299,7 +299,7 @@
 32766
 `f' called with 32767.000000
 `test00' called
-255
+-1
 `test01' called
 -1
 `test02' called
@@ -322,7 +322,7 @@
 32767
 `f' called with 32767.500000
 `test00' called
-255
+-1
 `test01' called
 -1
 `test02' called
@@ -345,13 +345,13 @@
 32767
 `f' called with 65534.500000
 `test00' called
-254
+0
 `test01' called
--2
+0
 `test02' called
-254
+0
 `test03' called
--2
+-32768
 `test04' called
 65534
 `test05' called
@@ -368,13 +368,13 @@
 65534
 `f' called with 65535.000000
 `test00' called
-255
+0
 `test01' called
--1
+0
 `test02' called
-255
+0
 `test03' called
--1
+-32768
 `test04' called
 65535
 `test05' called
@@ -391,13 +391,13 @@
 65535
 `f' called with 65535.500000
 `test00' called
-255
+0
 `test01' called
--1
+0
 `test02' called
-255
+0
 `test03' called
--1
+-32768
 `test04' called
 65535
 `test05' called
@@ -420,7 +420,7 @@
 `test02' called
 0
 `test03' called
-0
+-32768
 `test04' called
 0
 `test05' called
@@ -434,7 +434,7 @@
 `test09' called
 -2147483648
 `test10' called
-2147483648
+18446744071562067968
 `f' called with -2147483648.000000
 `test00' called
 0
@@ -443,7 +443,7 @@
 `test02' called
 0
 `test03' called
-0
+-32768
 `test04' called
 0
 `test05' called
@@ -457,16 +457,16 @@
 `test09' called
 -2147483648
 `test10' called
-2147483648
+18446744071562067968
 `f' called with -2147483647.500000
 `test00' called
-1
+0
 `test01' called
-1
+0
 `test02' called
-1
+0
 `test03' called
-1
+-32768
 `test04' called
 1
 `test05' called
@@ -480,16 +480,16 @@
 `test09' called
 -2147483647
 `test10' called
-2147483649
+18446744071562067969
 `f' called with 2147483646.500000
 `test00' called
-254
+0
 `test01' called
--2
+0
 `test02' called
-254
+0
 `test03' called
--2
+-32768
 `test04' called
 65534
 `test05' called
@@ -506,13 +506,13 @@
 2147483646
 `f' called with 2147483647.000000
 `test00' called
-255
+0
 `test01' called
--1
+0
 `test02' called
-255
+0
 `test03' called
--1
+-32768
 `test04' called
 65535
 `test05' called
@@ -529,13 +529,13 @@
 2147483647
 `f' called with 2147483647.500000
 `test00' called
-255
+0
 `test01' called
--1
+0
 `test02' called
-255
+0
 `test03' called
--1
+-32768
 `test04' called
 65535
 `test05' called
@@ -552,69 +552,69 @@
 2147483647
 `f' called with 4294967294.500000
 `test00' called
-254
+0
 `test01' called
--1
+0
 `test02' called
-254
+0
 `test03' called
--1
+-32768
 `test04' called
-65534
+0
 `test05' called
-2147483647
+-2147483648
 `test06' called
 -2
 `test07' called
-2147483647
+-2147483648
 `test08' called
-4294967294
+2147483648
 `test09' called
 4294967294
 `test10' called
 4294967294
 `f' called with 4294967295.000000
 `test00' called
-255
+0
 `test01' called
--1
+0
 `test02' called
-255
+0
 `test03' called
--1
+-32768
 `test04' called
-65535
+0
 `test05' called
-2147483647
+-2147483648
 `test06' called
 -1
 `test07' called
-2147483647
+-2147483648
 `test08' called
-4294967295
+2147483648
 `test09' called
 4294967295
 `test10' called
 4294967295
 `f' called with 4294967295.500000
 `test00' called
-255
+0
 `test01' called
--1
+0
 `test02' called
-255
+0
 `test03' called
--1
+-32768
 `test04' called
-65535
+0
 `test05' called
-2147483647
+-2147483648
 `test06' called
 -1
 `test07' called
-2147483647
+-2147483648
 `test08' called
-4294967295
+2147483648
 `test09' called
 4294967295
 `test10' called
@@ -627,13 +627,13 @@
 `test02' called
 0
 `test03' called
-0
+-32768
 `test04' called
 0
 `test05' called
 -2147483648
 `test06' called
--2147483648
+0
 `test07' called
 -2147483648
 `test08' called
@@ -641,7 +641,7 @@
 `test09' called
 -9223372036854775808
 `test10' called
-9223372039002259456
+9223372036854775808
 `f' called with -9223372036854775808.000000
 `test00' called
 0
@@ -650,13 +650,13 @@
 `test02' called
 0
 `test03' called
-0
+-32768
 `test04' called
 0
 `test05' called
 -2147483648
 `test06' called
--2147483648
+0
 `test07' called
 -2147483648
 `test08' called
@@ -664,7 +664,7 @@
 `test09' called
 -9223372036854775808
 `test10' called
-9223372039002259456
+9223372036854775808
 `f' called with -9223372036854775808.000000
 `test00' called
 0
@@ -673,13 +673,13 @@
 `test02' called
 0
 `test03' called
-0
+-32768
 `test04' called
 0
 `test05' called
 -2147483648
 `test06' called
--2147483648
+0
 `test07' called
 -2147483648
 `test08' called
@@ -687,142 +687,142 @@
 `test09' called
 -9223372036854775808
 `test10' called
-9223372039002259456
+9223372036854775808
 `f' called with 9223372036854775808.000000
 `test00' called
-255
+0
 `test01' called
--1
+0
 `test02' called
-255
+0
 `test03' called
--1
+-32768
 `test04' called
-65535
+0
 `test05' called
-2147483647
+-2147483648
 `test06' called
--1
+0
 `test07' called
-2147483647
+-2147483648
 `test08' called
-4294967295
+2147483648
 `test09' called
 -9223372036854775808
 `test10' called
 9223372036854775808
 `f' called with 9223372036854775808.000000
 `test00' called
-255
+0
 `test01' called
--1
+0
 `test02' called
-255
+0
 `test03' called
--1
+-32768
 `test04' called
-65535
+0
 `test05' called
-2147483647
+-2147483648
 `test06' called
--1
+0
 `test07' called
-2147483647
+-2147483648
 `test08' called
-4294967295
+2147483648
 `test09' called
 -9223372036854775808
 `test10' called
 9223372036854775808
 `f' called with 9223372036854775808.000000
 `test00' called
-255
+0
 `test01' called
--1
+0
 `test02' called
-255
+0
 `test03' called
--1
+-32768
 `test04' called
-65535
+0
 `test05' called
-2147483647
+-2147483648
 `test06' called
--1
+0
 `test07' called
-2147483647
+-2147483648
 `test08' called
-4294967295
+2147483648
 `test09' called
 -9223372036854775808
 `test10' called
 9223372036854775808
 `f' called with 18446744073709551616.000000
 `test00' called
-255
+0
 `test01' called
--1
+0
 `test02' called
-255
+0
 `test03' called
--1
+-32768
 `test04' called
-65535
+0
 `test05' called
-2147483647
+-2147483648
 `test06' called
--1
+0
 `test07' called
-2147483647
+-2147483648
 `test08' called
-4294967295
+2147483648
 `test09' called
--16
+-9223372036854775808
 `test10' called
-18446744073709551600
+0
 `f' called with 18446744073709551616.000000
 `test00' called
-255
+0
 `test01' called
--1
+0
 `test02' called
-255
+0
 `test03' called
--1
+-32768
 `test04' called
-65535
+0
 `test05' called
-2147483647
+-2147483648
 `test06' called
--1
+0
 `test07' called
-2147483647
+-2147483648
 `test08' called
-4294967295
+2147483648
 `test09' called
--16
+-9223372036854775808
 `test10' called
-18446744073709551600
+0
 `f' called with 18446744073709551616.000000
 `test00' called
-255
+0
 `test01' called
--1
+0
 `test02' called
-255
+0
 `test03' called
--1
+-32768
 `test04' called
-65535
+0
 `test05' called
-2147483647
+-2147483648
 `test06' called
--1
+0
 `test07' called
-2147483647
+-2147483648
 `test08' called
-4294967295
+2147483648
 `test09' called
--16
+-9223372036854775808
 `test10' called
-18446744073709551600
+0
