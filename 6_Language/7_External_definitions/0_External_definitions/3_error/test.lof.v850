@@ -1,0 +1,3 @@
+v850-elf-ld: a.o: in function `main':
+a.c:(.text+0xa): undefined reference to `a'
+v850-elf-ld: a.c:(.text+0xe): undefined reference to `a'
