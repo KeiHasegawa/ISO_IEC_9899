@@ -27,7 +27,7 @@ endif
 
 all:$(LOFS)
 
-CC1 = i386-elf-gcc
+CC1 = gcc
 CC1_FLAG = -c
 
 %.log : %.c

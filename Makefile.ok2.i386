@@ -3,9 +3,8 @@ OBJS = $(SRCS:.c=.o)
 
 all:test.lof
 
-CC = i386-elf-gcc
-LINK = i386-elf-ld
-RUN = i386-elf-run
+CC = gcc
+LINK = gcc
 DIFF = diff
 TOUCH = touch
 DOS2UNIX = dos2unix.csh
@@ -14,7 +13,7 @@ DOGV = wdog.exe -v
 %.o : %.c
 	$(DOGV) $(CC) -o $@ -c $<
 
-%.log : %.elf
+%.log : %.exe
 	$(DOGV) $(RUN) ./$< > $@
 	$(DOS2UNIX) $@
 
@@ -22,14 +21,8 @@ DOGV = wdog.exe -v
 	$(DOGV) $(DIFF) $< $@
 	$(TOUCH) $@
 
-START_O = /home/khasegawa/lang/53_GNU_tool/gcc_cross/I386/tool/start.o
-
-LIBGCC = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/GNU_LANG/lib/gcc/i386-elf/10.2.0/libgcc.a
-
-LDSCRIPT = /home/khasegawa/lang/53_GNU_tool/gcc_cross/I386/tool/sample.x
-
-test.elf:$(OBJS)
-	$(DOGV) $(LINK) -o $@ $(START_O) $(OBJS) $(LIBGCC) -T $(LDSCRIPT)
+test.exe:$(OBJS)
+	$(DOGV) $(LINK) -o $@ $(OBJS)
 
 clean:
 	$(RM) *.o *.log *.exe *.elf *.s *.i *.stackdump core.* *~
