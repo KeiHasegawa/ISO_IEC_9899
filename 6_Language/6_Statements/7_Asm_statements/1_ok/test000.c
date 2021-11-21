@@ -120,10 +120,10 @@ int main()
 
 #if defined(__v850__)
   __asm("movhi hi(_f),r0,r10");
-  __asm("movea lo(_f),r10,r10);
+  __asm("movea lo(_f),r10,r10");
   __asm("jarl .+4, r31 ; add 4, r31 ; jmp r10")
   __asm("movhi hi(_f),r0,r10");
-  __asm("movea lo(_f),r10,r10);
+  __asm("movea lo(_f),r10,r10");
   __asm("jarl .+4, r31 ; add 4, r31 ; jmp r10")
 #endif //  __v850__
   return 0;
