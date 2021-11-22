@@ -2,10 +2,10 @@
 
 int main()
 {
-#ifdef INTEL
+#if defined(INTEL)
   asm("call f");
   asm("call f");
-#endif // INTEL
+#endif // defined(INTEL)
 
 #if defined(_MSC_VER)
 #if defined(WIN32)
@@ -17,6 +17,11 @@ int main()
 #endif // defined(WIN32)
 #endif // defined(_MSC_VER)
 
+#if defined(__i386__) && !defined(INTEL)
+  __asm("call f");
+  __asm("call f");
+#endif
+ 
 #if defined(sparc)
   asm("call f");
   asm("nop");
