@@ -1,0 +1,2 @@
+sh-elf-ld: b.o: in function `f':
+b.c:(.text+0x0): multiple definition of `f'; a.o:a.c:(.text+0x0): first defined here
