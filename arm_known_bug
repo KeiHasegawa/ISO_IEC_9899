@@ -137,6 +137,7 @@
 41_ISO_IEC_9899/6_Language/5_Declarations/5_Declarators/2_Array_declarators/1_ok:test024
 
 41_ISO_IEC_9899/6_Language/6_Statements/6_Jump_statements/0_Jump_statements:test010
-41_ISO_IEC_9899/6_Language/6_Statements/7_Asm_statements/1_ok:test000
-41_ISO_IEC_9899/6_Language/6_Statements/6_Jump_statements/0_Jump_statements:test010
-41_ISO_IEC_9899/6_Language/6_Statements/7_Asm_statements/1_ok:test000
+
+41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:test064
+
+41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:test065
