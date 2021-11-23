@@ -50,15 +50,7 @@ int main()
 #endif // __arm__
 
 #if defined(__sh__)
-#error  
-  __asm("mov.l	my_label,r1");
-  __asm("jsr	@r1");
-  __asm("mov.l	my_label,r1");
-  __asm("jsr	@r1");
-  __asm("jmp	my_label2")
-  __asm("my_label:");
-  __asm(".long	_f");
-  __asm("my_label2:");
+#error
 #endif // __sh__
 
 #if defined(__H8300__)
