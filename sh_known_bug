@@ -203,3 +203,12 @@ lang/41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_cal
 41_ISO_IEC_9899/6_Language/5_Declarations/5_Declarators/2_Array_declarators/1_ok:test024
 41_ISO_IEC_9899/6_Language/5_Declarations/8_Initialization/1_ok:test004
 41_ISO_IEC_9899/6_Language/6_Statements/6_Jump_statements/3_The_break_statement/1_ok:test000
+
+41_ISO_IEC_9899/6_Language/3_Expressions/4_Cast_operators/1_ok:test000
+41_ISO_IEC_9899/6_Language/3_Expressions/9_Equality_operators/1_ok:test009
+41_ISO_IEC_9899/6_Language/5_Declarations/2_Type_specifiers/0_Type/2_error:test000
+41_ISO_IEC_9899/6_Language/5_Declarations/2_Type_specifiers/1_Structure_and_union_specifiers/1_ok:test005
+
+41_ISO_IEC_9899/6_Language/5_Declarations/5_Declarators/2_Array_declarators/1_ok:test001
+41_ISO_IEC_9899/6_Language/5_Declarations/8_Initialization/3_ok:test010
+41_ISO_IEC_9899/6_Language/6_Statements/6_Jump_statements/2_The_continue_statement/1_ok:test000
