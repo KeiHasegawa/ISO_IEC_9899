@@ -130,7 +130,7 @@ void test08(void)
 {
   printf("`test08' called\n");
   int a[10];
-  printf("a - &a[3] = %ld\n", a - &a[3]);
+  printf("a - &a[3] = %d\n", (int)(a - &a[3]));
   volatile int b = "program" - "C";
   volatile int c = L"C" - L"program";
 }
