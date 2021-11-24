@@ -1,0 +1,81 @@
+`test00' called
+3.000000
+`test01' called
+f called with 3
+`test02' called
+4
+`test03' called
+5
+`test04' called
+7
+7
+8
+`test05' called
+6
+6
+5
+`test06' called
+*p = 8
+8 & 9 = 8
+`test07' called
+f called with 40
+`test08' called
+f called with 23
+`test08' called
+f called with -27
+`test09' called
+f called with -16
+`test10' called
+sizeof s = 2
+sizeof(struct S) = 2
+`test12' called
+10 / 3 = 3
+`test13' called
+10 % 3 = 1
+`test14' called
+10 << 1 = 20
+`test15' called
+10 >> 1 = 5
+`test16' called
+-3 is less than 3
+`test17' called
+5 is greater than 3
+`test18' called
+1 is less than or equal to 3
+`test19' called
+4 is greater than or equal to 3
+`test20' called
+4 is equal to 4
+`test21' called
+4 is not equal to 5
+`test21' called
+10 ^ 12 = 6
+`test21' called
+10 | 12 = 14
+`test24' called
+1 && 2
+`test25' called
+!(0 || 0)
+`test26' called
+0 ? 1 : 2 = 2
+`test27' called
+a = 2
+b = 38
+c = 9
+d = 1
+e = 21
+f = 17
+g = 76
+h = 4
+i = 2
+j = 17
+k = 19
+(3,4) = 4
+`test029' called
+`test30' called
+cat(1,2) = 12
+`test31' called
+3.000000
+`test032' called
+`test33' called
+cat(1,2) = 12
