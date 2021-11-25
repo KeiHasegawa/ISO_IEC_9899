@@ -1,0 +1,75 @@
+`test00' called
+a
+b
+c
+b
+`test01' called
+A
+B
+C
+B
+`test02' called
+X
+Y
+Z
+Y
+`test03' called
+3
+4
+5
+4
+`test04' called
+-4
+-3
+-2
+-3
+`test05' called
+5
+6
+7
+6
+`test06' called
+-6
+-5
+-4
+-5
+`test07' called
+7
+8
+9
+8
+`test08' called
+-8
+-7
+-6
+-7
+`test09' called
+9
+10
+11
+10
+`test10' called
+-10
+-9
+-8
+-9
+`test11' called
+11.000000
+12.000000
+13.000000
+12.000000
+`test12' called
+-12.000000
+-11.000000
+-10.000000
+-11.000000
+`test13' called
+13.000000
+14.000000
+15.000000
+14.000000
+`test14' called
+-14
+-13
+-12
+-13

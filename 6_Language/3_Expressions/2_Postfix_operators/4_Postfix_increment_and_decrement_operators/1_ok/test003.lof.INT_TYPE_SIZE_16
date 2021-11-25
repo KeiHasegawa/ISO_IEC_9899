@@ -1,0 +1,10 @@
+`test00' called
+a = 3, b = 2, c = 2
+`test01' called
+n = 2
+case sizeof n++:
+n = 2
+case sizeof n--:
+n = 2
+`test02' called
+sizeof a = 4

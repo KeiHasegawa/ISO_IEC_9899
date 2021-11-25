@@ -1,0 +1,85 @@
+`test00' called
+abcd
+bcd
+cd
+bcd
+`test01' called
+ABCD
+BCD
+CD
+BCD
+`test02' called
+XYZW
+YZW
+ZW
+YZW
+`test03' called
+3
+4
+5
+4
+`test04' called
+-4
+-5
+-6
+-5
+`test05' called
+5
+6
+7
+6
+`test06' called
+-6
+-7
+-8
+-7
+`test07' called
+7
+8
+9
+8
+`test08' called
+-8
+-9
+-10
+-9
+`test09' called
+9
+10
+11
+10
+`test10' called
+-10
+-11
+-12
+-11
+`test11' called
+11.000000
+12.000000
+13.000000
+12.000000
+`test12' called
+-12.000000
+-13.000000
+-14.000000
+-13.000000
+`test13' called
+13.000000
+14.000000
+15.000000
+14.000000
+`test14' called
+-14
+-15
+-16
+-15
+`test15' called
+ 1 2 3
+ 4 5 6
+ 7 8 9
+ 4 5 6
+`test16' called
+ -1 -2 -3
+ -4 -5 -6
+ -7 -8 -9
+ -4 -5 -6

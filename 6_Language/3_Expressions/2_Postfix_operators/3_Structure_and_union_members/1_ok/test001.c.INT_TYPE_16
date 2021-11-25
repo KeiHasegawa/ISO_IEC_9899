@@ -1,0 +1,46 @@
+/*
+ * Check if pointer to qualified struct or union is recognized.
+ */
+#include <stdio.h>
+#include <string.h>
+
+struct S {
+  int a;
+  char b[5];
+};
+
+union U {
+  long a;
+  float b;
+};
+
+void f(const volatile struct S*);
+
+void g(volatile const union U*);
+
+int main(void)
+{
+  volatile struct S s;
+  printf("s.a = %d\n", s.a = 1);
+  strcpy((char*)&s.b[0],"unix");
+  printf("s.b = \"%s\"\n", s.b);
+  volatile union U u;
+  u.b = 1.0;
+  printf("u.a = 0x%lx\n", u.a);
+  f(&s);
+  g(&u);
+  return 0;
+}
+
+void f(volatile const struct S* ps)
+{
+  printf("f called\n");
+  printf("ps->a = %d\n", ps->a);
+  printf("ps->b = \"%s\"\n", &ps->b[0]);
+}
+
+void g(const volatile union U* pu)
+{
+  printf("g called\n");
+  printf("pu->a = 0x%lx\n", pu->a);
+}
