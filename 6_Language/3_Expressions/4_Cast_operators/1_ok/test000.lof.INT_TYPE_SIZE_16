@@ -1,0 +1,34 @@
+`test00' called
+hello world
+`test01' called
+(char)0xffffdef0 = 0x0xf0
+`test02' called
+(signed char)0xffffdef0 = 0xfffffff0
+`test03' called
+(unsigned char)0xffffdef0 = 0xf0
+`test04' called
+(short int)0xffffdef0 = 0xffffdef0
+`test05' called
+(unsigned short int)0xffffdef0 = 0xffffdef0
+`test06' called
+(int)0xffffdef0 = 0xffffdef0
+`test07' called
+(unsigned int)0xffffdef0 = 0xffffdef0
+`test08' called
+(long int)0xffffdef0 = 0xffffdef0
+`test09' called
+(unsigned long int)0xffffdef0 = 0xffffdef0
+`test10' called
+(long long int)0xffffdef0 = 0xffffffffffffdef0
+`test11' called
+(unsigned long long int)0xffffdef0 = 0xffffffffffffdef0
+`test12' called
+(float)0xffffdef0 = -8464.000000
+`test13' called
+(double)0xffffdef0 = -8464.000000
+`test14' called
+(long double)0xffffdef0 = -8464.000000
+`test15' called
+(int*)0xffffdef0 = 0xffffdef0
+`test16' called
+(enum E)0xffffdef0 = 0xffffdef0
