@@ -13,7 +13,7 @@ void test00(void)
   for ( int* p = begin ; p != end ; ++p )
     printf(" %d", *p);
   printf("\n");
-  printf("end - begin = %ld\n", end - begin);
+  printf("end - begin = %d\n", (int)(end - begin));
 }
 
 int main(void)

@@ -1,0 +1,10 @@
+`test00' called
+a = 0
+b = 2
+c = 'c'
+d = 1
+e = 2
+f = "howdy"
+case sizeof n:
+case sizeof "hello world":
+case sizeof 1.0":

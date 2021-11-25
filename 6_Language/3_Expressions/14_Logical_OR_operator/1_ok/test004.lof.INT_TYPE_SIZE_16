@@ -1,0 +1,6 @@
+`f' called with 0
+case 0.0 || 0ULL:
+`f' called with 1
+case -0.5 || 1ULL:
+`f' called with 2
+case sizeof(n || *(int*)n):
