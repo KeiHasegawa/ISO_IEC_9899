@@ -1,0 +1,288 @@
+`test0000' called
+1 << 2 = 4
+`test0001' called
+3 << 4 = 48
+`test0002' called
+5 << 6 = 320
+`test0003' called
+7 << 8 = 1792
+`test0004' called
+255 << 10 = -1024
+`test0005' called
+253 << 2 = 1012
+`test0006' called
+251 << 4 = 4016
+`test0007' called
+249 << 6 = 15936
+`test0008' called
+1 << 8 = 256
+`test0009' called
+3 << 10 = 3072
+`test0010' called
+5 << 2 = 20
+`test0014' called
+7 << 4 = 112
+`test0100' called
+-1 << 6 = -64
+`test0101' called
+-3 << 8 = -768
+`test0102' called
+-5 << 10 = -5120
+`test0103' called
+-7 << 2 = -28
+`test0104' called
+1 << 4 = 16
+`test0105' called
+3 << 6 = 192
+`test0106' called
+5 << 8 = 1280
+`test0107' called
+7 << 10 = 7168
+`test0108' called
+-1 << 2 = -4
+`test0109' called
+-3 << 4 = -48
+`test0110' called
+-5 << 6 = -320
+`test0114' called
+-7 << 8 = -1792
+`test0200' called
+1 << 10 = 1024
+`test0201' called
+3 << 2 = 12
+`test0202' called
+5 << 4 = 80
+`test0203' called
+7 << 6 = 448
+`test0204' called
+255 << 8 = -256
+`test0205' called
+253 << 10 = -3072
+`test0206' called
+251 << 2 = 1004
+`test0207' called
+249 << 4 = 3984
+`test0208' called
+1 << 6 = 64
+`test0209' called
+3 << 8 = 768
+`test0210' called
+5 << 10 = 5120
+`test0214' called
+7 << 2 = 28
+`test0300' called
+-1 << 4 = -16
+`test0301' called
+-3 << 6 = -192
+`test0302' called
+-5 << 8 = -1280
+`test0303' called
+-7 << 10 = -7168
+`test0304' called
+1 << 2 = 4
+`test0305' called
+3 << 4 = 48
+`test0306' called
+5 << 6 = 320
+`test0307' called
+7 << 8 = 1792
+`test0308' called
+-1 << 10 = -1024
+`test0309' called
+-3 << 2 = -12
+`test0310' called
+-5 << 4 = -80
+`test0314' called
+-7 << 6 = -448
+`test0400' called
+1 << 8 = 256
+`test0401' called
+3 << 10 = 3072
+`test0402' called
+5 << 2 = 20
+`test0403' called
+7 << 4 = 112
+`test0404' called
+-1 << 6 = -64
+`test0405' called
+-3 << 8 = -768
+`test0406' called
+-5 << 10 = -5120
+`test0407' called
+-7 << 2 = -28
+`test0408' called
+1 << 4 = 16
+`test0409' called
+3 << 6 = 192
+`test0410' called
+5 << 8 = 1280
+`test0414' called
+7 << 10 = 7168
+`test0500' called
+-1 << 2 = -4
+`test0501' called
+-3 << 4 = -48
+`test0502' called
+-5 << 6 = -320
+`test0503' called
+-7 << 8 = -1792
+`test0504' called
+1 << 10 = 1024
+`test0505' called
+3 << 2 = 12
+`test0506' called
+5 << 4 = 80
+`test0507' called
+7 << 6 = 448
+`test0508' called
+-1 << 8 = -256
+`test0509' called
+-3 << 10 = -3072
+`test0510' called
+-5 << 2 = -20
+`test0514' called
+-7 << 4 = -112
+`test0600' called
+1 << 6 = 64
+`test0601' called
+3 << 8 = 768
+`test0602' called
+5 << 10 = 5120
+`test0603' called
+7 << 2 = 28
+`test0604' called
+-1 << 4 = -16
+`test0605' called
+-3 << 6 = -192
+`test0606' called
+-5 << 8 = -1280
+`test0607' called
+-7 << 10 = -7168
+`test0608' called
+1 << 2 = 4
+`test0609' called
+3 << 4 = 48
+`test0610' called
+5 << 6 = 320
+`test0614' called
+7 << 8 = 1792
+`test0700' called
+-1 << 10 = -1024
+`test0701' called
+-3 << 2 = -12
+`test0702' called
+-5 << 4 = -80
+`test0703' called
+-7 << 6 = -448
+`test0704' called
+1 << 8 = 256
+`test0705' called
+3 << 10 = 3072
+`test0706' called
+5 << 2 = 20
+`test0707' called
+7 << 4 = 112
+`test0708' called
+-1 << 6 = -64
+`test0709' called
+-3 << 8 = -768
+`test0710' called
+-5 << 10 = -5120
+`test0714' called
+-7 << 2 = -28
+`test0800' called
+1 << 2 = 4
+`test0801' called
+3 << 4 = 48
+`test0802' called
+5 << 6 = 320
+`test0803' called
+7 << 8 = 1792
+`test0804' called
+-1 << 10 = -1024
+`test0805' called
+-3 << 4 = -48
+`test0806' called
+-5 << 6 = -320
+`test0807' called
+-7 << 8 = -1792
+`test0808' called
+1 << 10 = 1024
+`test0809' called
+3 << 2 = 12
+`test0810' called
+5 << 4 = 80
+`test0814' called
+7 << 6 = 448
+`test0900' called
+-1 << 8 = -256
+`test0901' called
+-3 << 10 = -3072
+`test0902' called
+-5 << 2 = -20
+`test0903' called
+-7 << 4 = -112
+`test0904' called
+1 << 6 = 64
+`test0905' called
+3 << 8 = 768
+`test0906' called
+5 << 10 = 5120
+`test0907' called
+7 << 2 = 28
+`test0908' called
+-1 << 4 = -16
+`test0909' called
+-3 << 6 = -192
+`test0910' called
+-5 << 6 = -320
+`test0914' called
+-5 << 8 = -1280
+`test1000' called
+1 << 10 = 1024
+`test1001' called
+3 << 2 = 12
+`test1002' called
+5 << 4 = 80
+`test1003' called
+7 << 6 = 448
+`test1004' called
+-1 << 8 = -256
+`test1005' called
+-3 << 10 = -3072
+`test1006' called
+-5 << 2 = -20
+`test1007' called
+-7 << 4 = -112
+`test1008' called
+1 << 6 = 64
+`test1009' called
+3 << 8 = 768
+`test1010' called
+5 << 10 = 5120
+`test1014' called
+7 << 2 = 28
+`test1400' called
+-1 << 4 = -16
+`test1401' called
+-3 << 6 = -192
+`test1402' called
+-5 << 8 = -1280
+`test1403' called
+-7 << 10 = -7168
+`test1404' called
+1 << 2 = 4
+`test1405' called
+3 << 4 = 48
+`test1406' called
+5 << 6 = 320
+`test1407' called
+7 << 8 = 1792
+`test1408' called
+-1 << 10 = -1024
+`test1409' called
+-3 << 2 = -12
+`test1410' called
+-5 << 4 = -80
+`test1414' called
+-7 << 6 = -448

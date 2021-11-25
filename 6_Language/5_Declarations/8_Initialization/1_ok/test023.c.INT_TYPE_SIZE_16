@@ -1,0 +1,21 @@
+/*
+ * Check if member designators are recognized, where
+ * type of initialized variable is union.
+ */
+#include <stdio.h>
+
+union { long a; float b; } u = { .b = 1.0 };
+
+union { long a; float b; } v = { .a = 2 };
+
+int main(void)
+{
+  union { long a; float b; } s = { .b = 2.0 };
+  union { long a; float b; } t = { .a = 3 };
+
+  printf("u.a = 0x%lx\n", u.a);
+  printf("v.a = %ld\n", v.a);
+  printf("s.a = 0x%lx\n", s.a);
+  printf("t.a = %ld\n", t.a);
+  return 0;
+}

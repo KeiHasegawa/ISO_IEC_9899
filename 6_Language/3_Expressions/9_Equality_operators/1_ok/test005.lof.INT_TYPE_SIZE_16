@@ -1,0 +1,20 @@
+`f' called with 2
+case sizeof(x == y):
+`f' called with 0
+case (void*)0 == (void*)1:
+`f' called with 1
+case (void*)0 != (void*)1:
+`g' called with 2
+case sizeof(n != a[3]):
+`g' called with 0
+case &a[0] == &a[3]:
+`g' called with 1
+case &a[0] != &a[3]:
+`h' called with 1
+case (int*)0 == 0:
+`h' called with 0
+0 == (int*)1:
+`h' called with 2
+case sizeof n + ((int*)1 == (void*)0)
+`h' called with 3
+case sizeof n + ((int*)1 != (void*)0)

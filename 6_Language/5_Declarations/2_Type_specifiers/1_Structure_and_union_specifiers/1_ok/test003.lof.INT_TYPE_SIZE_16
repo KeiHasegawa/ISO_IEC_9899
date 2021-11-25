@@ -1,0 +1,4 @@
+`test000' called
+sizeof(struct string) = 2
+sizeof *ps = 2
+flexible array member
