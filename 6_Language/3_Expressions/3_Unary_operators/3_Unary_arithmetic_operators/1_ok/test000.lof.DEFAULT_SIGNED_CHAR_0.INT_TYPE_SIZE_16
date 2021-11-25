@@ -1,0 +1,32 @@
+`test00' called
+248 -248 -249 0
+`test01' called
+-7 7 6 0
+`test02' called
+250 -250 -251 0
+`test03' called
+-5 5 4 0
+`test04' called
+-4 4 3 0
+`test05' called
+-3 3 2 0
+`test06' called
+-2 2 1 0
+`test07' called
+-1 1 0 0
+`test08' called
+0 0 -1 1
+`test09' called
+1 -1 -2 0
+`test10' called
+2 -2 -3 0
+`test11' called
+3.000000 -3.000000 0
+`test12' called
+4.000000 -4.000000 0
+`test13' called
+5.000000 -5.000000 0
+`test14' called
+6 -6 -7 0
+`test15' called
+0
