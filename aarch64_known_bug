@@ -1,13 +1,16 @@
-# 以下 3 つは
+# uint8_t <- float の変換で
 #
-# fcvtzu s0, s0
+#	fcvtzu	s0, s0
+#	umov	w0, v0.b[0]
 #
-# という命令をコンパイラで出しているが, デスティネーションレジスタに s0 は指定できない
-# はずなのでこれはコンパイラとアセンブラの間違い
+# のように生成しているが, fcvtzu のデスティネーションレジスタに s0 は指定できない
+# はずなのでこれはコンパイラとアセンブラの間違い. と思ったが
 #
-# fcvtzu w0, s0
+#	1e390000 	fcvtzu	w0, s0
+#	7ea1b800 	fcvtzu	s0, s0
 #
-# は有効な命令.
+# のように 2 つは区別されている. しかしマニュアルでは指定できないことになっている.
+# AARCH64 のシミュレータでは, この 2 つを区別できていない.
 41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/3_Real_floating_and_integer/1_ok:test000
 41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/3_Real_floating_and_integer/1_ok:test001
 41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/3_Real_floating_and_integer/1_ok:test002
