@@ -13,7 +13,7 @@
 # avr,        DEFAULT_SIGNED_CHAR_0 : test10 = 65535
 # bfin,       DEFAULT_SIGNED_CHAR_1 : test10 = -1
 # cr16,       DEFAULT_SIGNED_CHAR_0 : avr と同じ
-# cris,       DEFAULT_SIGNED_CHAR_0 : bfin と同じだが...
+# cris,       DEFAULT_SIGNED_CHAR_0 : bfin と同じだが DEFAULT_SIGNED_CHAR_0
 # frv,        DEFAULT_SIGNED_CHAR_0 : frv-elf-ld が不正メモリアクセス
 # ft32,       DEFAULT_SIGNED_CHAR_1 : bfin と同じ
 # h8300,      DEFAULT_SIGNED_CHAR_0 : aarch64 と同じ
@@ -24,7 +24,7 @@
 # m68hc11,    DEFAULT_SIGNED_CHAR_0 : リンクエラー `__extendsfdf2' 他
 # microblaze, DEFAULT_SIGNED_CHAR_1 : bfin と同じ
 # mips,       DEFAULT_SIGNED_CHAR_1 : bfin と同じ
-# mn10300,    DEFAULT_SIGNED_CHAR_0 : ログが不完全
+# mn10300,    DEFAULT_SIGNED_CHAR_0 : h8300 と同じ
 # moxie,      DEFAULT_SIGNED_CHAR_0 : h8300 と同じ
 # msp430,     DEFAULT_SIGNED_CHAR_0 : リンクエラー. libgcc.a に問題.
 # or1k,       DEFAULT_SIGNED_CHAR_1 : bfin と同じ
