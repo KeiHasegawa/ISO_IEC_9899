@@ -32,7 +32,7 @@ void test001(void)
   union U y = { 2 };
   printf("(%f,0x%lx), (%f,0x%lx)\n", x.a, x.b, y.a, y.b);
   x = y;
-  printf("(%f,0x%x), (%f,0x%x)\n", x.a, x.b, y.a, y.b);
+  printf("(%f,0x%lx), (%f,0x%lx)\n", x.a, x.b, y.a, y.b);
 }
 
 struct S;
@@ -56,7 +56,7 @@ extern union U test003_x;
 extern union U test003_y;
 union U {
   float a;
-  int b;
+  long b;
 };
 
 void test003(void)

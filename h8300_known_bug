@@ -37,7 +37,7 @@
 # mcore       : arm と同じ
 # microblaze  : arm と同じ
 # mips        : arm と同じ
-# mn10300     : ログが切れている
+# mn10300     : arm と同じ
 # moxie       : arm と同じ
 # msp430      : リンクエラー __unpack_f 他
 # or1k        : arm と同じ

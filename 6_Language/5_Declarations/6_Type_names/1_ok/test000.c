@@ -60,7 +60,10 @@ void test002(void)
 {
   printf("`test002' called\n");
   printf("%d\n", (int)1.0L);
-  printf("0x%x\n", *(int*)&(float){1.0F});
+  if (sizeof(long) == sizeof(float))
+    printf("0x%lx\n", *(int*)&(float){1.0F});
+  else
+    printf("0x%x\n", *(int*)&(float){1.0F});
   int (*p)[3] = (int (*)[3])&array;
   printf("%d, %d, %d\n", (*p)[0],(*p)[1],(*p)[2]);
   int (*pf)(void) = (int (*)(void))f;
