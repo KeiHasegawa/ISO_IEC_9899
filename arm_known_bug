@@ -7,4 +7,31 @@
 # としたとき test10 の初期値は char が unsigned char と同じ値の範囲を
 # 取るならば 0 を期待値としているが, 132 になっている.
 # この他にも同じテストで初期値が期待値と異なっている.
+#
+# aarch64,    DEFAULT_SIGNED_CHAR_0 : test010 = 0
+# arm,        DEFAULT_SIGNED_CHAR_0 : test010 = 132
+# avr,        DEFAULT_SIGNED_CHAR_0 : test10 = 65535
+# bfin,       DEFAULT_SIGNED_CHAR_1 : test10 = -1
+# cr16,       DEFAULT_SIGNED_CHAR_0 : avr と同じ
+# cris,       DEFAULT_SIGNED_CHAR_0 : bfin と同じだが...
+# frv,        DEFAULT_SIGNED_CHAR_0 : frv-elf-ld が不正メモリアクセス
+# ft32,       DEFAULT_SIGNED_CHAR_1 : bfin と同じ
+# h8300,      DEFAULT_SIGNED_CHAR_0 : aarch64 と同じ
+# iq2000,     DEFAULT_SIGNED_CHAR_0 : aarch64 と同じだが他もできていない 
+# lm32,       DEFAULT_SIGNED_CHAR_0 : aarch64 と同じ
+# m32c,       DEFAULT_SIGNED_CHAR_0 : リンクエラー `__extendsfdf2'
+# m32r,       DEFAULT_SIGNED_CHAR_1 : bfin と同じ
+# m68hc11,    DEFAULT_SIGNED_CHAR_0 : リンクエラー `__extendsfdf2' 他
+# microblaze, DEFAULT_SIGNED_CHAR_1 : bfin と同じ
+# mips,       DEFAULT_SIGNED_CHAR_1 : bfin と同じ
+# mn10300,    DEFAULT_SIGNED_CHAR_0 : ログが不完全
+# moxie,      DEFAULT_SIGNED_CHAR_0 : h8300 と同じ
+# msp430,     DEFAULT_SIGNED_CHAR_0 : リンクエラー. libgcc.a に問題.
+# or1k,       DEFAULT_SIGNED_CHAR_1 : bfin と同じ
+# ppc,        DEFAULT_SIGNED_CHAR_0 : h8300 と同じ
+# pru,        DEFAULT_SIGNED_CHAR_0 : h8300 と同じ
+# rl78,       DEFAULT_SIGNED_CHAR_0 : test10 = 17
+# rx,         DEFAULT_SIGNED_CHAR_0 : 実行時 NULL pointer dereference
+# sh,         DEFAULT_SIGNED_CHAR_1 : bfin と同じ
+# v850,       DEFAULT_SIGNED_CHAR_1 : bfin と同じ
 
