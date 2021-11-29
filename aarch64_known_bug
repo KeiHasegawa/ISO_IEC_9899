@@ -1,3 +1,4 @@
+41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/3_Real_floating_and_integer/1_ok:test000
 # uint8_t <- float の変換で
 #
 #	fcvtzu	s0, s0
@@ -10,7 +11,44 @@
 #	7ea1b800 	fcvtzu	s0, s0
 #
 # のように 2 つは区別されている. しかしマニュアルでは指定できないことになっている.
-# AARCH64 のシミュレータでは, この 2 つを区別できていない.
-41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/3_Real_floating_and_integer/1_ok:test000
+# ~/lang/53_GNU_tool/gcc_cross/AARCH64/fcvtzu.diff
+# を作成したが
+#
+#  	fcvtzu	s0, s0
+#
+# が正しいならパッチの意味はあるが, その場合は改めて上の命令をシミュレーションする部分が必要
+# になる. おそらくだが, この命令は正しくないというのが現時点での結論.
+#
+# コンパイラの修正点   fcvtzu w0, s0 を生成する
+# アセンブラの修正点   fcvtzu s0, s0 をエラーにする
+# シミュレータの修正点  7ea1b800 等は illegal instruction にする
+#
+# aarch64,    DEFAULT_SIGNED_CHAR_0 : 0, 0, 0
+# arm,        DEFAULT_SIGNED_CHAR_0 : 0, -128, 0
+# avr,        DEFAULT_SIGNED_CHAR_0 : リンクエラー `__fixsfsi'
+# bfin,       DEFAULT_SIGNED_CHAR_1 : -128, -128, 128
+# cr16,       DEFAULT_SIGNED_CHAR_0 : 0, 0, 0 だが他もできていない
+# cris,       DEFAULT_SIGNED_CHAR_0 : -128, -128, 0
+# frv,        DEFAULT_SIGNED_CHAR_0 : illegal instruction
+# ft32,       DEFAULT_SIGNED_CHAR_1 : bfin と同じ
+# h8300,      DEFAULT_SIGNED_CHAR_0 : 128, -128, 128
+# iq2000,     DEFAULT_SIGNED_CHAR_0 : 0, 0, 0 だが他もできていない
+# lm32,       DEFAULT_SIGNED_CHAR_0 : arm と同じ
+# m32c,       DEFAULT_SIGNED_CHAR_0 : リンクエラー `__fixsfsi' 他
+# m32r,       DEFAULT_SIGNED_CHAR_1 : bfin と同じ
+# m68hc11,    DEFAULT_SIGNED_CHAR_0 : リンクエラー `__fixdfsi' 他
+# microblaze, DEFAULT_SIGNED_CHAR_1 : bfin と同じ
+# mips,       DEFAULT_SIGNED_CHAR_1 : bfin と同じ
+# mn10300,    DEFAULT_SIGNED_CHAR_0 : ログが不完全
+# moxie,      DEFAULT_SIGNED_CHAR_0 : h8300 と同じ
+# msp430,     DEFAULT_SIGNED_CHAR_0 : リンクエラー. libgcc.a に問題.
+# or1k,       DEFAULT_SIGNED_CHAR_1 : cris と同じ
+# ppc,        DEFAULT_SIGNED_CHAR_0 : h8300 と同じ
+# pru,        DEFAULT_SIGNED_CHAR_0 : h8300 と同じ
+# rl78,       DEFAULT_SIGNED_CHAR_0 : 0, 65408, 0
+# rx,         DEFAULT_SIGNED_CHAR_0 : h8300 と同じ
+# sh,         DEFAULT_SIGNED_CHAR_1 : bfin と同じ
+# v850,       DEFAULT_SIGNED_CHAR_1 : bfin と同じ
+
 41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/3_Real_floating_and_integer/1_ok:test001
 41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/3_Real_floating_and_integer/1_ok:test002
