@@ -1,1 +1,4 @@
 41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/3_Real_floating_and_integer/1_ok:test000
+#
+# aarch64_known_bug で既に調査済み. bfin と同じ結果になるのが期待値.
+
