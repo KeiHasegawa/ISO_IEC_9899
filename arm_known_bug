@@ -13,7 +13,7 @@
 # avr,        DEFAULT_SIGNED_CHAR_0 : test10 = 65535
 # bfin,       DEFAULT_SIGNED_CHAR_1 : test10 = -1
 # cr16,       DEFAULT_SIGNED_CHAR_0 : avr と同じ
-# cris,       DEFAULT_SIGNED_CHAR_0 : bfin と同じだが DEFAULT_SIGNED_CHAR_0
+# cris,       DEFAULT_SIGNED_CHAR_1 : bfin と同じ
 # frv,        DEFAULT_SIGNED_CHAR_0 : frv-elf-ld が不正メモリアクセス
 # ft32,       DEFAULT_SIGNED_CHAR_1 : bfin と同じ
 # h8300,      DEFAULT_SIGNED_CHAR_0 : aarch64 と同じ
