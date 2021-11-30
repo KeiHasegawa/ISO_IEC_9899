@@ -23,8 +23,10 @@ START_O = /home/khasegawa/lang/53_GNU_tool/gcc_cross/AVR/tool/start.o
 
 LIBGCC = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/GNU_LANG/lib/gcc/avr-elf/10.2.0/libgcc.a
 
+LDSCRIPT = /home/khasegawa/lang/53_GNU_tool/gcc_cross/AARCH64/tool/sample.x
+
 test.log:$(OBJS)
-	-if export LANG=C ; $(DOG) $(LINK) $(START_O) $(OBJS) $(LIBGCC) 2> $@ ; then \
+	-if export LANG=C ; $(DOG) $(LINK) $(START_O) $(OBJS) $(LIBGCC) -T $(LDSCRIPT) 2> $@ ; then \
 		$(RM) $@ ; \
 	else \
 		$(DOS2UNIX) $@; \

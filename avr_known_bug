@@ -1,4 +1,15 @@
 41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/1_Floating_constants/1_ok:test004
+#
+# 実行が停止しない理由は
+#
+# rcall main
+#
+# で main 函数に届かない函数コールをしているから
+# 一番の元凶はリンカがエラーを捕えていないこと
+#
+# /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_avr.013
+#
+# で解析している.
 41_ISO_IEC_9899/6_Language/1_Lexical_elements/5_Operators/1_ok:test000
 41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/4_Real_floating_types/1_ok:test004
 41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/4_Real_floating_types/1_ok:test005

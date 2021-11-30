@@ -1,4 +1,21 @@
-41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/1_Floating_constants/1_ok:test002
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/1_Keywords/1_ok:test000
+#
+# ef = 0.75
+#
+# t.b = 2.0
+#
+# が期待値だが
+#
+# ef = 1.5
+#
+# t.b = 4.0
+#
+# のように違っている. 簡易版 printf の単純なテストは期待通り動作している.
+#
+#41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/1_Floating_constants/1_ok:test002
+#
+#
+# 
 41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/2_Integer_constants/1_ok:test002
 41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/2_Integer_constants/1_ok:test003
 41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/4_Character_constants/1_ok:test004
