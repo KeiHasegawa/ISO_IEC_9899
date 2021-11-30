@@ -9,7 +9,7 @@ all:$(LOFS)
 AS = cris-elf-as
 CC = cris-elf-gcc -std=c99
 LD = cris-elf-ld
-RUN = cris-elf-run
+RUN = cris-elf-run --memory-size 0x10000
 DOGV = wdog.exe -v
 
 %.o:%.S
