@@ -1,0 +1,2 @@
+cr16-elf-ld: a.o: in function `main':
+a.c:(.text+0x8): undefined reference to `a'
