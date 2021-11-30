@@ -29,7 +29,7 @@
 # bfin,       DEFAULT_SIGNED_CHAR_1 : -128, -128, 128
 # cr16,       DEFAULT_SIGNED_CHAR_0 : 0, 0, 0 だが他もできていない
 # cris,       DEFAULT_SIGNED_CHAR_1 : -128, -128, 0
-# frv,        DEFAULT_SIGNED_CHAR_0 : illegal instruction
+# frv,        DEFAULT_SIGNED_CHAR_1 : bfin と同じ
 # ft32,       DEFAULT_SIGNED_CHAR_1 : bfin と同じ
 # h8300,      DEFAULT_SIGNED_CHAR_0 : 128, -128, 128
 # iq2000,     DEFAULT_SIGNED_CHAR_0 : 0, 0, 0 だが他もできていない
