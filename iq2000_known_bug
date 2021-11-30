@@ -1,0 +1,25 @@
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/4_Storage_durations_of_objects/2_ok/1_reg/02_fpr:test014
+#
+# 浮動小数点数演算ができていない.
+#
+# double f(void)
+# {
+#   double a, b, c;
+#   a = 6.0;
+#   b = 2.0;
+#   c = 3.0;
+#   return a * b / c;
+# }
+#
+# 4.0 を計算できていない. 5.332682 を返しているようなログ. 5.332682 になるのは以下:
+#
+# aarch64, arm, bfin, cr16, frv, ft32, h8300, iq2000, lm32, m32r, mcore, 
+# microblaze, mips, mn10300, or1k, ppc, pru, rx, sh, v850
+#
+# FPU がある aarch64, mips でもエラーになるので libgcc の問題でもなさそう.
+#
+# avr : `__mulsf3' リンクエラー
+# cris : ターゲットプログラムの不正メモリアクセス
+# m32c : `__muldf3', `__divdf3' リンクエラー
+# m68hc11 : `__muldf3', `__divdf3' 他リンクエラー
+# msp430 : `__mspabi_divd' 他リンクエラー
