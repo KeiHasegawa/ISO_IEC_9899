@@ -1,3 +1,11 @@
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/1_Keywords/1_ok:test000
+#
+# frv-elf-ld が不正メモリアクセスする.
+#
+# /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/GNU_LANG/binutils-2.36.1.frv-elf/ld/MEMO
+#
+# に途中まで調べたことを書いている.
+
 41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/4_Storage_durations_of_objects/2_ok/1_reg/02_fpr:test003
 41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/4_Storage_durations_of_objects/2_ok/1_reg/02_fpr:test004
 41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/4_Storage_durations_of_objects/2_ok/1_reg/02_fpr:test005
