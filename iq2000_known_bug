@@ -11,15 +11,15 @@
 #   return a * b / c;
 # }
 #
-# 4.0 を計算できていない. 5.332682 を返しているようなログ. 5.332682 になるのは以下:
+# 4.0 を計算できていない. 5.332682 を返しているようなログ.
 #
-# aarch64, arm, bfin, cr16, frv, ft32, h8300, iq2000, lm32, m32r, mcore, 
-# microblaze, mips, mn10300, or1k, ppc, pru, rx, sh, v850
-#
-# FPU がある aarch64, mips でもエラーになるので libgcc の問題でもなさそう.
+# aarch64, arm, bfin, frv, ft32, h8300, lm32, m32r, microblaze, mips,
+# mn10300, or1k, ppc, pru, rl78, rx, sh, v850 で期待通り動作している
 #
 # avr : `__mulsf3' リンクエラー
+# cr16 : 64.000000 と表示
 # cris : ターゲットプログラムの不正メモリアクセス
 # m32c : `__muldf3', `__divdf3' リンクエラー
 # m68hc11 : `__muldf3', `__divdf3' 他リンクエラー
+# mcore : 0.000000 と表示
 # msp430 : `__mspabi_divd' 他リンクエラー
