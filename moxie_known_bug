@@ -1,113 +1,113 @@
 41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/4_Storage_durations_of_objects/2_ok/1_reg/02_fpr:test014
-41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/1_Floating_constants/1_ok:test002
-41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/2_Integer_constants/1_ok:test002
-41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/2_Integer_constants/1_ok:test003
-41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/4_Character_constants/1_ok:test004
-41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:test000
-41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:test001
-41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:test002
-41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:test003
-41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:test004
-41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:test005
-41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:test007
-41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/7_Usual_arithmetic_conversions:test014
-41_ISO_IEC_9899/6_Language/2_Conversions/30_char:test058
-41_ISO_IEC_9899/6_Language/2_Conversions/30_char:test059
-41_ISO_IEC_9899/6_Language/2_Conversions/30_char:test061
-41_ISO_IEC_9899/6_Language/2_Conversions/30_char:test062
-41_ISO_IEC_9899/6_Language/2_Conversions/30_char:test064
-41_ISO_IEC_9899/6_Language/2_Conversions/30_char:test065
-41_ISO_IEC_9899/6_Language/2_Conversions/30_char:test067
-41_ISO_IEC_9899/6_Language/2_Conversions/30_char:test068
-41_ISO_IEC_9899/6_Language/2_Conversions/32_uchar:test058
-41_ISO_IEC_9899/6_Language/2_Conversions/32_uchar:test059
-41_ISO_IEC_9899/6_Language/2_Conversions/32_uchar:test061
-41_ISO_IEC_9899/6_Language/2_Conversions/32_uchar:test062
-41_ISO_IEC_9899/6_Language/2_Conversions/32_uchar:test064
-41_ISO_IEC_9899/6_Language/2_Conversions/32_uchar:test065
-41_ISO_IEC_9899/6_Language/2_Conversions/32_uchar:test067
-41_ISO_IEC_9899/6_Language/2_Conversions/32_uchar:test068
-41_ISO_IEC_9899/6_Language/2_Conversions/34_ushort:test058
-41_ISO_IEC_9899/6_Language/2_Conversions/34_ushort:test059
-41_ISO_IEC_9899/6_Language/2_Conversions/34_ushort:test061
-41_ISO_IEC_9899/6_Language/2_Conversions/34_ushort:test062
-41_ISO_IEC_9899/6_Language/2_Conversions/34_ushort:test064
-41_ISO_IEC_9899/6_Language/2_Conversions/34_ushort:test065
-41_ISO_IEC_9899/6_Language/2_Conversions/34_ushort:test066
-41_ISO_IEC_9899/6_Language/2_Conversions/34_ushort:test067
-41_ISO_IEC_9899/6_Language/2_Conversions/34_ushort:test068
-41_ISO_IEC_9899/6_Language/2_Conversions/36_uint:test058
-41_ISO_IEC_9899/6_Language/2_Conversions/36_uint:test059
-41_ISO_IEC_9899/6_Language/2_Conversions/36_uint:test061
-41_ISO_IEC_9899/6_Language/2_Conversions/36_uint:test062
-41_ISO_IEC_9899/6_Language/2_Conversions/36_uint:test064
-41_ISO_IEC_9899/6_Language/2_Conversions/36_uint:test065
-41_ISO_IEC_9899/6_Language/2_Conversions/36_uint:test066
-41_ISO_IEC_9899/6_Language/2_Conversions/36_uint:test067
-41_ISO_IEC_9899/6_Language/2_Conversions/36_uint:test068
-41_ISO_IEC_9899/6_Language/2_Conversions/38_ulong:test058
-41_ISO_IEC_9899/6_Language/2_Conversions/38_ulong:test059
-41_ISO_IEC_9899/6_Language/2_Conversions/38_ulong:test061
-41_ISO_IEC_9899/6_Language/2_Conversions/38_ulong:test062
-41_ISO_IEC_9899/6_Language/2_Conversions/38_ulong:test064
-41_ISO_IEC_9899/6_Language/2_Conversions/38_ulong:test065
-41_ISO_IEC_9899/6_Language/2_Conversions/38_ulong:test066
-41_ISO_IEC_9899/6_Language/2_Conversions/38_ulong:test067
-41_ISO_IEC_9899/6_Language/2_Conversions/38_ulong:test068
-41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:test064
-41_ISO_IEC_9899/6_Language/2_Conversions/40_ulonglong:test065
-41_ISO_IEC_9899/6_Language/2_Conversions/42_float:test036
-41_ISO_IEC_9899/6_Language/2_Conversions/42_float:test037
-41_ISO_IEC_9899/6_Language/2_Conversions/42_float:test039
-41_ISO_IEC_9899/6_Language/2_Conversions/42_float:test040
-41_ISO_IEC_9899/6_Language/2_Conversions/42_float:test042
-41_ISO_IEC_9899/6_Language/2_Conversions/42_float:test043
-41_ISO_IEC_9899/6_Language/2_Conversions/42_float:test045
-41_ISO_IEC_9899/6_Language/2_Conversions/42_float:test046
-41_ISO_IEC_9899/6_Language/2_Conversions/43_double:test036
-41_ISO_IEC_9899/6_Language/2_Conversions/43_double:test037
-41_ISO_IEC_9899/6_Language/2_Conversions/43_double:test039
-41_ISO_IEC_9899/6_Language/2_Conversions/43_double:test040
-41_ISO_IEC_9899/6_Language/2_Conversions/43_double:test042
-41_ISO_IEC_9899/6_Language/2_Conversions/43_double:test043
-41_ISO_IEC_9899/6_Language/2_Conversions/43_double:test045
-41_ISO_IEC_9899/6_Language/2_Conversions/43_double:test046
-41_ISO_IEC_9899/6_Language/2_Conversions/44_longdouble:test036
-41_ISO_IEC_9899/6_Language/2_Conversions/44_longdouble:test037
-41_ISO_IEC_9899/6_Language/2_Conversions/44_longdouble:test039
-41_ISO_IEC_9899/6_Language/2_Conversions/44_longdouble:test040
-41_ISO_IEC_9899/6_Language/2_Conversions/44_longdouble:test042
-41_ISO_IEC_9899/6_Language/2_Conversions/44_longdouble:test043
-41_ISO_IEC_9899/6_Language/2_Conversions/44_longdouble:test045
-41_ISO_IEC_9899/6_Language/2_Conversions/44_longdouble:test046
-41_ISO_IEC_9899/6_Language/3_Expressions/1_Primary_expressions/1_ok:test000
-41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_calls/1_ok:test011
-41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_calls/3_call:test032
-41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_calls/3_call:test036
-41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_calls/3_call:test037
-41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_calls/6_va:test006
-41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/3_Structure_and_union_members/1_ok:test016
-41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/4_Postfix_increment_and_decrement_operators/1_ok:test000
-41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/4_Postfix_increment_and_decrement_operators/1_ok:test001
-41_ISO_IEC_9899/6_Language/3_Expressions/3_Unary_operators/0_Unary_operators:test046
-41_ISO_IEC_9899/6_Language/3_Expressions/3_Unary_operators/0_Unary_operators:test077
-41_ISO_IEC_9899/6_Language/3_Expressions/3_Unary_operators/0_Unary_operators:test078
-41_ISO_IEC_9899/6_Language/3_Expressions/3_Unary_operators/1_Prefix_increment_and_decrement_operators/1_ok:test000
-41_ISO_IEC_9899/6_Language/3_Expressions/3_Unary_operators/1_Prefix_increment_and_decrement_operators/1_ok:test001
-41_ISO_IEC_9899/6_Language/3_Expressions/5_Multiplicative_operators/3_binop:test026
-41_ISO_IEC_9899/6_Language/3_Expressions/5_Multiplicative_operators/3_binop:test027
-41_ISO_IEC_9899/6_Language/3_Expressions/5_Multiplicative_operators/3_binop:test046
-41_ISO_IEC_9899/6_Language/3_Expressions/8_Relational_operators/1_ok:test012
-41_ISO_IEC_9899/6_Language/5_Declarations/5_Declarators/2_Array_declarators/1_ok:test001
-41_ISO_IEC_9899/6_Language/5_Declarations/5_Declarators/2_Array_declarators/1_ok:test005
-41_ISO_IEC_9899/6_Language/5_Declarations/5_Declarators/2_Array_declarators/1_ok:test006
-41_ISO_IEC_9899/6_Language/5_Declarations/5_Declarators/2_Array_declarators/1_ok:test007
-41_ISO_IEC_9899/6_Language/5_Declarations/5_Declarators/2_Array_declarators/1_ok:test008
-41_ISO_IEC_9899/6_Language/5_Declarations/5_Declarators/2_Array_declarators/1_ok:test024
-41_ISO_IEC_9899/6_Language/5_Declarations/5_Declarators/3_Function_declarators/1_ok:test002
-41_ISO_IEC_9899/6_Language/5_Declarations/8_Initialization/1_ok:test007
-41_ISO_IEC_9899/6_Language/6_Statements/6_Jump_statements/0_Jump_statements:test029
-41_ISO_IEC_9899/6_Language/6_Statements/6_Jump_statements/0_Jump_statements:test030
-41_ISO_IEC_9899/6_Language/6_Statements/6_Jump_statements/0_Jump_statements:test031
-41_ISO_IEC_9899/6_Language/6_Statements/6_Jump_statements/0_Jump_statements:test032
-41_ISO_IEC_9899/6_Language/6_Statements/6_Jump_statements/0_Jump_statements:test033
+#
+# iq2000_known_bug で調査した通り
+#
+
+41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/3_Real_floating_and_integer/1_ok:test000
+#
+# uint16_t <- -128.5F
+#
+# moxie-elf-gcc
+# `test04' called
+# 65408
+#
+# 期待値は以下のつもりだった
+# `test04' called
+# -128
+# が, 他も調べてみた
+#
+# aarch64
+# `test03' called
+# -32768
+# `test04' called
+# 32768
+#
+# arm
+# `test03' called
+# -128
+# `test04' called
+# 0
+#
+# avr
+# リンクエラー
+#
+# bfin
+# `test03' called
+# -128
+# `test04' called
+# 65408
+#
+# cr16
+# できていない. 変換結果がすべて 0 になっている.
+#
+# cris
+# ターゲットプログラムが不正メモリアクセスしてしまう.
+#
+# frv
+# bfin と同じ
+#
+# ft32
+# bfin と同じ
+#
+# h8300
+# `test03' called
+# -128
+# `test04' called
+# -128
+#
+# iq2000
+# bfin と同じ
+#
+# lm32
+# arm と同じ
+#
+# m32c
+# リンクエラー
+#
+# m32r
+# bfin と同じ
+#
+# m68hc11
+# リンクエラー
+#
+# mcore
+# bfin と同じ
+#
+# microblaz
+# bfin と同じ
+#
+# mips
+# bfin と同じ
+#
+# mn10300
+# bfin と同じ
+#
+# moxie
+# bfin と同じ
+#
+# msp430
+# リンクエラー
+#
+# or1k
+# arm と同じ
+#
+# ppc
+# bfin と同じ
+#
+# pru
+# bfin と同じ
+#
+# rl78
+# `test03' called
+# 65408
+# `test04' called
+# 0
+#
+# rx
+# bfin と同じ
+#
+# sh
+# bfin と同じ
+#
+# v850
+# bfin と同じ
