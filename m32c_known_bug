@@ -1,4 +1,14 @@
 41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/2_Integer_constants/1_ok:test002
+#
+#  signed char c128 = 128;
+#  ...
+#  printf("c128 = %d\n", c128);
+#
+#  の結果が
+#
+#  c128 = 65408
+#
+
 41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/2_Integer_constants/1_ok:test003
 41_ISO_IEC_9899/6_Language/1_Lexical_elements/3_Constants/4_Character_constants/1_ok:test004
 41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_calls/4_param:test048
