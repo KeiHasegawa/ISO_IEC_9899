@@ -1,0 +1,5 @@
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/4_Storage_durations_of_objects/2_ok/7_constant:test001
+#
+# hasegawa %c,'a'
+#
+# が期待するログだが, 'a' でなく違う文字が出ている.
