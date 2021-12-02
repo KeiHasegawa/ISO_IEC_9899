@@ -13,7 +13,7 @@ void quicksort(int m, int n)
   int v = a[n];
   while ( 1 ) {
     do ++i; while ( a[i] < v );
-    do --j; while ( a[j] > v );
+    do --j; while (i != j && a[j] > v );
     if ( i >= j ) break;
     int x = a[i]; a[i] = a[j]; a[j] = x;
   }
