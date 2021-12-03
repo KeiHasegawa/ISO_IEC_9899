@@ -9,7 +9,7 @@ all:$(LOFS)
 AS = ft32-elf-as
 CC = ft32-elf-gcc -std=c99
 LD = ft32-elf-ld
-RUN = ft32-elf-run
+RUN = ft32-elf-run --memory-region 0x80e000,0x1000
 DOGV = wdog.exe -v
 
 %.o:%.S

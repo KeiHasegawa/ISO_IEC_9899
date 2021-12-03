@@ -5,7 +5,7 @@ all:test.lof
 
 CC = iq2000-elf-gcc
 LINK = iq2000-elf-ld
-RUN = iq2000-elf-run
+RUN = iq2000-elf-run --memory-region 0x1b000,0x5000
 DIFF = diff
 TOUCH = touch
 DOS2UNIX = dos2unix.csh

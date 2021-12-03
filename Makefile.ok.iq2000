@@ -9,7 +9,7 @@ all:$(LOFS)
 AS = iq2000-elf-as
 CC = iq2000-elf-gcc -std=c99
 LD = iq2000-elf-ld
-RUN = iq2000-elf-run
+RUN = iq2000-elf-run --memory-region 0x1b000,0x5000
 DOGV = wdog.exe -v
 
 %.o:%.S

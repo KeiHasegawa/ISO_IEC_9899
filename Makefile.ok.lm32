@@ -9,7 +9,7 @@ all:$(LOFS)
 AS = lm32-elf-as
 CC = lm32-elf-gcc -std=c99
 LD = lm32-elf-ld
-RUN = lm32-elf-run
+RUN = lm32-elf-run --memory-region 0x1b000,0x5004
 DOGV = wdog.exe -v
 
 %.o:%.S
