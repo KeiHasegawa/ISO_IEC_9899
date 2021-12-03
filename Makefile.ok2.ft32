@@ -5,7 +5,7 @@ all:test.lof
 
 CC = ft32-elf-gcc
 LINK = ft32-elf-ld
-RUN = ft32-elf-run
+RUN = ft32-elf-run --memory-region 0x80e000,0x1000
 DIFF = diff
 TOUCH = touch
 DOS2UNIX = dos2unix.csh
