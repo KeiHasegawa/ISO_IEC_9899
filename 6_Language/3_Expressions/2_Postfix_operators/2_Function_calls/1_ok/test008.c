@@ -16,7 +16,7 @@ extern int w(void);
 
 extern struct T x(volatile int*);
 extern int* y(int);
-extern char z(void);
+extern signed char z(void);
 
 int main(void)
 {
@@ -68,7 +68,7 @@ int* y(int n)
 
 int yy = -2;
 
-char z(void)
+signed char z(void)
 {
   return yy;
 }

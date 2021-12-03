@@ -9,7 +9,7 @@ all:$(LOFS)
 AS = aarch64-elf-as
 CC = aarch64-elf-gcc -std=c99
 LD = aarch64-elf-ld
-RUN = aarch64-elf-run
+RUN = aarch64-elf-run --memory-fill 0xcc --memory-region 0x1b000,0x5000
 DOGV = wdog.exe -v
 
 %.o:%.S

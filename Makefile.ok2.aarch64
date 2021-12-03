@@ -5,7 +5,7 @@ all:test.lof
 
 CC = aarch64-elf-gcc
 LINK = aarch64-elf-ld
-RUN = aarch64-elf-run
+RUN = aarch64-elf-run --memory-fill 0xcc --memory-region 0x1b000,0x5000
 DIFF = diff
 TOUCH = touch
 DOS2UNIX = dos2unix.csh

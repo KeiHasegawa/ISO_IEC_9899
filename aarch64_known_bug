@@ -52,3 +52,18 @@
 
 41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/3_Real_floating_and_integer/1_ok:test001
 41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/3_Real_floating_and_integer/1_ok:test002
+
+41_ISO_IEC_9899/6_Language/3_Expressions/15_Conditional_operator/1_ok:test009
+#
+# 128 MByte メモリ確保するのではなく断片で確保するようにしたところ不正メモリアクセスが
+# 検出されているが, シミュレータをもとに戻してもそもそもできていない
+#
+# `h' called with 0.000000
+#
+# のようになるが, 期待値は
+#
+# `h' called with 4.000000
+#
+# また 0xf000 に 8 バイトでアクセスしているのは main で定義されている配列 `a'
+# のサイズを超えてアクセスしているから.
+#
