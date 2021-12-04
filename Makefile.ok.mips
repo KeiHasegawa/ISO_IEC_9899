@@ -9,7 +9,7 @@ all:$(LOFS)
 AS = mips-elf-as
 CC = mips-elf-gcc -std=c99
 LD = mips-elf-ld
-RUN = mips-elf-run
+RUN = mips-elf-run --firmware none --memory-region 0xa003b000,0x5000
 DOGV = wdog.exe -v
 
 %.o:%.S

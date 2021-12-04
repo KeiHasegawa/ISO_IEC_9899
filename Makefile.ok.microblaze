@@ -9,7 +9,7 @@ all:$(LOFS)
 AS = microblaze-elf-as
 CC = microblaze-elf-gcc -std=c99
 LD = microblaze-elf-ld
-RUN = microblaze-elf-run
+RUN = microblaze-elf-run --memory-fill 0xcc --memory-region 0x1b000,0x5000
 DOGV = wdog.exe -v
 
 %.o:%.S

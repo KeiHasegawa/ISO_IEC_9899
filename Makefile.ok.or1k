@@ -9,7 +9,7 @@ all:$(LOFS)
 AS = or1k-elf-as
 CC = or1k-elf-gcc -std=c99
 LD = or1k-elf-ld
-RUN = or1k-elf-run
+RUN = or1k-elf-run --memory-fill 0xcc --memory-region 0x1b000,0x5000
 DOGV = wdog.exe -v
 
 %.o:%.S

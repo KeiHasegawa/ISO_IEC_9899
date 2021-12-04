@@ -5,7 +5,7 @@ all:test.lof
 
 CC = mips-elf-gcc
 LINK = mips-elf-ld
-RUN = mips-elf-run
+RUN = mips-elf-run --firmware none --memory-region 0xa003b000,0x5000
 DIFF = diff
 TOUCH = touch
 DOS2UNIX = dos2unix.csh

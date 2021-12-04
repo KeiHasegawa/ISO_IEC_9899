@@ -5,7 +5,7 @@ all:test.lof
 
 CC = mn10300-elf-gcc
 LINK = mn10300-elf-ld
-RUN = mn10300-elf-run
+RUN = mn10300-elf-run --memory-fill 0xcc --memory-region 0x1c000,0x4004
 DIFF = diff
 TOUCH = touch
 DOS2UNIX = dos2unix.csh

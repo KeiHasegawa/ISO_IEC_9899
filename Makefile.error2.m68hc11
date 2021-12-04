@@ -19,11 +19,11 @@ DOGV = wdog.exe -v
 	$(DOGV) $(DIFF) $< $@
 	$(TOUCH) $@
 
-START_O = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_m68hc11.015/start.o
+START_O = /home/khasegawa/lang/53_GNU_tool/gcc_cross/Motorola_68000/tool/start.o
 
-LIBGCC = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/GNU_LANG/lib/gcc/m68hc11-elf/3.4.4/libgcc.a
+LIBGCC = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/GNU_LANG/lib/gcc/m68hc11-elf/4.2.0/libgcc.a
 
-LDSCRIPT = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/test_m68hc11.015/test015.x
+LDSCRIPT = /home/khasegawa/lang/53_GNU_tool/gcc_cross/Motorola_68000/tool/sample.x
 
 test.log:$(OBJS)
 	-if export LANG=C ; $(DOG) $(LINK) $(START_O) $(OBJS) $(LIBGCC) -T $(LDSCRIPT) 2> $@ ; then \

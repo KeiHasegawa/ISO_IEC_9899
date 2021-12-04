@@ -9,7 +9,7 @@ all:$(LOFS)
 AS = mn10300-elf-as
 CC = mn10300-elf-gcc -std=c99
 LD = mn10300-elf-ld
-RUN = mn10300-elf-run
+RUN = mn10300-elf-run --memory-fill 0xcc --memory-region 0x1c000,0x4004
 DOGV = wdog.exe -v
 
 %.o:%.S

@@ -5,7 +5,7 @@ all:test.lof
 
 CC = msp430-elf-gcc
 LINK = msp430-elf-ld
-RUN = msp430-elf-run
+RUN = msp430-elf-run --memory-fill 0xcc --memory-region 0xe000,0x1f00
 DIFF = diff
 TOUCH = touch
 DOS2UNIX = dos2unix.csh
