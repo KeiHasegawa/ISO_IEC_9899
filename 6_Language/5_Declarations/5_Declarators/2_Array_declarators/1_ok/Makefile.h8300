@@ -1,0 +1,4 @@
+include ../../../../../Makefile.ok
+
+test006.log:test006.elf
+	h8300-elf-run --memory-fill 0xcc --memory-region 0xaff0,0x5000 ./$< > $@
