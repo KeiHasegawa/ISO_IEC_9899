@@ -5,7 +5,8 @@ all:test.lof
 
 CC = sh-elf-gcc
 LINK = sh-elf-ld
-RUN = sh-elf-run
+#RUN = sh-elf-run
+RUN = sh-elf-run --memory-fill 0xcc --memory-region 0x1b000,0x5000
 DIFF = diff
 TOUCH = touch
 DOS2UNIX = dos2unix.csh

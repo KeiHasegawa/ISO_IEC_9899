@@ -5,7 +5,7 @@ all:test.lof
 
 CC = rl78-elf-gcc
 LINK = rl78-elf-ld
-RUN = rl78-elf-run
+RUN = rl78-elf-run --memory-fill 0xcc --memory-region 0xf7000,0x1000
 DIFF = diff
 TOUCH = touch
 DOS2UNIX = dos2unix.csh

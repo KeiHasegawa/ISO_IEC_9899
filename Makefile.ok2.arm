@@ -5,7 +5,7 @@ all:test.lof
 
 CC = arm-elf-gcc
 LINK = arm-elf-ld
-RUN = arm-elf-run
+RUN = arm-elf-run --memory-region 0x1b000,0x5000
 DIFF = diff
 TOUCH = touch
 DOS2UNIX = dos2unix.csh

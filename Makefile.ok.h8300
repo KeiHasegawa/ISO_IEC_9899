@@ -9,7 +9,7 @@ all:$(LOFS)
 AS = h8300-elf-as
 CC = h8300-elf-gcc -std=c99
 LD = h8300-elf-ld
-RUN = h8300-elf-run
+RUN = h8300-elf-run --memory-fill 0xcc --memory-region 0xdff0,0x2000
 DOGV = wdog.exe -v
 
 %.o:%.S

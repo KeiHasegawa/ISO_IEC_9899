@@ -5,7 +5,8 @@ all:test.lof
 
 CC = m32c-elf-gcc
 LINK = m32c-elf-ld
-RUN = m32c-elf-run
+#RUN = m32c-elf-run
+RUN = m32c-elf-run --memory-fill 0xcc --memory-region 0xdff0,0x2000
 DIFF = diff
 TOUCH = touch
 DOS2UNIX = dos2unix.csh

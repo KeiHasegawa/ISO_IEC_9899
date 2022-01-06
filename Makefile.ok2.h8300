@@ -5,7 +5,7 @@ all:test.lof
 
 CC = h8300-elf-gcc
 LINK = h8300-elf-ld
-RUN = h8300-elf-run
+RUN = h8300-elf-run --memory-fill 0xcc --memory-region 0xdff0,0x2000
 DIFF = diff
 TOUCH = touch
 DOS2UNIX = dos2unix.csh

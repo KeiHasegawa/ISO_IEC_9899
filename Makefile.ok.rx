@@ -9,7 +9,7 @@ all:$(LOFS)
 AS = rx-elf-as
 CC = rx-elf-gcc -std=c99
 LD = rx-elf-ld
-RUN = rx-elf-run
+RUN = rx-elf-run --memory-fil 0xcc --memory-region 0x1b000,0x5000
 DOGV = wdog.exe -v
 
 %.o:%.S

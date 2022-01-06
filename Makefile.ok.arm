@@ -9,7 +9,7 @@ all:$(LOFS)
 AS = arm-elf-as
 CC = arm-elf-gcc -std=c99
 LD = arm-elf-ld
-RUN = arm-elf-run
+RUN = arm-elf-run --memory-region 0x1b000,0x5000
 DOGV = wdog.exe -v
 
 %.o:%.S

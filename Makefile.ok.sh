@@ -9,7 +9,8 @@ all:$(LOFS)
 AS = sh-elf-as
 CC = sh-elf-gcc -std=c99
 LD = sh-elf-ld
-RUN = sh-elf-run
+#RUN = sh-elf-run
+RUN = sh-elf-run --memory-fill 0xcc --memory-region 0x1b000,0x5000
 DOGV = wdog.exe -v
 
 %.o:%.S

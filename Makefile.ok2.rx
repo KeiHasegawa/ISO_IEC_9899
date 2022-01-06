@@ -5,7 +5,7 @@ all:test.lof
 
 CC = rx-elf-gcc
 LINK = rx-elf-ld
-RUN = rx-elf-run
+RUN = rx-elf-run --memory-fil 0xcc --memory-region 0x1b000,0x5000
 DIFF = diff
 TOUCH = touch
 DOS2UNIX = dos2unix.csh
