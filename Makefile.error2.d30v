@@ -1,0 +1,44 @@
+SRCS = $(wildcard *.c)
+OBJS = $(SRCS:.c=.o)
+
+all:test.lof
+
+CC = d30v-elf-gcc
+LINK = d30v-elf-ld
+RUN = d30v-elf-run
+DIFF = diff
+TOUCH = touch
+DOS2UNIX = dos2unix.csh
+DOG = wdog.exe
+DOGV = wdog.exe -v
+
+%.o : %.c
+	$(DOGV) $(CC) -o $@ -c $<
+
+%.lof : %.log
+	$(DOGV) $(DIFF) $< $@
+	$(TOUCH) $@
+
+START_O = /home/khasegawa/lang/53_GNU_tool/gcc_cross/D30V/tool/start.o
+
+LIBGCC = /media/ca850f52-0605-42a7-9fd4-899de9edf461/work/GNU_LANG/lib/gcc/d30v-elf/3.4.4/libgcc.a
+
+LDSCRIPT = /home/khasegawa/lang/53_GNU_tool/gcc_cross/D30V/tool/sample.x
+
+test.log:$(OBJS)
+	-if export LANG=C ; $(DOG) $(LINK) $(START_O) $(OBJS) $(LIBGCC) -T $(LDSCRIPT) 2> $@ ; then \
+		$(RM) $@ ; \
+	else \
+		$(DOS2UNIX) $@; \
+	fi
+	line_conv.csh $@
+
+clean:
+	$(RM) *.o *.log *.elf *.s *.i *.stackdump core.* *~
+
+test.lof:test.log
+a.s:a.i
+b.s:b.i
+c.s:c.i
+
+
